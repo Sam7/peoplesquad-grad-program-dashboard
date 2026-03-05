@@ -1,4 +1,4 @@
-import { computeApplicationStatus, getDaysUntil, getDeadlineUrgency } from "./dates";
+import { getDaysUntil, getDeadlineUrgency } from "./dates";
 
 export type WorkRightsCategory = "all" | "citizen_pr" | "visa_ok" | "unknown";
 export type SortMode = "deadline" | "name";
@@ -21,7 +21,8 @@ export interface UiCompany {
   name: string;
   streamTags: string[];
   workRightsText: string | null;
-  status: "open" | "closed" | "unknown";
+  status: "open" | "upcoming" | "closed" | "unknown";
+  openDateRaw: string | null;
   closeDateRaw: string | null;
   progressState: ProgressState;
 }
@@ -165,29 +166,52 @@ function matchesSoonFilter(company: UiCompany, soon: boolean, referenceDate: Dat
 }
 
 function deadlineSort(a: UiCompany, b: UiCompany, referenceDate: Date): number {
-  const aStatus = computeApplicationStatus(null, a.closeDateRaw, referenceDate);
-  const bStatus = computeApplicationStatus(null, b.closeDateRaw, referenceDate);
-
-  const rank = (status: string): number => {
-    if (status === "open") {
-      return 0;
+  const rank = (company: UiCompany): number => {
+    if (company.status === "upcoming") {
+      const daysUntilOpen = getDaysUntil(company.openDateRaw, referenceDate);
+      if (daysUntilOpen !== null && daysUntilOpen >= 0 && daysUntilOpen <= 3) {
+        return 0;
+      }
+      return 2;
     }
-    if (status === "unknown") {
+
+    if (company.status === "open") {
       return 1;
     }
-    return 2;
+
+    if (company.status === "unknown") {
+      return 3;
+    }
+
+    return 4;
   };
 
-  const rankDiff = rank(aStatus) - rank(bStatus);
+  const rankDiff = rank(a) - rank(b);
   if (rankDiff !== 0) {
     return rankDiff;
   }
 
-  const aDays = getDaysUntil(a.closeDateRaw, referenceDate);
-  const bDays = getDaysUntil(b.closeDateRaw, referenceDate);
+  const getPrimaryDateOffset = (company: UiCompany): number | null => {
+    if (company.status === "upcoming") {
+      return getDaysUntil(company.openDateRaw, referenceDate);
+    }
+
+    if (company.status === "open" || company.status === "closed") {
+      return getDaysUntil(company.closeDateRaw, referenceDate);
+    }
+
+    return null;
+  };
+
+  const aDays = getPrimaryDateOffset(a);
+  const bDays = getPrimaryDateOffset(b);
 
   if (aDays !== null && bDays !== null) {
-    if (aDays !== bDays) {
+    if (a.status === "closed" && b.status === "closed") {
+      if (aDays !== bDays) {
+        return bDays - aDays;
+      }
+    } else if (aDays !== bDays) {
       return aDays - bDays;
     }
   } else if (aDays !== null) {

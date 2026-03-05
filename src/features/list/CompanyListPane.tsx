@@ -7,6 +7,19 @@ import { cn } from "../../lib/cn";
 import { CompanyBoardView } from "./CompanyBoardView";
 import { ProgressControl } from "../progress/ProgressControl";
 
+function formatStatusLabel(status: ListCompany["status"]): string {
+  if (status === "upcoming") {
+    return "Upcoming";
+  }
+  if (status === "open") {
+    return "Open";
+  }
+  if (status === "closed") {
+    return "Closed";
+  }
+  return "Unknown";
+}
+
 interface CompanyListPaneProps {
   filteredCompanies: ListCompany[];
   allCompanies: ListCompany[];
@@ -38,28 +51,33 @@ export function CompanyListPane({
   onSetProgress,
   onSetView
 }: CompanyListPaneProps) {
+  const isDetailMode = selectedId !== null;
+  const effectiveView: FiltersState["view"] = isDetailMode ? "search" : filters.view;
+
   return (
     <section className={cn("list-pane", selectedId && "list-pane--selected")} aria-label="Company list">
-      <div className="listing-tabs" role="tablist" aria-label="Listing view tabs">
-        <button
-          role="tab"
-          aria-selected={filters.view === "search"}
-          className={cn("listing-tabs__tab", filters.view === "search" && "listing-tabs__tab--active")}
-          onClick={() => onSetView("search")}
-        >
-          Search View
-        </button>
-        <button
-          role="tab"
-          aria-selected={filters.view === "board"}
-          className={cn("listing-tabs__tab", filters.view === "board" && "listing-tabs__tab--active")}
-          onClick={() => onSetView("board")}
-        >
-          Board View
-        </button>
-      </div>
+      {!isDetailMode ? (
+        <div className="listing-tabs" role="tablist" aria-label="Listing view tabs">
+          <button
+            role="tab"
+            aria-selected={filters.view === "search"}
+            className={cn("listing-tabs__tab", filters.view === "search" && "listing-tabs__tab--active")}
+            onClick={() => onSetView("search")}
+          >
+            Search View
+          </button>
+          <button
+            role="tab"
+            aria-selected={filters.view === "board"}
+            className={cn("listing-tabs__tab", filters.view === "board" && "listing-tabs__tab--active")}
+            onClick={() => onSetView("board")}
+          >
+            Board View
+          </button>
+        </div>
+      ) : null}
 
-      {filters.view === "search" ? (
+      {effectiveView === "search" ? (
         <>
           <div className="filters">
             <label className="filters__search">
@@ -143,11 +161,16 @@ export function CompanyListPane({
                 >
                   <div className="company-card__header">
                     <h2>{company.name}</h2>
-                    <span className={cn("status-pill", `status-pill--${company.status}`)}>{company.status}</span>
                   </div>
                   <p className="company-card__date">
                     <CalendarClock size={14} aria-hidden />
-                    <span>{formatDisplayDate(company.closeDateRaw)}</span>
+                    <span>
+                      {company.status === "upcoming"
+                        ? `Opens: ${formatDisplayDate(company.openDateRaw)}`
+                        : company.status === "unknown"
+                          ? `Date: ${formatDisplayDate(company.closeDateRaw)}`
+                          : `Closes: ${formatDisplayDate(company.closeDateRaw)}`}
+                    </span>
                   </p>
                   <p
                     className={cn(
@@ -155,15 +178,18 @@ export function CompanyListPane({
                       getDeadlineUrgency(company.closeDateRaw, company.status) === "soon" && "company-card__relative--soon"
                     )}
                   >
-                    {formatRelativeDeadline(company.closeDateRaw)}
+                    {formatRelativeDeadline(company.closeDateRaw, company.status, company.openDateRaw)}
                   </p>
                 </button>
 
-                <ProgressControl
-                  companyName={company.name}
-                  state={company.progressState}
-                  onStateChange={(next) => onSetProgress(company.id, next)}
-                />
+                <div className="company-card__meta">
+                  <span className={cn("status-pill", `status-pill--${company.status}`)}>{formatStatusLabel(company.status)}</span>
+                  <ProgressControl
+                    companyName={company.name}
+                    state={company.progressState}
+                    onStateChange={(next) => onSetProgress(company.id, next)}
+                  />
+                </div>
               </li>
             ))}
           </ul>

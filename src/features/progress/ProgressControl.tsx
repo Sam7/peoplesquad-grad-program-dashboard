@@ -51,8 +51,8 @@ export function ProgressControl({ companyName, state, onStateChange, compact = f
   const [expanded, setExpanded] = useState(false);
   const supportsHover = useHoverSupport();
 
-  const leftOption = getLeftProgressOption(state);
-  const rightOption = getRightProgressOption(state);
+  const negativeOption = getLeftProgressOption(state);
+  const positiveOption = getRightProgressOption(state);
 
   useEffect(() => {
     if (state === "none") {
@@ -74,7 +74,13 @@ export function ProgressControl({ companyName, state, onStateChange, compact = f
       return;
     }
 
-    setExpanded((value) => !value);
+    if (expanded) {
+      onStateChange("none");
+      setExpanded(false);
+      return;
+    }
+
+    setExpanded(true);
   }
 
   return (
@@ -96,14 +102,17 @@ export function ProgressControl({ companyName, state, onStateChange, compact = f
         }
       }}
     >
-      {leftOption && expanded ? (
+      {positiveOption && expanded ? (
         <button
           type="button"
-          className="progress-control__side progress-control__side--left"
-          onClick={() => onStateChange(leftOption)}
-          aria-label={`Move ${companyName} to ${getLabel(leftOption)}`}
+          className="progress-control__side progress-control__side--top"
+          onClick={() => {
+            onStateChange(positiveOption);
+            setExpanded(false);
+          }}
+          aria-label={`Move ${companyName} to ${getLabel(positiveOption)}`}
         >
-          <span>{getLabel(leftOption)}</span>
+          <span>{getLabel(positiveOption)}</span>
         </button>
       ) : null}
 
@@ -117,25 +126,17 @@ export function ProgressControl({ companyName, state, onStateChange, compact = f
         <span>{currentMeta.label}</span>
       </button>
 
-      {expanded && state !== "none" ? (
+      {negativeOption && expanded ? (
         <button
           type="button"
-          className="progress-control__clear"
-          onClick={() => onStateChange("none")}
-          aria-label={`Clear progress for ${companyName}`}
+          className="progress-control__side progress-control__side--bottom"
+          onClick={() => {
+            onStateChange(negativeOption);
+            setExpanded(false);
+          }}
+          aria-label={`Move ${companyName} to ${getLabel(negativeOption)}`}
         >
-          Clear
-        </button>
-      ) : null}
-
-      {rightOption && expanded ? (
-        <button
-          type="button"
-          className="progress-control__side progress-control__side--right"
-          onClick={() => onStateChange(rightOption)}
-          aria-label={`Move ${companyName} to ${getLabel(rightOption)}`}
-        >
-          <span>{getLabel(rightOption)}</span>
+          <span>{getLabel(negativeOption)}</span>
         </button>
       ) : null}
     </div>

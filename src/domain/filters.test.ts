@@ -15,6 +15,7 @@ const baseCompanies: UiCompany[] = [
     streamTags: ["Technology", "Finance"],
     workRightsText: "Australian or New Zealand citizens or permanent residents",
     status: "open",
+    openDateRaw: "2026-03-10",
     closeDateRaw: "2026-04-12",
     progressState: "saved"
   },
@@ -24,6 +25,7 @@ const baseCompanies: UiCompany[] = [
     streamTags: ["Engineering"],
     workRightsText: "International students with a valid visa are welcome to apply",
     status: "open",
+    openDateRaw: null,
     closeDateRaw: "6 April 2026",
     progressState: "none"
   },
@@ -33,6 +35,7 @@ const baseCompanies: UiCompany[] = [
     streamTags: ["Technical program"],
     workRightsText: null,
     status: "unknown",
+    openDateRaw: null,
     closeDateRaw: null,
     progressState: "none"
   },
@@ -42,7 +45,28 @@ const baseCompanies: UiCompany[] = [
     streamTags: ["Business"],
     workRightsText: "Australian or New Zealand Citizen",
     status: "closed",
+    openDateRaw: "2026-02-01",
     closeDateRaw: "2026-03-01",
+    progressState: "none"
+  },
+  {
+    id: "atlassian",
+    name: "Atlassian",
+    streamTags: ["Technology"],
+    workRightsText: "Australian citizen or permanent resident",
+    status: "upcoming",
+    openDateRaw: "2026-04-03",
+    closeDateRaw: "2026-04-25",
+    progressState: "none"
+  },
+  {
+    id: "canva",
+    name: "Canva",
+    streamTags: ["Design"],
+    workRightsText: "Australian citizen or permanent resident",
+    status: "upcoming",
+    openDateRaw: "2026-04-20",
+    closeDateRaw: "2026-05-20",
     progressState: "none"
   }
 ];
@@ -97,6 +121,12 @@ describe("filterAndSortCompanies", () => {
   it("puts expired companies at bottom for deadline sort", () => {
     const result = filterAndSortCompanies(baseCompanies, defaultFilters(), new Date("2026-04-01T12:00:00+11:00"));
     expect(result[result.length - 1]?.id).toBe("westpac");
+  });
+
+  it("prioritizes upcoming programs opening within 3 days ahead of open programs", () => {
+    const result = filterAndSortCompanies(baseCompanies, defaultFilters(), new Date("2026-04-01T12:00:00+11:00"));
+    expect(result[0]?.id).toBe("atlassian");
+    expect(result[1]?.status).toBe("open");
   });
 
   it("supports closing-soon filter", () => {

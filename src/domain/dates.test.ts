@@ -28,6 +28,12 @@ describe("parseFlexibleDate", () => {
 });
 
 describe("computeApplicationStatus", () => {
+  it("returns upcoming when open date is in the future", () => {
+    expect(
+      computeApplicationStatus("2026-03-10", "2026-04-12", new Date("2026-03-06T12:00:00+11:00"))
+    ).toBe("upcoming");
+  });
+
   it("returns open when today is within open-close range", () => {
     expect(
       computeApplicationStatus("2026-03-10", "2026-04-12", new Date("2026-03-15T12:00:00+11:00"))
@@ -40,6 +46,10 @@ describe("computeApplicationStatus", () => {
 
   it("returns unknown when no parseable dates exist", () => {
     expect(computeApplicationStatus(null, "August", new Date("2026-04-07T12:00:00+10:00"))).toBe("unknown");
+  });
+
+  it("returns upcoming when only open date exists and has not started", () => {
+    expect(computeApplicationStatus("2026-05-02", null, new Date("2026-04-07T12:00:00+10:00"))).toBe("upcoming");
   });
 });
 

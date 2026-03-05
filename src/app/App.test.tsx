@@ -16,8 +16,8 @@ const mockIndex = {
       career_url: "https://colescareers.com.au/au/en/studentandgraduates",
       apply: {
         direct_apply_url: "https://example.com/coles/apply",
-        open_date: "2026-03-10",
-        close_date: "2026-04-12",
+        open_date: "2099-03-10",
+        close_date: "2099-04-12",
         status: "unknown"
       },
       tags: {
@@ -58,7 +58,8 @@ const mockDetail = {
   program: {
     name: "Coles Graduate Program",
     direct_apply_url: "https://example.com/coles/apply",
-    close_date: "2026-04-12",
+    open_date: "2099-03-10",
+    close_date: "2099-04-12",
     salary_text: null,
     streams: ["Technology"]
   },
@@ -174,6 +175,18 @@ describe("App", () => {
     expect(await screen.findByText("Saved")).toBeInTheDocument();
   });
 
+  it("shows upcoming status with opens-in relative copy when program has future open date", async () => {
+    render(
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    );
+
+    await screen.findByText("Coles Group");
+    expect(screen.getByText("Upcoming")).toBeInTheDocument();
+    expect(screen.getByText(/opens in/i)).toBeInTheDocument();
+  });
+
   it("navigates to detail route on company selection", async () => {
     const user = userEvent.setup();
     render(
@@ -192,7 +205,7 @@ describe("App", () => {
     expect(screen.getByText(/salary:/i)).toBeInTheDocument();
   });
 
-  it("forces search view when a detail route is open", async () => {
+  it("hides tabs and forces search pane rendering when detail route is open", async () => {
     window.history.pushState({}, "", "/company/coles-group?view=board");
 
     render(
@@ -202,14 +215,52 @@ describe("App", () => {
     );
 
     await screen.findByText("Coles Graduate Program");
+    expect(window.location.search).toContain("view=board");
+    expect(screen.queryByRole("tablist", { name: /listing view tabs/i })).not.toBeInTheDocument();
+    expect(screen.getByRole("searchbox", { name: /search companies/i })).toBeInTheDocument();
+    expect(screen.queryByLabelText(/company progress board/i)).not.toBeInTheDocument();
+  });
+
+  it("shows industry, streams, and plain eligibility content in detail utility cards", async () => {
+    const user = userEvent.setup();
+    render(
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    );
+
+    const companyButton = await screen.findByRole("button", { name: /open coles group details/i });
+    await user.click(companyButton);
+
+    expect(await screen.findByText(/industry/i)).toBeInTheDocument();
+    expect(screen.getAllByText("Retail").length).toBeGreaterThan(0);
+    expect(screen.getAllByText(/streams/i).length).toBeGreaterThan(0);
+    expect(screen.getAllByText("Technology").length).toBeGreaterThan(0);
+    expect(screen.getByText(/eligibility/i)).toBeInTheDocument();
+    expect(screen.getByText(/citizens or permanent residents/i)).toBeInTheDocument();
+  });
+
+  it("returns to full board view after closing detail when URL has view=board", async () => {
+    const user = userEvent.setup();
+    window.history.pushState({}, "", "/company/coles-group?view=board");
+
+    render(
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    );
+
+    await screen.findByText("Coles Graduate Program");
+    expect(screen.queryByRole("tablist", { name: /listing view tabs/i })).not.toBeInTheDocument();
+
+    await user.click(screen.getByRole("button", { name: /close company details/i }));
 
     await waitFor(() => {
-      expect(window.location.search).not.toContain("view=board");
+      expect(window.location.pathname).toBe("/");
+      expect(window.location.search).toContain("view=board");
     });
 
-    const searchTab = screen.getByRole("tab", { name: /search view/i });
-    const boardTab = screen.getByRole("tab", { name: /board view/i });
-    expect(searchTab).toHaveAttribute("aria-selected", "true");
-    expect(boardTab).toHaveAttribute("aria-selected", "false");
+    expect(screen.getByRole("tablist", { name: /listing view tabs/i })).toBeInTheDocument();
+    expect(screen.getByLabelText(/company progress board/i)).toBeInTheDocument();
   });
 });

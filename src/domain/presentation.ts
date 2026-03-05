@@ -1,5 +1,5 @@
 import { format } from "date-fns";
-import { getDaysUntil, parseFlexibleDate } from "./dates";
+import { getDaysUntil, parseFlexibleDate, type ApplicationStatus } from "./dates";
 
 export function formatDisplayDate(dateRaw: string | null | undefined): string {
   if (!dateRaw) {
@@ -14,19 +14,45 @@ export function formatDisplayDate(dateRaw: string | null | undefined): string {
   return format(parsed, "dd MMM yyyy");
 }
 
-export function formatRelativeDeadline(dateRaw: string | null | undefined, referenceDate: Date = new Date()): string {
-  const days = getDaysUntil(dateRaw, referenceDate);
-  if (days === null) {
-    return "Deadline not published";
+export function formatRelativeDeadline(
+  closeDateRaw: string | null | undefined,
+  status: ApplicationStatus = "unknown",
+  openDateRaw: string | null | undefined = null,
+  referenceDate: Date = new Date()
+): string {
+  if (status === "upcoming") {
+    const daysUntilOpen = getDaysUntil(openDateRaw, referenceDate);
+    if (daysUntilOpen === null) {
+      return "Opens date not published";
+    }
+    if (daysUntilOpen === 0) {
+      return "Opens today";
+    }
+    if (daysUntilOpen === 1) {
+      return "Opens in 1 day";
+    }
+    return `Opens in ${daysUntilOpen} days`;
   }
-  if (days < 0) {
-    return `Closed ${Math.abs(days)} day${Math.abs(days) === 1 ? "" : "s"} ago`;
+
+  const daysUntilClose = getDaysUntil(closeDateRaw, referenceDate);
+  if (daysUntilClose === null) {
+    return "Dates not published";
   }
-  if (days === 0) {
-    return "Closes today";
+
+  if (status === "open") {
+    if (daysUntilClose === 0) {
+      return "Closes today";
+    }
+    if (daysUntilClose === 1) {
+      return "Closes in 1 day";
+    }
+    return `Closes in ${daysUntilClose} days`;
   }
-  if (days === 1) {
-    return "Closes in 1 day";
+
+  if (status === "closed") {
+    const daysClosed = Math.abs(daysUntilClose);
+    return `Closed ${daysClosed} day${daysClosed === 1 ? "" : "s"} ago`;
   }
-  return `Closes in ${days} days`;
+
+  return "Dates not published";
 }

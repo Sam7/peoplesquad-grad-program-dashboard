@@ -43,4 +43,36 @@ describe("mapIndexToListCompanies", () => {
     expect(companies[0].progressState).toBe("applied");
     expect(companies[0].workRightsText).toContain("visa");
   });
+
+  it("maps future open_date programs to upcoming status", () => {
+    const payload: CompanyIndexPayload = {
+      schema_version: "1.0",
+      generated_at: "2026-03-05T00:00:00Z",
+      companies: [
+        {
+          id: "future-co",
+          name: "Future Co",
+          entity_type: "company",
+          logo_url: null,
+          career_url: "https://example.com/careers",
+          apply: {
+            direct_apply_url: "https://example.com/apply",
+            open_date: "2026-04-10",
+            close_date: "2026-04-30",
+            status: "unknown"
+          },
+          tags: {
+            streams: ["Tech"],
+            eligibility: ["Citizen or PR"],
+            industries: ["Technology"]
+          },
+          updated_at: "2026-03-05T00:00:00Z",
+          confidence: "high"
+        }
+      ]
+    };
+
+    const companies = mapIndexToListCompanies(payload, {}, new Date("2026-04-05T12:00:00+10:00"));
+    expect(companies[0].status).toBe("upcoming");
+  });
 });

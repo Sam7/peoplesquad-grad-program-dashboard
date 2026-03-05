@@ -50,14 +50,22 @@ interface DetailCard {
   value: string;
 }
 
+function formatStatusLabel(status: ListCompany["status"]): string {
+  if (status === "upcoming") {
+    return "Upcoming";
+  }
+  if (status === "open") {
+    return "Open";
+  }
+  if (status === "closed") {
+    return "Closed";
+  }
+  return "Unknown";
+}
+
 export function CompanyDetailPane({ company, detail, isLoading, onClose, onSetProgress }: CompanyDetailPaneProps) {
   if (!company) {
-    return (
-      <section className="detail-pane detail-pane--empty" aria-label="Company details">
-        <h2>Pick an employer</h2>
-        <p>Choose a company to view key dates, eligibility, recruitment flow, and official sources.</p>
-      </section>
-    );
+    return undefined;
   }
 
   if (isLoading) {
@@ -70,6 +78,7 @@ export function CompanyDetailPane({ company, detail, isLoading, onClose, onSetPr
 
   const safeDetail = detail ?? ({} as CompanyDetailPayload);
   const program = asObject(safeDetail.program);
+  const classification = asObject(safeDetail.classification);
   const eligibility = asObject(safeDetail.eligibility);
   const recruitment = asObject(safeDetail.recruitment_process);
   const commercial = asObject(safeDetail.commercial_context);
@@ -77,11 +86,14 @@ export function CompanyDetailPane({ company, detail, isLoading, onClose, onSetPr
 
   const programName = asString(program.name) ?? "Not published";
   const applyUrl = asString(program.direct_apply_url) ?? company.directApplyUrl;
+  const openDate = asString(program.open_date) ?? company.openDateRaw;
   const closeDate = asString(program.close_date) ?? company.closeDateRaw;
   const salaryText = asString(program.salary_text) ?? "Not published";
 
   const workRights = asString(eligibility.work_rights) ?? company.workRightsText ?? "Not published";
-  const streamTags = asStringArray(program.streams);
+  const streamTags = asStringArray(program.streams).length > 0 ? asStringArray(program.streams) : company.streamTags;
+  const derivedIndustry = asString(classification.industry_bucket);
+  const industries = company.industries.length > 0 ? company.industries : derivedIndustry ? [derivedIndustry] : [];
   const recruitmentStages = Array.isArray(recruitment.stages)
     ? (recruitment.stages as Array<Record<string, unknown>>)
     : [];
@@ -170,7 +182,15 @@ export function CompanyDetailPane({ company, detail, isLoading, onClose, onSetPr
             </div>
           )}
           <div>
-            <h2>{company.name}</h2>
+            <div className="utility-header__name-row">
+              <h2>{company.name}</h2>
+              {industries.map((industry) => (
+                <span key={industry} className="industry-pill">
+                  {industry}
+                </span>
+              ))}
+            </div>
+            <p className="utility-header__field-label">Industry</p>
             <p>{programName}</p>
           </div>
         </div>
@@ -194,36 +214,44 @@ export function CompanyDetailPane({ company, detail, isLoading, onClose, onSetPr
 
         <div className="utility-header__metrics">
           <div className="metric-card">
-            <span>Closes</span>
+            <span>Timeline & status</span>
+            <p>
+              <CalendarClock size={14} aria-hidden />
+              Opens: {formatDisplayDate(openDate)}
+            </p>
             <p className={cn(urgency === "soon" && "metric-card__value--soon")}>
               <CalendarClock size={14} aria-hidden />
-              {formatDisplayDate(closeDate)}
+              Closes: {formatDisplayDate(closeDate)}
             </p>
-            <small>{formatRelativeDeadline(closeDate)}</small>
+            <small>{formatRelativeDeadline(closeDate, company.status, openDate)}</small>
+            <p>
+              <span className={cn("status-pill", `status-pill--${company.status}`)}>{formatStatusLabel(company.status)}</span>
+            </p>
+          </div>
+
+          <div className="metric-card metric-card--plain">
+            <span>Eligibility</span>
+            <p>{workRights}</p>
           </div>
 
           <div className="metric-card">
-            <span>Eligibility</span>
+            <span>Streams</span>
             <div className="tag-row">
-              <span className="tag-chip">{workRights}</span>
-              {streamTags.slice(0, 2).map((stream) => (
-                <span key={stream} className="tag-chip tag-chip--secondary">
-                  {stream}
-                </span>
-              ))}
+              {streamTags.length > 0 ? (
+                streamTags.map((stream) => (
+                  <span key={stream} className="tag-chip tag-chip--secondary">
+                    {stream}
+                  </span>
+                ))
+              ) : (
+                <p className="muted">Not published</p>
+              )}
             </div>
           </div>
 
           <div className="metric-card">
             <span>Salary</span>
             <p>Salary: {salaryText}</p>
-          </div>
-
-          <div className="metric-card">
-            <span>Status</span>
-            <p>
-              <span className={cn("status-pill", `status-pill--${company.status}`)}>{company.status}</span>
-            </p>
           </div>
         </div>
       </div>

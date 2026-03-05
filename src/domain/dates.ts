@@ -2,7 +2,7 @@ import { isValid, parse } from "date-fns";
 import { differenceInCalendarDays } from "date-fns";
 import { formatInTimeZone } from "date-fns-tz";
 
-export type ApplicationStatus = "open" | "closed" | "unknown";
+export type ApplicationStatus = "open" | "upcoming" | "closed" | "unknown";
 export type DeadlineUrgency = "none" | "normal" | "soon" | "closed";
 
 const APP_TIMEZONE = "Australia/Sydney";
@@ -110,7 +110,18 @@ export function computeApplicationStatus(
   if (openDate && closeDate) {
     const openKey = getDateKey(openDate);
     const closeKey = getDateKey(closeDate);
-    return openKey <= referenceKey && referenceKey <= closeKey ? "open" : "closed";
+    if (referenceKey < openKey) {
+      return "upcoming";
+    }
+    if (referenceKey > closeKey) {
+      return "closed";
+    }
+    return "open";
+  }
+
+  if (openDate) {
+    const openKey = getDateKey(openDate);
+    return referenceKey < openKey ? "upcoming" : "open";
   }
 
   if (closeDate) {
