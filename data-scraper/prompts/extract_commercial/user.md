@@ -11,5 +11,6 @@ Extract these fields from official company reports/transcripts/pages:
 - esg
 - recent_pivot
 Also return section-level provenance (confidence, notes, sources).
+- Keep language student-friendly, plain English, and easy to understand.
 
 Return strict JSON only.

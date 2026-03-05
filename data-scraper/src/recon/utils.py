@@ -19,10 +19,30 @@ def slugify(value: str) -> str:
 def parse_date(date_str: str | None) -> dt.date | None:
     if not date_str:
         return None
-    try:
-        return dt.date.fromisoformat(date_str.strip())
-    except ValueError:
+    cleaned = date_str.strip()
+    if not cleaned:
         return None
+
+    try:
+        return dt.date.fromisoformat(cleaned)
+    except ValueError:
+        pass
+
+    # Support ISO datetime variants such as 2026-03-29T23:59:00+11:00 / Z.
+    iso_candidate = cleaned.replace("Z", "+00:00")
+    try:
+        return dt.datetime.fromisoformat(iso_candidate).date()
+    except ValueError:
+        pass
+
+    # Support natural language dates used by source pages.
+    for fmt in ("%d %B %Y", "%d %b %Y"):
+        try:
+            return dt.datetime.strptime(cleaned, fmt).date()
+        except ValueError:
+            continue
+
+    return None
 
 
 def compute_status(open_date: str | None, close_date: str | None, *, today: dt.date | None = None) -> str:
@@ -30,7 +50,13 @@ def compute_status(open_date: str | None, close_date: str | None, *, today: dt.d
     open_d = parse_date(open_date)
     close_d = parse_date(close_date)
     if open_d and close_d:
-        return "open" if open_d <= ref <= close_d else "closed"
+        if ref < open_d:
+            return "upcoming"
+        if ref > close_d:
+            return "closed"
+        return "open"
+    if open_d:
+        return "upcoming" if ref < open_d else "open"
     if close_d:
         return "open" if ref <= close_d else "closed"
     return "unknown"

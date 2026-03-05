@@ -12,7 +12,7 @@ export interface CompanyIndexItem {
     direct_apply_url: string | null;
     open_date: string | null;
     close_date: string | null;
-    status: string;
+    status: "open" | "upcoming" | "closed" | "unknown";
   };
   tags: {
     streams: string[];

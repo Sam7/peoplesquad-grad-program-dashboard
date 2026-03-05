@@ -1,6 +1,6 @@
 import { ArrowLeft, CalendarClock, ExternalLink, X } from "lucide-react";
 import type { CompanyDetailPayload, ListCompany } from "../../data/companyData";
-import { getDeadlineUrgency } from "../../domain/dates";
+import { getDeadlineUrgency, parseFlexibleDate } from "../../domain/dates";
 import { formatDisplayDate, formatRelativeDeadline } from "../../domain/presentation";
 import type { ProgressState } from "../../domain/filters";
 import { cn } from "../../lib/cn";
@@ -44,10 +44,39 @@ function getInitials(name: string): string {
     .toUpperCase();
 }
 
-interface DetailCard {
-  key: string;
+interface StageItem {
+  name: string;
+  details: string | null;
+}
+
+interface SourceItem {
   title: string;
-  value: string;
+  url: string | null;
+}
+
+function asStages(value: unknown): StageItem[] {
+  if (!Array.isArray(value)) {
+    return [];
+  }
+  return value
+    .map((item) => asObject(item))
+    .map((stage) => ({
+      name: asString(stage.name) ?? "Unnamed stage",
+      details: asString(stage.details)
+    }))
+    .filter((stage) => stage.name.trim().length > 0);
+}
+
+function asSources(value: unknown): SourceItem[] {
+  if (!Array.isArray(value)) {
+    return [];
+  }
+  return value
+    .map((item) => asObject(item))
+    .map((source) => ({
+      title: asString(source.title) ?? "Official source",
+      url: asString(source.url)
+    }));
 }
 
 function formatStatusLabel(status: ListCompany["status"]): string {
@@ -78,6 +107,7 @@ export function CompanyDetailPane({ company, detail, isLoading, onClose, onSetPr
 
   const safeDetail = detail ?? ({} as CompanyDetailPayload);
   const program = asObject(safeDetail.program);
+  const urls = asObject(safeDetail.urls);
   const classification = asObject(safeDetail.classification);
   const eligibility = asObject(safeDetail.eligibility);
   const recruitment = asObject(safeDetail.recruitment_process);
@@ -85,78 +115,35 @@ export function CompanyDetailPane({ company, detail, isLoading, onClose, onSetPr
   const provenance = asObject(safeDetail.provenance);
 
   const programName = asString(program.name) ?? "Not published";
-  const applyUrl = asString(program.direct_apply_url) ?? company.directApplyUrl;
+  const applyUrl = asString(program.direct_apply_url) ?? company.directApplyUrl ?? asString(urls.apply_url);
+  const overviewUrl = asString(program.overview_url) ?? asString(urls.grad_program_url);
+  const careersUrl = asString(urls.careers_url) ?? company.careerUrl;
   const openDate = asString(program.open_date) ?? company.openDateRaw;
   const closeDate = asString(program.close_date) ?? company.closeDateRaw;
   const salaryText = asString(program.salary_text) ?? "Not published";
+  const durationText = asString(program.duration_text) ?? "Not published";
+  const rotationText = asString(program.rotation_text) ?? "Not published";
 
   const workRights = asString(eligibility.work_rights) ?? company.workRightsText ?? "Not published";
+  const graduationWindow = asString(eligibility.graduation_window) ?? "Not published";
+  const disciplines = asStringArray(eligibility.disciplines);
+  const minimumRequirements = asStringArray(eligibility.minimum_requirements);
   const streamTags = asStringArray(program.streams).length > 0 ? asStringArray(program.streams) : company.streamTags;
+  const locations = asStringArray(program.locations);
   const derivedIndustry = asString(classification.industry_bucket);
   const industries = company.industries.length > 0 ? company.industries : derivedIndustry ? [derivedIndustry] : [];
-  const recruitmentStages = Array.isArray(recruitment.stages)
-    ? (recruitment.stages as Array<Record<string, unknown>>)
-    : [];
+  const recruitmentStages = asStages(recruitment.stages);
   const tips = asStringArray(recruitment.tips);
 
   const execThemes = asStringArray(commercial.exec_themes);
-  const sourceItems = Array.isArray(provenance.sources) ? (provenance.sources as Array<Record<string, unknown>>) : [];
+  const profitEngine = asString(commercial.profit_engine) ?? "Not published";
+  const headwinds = asString(commercial.headwinds) ?? "Not published";
+  const esg = asString(commercial.esg) ?? "Not published";
+  const recentPivot = asString(commercial.recent_pivot) ?? "Not published";
 
-  const essentialCards: DetailCard[] = [
-    {
-      key: "archetype",
-      title: "Recruitment Archetype",
-      value: recruitmentStages.length > 0 ? String(recruitmentStages[0].name ?? "Not published") : "Not published"
-    },
-    {
-      key: "rotation",
-      title: "Rotation Logic",
-      value: asString(program.rotation_text) ?? "Not published"
-    },
-    {
-      key: "support",
-      title: "Support Hierarchy",
-      value: tips.length > 0 ? tips[0] : "Not published"
-    },
-    {
-      key: "conversion",
-      title: "Conversion Strategy",
-      value: asString(program.duration_text) ?? "Not published"
-    },
-    {
-      key: "signal",
-      title: "Success Signal",
-      value: execThemes[0] ?? "Not published"
-    }
-  ];
-
-  const commercialCards: DetailCard[] = [
-    {
-      key: "themes",
-      title: "CEO Themes",
-      value: execThemes.slice(0, 3).join(" • ") || "Not published"
-    },
-    {
-      key: "profit",
-      title: "Profit Engine",
-      value: asString(commercial.profit_engine) ?? "Not published"
-    },
-    {
-      key: "headwinds",
-      title: "Market Headwinds",
-      value: asString(commercial.headwinds) ?? "Not published"
-    },
-    {
-      key: "esg",
-      title: "ESG Action",
-      value: asString(commercial.esg) ?? "Not published"
-    },
-    {
-      key: "pivot",
-      title: "Recent Pivot",
-      value: asString(commercial.recent_pivot) ?? "Not published"
-    }
-  ];
+  const updatedAt = asString(provenance.updated_at);
+  const provenanceNotes = asStringArray(provenance.notes);
+  const sourceItems = asSources(provenance.sources);
 
   const urgency = getDeadlineUrgency(closeDate, company.status);
 
@@ -198,7 +185,7 @@ export function CompanyDetailPane({ company, detail, isLoading, onClose, onSetPr
         <div className="utility-header__actions">
           {applyUrl ? (
             <a href={applyUrl} target="_blank" rel="noreferrer" className="apply-link">
-              Direct Apply
+              Apply
               <ExternalLink size={14} aria-hidden />
             </a>
           ) : (
@@ -215,10 +202,16 @@ export function CompanyDetailPane({ company, detail, isLoading, onClose, onSetPr
         <div className="utility-header__metrics">
           <div className="metric-card">
             <span>Timeline & status</span>
-            <p>
-              <CalendarClock size={14} aria-hidden />
-              Opens: {formatDisplayDate(openDate)}
-            </p>
+            {(() => {
+              const parsedOpenDate = parseFlexibleDate(openDate);
+              const isOpenDateInFuture = parsedOpenDate && parsedOpenDate > new Date();
+              return isOpenDateInFuture ? (
+                <p>
+                  <CalendarClock size={14} aria-hidden />
+                  Opens: {formatDisplayDate(openDate)}
+                </p>
+              ) : null;
+            })()}
             <p className={cn(urgency === "soon" && "metric-card__value--soon")}>
               <CalendarClock size={14} aria-hidden />
               Closes: {formatDisplayDate(closeDate)}
@@ -256,45 +249,208 @@ export function CompanyDetailPane({ company, detail, isLoading, onClose, onSetPr
         </div>
       </div>
 
-      <section className="canvas-section canvas-section--essential">
-        <h3>The 5 Essential Program Facts</h3>
-        <div className="canvas-grid">
-          {essentialCards.map((card) => (
-            <article key={card.key} className="canvas-card">
-              <h4>{card.title}</h4>
-              <p>{card.value}</p>
-            </article>
-          ))}
-        </div>
-      </section>
-
-      <section className="canvas-section canvas-section--commercial">
-        <h3>The 5 Critical Data Fields</h3>
-        <div className="canvas-grid">
-          {commercialCards.map((card) => (
-            <article key={card.key} className="canvas-card">
-              <h4>{card.title}</h4>
-              <p>{card.value}</p>
-            </article>
-          ))}
+      <section className="detail-section">
+        <h3>Can I apply?</h3>
+        <div className="detail-grid">
+          <article className="detail-card">
+            <h4>Work rights</h4>
+            <p>{workRights}</p>
+          </article>
+          <article className="detail-card">
+            <h4>Graduation timing</h4>
+            <p>{graduationWindow}</p>
+          </article>
+          <article className="detail-card">
+            <h4>Degree backgrounds</h4>
+            {disciplines.length > 0 ? (
+              <ul className="detail-list scroll-panel">
+                {disciplines.map((discipline) => (
+                  <li key={discipline}>{discipline}</li>
+                ))}
+              </ul>
+            ) : (
+              <p className="muted">Not published</p>
+            )}
+          </article>
+          <article className="detail-card">
+            <h4>Minimum requirements</h4>
+            {minimumRequirements.length > 0 ? (
+              <ul className="detail-list scroll-panel">
+                {minimumRequirements.map((requirement) => (
+                  <li key={requirement}>{requirement}</li>
+                ))}
+              </ul>
+            ) : (
+              <p className="muted">Not published</p>
+            )}
+          </article>
         </div>
       </section>
 
       <section className="detail-section">
-        <h3>Sources</h3>
+        <h3>How this program works</h3>
+        <div className="detail-grid">
+          <article className="detail-card">
+            <h4>Program length</h4>
+            <p>{durationText}</p>
+          </article>
+          <article className="detail-card">
+            <h4>Rotation setup</h4>
+            <p>{rotationText}</p>
+          </article>
+          <article className="detail-card">
+            <h4>Locations</h4>
+            {locations.length > 0 ? (
+              <ul className="detail-list scroll-panel">
+                {locations.map((location) => (
+                  <li key={location}>{location}</li>
+                ))}
+              </ul>
+            ) : (
+              <p className="muted">Not published</p>
+            )}
+          </article>
+          <article className="detail-card">
+            <h4>Official program page</h4>
+            {overviewUrl ? (
+              <p>
+                <a href={overviewUrl} target="_blank" rel="noreferrer">
+                  View program overview
+                </a>
+              </p>
+            ) : (
+              <p className="muted">Not published</p>
+            )}
+          </article>
+        </div>
+      </section>
+
+      <section className="detail-section">
+        <h3>Recruitment process</h3>
+        {recruitmentStages.length > 0 ? (
+          <ol className="process-timeline">
+            {recruitmentStages.map((stage, index) => (
+              <li key={`${stage.name}-${index}`} className="process-timeline__item">
+                <span className="process-timeline__step">{index + 1}</span>
+                <div>
+                  <h4>{stage.name}</h4>
+                  <p>{stage.details ?? "Details not published."}</p>
+                </div>
+              </li>
+            ))}
+          </ol>
+        ) : (
+          <p className="muted">Not published</p>
+        )}
+      </section>
+
+      <section className="detail-section">
+        <h3>Application tips</h3>
+        {tips.length > 0 ? (
+          <ul className="detail-list scroll-panel">
+            {tips.map((tip) => (
+              <li key={tip}>{tip}</li>
+            ))}
+          </ul>
+        ) : (
+          <p className="muted">Not published</p>
+        )}
+      </section>
+
+      <section className="detail-section">
+        <h3>What this company is focused on</h3>
+        <div className="detail-grid">
+          <article className="detail-card">
+            <h4>Current priorities</h4>
+            {execThemes.length > 0 ? (
+              <ul className="detail-list scroll-panel">
+                {execThemes.map((theme) => (
+                  <li key={theme}>{theme}</li>
+                ))}
+              </ul>
+            ) : (
+              <p className="muted">Not published</p>
+            )}
+          </article>
+          <article className="detail-card">
+            <h4>How they make money</h4>
+            <p>{profitEngine}</p>
+          </article>
+          <article className="detail-card">
+            <h4>Current challenges</h4>
+            <p>{headwinds}</p>
+          </article>
+          <article className="detail-card">
+            <h4>Sustainability commitments</h4>
+            <p>{esg}</p>
+          </article>
+          <article className="detail-card">
+            <h4>Recent strategic move</h4>
+            <p>{recentPivot}</p>
+          </article>
+        </div>
+      </section>
+
+      <section className="detail-section">
+        <h3>Source confidence & references</h3>
+        <p>
+          Updated: <strong>{formatDisplayDate(updatedAt)}</strong>
+        </p>
+
+        <div className="detail-grid">
+          <article className="detail-card">
+            <h4>Official links</h4>
+            <ul className="detail-list">
+              {applyUrl ? (
+                <li>
+                  <a href={applyUrl} target="_blank" rel="noreferrer">
+                    Direct apply
+                  </a>
+                </li>
+              ) : null}
+              {overviewUrl ? (
+                <li>
+                  <a href={overviewUrl} target="_blank" rel="noreferrer">
+                    Program overview
+                  </a>
+                </li>
+              ) : null}
+              {careersUrl ? (
+                <li>
+                  <a href={careersUrl} target="_blank" rel="noreferrer">
+                    Careers page
+                  </a>
+                </li>
+              ) : null}
+              {!applyUrl && !overviewUrl && !careersUrl ? <li className="muted">No official links listed.</li> : null}
+            </ul>
+          </article>
+          <article className="detail-card">
+            <h4>Notes</h4>
+            {provenanceNotes.length > 0 ? (
+              <ul className="detail-list scroll-panel">
+                {provenanceNotes.map((note) => (
+                  <li key={note}>{note}</li>
+                ))}
+              </ul>
+            ) : (
+              <p className="muted">No notes provided.</p>
+            )}
+          </article>
+        </div>
+
+        <h4>All official sources</h4>
         {sourceItems.length > 0 ? (
-          <ul>
+          <ul className="detail-list scroll-panel">
             {sourceItems.map((source, index) => {
-              const title = String(source.title ?? "Official source");
-              const url = asString(source.url);
               return (
-                <li key={`${title}-${index}`}>
-                  {url ? (
-                    <a href={url} target="_blank" rel="noreferrer">
-                      {title}
+                <li key={`${source.title}-${index}`}>
+                  {source.url ? (
+                    <a href={source.url} target="_blank" rel="noreferrer">
+                      {source.title}
                     </a>
                   ) : (
-                    title
+                    source.title
                   )}
                 </li>
               );

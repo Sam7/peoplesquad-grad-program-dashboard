@@ -58,30 +58,73 @@ const mockDetail = {
   program: {
     name: "Coles Graduate Program",
     direct_apply_url: "https://example.com/coles/apply",
+    overview_url: "https://example.com/coles/program",
     open_date: "2099-03-10",
     close_date: "2099-04-12",
     salary_text: null,
-    streams: ["Technology"]
+    streams: ["Technology", "Finance"],
+    locations: ["Melbourne", "Sydney"],
+    duration_text: "2 years",
+    rotation_text: "2 to 3 rotations across business teams"
   },
   eligibility: {
-    work_rights: "Australian or New Zealand citizens or permanent residents"
+    work_rights: "Australian or New Zealand citizens or permanent residents",
+    graduation_window: "Graduate by end of 2026",
+    disciplines: ["Computer Science", "Engineering"],
+    minimum_requirements: ["Submit transcript", "Full-time work rights by start date"]
   },
   recruitment_process: {
     stages: [
       {
-        name: "Online application"
+        name: "Online application",
+        details: "Submit your application and CV online."
+      },
+      {
+        name: "Video interview",
+        details: "Record short answers in an online interview."
       }
-    ]
+    ],
+    tips: ["Use clear examples from uni projects.", "Apply before the deadline week."]
   },
   commercial_context: {
     exec_themes: ["Customer value"],
-    profit_engine: "Retail"
+    profit_engine: "Retail",
+    headwinds: "Cost-of-living pressure",
+    esg: "Waste and emissions targets",
+    recent_pivot: "Digital checkout expansion"
+  },
+  section_provenance: {
+    program: {
+      confidence: "high",
+      notes: ["Dates and streams are from the official grad page."],
+      sources: [{ title: "Program page", url: "https://example.com/coles/program", type: "web", retrieved_at: null }]
+    },
+    eligibility: {
+      confidence: "high",
+      notes: ["Work rights are explicitly listed."],
+      sources: [{ title: "Eligibility page", url: "https://example.com/coles/eligibility", type: "web", retrieved_at: null }]
+    },
+    recruitment_process: {
+      confidence: "medium",
+      notes: ["Interview format can vary by stream."],
+      sources: [{ title: "Recruitment page", url: "https://example.com/coles/recruitment", type: "web", retrieved_at: null }]
+    },
+    commercial_context: {
+      confidence: "medium",
+      notes: ["Commercial summary is synthesized from latest company updates."],
+      sources: [{ title: "Investor update", url: "https://example.com/coles/investors", type: "web", retrieved_at: null }]
+    }
   },
   provenance: {
+    updated_at: "2026-03-05T00:00:00Z",
+    confidence: "medium",
+    notes: ["Synthesized from official pages only."],
     sources: [
       {
         title: "Official source",
-        url: "https://example.com"
+        url: "https://example.com",
+        type: "web",
+        retrieved_at: null
       }
     ]
   }
@@ -131,7 +174,7 @@ describe("App", () => {
     );
 
     await screen.findByText("Coles Group");
-    const boardTab = screen.getByRole("tab", { name: /board view/i });
+    const boardTab = screen.getByRole("tab", { name: /tracking view|board view/i });
     await user.click(boardTab);
 
     await waitFor(() => {
@@ -221,7 +264,7 @@ describe("App", () => {
     expect(screen.queryByLabelText(/company progress board/i)).not.toBeInTheDocument();
   });
 
-  it("shows industry, streams, and plain eligibility content in detail utility cards", async () => {
+  it("renders student-first sections and detailed JSON coverage on company detail", async () => {
     const user = userEvent.setup();
     render(
       <BrowserRouter>
@@ -234,10 +277,24 @@ describe("App", () => {
 
     expect(await screen.findByText(/industry/i)).toBeInTheDocument();
     expect(screen.getAllByText("Retail").length).toBeGreaterThan(0);
-    expect(screen.getAllByText(/streams/i).length).toBeGreaterThan(0);
-    expect(screen.getAllByText("Technology").length).toBeGreaterThan(0);
-    expect(screen.getByText(/eligibility/i)).toBeInTheDocument();
-    expect(screen.getByText(/citizens or permanent residents/i)).toBeInTheDocument();
+    expect(screen.getByText(/can i apply\?/i)).toBeInTheDocument();
+    expect(screen.getByText(/how this program works/i)).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: /recruitment process/i, level: 3 })).toBeInTheDocument();
+    expect(screen.getByText(/application tips/i)).toBeInTheDocument();
+    expect(screen.getByText(/what this company is focused on/i)).toBeInTheDocument();
+    expect(screen.getByText(/source confidence & references/i)).toBeInTheDocument();
+    expect(screen.getAllByText(/citizens or permanent residents/i).length).toBeGreaterThan(0);
+    expect(screen.getByText(/graduate by end of 2026/i)).toBeInTheDocument();
+    expect(screen.getByText("Computer Science")).toBeInTheDocument();
+    expect(screen.getByText(/submit transcript/i)).toBeInTheDocument();
+    expect(screen.getByText(/video interview/i)).toBeInTheDocument();
+    expect(screen.getByText(/apply before the deadline week/i)).toBeInTheDocument();
+    expect(screen.getByText(/cost-of-living pressure/i)).toBeInTheDocument();
+    expect(screen.getByText(/updated:/i)).toBeInTheDocument();
+    expect(screen.getByText(/source confidence:/i)).toBeInTheDocument();
+    expect(screen.queryByText(/program confidence:/i)).not.toBeInTheDocument();
+    expect(screen.queryByText(/dates and streams are from the official grad page/i)).not.toBeInTheDocument();
+    expect(document.querySelectorAll(".scroll-panel").length).toBeGreaterThan(0);
   });
 
   it("returns to full board view after closing detail when URL has view=board", async () => {

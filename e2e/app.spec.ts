@@ -24,7 +24,7 @@ test("progress state moves between board columns", async ({ page }) => {
   await progressButton.click();
   await expect(progressButton).toContainText("Saved");
 
-  await page.getByRole("tab", { name: /board view/i }).click();
+  await page.getByRole("tab", { name: /tracking view|board view/i }).click();
   await expect(page).toHaveURL(/view=board/);
 
   const savedColumn = page.locator('[data-progress-column="saved"]');

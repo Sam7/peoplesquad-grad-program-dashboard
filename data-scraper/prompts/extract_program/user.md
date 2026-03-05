@@ -9,5 +9,7 @@ Extract:
 - Eligibility (work rights, grad window, disciplines, minimum requirements)
 - Recruitment process (stages, tips)
 - Section-level provenance with confidence, notes, and sources.
+- Use language that students can understand quickly.
+- Keep wording factual, plain English, and easy to scan.
 
 Return strict JSON only.

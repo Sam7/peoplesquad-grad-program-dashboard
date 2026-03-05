@@ -72,7 +72,7 @@ export function CompanyListPane({
             className={cn("listing-tabs__tab", filters.view === "board" && "listing-tabs__tab--active")}
             onClick={() => onSetView("board")}
           >
-            Board View
+            Tracking View
           </button>
         </div>
       ) : null}
@@ -93,6 +93,36 @@ export function CompanyListPane({
             </label>
 
             <div className="filters__row">
+              
+              <label>
+                Work rights
+                <select value={filters.workRights} onChange={(event) => onWorkRightsChange(event.target.value as FiltersState["workRights"])}>
+                  <option value="all">All</option>
+                  <option value="citizen_pr">Citizen / PR</option>
+                  <option value="visa_ok">Visa eligible</option>
+                  <option value="unknown">Unknown</option>
+                </select>
+              </label>
+
+              {/* <label>
+                Stream
+                <select value={filters.stream[0] ?? ""} onChange={(event) => onStreamChange(event.target.value)}>
+                  <option value="">All streams</option>
+                  {allStreams.map((stream) => (
+                    <option key={stream} value={stream}>
+                      {stream}
+                    </option>
+                  ))}
+                </select>
+              </label> */}
+
+              <label>
+                Sort
+                <select value={filters.sort} onChange={(event) => onSortChange(event.target.value as FiltersState["sort"])}>
+                  <option value="deadline">Deadline</option>
+                  <option value="name">Name</option>
+                </select>
+              </label>
               <label>
                 <input
                   type="checkbox"
@@ -108,38 +138,6 @@ export function CompanyListPane({
                   onChange={(event) => onToggleFilter("soon", event.target.checked)}
                 />
                 Closing soon
-              </label>
-            </div>
-
-            <div className="filters__row">
-              <label>
-                Work rights
-                <select value={filters.workRights} onChange={(event) => onWorkRightsChange(event.target.value as FiltersState["workRights"])}>
-                  <option value="all">All</option>
-                  <option value="citizen_pr">Citizen / PR</option>
-                  <option value="visa_ok">Visa eligible</option>
-                  <option value="unknown">Unknown</option>
-                </select>
-              </label>
-
-              <label>
-                Stream
-                <select value={filters.stream[0] ?? ""} onChange={(event) => onStreamChange(event.target.value)}>
-                  <option value="">All streams</option>
-                  {allStreams.map((stream) => (
-                    <option key={stream} value={stream}>
-                      {stream}
-                    </option>
-                  ))}
-                </select>
-              </label>
-
-              <label>
-                Sort
-                <select value={filters.sort} onChange={(event) => onSortChange(event.target.value as FiltersState["sort"])}>
-                  <option value="deadline">Deadline</option>
-                  <option value="name">Name</option>
-                </select>
               </label>
             </div>
           </div>
