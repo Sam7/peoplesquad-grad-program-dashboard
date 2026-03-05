@@ -39,14 +39,12 @@ interface CompanyListPaneProps {
 export function CompanyListPane({
   filteredCompanies,
   allCompanies,
-  allStreams,
   filters,
   selectedId,
   onSearchChange,
   onToggleFilter,
   onWorkRightsChange,
   onSortChange,
-  onStreamChange,
   onSelectCompany,
   onSetProgress,
   onSetView
