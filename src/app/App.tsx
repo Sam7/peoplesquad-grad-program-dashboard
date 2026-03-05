@@ -30,7 +30,7 @@ export function App() {
 
   const { filters, setFilters } = useUrlFilters();
   const { progressMap, updateCompanyProgress } = useProgress();
-  const { preference: themePreference, setPreference: setThemePreference } = useTheme();
+  const { resolvedTheme, toggleTheme } = useTheme();
 
   const [indexPayload, setIndexPayload] = useState<CompanyIndexPayload | null>(null);
   const [indexError, setIndexError] = useState<string | null>(null);
@@ -149,8 +149,8 @@ export function App() {
     <div className="app-shell">
       <AppHeader
         peoplesquadUrl={peoplesquadUrl}
-        themePreference={themePreference}
-        onThemePreferenceChange={setThemePreference}
+        resolvedTheme={resolvedTheme}
+        onThemeToggle={toggleTheme}
       />
 
       <main className={cn("app-main", selectedCompanyId && "app-main--detail")}>

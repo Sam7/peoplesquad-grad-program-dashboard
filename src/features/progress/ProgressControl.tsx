@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
-import { Award, Bookmark, CircleX, Flag, Handshake, Plus } from "lucide-react";
 import { cn } from "../../lib/cn";
 import { getLeftProgressOption, getRightProgressOption, type ProgressState } from "./progressStore";
+import { getProgressLabel, PROGRESS_META } from "./progressMeta";
 
 interface ProgressControlProps {
   companyName: string;
@@ -9,20 +9,6 @@ interface ProgressControlProps {
   onStateChange: (next: ProgressState) => void;
   compact?: boolean;
 }
-
-interface ProgressMeta {
-  label: string;
-  icon: typeof Bookmark;
-}
-
-const PROGRESS_META: Record<ProgressState, ProgressMeta> = {
-  none: { label: "Track", icon: Plus },
-  saved: { label: "Saved", icon: Bookmark },
-  applied: { label: "Applied", icon: Handshake },
-  interviewing: { label: "Interviewing", icon: Flag },
-  offer: { label: "Offer", icon: Award },
-  rejected: { label: "Rejected", icon: CircleX }
-};
 
 function useHoverSupport(): boolean {
   const [supportsHover, setSupportsHover] = useState(true);
@@ -41,10 +27,6 @@ function useHoverSupport(): boolean {
   }, []);
 
   return supportsHover;
-}
-
-function getLabel(state: ProgressState): string {
-  return PROGRESS_META[state].label;
 }
 
 export function ProgressControl({ companyName, state, onStateChange, compact = false }: ProgressControlProps) {
@@ -110,9 +92,9 @@ export function ProgressControl({ companyName, state, onStateChange, compact = f
             onStateChange(positiveOption);
             setExpanded(false);
           }}
-          aria-label={`Move ${companyName} to ${getLabel(positiveOption)}`}
+          aria-label={`Move ${companyName} to ${getProgressLabel(positiveOption)}`}
         >
-          <span>{getLabel(positiveOption)}</span>
+          <span>{getProgressLabel(positiveOption)}</span>
         </button>
       ) : null}
 
@@ -134,9 +116,9 @@ export function ProgressControl({ companyName, state, onStateChange, compact = f
             onStateChange(negativeOption);
             setExpanded(false);
           }}
-          aria-label={`Move ${companyName} to ${getLabel(negativeOption)}`}
+          aria-label={`Move ${companyName} to ${getProgressLabel(negativeOption)}`}
         >
-          <span>{getLabel(negativeOption)}</span>
+          <span>{getProgressLabel(negativeOption)}</span>
         </button>
       ) : null}
     </div>

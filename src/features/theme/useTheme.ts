@@ -1,9 +1,18 @@
 import { useEffect, useMemo, useState } from "react";
+import Cookies from "js-cookie";
 
-export type ThemePreference = "system" | "dark" | "light";
+export type ThemePreference = "dark" | "light";
 export type ResolvedTheme = "dark" | "light";
 
-const STORAGE_KEY = "ps_theme";
+const COOKIE_NAME = "ps_theme";
+const COOKIE_DAYS = 365;
+
+function secureCookie(): boolean {
+  if (typeof window === "undefined") {
+    return false;
+  }
+  return window.location.protocol === "https:";
+}
 
 function getSystemTheme(): ResolvedTheme {
   if (typeof window === "undefined" || typeof window.matchMedia !== "function") {
@@ -12,30 +21,26 @@ function getSystemTheme(): ResolvedTheme {
   return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
 }
 
-function readPreference(): ThemePreference {
-  if (typeof window === "undefined") {
-    return "system";
-  }
-
-  const value = window.localStorage.getItem(STORAGE_KEY);
-  if (value === "dark" || value === "light" || value === "system") {
+function readPreference(): ThemePreference | null {
+  const value = Cookies.get(COOKIE_NAME);
+  if (value === "dark" || value === "light") {
     return value;
   }
-  return "system";
+  return null;
 }
 
-function resolveTheme(preference: ThemePreference): ResolvedTheme {
-  return preference === "system" ? getSystemTheme() : preference;
+function resolveTheme(preference: ThemePreference | null): ResolvedTheme {
+  return preference ?? getSystemTheme();
 }
 
 export interface ThemeApi {
-  preference: ThemePreference;
+  preference: ThemePreference | null;
   resolvedTheme: ResolvedTheme;
-  setPreference: (next: ThemePreference) => void;
+  toggleTheme: () => void;
 }
 
 export function useTheme(): ThemeApi {
-  const [preference, setPreferenceState] = useState<ThemePreference>(() => readPreference());
+  const [preference, setPreferenceState] = useState<ThemePreference | null>(() => readPreference());
   const [resolvedTheme, setResolvedTheme] = useState<ResolvedTheme>(() => resolveTheme(readPreference()));
 
   useEffect(() => {
@@ -46,9 +51,17 @@ export function useTheme(): ThemeApi {
       document.documentElement.dataset.theme = nextResolved;
     }
 
-    if (typeof window !== "undefined") {
-      window.localStorage.setItem(STORAGE_KEY, preference);
+    if (preference) {
+      Cookies.set(COOKIE_NAME, preference, {
+        expires: COOKIE_DAYS,
+        sameSite: "Lax",
+        secure: secureCookie(),
+        path: "/"
+      });
+      return;
     }
+
+    Cookies.remove(COOKIE_NAME, { path: "/" });
   }, [preference]);
 
   useEffect(() => {
@@ -58,7 +71,7 @@ export function useTheme(): ThemeApi {
 
     const media = window.matchMedia("(prefers-color-scheme: dark)");
     const update = () => {
-      if (preference === "system") {
+      if (preference === null) {
         setResolvedTheme(media.matches ? "dark" : "light");
         if (typeof document !== "undefined") {
           document.documentElement.dataset.theme = media.matches ? "dark" : "light";
@@ -70,11 +83,16 @@ export function useTheme(): ThemeApi {
     return () => media.removeEventListener("change", update);
   }, [preference]);
 
+  function toggleTheme(): void {
+    const current = resolveTheme(preference);
+    setPreferenceState(current === "dark" ? "light" : "dark");
+  }
+
   const api = useMemo(
     () => ({
       preference,
       resolvedTheme,
-      setPreference: setPreferenceState
+      toggleTheme
     }),
     [preference, resolvedTheme]
   );

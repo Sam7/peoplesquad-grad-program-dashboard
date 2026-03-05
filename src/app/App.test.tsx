@@ -202,6 +202,21 @@ describe("App", () => {
     });
   });
 
+  it("renders a single theme toggle button instead of three theme options", async () => {
+    render(
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    );
+
+    await screen.findByText("Coles Group");
+
+    const toggleButtons = screen.getAllByRole("button", { name: /switch to .* theme/i });
+    expect(toggleButtons).toHaveLength(1);
+    expect(screen.queryByRole("group", { name: /theme preference/i })).not.toBeInTheDocument();
+    expect(screen.queryByRole("button", { name: /switch to system theme/i })).not.toBeInTheDocument();
+  });
+
   it("supports progress tracking control from list", async () => {
     const user = userEvent.setup();
     render(
@@ -291,7 +306,7 @@ describe("App", () => {
     expect(screen.getByText(/apply before the deadline week/i)).toBeInTheDocument();
     expect(screen.getByText(/cost-of-living pressure/i)).toBeInTheDocument();
     expect(screen.getByText(/updated:/i)).toBeInTheDocument();
-    expect(screen.getByText(/source confidence:/i)).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: /source confidence & references/i, level: 3 })).toBeInTheDocument();
     expect(screen.queryByText(/program confidence:/i)).not.toBeInTheDocument();
     expect(screen.queryByText(/dates and streams are from the official grad page/i)).not.toBeInTheDocument();
     expect(document.querySelectorAll(".scroll-panel").length).toBeGreaterThan(0);

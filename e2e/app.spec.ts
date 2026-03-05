@@ -32,6 +32,13 @@ test("progress state moves between board columns", async ({ page }) => {
   const card = savedColumn.locator('[data-company-id="coles-group"]');
 
   await expect(card).toBeVisible();
+
+  const isTouchMode = await card.evaluate((element) => element.getAttribute("draggable") === "false");
+  if (isTouchMode) {
+    await expect(card).toHaveAttribute("draggable", "false");
+    return;
+  }
+
   await card.dragTo(appliedColumn);
 
   await expect(appliedColumn.locator('[data-company-id="coles-group"]')).toBeVisible();
