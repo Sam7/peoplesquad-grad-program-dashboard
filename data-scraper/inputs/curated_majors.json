@@ -1,0 +1,22 @@
+[
+  {"id": "deloitte-australia", "name": "Deloitte Australia", "entity_type": "company", "taxonomy_hint": "Consulting"},
+  {"id": "ey-australia", "name": "EY Australia", "entity_type": "company", "taxonomy_hint": "Consulting"},
+  {"id": "kpmg-australia", "name": "KPMG Australia", "entity_type": "company", "taxonomy_hint": "Consulting"},
+  {"id": "pwc-australia", "name": "PwC Australia", "entity_type": "company", "taxonomy_hint": "Consulting"},
+  {"id": "accenture-australia", "name": "Accenture Australia", "entity_type": "company", "taxonomy_hint": "Consulting"},
+  {"id": "mckinsey-australia", "name": "McKinsey Australia", "entity_type": "company", "taxonomy_hint": "Consulting"},
+  {"id": "boston-consulting-group-australia", "name": "Boston Consulting Group Australia", "entity_type": "company", "taxonomy_hint": "Consulting"},
+  {"id": "amazon-australia", "name": "Amazon Australia", "entity_type": "company", "taxonomy_hint": "Technology"},
+  {"id": "google-australia", "name": "Google Australia", "entity_type": "company", "taxonomy_hint": "Technology"},
+  {"id": "microsoft-australia", "name": "Microsoft Australia", "entity_type": "company", "taxonomy_hint": "Technology"},
+  {"id": "atlassian", "name": "Atlassian", "entity_type": "company", "taxonomy_hint": "Technology"},
+  {"id": "salesforce-australia", "name": "Salesforce Australia", "entity_type": "company", "taxonomy_hint": "Technology"},
+  {"id": "canva", "name": "Canva", "entity_type": "company", "taxonomy_hint": "Technology"},
+  {"id": "australian-public-service-grad", "name": "Australian Government Graduate Program", "entity_type": "government_program", "taxonomy_hint": "Government"},
+  {"id": "ato-graduate-program", "name": "Australian Taxation Office Graduate Program", "entity_type": "government_program", "taxonomy_hint": "Government"},
+  {"id": "department-of-defence-graduate", "name": "Department of Defence Graduate Program", "entity_type": "government_program", "taxonomy_hint": "Government"},
+  {"id": "nsw-government-graduate", "name": "NSW Government Graduate Program", "entity_type": "government_program", "taxonomy_hint": "Government"},
+  {"id": "victoria-government-graduate", "name": "Victorian Government Graduate Program", "entity_type": "government_program", "taxonomy_hint": "Government"},
+  {"id": "queensland-government-graduate", "name": "Queensland Government Graduate Program", "entity_type": "government_program", "taxonomy_hint": "Government"},
+  {"id": "western-australia-government-graduate", "name": "WA Government Graduate Program", "entity_type": "government_program", "taxonomy_hint": "Government"}
+]

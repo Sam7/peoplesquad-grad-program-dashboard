@@ -1,0 +1,24 @@
+[project]
+name = "peoplesquad-recon"
+version = "0.1.0"
+description = "CLI scraper pipeline for the PeopleSquad Graduate Program Dashboard."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "openai>=1.68.0",
+  "Pillow>=10.4.0",
+  "CairoSVG>=2.7.1",
+]
+
+[project.scripts]
+recon = "recon.cli:main"
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

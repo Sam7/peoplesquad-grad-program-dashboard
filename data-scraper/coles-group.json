@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "company_name": "Coles Group",
+  "program": {
+    "program_name": "Graduate Program",
+    "program_overview_url": "https://colescareers.com.au/au/en/studentandgraduates",
+    "direct_apply_url": null,
+    "open_date": "2026-03-10",
+    "close_date": "2026-04-12"
+  },
+  "eligibility": {
+    "work_rights": "Australian or New Zealand citizens or permanent residents at the time of application can apply.",
+    "graduation_window": null,
+    "disciplines": []
+  },
+  "recruitment_process": {
+    "stages": [
+      "Online application",
+      "Online assessment and video interview",
+      "Discovery Center",
+      "Offer stage"
+    ]
+  },
+  "provenance": {
+    "updated_at": "2026-03-05T02:26:33+00:00",
+    "sources": [
+      {
+        "title": "Graduate Program | Coles Careers (Students & Graduates)",
+        "url": "https://colescareers.com.au/au/en/studentandgraduates"
+      }
+    ],
+    "notes": [
+      "No official direct apply URL found on the graduate program page; it only provides a 'Register your interest' link (pushapply) and states application dates. The pushapply page could not be opened via the web tool due to safety/URL constraints, so direct_apply_url is set to null.",
+      "Eligibility graduation window (e.g., specific graduating years) is not explicitly stated; only 'completed a bachelor’s degree before starting the program' is stated.",
+      "Eligibility disciplines are not explicitly listed as an allowed/required set (the page lists streams, not eligible degree disciplines), so eligibility.disciplines is empty."
+    ]
+  }
+}

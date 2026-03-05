@@ -1,0 +1,97 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-03-05T07:47:57.454Z",
+  "companies": [
+    {
+      "id": "bhp-group",
+      "name": "BHP Group",
+      "entity_type": "company",
+      "logo_url": null,
+      "career_url": "https://www.bhp.com/careers/",
+      "apply": {
+        "direct_apply_url": "https://careers.bhp.com/",
+        "open_date": null,
+        "close_date": "6 April 2026",
+        "status": "unknown"
+      },
+      "tags": {
+        "streams": [
+          "Graduate Program"
+        ],
+        "eligibility": [
+          "International students with a valid visa are welcome to apply. By February 2027, you must hold a visa with no work restrictions."
+        ],
+        "industries": [
+          "Resources"
+        ]
+      },
+      "updated_at": "2026-03-05T04:54:50+00:00",
+      "confidence": "medium"
+    },
+    {
+      "id": "coles-group",
+      "name": "Coles Group",
+      "entity_type": "company",
+      "logo_url": "assets/logos/coles-group-peoplesquad-logo.webp",
+      "career_url": "https://colescareers.com.au/au/en/studentandgraduates",
+      "apply": {
+        "direct_apply_url": "https://2027colesgroupgraduateprogram-expressionofinterest-coles.pushapply.com",
+        "open_date": "2026-03-10",
+        "close_date": "2026-04-12",
+        "status": "closed"
+      },
+      "tags": {
+        "streams": [
+          "Commercial",
+          "Finance",
+          "Customer Experience",
+          "Technology",
+          "Agribusiness",
+          "Procurement",
+          "Central Operations & Supply Chain",
+          "Coles Liquor",
+          "Legal",
+          "Property",
+          "People & Culture",
+          "Own Brand",
+          "Safety"
+        ],
+        "eligibility": [
+          "Australian or New Zealand citizens or permanent residents at the time of application can apply."
+        ],
+        "industries": [
+          "Retail"
+        ]
+      },
+      "updated_at": "2026-03-05T04:54:00+00:00",
+      "confidence": "high"
+    },
+    {
+      "id": "xero",
+      "name": "Xero",
+      "entity_type": "company",
+      "logo_url": "assets/logos/xero-peoplesquad-logo.webp",
+      "career_url": "https://careers.xero.com/jobs/",
+      "apply": {
+        "direct_apply_url": null,
+        "open_date": null,
+        "close_date": null,
+        "status": "unknown"
+      },
+      "tags": {
+        "streams": [
+          "Technical program",
+          "Design grad program"
+        ],
+        "eligibility": [
+          "Either have the right to work full-time in Australia or will be eligible to work full-time after graduating."
+        ],
+        "industries": [
+          "Technology"
+        ]
+      },
+      "updated_at": "2026-03-05T04:53:58+00:00",
+      "confidence": "medium"
+    }
+  ]
+}

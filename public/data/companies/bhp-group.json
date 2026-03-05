@@ -1,0 +1,256 @@
+{
+  "schema_version": "1.0",
+  "id": "bhp-group",
+  "name": "BHP Group",
+  "entity_type": "company",
+  "classification": {
+    "industry_bucket": "Resources",
+    "is_government": false,
+    "government_level": "none"
+  },
+  "official_domains": [
+    "bhp.com",
+    "careers.bhp.com"
+  ],
+  "urls": {
+    "careers_url": "https://www.bhp.com/careers/",
+    "grad_program_url": "https://www.bhp.com/careers/graduate-student-programs/australia",
+    "apply_url": "https://careers.bhp.com/",
+    "investor_relations_url": "https://www.bhp.com/investors"
+  },
+  "logo_url": null,
+  "branding": {
+    "logo_candidates": [],
+    "logo": null
+  },
+  "program": {
+    "name": "BHP Graduate Program",
+    "overview_url": "https://www.bhp.com/careers/graduate-student-programs/australia",
+    "direct_apply_url": "https://careers.bhp.com/",
+    "open_date": null,
+    "close_date": "6 April 2026",
+    "streams": [
+      "Graduate Program"
+    ],
+    "locations": [
+      "Copper Operations in South Australia",
+      "Iron Ore in Western Australia",
+      "Coal teams in Queensland",
+      "mine and rail network sites across Western Australia",
+      "BMA Queensland in the Bowen Basin",
+      "South Australia",
+      "offices in Perth",
+      "offices in Brisbane",
+      "offices in Adelaide"
+    ],
+    "salary_text": null,
+    "duration_text": "Over 24 months",
+    "rotation_text": "Graduates will rotate into different teams 2-4 times"
+  },
+  "eligibility": {
+    "work_rights": "International students with a valid visa are welcome to apply. By February 2027, you must hold a visa with no work restrictions.",
+    "graduation_window": "For those graduating this year, or within the last two years. To be eligible for our program, you must have graduated within the past two years or be due to graduate by the end of 2026.",
+    "disciplines": [
+      "Engineering: Chemical",
+      "Engineering: Civil",
+      "Engineering: Construction",
+      "Engineering: Electrical",
+      "Engineering: Environmental",
+      "Engineering: Geotechnical",
+      "Engineering: Instrumentation Control and Automation",
+      "Engineering: Mechanical",
+      "Engineering: Mechatronics",
+      "Engineering: Metallurgy",
+      "Engineering: Minerals Processing",
+      "Engineering: Mining & Mine Planning",
+      "Engineering: Process Control or Systems Engineering",
+      "Technology: Analytics",
+      "Technology: Applied Statistics",
+      "Technology: Cloud Computing",
+      "Technology: Computer Science",
+      "Technology: Cybersecurity",
+      "Technology: Data Science",
+      "Technology: Information Technology",
+      "Technology: Mathematics",
+      "Technology: Networking or Systems Administration",
+      "Technology: Software Engineering",
+      "Science: Chemistry",
+      "Science: Environmental and Earth Sciences",
+      "Science: Geographical Information Systems",
+      "Science: Geology",
+      "Science: Hydrogeology",
+      "Science: Physics",
+      "Science: Spatial Science (surveying)",
+      "Health Sciences: Health & Safety",
+      "Health Sciences: Occupational Hygiene",
+      "Health Sciences: Occupational Therapy",
+      "Health Sciences: Physiotherapy",
+      "Business: Accounting",
+      "Business: Business",
+      "Business: Commerce",
+      "Business: Finance",
+      "Business: Logistics Management",
+      "Business: Project Management",
+      "Business: Supply Chain"
+    ],
+    "minimum_requirements": [
+      "Graduated within the past two years or due to graduate by the end of 2026.",
+      "By February 2027, must hold a visa with no work restrictions (for international students)."
+    ]
+  },
+  "recruitment_process": {
+    "stages": [
+      {
+        "name": "Step 1: The Online Application",
+        "details": "Apply online. A cover letter is not required; if included, submit it as part of the same document as your résumé/CV and upload as one file."
+      },
+      {
+        "name": "Step 2: The Online Assessment",
+        "details": "After submitting the online application, in most cases BHP sends an email invitation to take part in a virtual assessment, which may include a video and games-based assessment."
+      },
+      {
+        "name": "Step 3: The Interview/Engagement Centre",
+        "details": "May involve an in-person interview, an Engagement Centre, or an interview online."
+      },
+      {
+        "name": "Final steps: Pre employment checks and offer of employment",
+        "details": "May include a second interview or pre-employment checks (may include reference, medical and criminal checks). Final stages vary depending on role and location."
+      }
+    ],
+    "tips": [
+      "Cover letter not required; if you include one, combine it with your résumé/CV into a single uploaded file.",
+      "Sign up for job alerts within your candidate profile.",
+      "For video assessment: relax and be yourself; BHP is not after perfect answers.",
+      "If you need adjustments for accessibility, contact inclusion@bhp.com."
+    ]
+  },
+  "commercial_context": {
+    "exec_themes": [
+      "Operational excellence and safety; record output; disciplined cost control",
+      "Sector-leading margins/strong cash flow and disciplined capital allocation; shareholder returns (dividends) through the cycle",
+      "Growth investment in copper, iron ore, and fertilisers (potash) including Jansen; expansion optionality (Escondida, Copper South Australia)",
+      "Portfolio positioning for energy transition and continued economic development (demand from China/India; AI/data centres)",
+      "Sustainability and social value: operational decarbonisation progress; shipping emissions intensity reduction; Indigenous partnerships/procurement; gender balance"
+    ],
+    "profit_engine": "Low-cost, large, long-life, diversified assets (notably WAIO as lowest-cost major iron ore producer) combined with safe/reliable operations, rigorous cost control, and disciplined capital allocation to deliver sector-leading margins, strong cash flow, dividends, and self-funded growth through the cycle.",
+    "headwinds": "Near-term global economic uncertainty and shifting trade policies; potential commodity price softness/volatility (e.g., steelmaking coal price softening due to oversupply); practical challenges affecting the pace/cost of the global energy transition (technology development at competitive cost).",
+    "esg": "Operational GHG reduction target: at least 30% reduction by FY2030 vs FY2020 baseline (stated as on track). Actions noted include contracts for ammonia dual-fuel bulk carriers (shipping emissions intensity) and logistics partnerships to reduce truck movements/emissions; Indigenous procurement spend increase; conservation project planning; and achieving gender balance in global workforce (April 2025/early FY25 context).",
+    "recent_pivot": "Increased emphasis and capital deployment toward future-facing commodities and growth options (potash via Jansen with first production targeted mid-2027; copper growth including Vicuña JV formation and expansion optionality in Chile/SA), alongside continued focus on operational excellence and sustainability progress."
+  },
+  "section_provenance": {
+    "program": {
+      "confidence": "medium",
+      "notes": [
+        "Program name, duration, rotations and locations were taken from the Australia graduate and student programs page.",
+        "Application close date was taken from a careers.bhp.com job advertisement; the Australia overview page states applications open at different times and does not provide a single close date."
+      ],
+      "sources": [
+        {
+          "type": "web",
+          "title": "Australia graduate and student programs | BHP",
+          "url": "https://www.bhp.com/careers/graduate-student-programs/australia",
+          "retrieved_at": null
+        },
+        {
+          "type": "web",
+          "title": "BHP 2027 Australian Graduate Campaign Job Details | BHP Career Portal",
+          "url": "https://careers.bhp.com/job/BHP-2027-Australian-Graduate-Campaign/1368544000/",
+          "retrieved_at": null
+        }
+      ]
+    },
+    "eligibility": {
+      "confidence": "medium",
+      "notes": [
+        "Graduation window and discipline lists were taken from the Australia graduate and student programs page and the 2027 Australian Graduate Campaign job ad.",
+        "Work-rights wording for international students was taken from the 2027 Australian Graduate Campaign job ad."
+      ],
+      "sources": [
+        {
+          "type": "web",
+          "title": "Australia graduate and student programs | BHP",
+          "url": "https://www.bhp.com/careers/graduate-student-programs/australia",
+          "retrieved_at": null
+        },
+        {
+          "type": "web",
+          "title": "BHP 2027 Australian Graduate Campaign Job Details | BHP Career Portal",
+          "url": "https://careers.bhp.com/job/BHP-2027-Australian-Graduate-Campaign/1368544000/",
+          "retrieved_at": null
+        }
+      ]
+    },
+    "recruitment_process": {
+      "confidence": "high",
+      "notes": [
+        "Stages and tips were extracted from BHP's recruitment process page."
+      ],
+      "sources": [
+        {
+          "type": "web",
+          "title": "Recruitment process | BHP",
+          "url": "https://www.bhp.com/careers/recruitment-process",
+          "retrieved_at": null
+        }
+      ]
+    },
+    "commercial_context": {
+      "confidence": "medium",
+      "notes": [
+        "Primary sources used were BHP FY25 and HY25 results releases containing CEO commentary on strategy, margins/cash flow, growth projects (Jansen, Vicuña, Escondida/Copper SA), market conditions (uncertainty; coal oversupply), and selected sustainability milestones/targets.",
+        "Unable to extract additional detail from BHP Annual Report PDFs because the tool could not fetch the /-/media/documents PDF URLs (HTTP fetch error). As a result, themes/headwinds/ESG are based on results-release narratives rather than full annual report risk/strategy sections.",
+        "“Recent_pivot” is expressed as a synthesis of described initiatives (capex/growth focus) rather than a formally labeled ‘pivot’ section in the sources."
+      ],
+      "sources": [
+        {
+          "type": "web",
+          "title": "BHP Results for the full year ended 30 June 2025",
+          "url": "https://www.bhp.com/news/media-centre/releases/2025/08/bhp-results-for-the-full-year-ended-30-june-2025",
+          "retrieved_at": null
+        },
+        {
+          "type": "web",
+          "title": "BHP Results for the half year ended 31 December 2024",
+          "url": "https://www.bhp.com/news/media-centre/releases/2025/02/bhp-results-for-the-half-year-ended-31-december-2024",
+          "retrieved_at": null
+        }
+      ]
+    }
+  },
+  "provenance": {
+    "updated_at": "2026-03-05T04:54:50+00:00",
+    "sources": [
+      {
+        "type": "web",
+        "title": "Australia graduate and student programs | BHP",
+        "url": "https://www.bhp.com/careers/graduate-student-programs/australia",
+        "retrieved_at": null
+      },
+      {
+        "type": "web",
+        "title": "BHP 2027 Australian Graduate Campaign Job Details | BHP Career Portal",
+        "url": "https://careers.bhp.com/job/BHP-2027-Australian-Graduate-Campaign/1368544000/",
+        "retrieved_at": null
+      },
+      {
+        "type": "web",
+        "title": "Recruitment process | BHP",
+        "url": "https://www.bhp.com/careers/recruitment-process",
+        "retrieved_at": null
+      },
+      {
+        "type": "web",
+        "title": "BHP Results for the full year ended 30 June 2025",
+        "url": "https://www.bhp.com/news/media-centre/releases/2025/08/bhp-results-for-the-full-year-ended-30-june-2025",
+        "retrieved_at": null
+      },
+      {
+        "type": "web",
+        "title": "BHP Results for the half year ended 31 December 2024",
+        "url": "https://www.bhp.com/news/media-centre/releases/2025/02/bhp-results-for-the-half-year-ended-31-december-2024",
+        "retrieved_at": null
+      }
+    ],
+    "notes": []
+  }
+}

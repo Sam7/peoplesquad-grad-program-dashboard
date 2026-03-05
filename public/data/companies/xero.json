@@ -1,0 +1,317 @@
+{
+  "schema_version": "1.0",
+  "id": "xero",
+  "name": "Xero",
+  "entity_type": "company",
+  "classification": {
+    "industry_bucket": "Technology",
+    "is_government": false,
+    "government_level": ""
+  },
+  "official_domains": [
+    "xero.com",
+    "careers.xero.com",
+    "login.xero.com",
+    "developer.xero.com",
+    "central.xero.com",
+    "learning.central.xero.com",
+    "apps.xero.com",
+    "blog.xero.com",
+    "innovations.xero.com",
+    "brandfolder.xero.com"
+  ],
+  "urls": {
+    "careers_url": "https://careers.xero.com/jobs/",
+    "grad_program_url": "https://www.xero.com/au/graduate/",
+    "apply_url": "https://www.xero.com/au/graduate/",
+    "investor_relations_url": "https://www.xero.com/au/investors/"
+  },
+  "logo_url": "assets/logos/xero-peoplesquad-logo.webp",
+  "branding": {
+    "logo_candidates": [
+      "https://www.xero.com/id/media/downloads/",
+      "https://www.xero.com/id/about/media/downloads/"
+    ],
+    "logo": {
+      "local_path": "assets/logos/xero-peoplesquad-logo.webp",
+      "source_url": "https://careers.xero.com/images/xero-wordmark-blue.png",
+      "mime_type": "image/webp",
+      "filename": "xero-peoplesquad-logo.webp",
+      "format": "webp",
+      "source_width": 2772,
+      "source_height": 750,
+      "output_width": 512,
+      "output_height": 512,
+      "confidence": "high",
+      "quality_score": 0.95,
+      "selection_reason": "brand_logo",
+      "retrieved_at": "2026-03-05T04:53:58+00:00",
+      "notes": []
+    }
+  },
+  "program": {
+    "name": "Xero grad program 2026",
+    "overview_url": "https://www.xero.com/au/graduate/",
+    "direct_apply_url": null,
+    "open_date": null,
+    "close_date": null,
+    "streams": [
+      "Technical program",
+      "Design grad program"
+    ],
+    "locations": [],
+    "salary_text": null,
+    "duration_text": "Our 12-month graduate program is designed to launch your career in either engineering, security, analysis, security engineering, or data science.",
+    "rotation_text": "Technical grads complete three 4-month rotations over 12 months, working with teams across the business in their chosen field."
+  },
+  "eligibility": {
+    "work_rights": "Either have the right to work full-time in Australia or will be eligible to work full-time after graduating.",
+    "graduation_window": null,
+    "disciplines": [],
+    "minimum_requirements": [
+      "Fewer than 12 months professional working experience in relevant industries.",
+      "Be able to start full-time in February 2026.",
+      "If you’re a current or past university student applying for a role in your field of study, you’ll need to provide a copy of your transcript.",
+      "You’ll also need to send your CV but only so we can use it to verify your eligibility."
+    ]
+  },
+  "recruitment_process": {
+    "stages": [
+      {
+        "name": "Meet the eligibility criteria",
+        "details": "Meet the eligibility criteria."
+      },
+      {
+        "name": "Logical and skills assessments",
+        "details": "Complete a logical reasoning assessment (~15 mins) and, if you’re applying for the technical program, a technical skills assessment (~60 mins). For technical roles, you’ll complete a HackerRank test, which you can practice beforehand."
+      },
+      {
+        "name": "Record a short video interview",
+        "details": "Pre-record a video interview. If successful, you’ll be invited to attend a grad day."
+      },
+      {
+        "name": "Virtual grad day",
+        "details": "A 1.5 hour virtual event assessed in two activities: a behavioural interview (30 min) and a technical assessment (30 min), plus a 15 minute introduction and a five minute break between sessions."
+      }
+    ],
+    "tips": [
+      "Early applications aren’t given priority (apply any time before the closing date).",
+      "Don’t miss the closing date (applications past the close date aren’t accepted).",
+      "No cover letter required.",
+      "The entire Xero grad recruitment process is online, with a virtual assessment centre as the last stage, so you won’t need to travel.",
+      "For the technical skills assessment: HackerRank test which you can practice beforehand."
+    ]
+  },
+  "commercial_context": {
+    "exec_themes": [
+      ">4.6m global subscribers; building momentum and scaling the platform globally",
+      "Product expansion beyond core accounting (e.g., payroll, expenses, projects, ecosystem integrations)",
+      "AI-enabled productivity and automation (e.g., positioning of JAX as an in-product AI ‘financial superagent’)",
+      "Payments/bill-pay and broader financial services adjacency (implied via product features like ‘Pay bills’, ‘Accept payments’, and investor focus on Melio)",
+      "ESG & sustainability as a strategic commitment (net-zero roadmap; carbon accounting enablement for customers/advisors)"
+    ],
+    "profit_engine": "Subscription-based SaaS revenue from small business accounting platform (pricing plans) with monetization via tiered plans and adjacent products (e.g., payroll/expenses/projects) and ecosystem/embedded financial services such as payments and bill pay (including strategic focus on Melio).",
+    "headwinds": "Macroeconomic pressure on small businesses (e.g., cash-flow stress) that may affect customer affordability/retention and purchasing of add-ons.",
+    "esg": "Xero states sustainability is part of its approach and has published a Sustainability Report 2025; it also highlights climate targets/net-zero roadmap and partnerships to support carbon accounting and climate reporting (e.g., Sumday).",
+    "recent_pivot": "Increased emphasis on AI-driven experiences (JAX) and deeper push into payments/bill-pay via the Melio acquisition/investor briefings (2025–2026)."
+  },
+  "section_provenance": {
+    "program": {
+      "confidence": "medium",
+      "notes": [
+        "The AU graduate overview page indicates the program kicks off in February 2026 but does not explicitly state application open/close dates.",
+        "The early careers page lists global locations and disciplines for the 12-month grad program but does not provide a single named cohort title or salary details."
+      ],
+      "sources": [
+        {
+          "type": "web",
+          "title": "Xero Grad Program | Australian Grad Program | Xero AU",
+          "url": "https://www.xero.com/au/graduate/",
+          "retrieved_at": null
+        },
+        {
+          "type": "web",
+          "title": "Early Careers at Xero | Grad Programs | Xero",
+          "url": "https://careers.xero.com/early-careers/",
+          "retrieved_at": null
+        },
+        {
+          "type": "web",
+          "title": "Technical grad program | 2026 grad program",
+          "url": "https://www.xero.com/au/graduate/technical-program/",
+          "retrieved_at": null
+        }
+      ]
+    },
+    "eligibility": {
+      "confidence": "high",
+      "notes": [
+        "Eligibility criteria and required documents were explicitly stated on the design program page in the 'Step 1: Check if you're eligible' section."
+      ],
+      "sources": [
+        {
+          "type": "web",
+          "title": "Design Grad Program | Xero Grad Program | Xero AU",
+          "url": "https://www.xero.com/au/graduate/design-program/",
+          "retrieved_at": null
+        }
+      ]
+    },
+    "recruitment_process": {
+      "confidence": "high",
+      "notes": [
+        "Recruitment stages were explicitly listed on the early careers page and the design program page includes application tips (e.g., no cover letter, early applications not prioritised, online process)."
+      ],
+      "sources": [
+        {
+          "type": "web",
+          "title": "Early Careers at Xero | Grad Programs | Xero",
+          "url": "https://careers.xero.com/early-careers/",
+          "retrieved_at": null
+        },
+        {
+          "type": "web",
+          "title": "Design Grad Program | Xero Grad Program | Xero AU",
+          "url": "https://www.xero.com/au/graduate/design-program/",
+          "retrieved_at": null
+        }
+      ]
+    },
+    "commercial_context": {
+      "confidence": "medium",
+      "notes": [
+        "Investor PDFs (interim report, investor presentation, ASX releases) are linked from Xero’s investor site but were not retrievable via the provided tooling (brandfolder fetch returned an error), so themes/profit engine/headwinds are inferred from Xero’s official site navigation/content and investor-page context rather than quoted from formal reports.",
+        "‘Profit_engine’ and ‘recent_pivot’ are based on explicit product/pricing positioning and investor-page emphasis on Melio and AI (JAX), but detailed financial drivers (ARPU, churn, geographic mix, margins) are not available without the official reports.",
+        "‘Headwinds’ are supported by Xero research/media release about small-business cash-flow/economic challenges; this is not a financial risk disclosure section from an annual report."
+      ],
+      "sources": [
+        {
+          "type": "official investor page",
+          "title": "Investor information (Xero AU)",
+          "url": "https://www.xero.com/au/investors/",
+          "retrieved_at": null
+        },
+        {
+          "type": "official investor page",
+          "title": "Financial information (Xero AU)",
+          "url": "https://www.xero.com/au/investors/financial-information/",
+          "retrieved_at": null
+        },
+        {
+          "type": "official company page",
+          "title": "Software & Solutions for Small Businesses (Xero AU homepage)",
+          "url": "https://www.xero.com/au/",
+          "retrieved_at": null
+        },
+        {
+          "type": "official company page",
+          "title": "Sustainability at Xero (Xero AU)",
+          "url": "https://www.xero.com/au/sustainability/",
+          "retrieved_at": null
+        },
+        {
+          "type": "official media release",
+          "title": "Xero and Sumday enter global partnership to enhance carbon accounting for advisors",
+          "url": "https://www.xero.com/media-releases/xero-sumday-enter-carbon-accounting-partnership/",
+          "retrieved_at": null
+        },
+        {
+          "type": "official media release",
+          "title": "Xero and Sumday partner to support climate reporting demands with free carbon accounting tools",
+          "url": "https://www.xero.com/media-releases/xero-sumday-partner-climate-reporting-demands-free-carbon-accounting-tools/",
+          "retrieved_at": null
+        },
+        {
+          "type": "official media release",
+          "title": "UK small business owners unable to pay themselves due to cash flow issues",
+          "url": "https://www.xero.com/au/media-releases/uk-money-matters-report-cash-flow/",
+          "retrieved_at": null
+        },
+        {
+          "type": "official media release",
+          "title": "Xero sets climate targets to work towards a net-zero future",
+          "url": "https://www.xero.com/au/media-releases/xero-sets-climate-targets/",
+          "retrieved_at": null
+        }
+      ]
+    }
+  },
+  "provenance": {
+    "updated_at": "2026-03-05T04:53:58+00:00",
+    "sources": [
+      {
+        "type": "web",
+        "title": "Xero Grad Program | Australian Grad Program | Xero AU",
+        "url": "https://www.xero.com/au/graduate/",
+        "retrieved_at": null
+      },
+      {
+        "type": "web",
+        "title": "Early Careers at Xero | Grad Programs | Xero",
+        "url": "https://careers.xero.com/early-careers/",
+        "retrieved_at": null
+      },
+      {
+        "type": "web",
+        "title": "Technical grad program | 2026 grad program",
+        "url": "https://www.xero.com/au/graduate/technical-program/",
+        "retrieved_at": null
+      },
+      {
+        "type": "web",
+        "title": "Design Grad Program | Xero Grad Program | Xero AU",
+        "url": "https://www.xero.com/au/graduate/design-program/",
+        "retrieved_at": null
+      },
+      {
+        "type": "official investor page",
+        "title": "Investor information (Xero AU)",
+        "url": "https://www.xero.com/au/investors/",
+        "retrieved_at": null
+      },
+      {
+        "type": "official investor page",
+        "title": "Financial information (Xero AU)",
+        "url": "https://www.xero.com/au/investors/financial-information/",
+        "retrieved_at": null
+      },
+      {
+        "type": "official company page",
+        "title": "Software & Solutions for Small Businesses (Xero AU homepage)",
+        "url": "https://www.xero.com/au/",
+        "retrieved_at": null
+      },
+      {
+        "type": "official company page",
+        "title": "Sustainability at Xero (Xero AU)",
+        "url": "https://www.xero.com/au/sustainability/",
+        "retrieved_at": null
+      },
+      {
+        "type": "official media release",
+        "title": "Xero and Sumday enter global partnership to enhance carbon accounting for advisors",
+        "url": "https://www.xero.com/media-releases/xero-sumday-enter-carbon-accounting-partnership/",
+        "retrieved_at": null
+      },
+      {
+        "type": "official media release",
+        "title": "Xero and Sumday partner to support climate reporting demands with free carbon accounting tools",
+        "url": "https://www.xero.com/media-releases/xero-sumday-partner-climate-reporting-demands-free-carbon-accounting-tools/",
+        "retrieved_at": null
+      },
+      {
+        "type": "official media release",
+        "title": "UK small business owners unable to pay themselves due to cash flow issues",
+        "url": "https://www.xero.com/au/media-releases/uk-money-matters-report-cash-flow/",
+        "retrieved_at": null
+      },
+      {
+        "type": "official media release",
+        "title": "Xero sets climate targets to work towards a net-zero future",
+        "url": "https://www.xero.com/au/media-releases/xero-sets-climate-targets/",
+        "retrieved_at": null
+      }
+    ],
+    "notes": []
+  }
+}
