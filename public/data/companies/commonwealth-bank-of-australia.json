@@ -1,0 +1,286 @@
+{
+  "schema_version": "1.0",
+  "id": "commonwealth-bank-of-australia",
+  "name": "Commonwealth Bank of Australia (CommBank)",
+  "entity_type": "company",
+  "classification": {
+    "industry_bucket": "Banking",
+    "is_government": false,
+    "government_level": "none"
+  },
+  "official_domains": [
+    "commbank.com.au",
+    "commbank.commbank"
+  ],
+  "urls": {
+    "careers_url": "https://www.commbank.com.au/about-us/careers.html",
+    "grad_program_url": "https://www.commbank.com.au/about-us/careers/graduate-intern-programs.html",
+    "apply_url": null,
+    "investor_relations_url": "https://www.commbank.com.au/about-us/investors.html"
+  },
+  "logo_url": "assets/logos/commonwealth-bank-of-australia-peoplesquad-logo.webp",
+  "branding": {
+    "logo_candidates": [],
+    "logo": {
+      "local_path": "assets/logos/commonwealth-bank-of-australia-peoplesquad-logo.webp",
+      "source_url": "https://www.commbank.com.au/content/dam/commbank-assets/about-us/2019-07/woman_lghero.jpg",
+      "mime_type": "image/webp",
+      "filename": "commonwealth-bank-of-australia-peoplesquad-logo.webp",
+      "format": "webp",
+      "source_width": 1180,
+      "source_height": 1240,
+      "output_width": 512,
+      "output_height": 512,
+      "confidence": "medium",
+      "quality_score": 0.7,
+      "selection_reason": "fallback_og_image",
+      "retrieved_at": "2026-03-05T14:59:14+00:00",
+      "notes": []
+    }
+  },
+  "program": {
+    "name": "Graduate Program",
+    "overview_url": "https://www.commbank.com.au/about-us/careers/graduate-intern-programs.html",
+    "direct_apply_url": null,
+    "open_date": "Applications open – March and July (recurring each year)",
+    "close_date": null,
+    "streams": [
+      "Technology (Engineering, Cyber Security, Data Science & AI)",
+      "Advanced Analytics",
+      "Banking Products (including CommSec & Product Management)",
+      "Banking Relationship Management (Institutional, Business & IB&M)",
+      "Finance & Accounting",
+      "Procurement",
+      "Regional and Agribusiness Banking",
+      "Risk Management",
+      "Marketing and Corporate Affairs"
+    ],
+    "locations": [
+      "Roles available across Australia (metro and regional locations depending on stream)"
+    ],
+    "salary_text": "Starting salary is described as competitive with the graduate market; specific remuneration and bonus details are discussed during the recruitment process.",
+    "duration_text": "Program length varies by stream; graduates rotate through areas for 12–24 months depending on program.",
+    "rotation_text": "Graduates rotate through different areas within the chosen program stream to build skills; graduates are permanent employees from day one."
+  },
+  "eligibility": {
+    "work_rights": "Australian or New Zealand citizen, or Australian permanent resident at the time of application. (This does not include bridging visas while awaiting permanent residency or subclass 820 visa holders.)",
+    "graduation_window": "Final-year university students or applicants who completed their studies within the last 24 months.",
+    "disciplines": [
+      "Technology (Engineering, Data Science, Cyber Security)",
+      "Advanced Analytics / Data Science",
+      "Product Management / Banking Products",
+      "Relationship Management / Business & Institutional Banking",
+      "Finance & Accounting",
+      "Procurement",
+      "Regional & Agribusiness Banking",
+      "Risk Management",
+      "Marketing and Corporate Affairs"
+    ],
+    "minimum_requirements": [
+      "Overall credit average (65 WAM/GPA).",
+      "For Technology (Engineering and Cyber Security) streams the minimum overall average is 70.",
+      "Final-year students or graduates within the last 24 months.",
+      "Must meet the work-rights requirement described above."
+    ]
+  },
+  "recruitment_process": {
+    "stages": [
+      {
+        "name": "Apply online",
+        "details": "Submit an online application selecting the stream that fits you. The site states the form takes around 10 minutes and you should have an updated resume and most recent transcript ready."
+      },
+      {
+        "name": "Online assessment",
+        "details": "If your application is successful you'll be invited to complete an online assessment that provides insights about your capabilities."
+      },
+      {
+        "name": "Digital interview",
+        "details": "Short pre-recorded questions answered via your device webcam. You receive an email invite with instructions and a 48-hour deadline to complete the interview."
+      },
+      {
+        "name": "Assessment centre",
+        "details": "Successful digital-interview candidates are invited to a virtual or face-to-face assessment centre. The Global Markets Summer Analyst process uses team interviews and may include an additional coding assessment and two interview rounds for some teams."
+      },
+      {
+        "name": "Offer and program start",
+        "details": "Candidates who progress successfully receive offers and the program typically starts mid-February the following year."
+      }
+    ],
+    "tips": [
+      "Read the program and stream descriptions before applying so you can choose the best fit.",
+      "Have an up-to-date resume and your most recent academic transcript ready.",
+      "Do research on CommBank and the specific area you apply to; be prepared to explain why you’re interested in that area.",
+      "For the digital interview, monitor your email closely and complete it within the 48-hour deadline.",
+      "If invited to an assessment centre, prepare to discuss how your skills match the role and to network with business representatives."
+    ]
+  },
+  "commercial_context": {
+    "exec_themes": [
+      "Digital transformation and AI leadership — modernising technology, building an 'AI Factory', and rolling out AI education and tools across the bank.",
+      "Customer experience and digital-first banking — investing in the CommBank app, CommBank Yello and personalised digital services to deepen customer relationships.",
+      "Growth through disciplined lending — expanding home and business lending volumes while managing margins and capital.",
+      "Operational resilience and safety — strengthening fraud, scams and cyber-defence capabilities and improving operational reliability.",
+      "Simplification and efficiency — reducing complexity in operations to make the bank easier to run and to support frontline service.",
+      "Supporting the economy and sustainability — backing small businesses, agribusiness and initiatives to help Australia’s productivity while reporting on environmental and social commitments."
+    ],
+    "profit_engine": "Core profit is driven by net interest income from lending (home and business lending) and transaction account balances, supported by fees and other operating income; recent results emphasise growth from higher lending volumes together with disciplined margin management and contributions from digital transaction activity.",
+    "headwinds": "External pressures include cost-of-living and global economic uncertainty, inflation-driven higher operating costs, ongoing cyber and scams risk (despite improvements), and structural/regulatory costs from national infrastructure and payment system obligations.",
+    "esg": "CommBank reports on environmental, social and governance metrics and has programs to support sustainability (including a Sustainability Action Tool for small businesses and ISCC certification for some agribusiness activity). Social commitments include financial inclusion initiatives, community support and reporting on governance practices; the bank also emphasises responsible AI adoption as part of governance.",
+    "recent_pivot": "In the most recent refresh the bank accelerated technology and AI investment, explicitly increased lending across segments (record RWA growth), and rebalanced toward growth while also stepping up investment in fraud/cyber protections and operational resilience."
+  },
+  "section_provenance": {
+    "program": {
+      "confidence": "high",
+      "notes": [
+        "Program description, duration, rotation approach, locations guidance, and key recurring application months are explicitly stated on CommBank's Graduate & Intern Programs page.",
+        "Starting salary is described generally as 'competitive' on the FAQ section; no specific dollar amount is given."
+      ],
+      "sources": [
+        {
+          "type": "webpage",
+          "title": "Our Graduate, Intern and Analyst Programs - CommBank",
+          "url": "https://www.commbank.com.au/about-us/careers/graduate-intern-programs.html",
+          "retrieved_at": "2026-03-05"
+        },
+        {
+          "type": "webpage",
+          "title": "Careers - CommBank",
+          "url": "https://www.commbank.com.au/about-us/careers.html",
+          "retrieved_at": "2026-03-05"
+        }
+      ]
+    },
+    "eligibility": {
+      "confidence": "high",
+      "notes": [
+        "Eligibility criteria including citizenship/permanent residency, graduation window, and minimum grade thresholds are explicitly listed on the Graduate & Intern Programs page.",
+        "The page specifically excludes bridging visas and subclass 820 visa holders from eligibility."
+      ],
+      "sources": [
+        {
+          "type": "webpage",
+          "title": "Our Graduate, Intern and Analyst Programs - CommBank (Eligibility & Key Dates)",
+          "url": "https://www.commbank.com.au/about-us/careers/graduate-intern-programs.html",
+          "retrieved_at": "2026-03-05"
+        }
+      ]
+    },
+    "recruitment_process": {
+      "confidence": "high",
+      "notes": [
+        "Recruitment stages (apply online, online assessment, digital interview, assessment centre) and details such as the 48-hour digital interview deadline, virtual/face-to-face assessment centres, and assessment-centre travel support are described on the CommBank careers pages.",
+        "Global Markets Summer Analyst process differences (team interviews and possible coding assessment) are explicitly mentioned."
+      ],
+      "sources": [
+        {
+          "type": "webpage",
+          "title": "Our Graduate, Intern and Analyst Programs - CommBank (Application process & Assessment Centres)",
+          "url": "https://www.commbank.com.au/about-us/careers/graduate-intern-programs.html",
+          "retrieved_at": "2026-03-05"
+        }
+      ]
+    },
+    "commercial_context": {
+      "confidence": "high",
+      "notes": [
+        "Exec themes and recent pivot are taken from the bank's strategy and full-year results briefing where the bank states a refreshed strategy and four strategy pillars (building Australia’s future economy; reimagining customer experiences; leading in technology and AI; delivering simpler, safer, better).",
+        "Profit engine statement is based on the FY25 results briefing which highlights net interest income, disciplined volume/margin management, lending growth and increases in operating income; granular breakdown of all income line items (e.g., exact fee mix) is not detailed in the cited pages, so 'fees and other operating income' is a concise summary.",
+        "Headwinds are drawn from management commentary in the results briefing and AGM materials referencing cost-of-living pressures, inflation, global uncertainty, higher operating expenses and regulatory/infrastructure obligations.",
+        "ESG summary uses the annual report sustainability section and newsroom items (Sustainability Action Tool, ISCC certification) plus the bank’s AI report on responsible AI adoption to reflect governance of emerging tech.",
+        "All sources are official CommBank pages or official investor/report PDFs hosted on commbank.com.au."
+      ],
+      "sources": [
+        {
+          "type": "annual report (webpage)",
+          "title": "2024 Annual Report — Our strategic priorities & sustainability",
+          "url": "https://www.commbank.com.au/about-us/investors/annual-reports/annual-report-2024.html",
+          "retrieved_at": "2026-03-05"
+        },
+        {
+          "type": "results briefing (transcript, PDF)",
+          "title": "Commonwealth Bank of Australia 2025 Full Year Results Briefing (webcast transcript, 13 Aug 2025)",
+          "url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/2025-full-year-results-webcast-transcript.pdf",
+          "retrieved_at": "2026-03-05"
+        },
+        {
+          "type": "newsroom article",
+          "title": "CommBank releases Australian-first report outlining how it is adopting AI",
+          "url": "https://www.commbank.com.au/articles/newsroom/2026/02/cba-approach-to-adopting-ai-report-announcement.html",
+          "retrieved_at": "2026-03-05"
+        },
+        {
+          "type": "newsroom article",
+          "title": "CBA enhances small business Sustainability Tool with Aussie-owned businesses",
+          "url": "https://www.commbank.com.au/articles/newsroom/2024/05/commbank-sustainability-action-tool.html",
+          "retrieved_at": "2026-03-05"
+        },
+        {
+          "type": "newsroom article",
+          "title": "CBA becomes first Australian bank to achieve International Sustainability and Carbon Certification",
+          "url": "https://www.commbank.com.au/articles/newsroom/2022/03/CBA-first-Australian-bank-to-achieve-ISCC.html",
+          "retrieved_at": "2026-03-05"
+        }
+      ]
+    }
+  },
+  "provenance": {
+    "updated_at": "2026-03-05T14:59:14+00:00",
+    "sources": [
+      {
+        "type": "webpage",
+        "title": "Our Graduate, Intern and Analyst Programs - CommBank",
+        "url": "https://www.commbank.com.au/about-us/careers/graduate-intern-programs.html",
+        "retrieved_at": "2026-03-05"
+      },
+      {
+        "type": "webpage",
+        "title": "Careers - CommBank",
+        "url": "https://www.commbank.com.au/about-us/careers.html",
+        "retrieved_at": "2026-03-05"
+      },
+      {
+        "type": "webpage",
+        "title": "Our Graduate, Intern and Analyst Programs - CommBank (Eligibility & Key Dates)",
+        "url": "https://www.commbank.com.au/about-us/careers/graduate-intern-programs.html",
+        "retrieved_at": "2026-03-05"
+      },
+      {
+        "type": "webpage",
+        "title": "Our Graduate, Intern and Analyst Programs - CommBank (Application process & Assessment Centres)",
+        "url": "https://www.commbank.com.au/about-us/careers/graduate-intern-programs.html",
+        "retrieved_at": "2026-03-05"
+      },
+      {
+        "type": "annual report (webpage)",
+        "title": "2024 Annual Report — Our strategic priorities & sustainability",
+        "url": "https://www.commbank.com.au/about-us/investors/annual-reports/annual-report-2024.html",
+        "retrieved_at": "2026-03-05"
+      },
+      {
+        "type": "results briefing (transcript, PDF)",
+        "title": "Commonwealth Bank of Australia 2025 Full Year Results Briefing (webcast transcript, 13 Aug 2025)",
+        "url": "https://www.commbank.com.au/content/dam/commbank-assets/investors/docs/results/fy25/2025-full-year-results-webcast-transcript.pdf",
+        "retrieved_at": "2026-03-05"
+      },
+      {
+        "type": "newsroom article",
+        "title": "CommBank releases Australian-first report outlining how it is adopting AI",
+        "url": "https://www.commbank.com.au/articles/newsroom/2026/02/cba-approach-to-adopting-ai-report-announcement.html",
+        "retrieved_at": "2026-03-05"
+      },
+      {
+        "type": "newsroom article",
+        "title": "CBA enhances small business Sustainability Tool with Aussie-owned businesses",
+        "url": "https://www.commbank.com.au/articles/newsroom/2024/05/commbank-sustainability-action-tool.html",
+        "retrieved_at": "2026-03-05"
+      },
+      {
+        "type": "newsroom article",
+        "title": "CBA becomes first Australian bank to achieve International Sustainability and Carbon Certification",
+        "url": "https://www.commbank.com.au/articles/newsroom/2022/03/CBA-first-Australian-bank-to-achieve-ISCC.html",
+        "retrieved_at": "2026-03-05"
+      }
+    ],
+    "notes": []
+  }
+}

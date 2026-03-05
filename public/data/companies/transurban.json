@@ -1,0 +1,289 @@
+{
+  "schema_version": "1.0",
+  "id": "transurban",
+  "name": "Transurban",
+  "entity_type": "company",
+  "classification": {
+    "industry_bucket": "Industrial",
+    "is_government": false,
+    "government_level": ""
+  },
+  "official_domains": [
+    "transurban.com",
+    "careers.transurban.com",
+    "insights.transurban.com"
+  ],
+  "urls": {
+    "careers_url": "https://careers.transurban.com/",
+    "grad_program_url": "https://careers.transurban.com/graduate-program",
+    "apply_url": "https://careers.transurban.com/opportunities",
+    "investor_relations_url": "https://www.transurban.com/investor-centre.html"
+  },
+  "logo_url": "assets/logos/transurban-peoplesquad-logo.webp",
+  "branding": {
+    "logo_candidates": [],
+    "logo": {
+      "local_path": "assets/logos/transurban-peoplesquad-logo.webp",
+      "source_url": "https://careers.transurban.com/content/dam/careers/logos/app-icon.png",
+      "mime_type": "image/webp",
+      "filename": "transurban-peoplesquad-logo.webp",
+      "format": "webp",
+      "source_width": 114,
+      "source_height": 114,
+      "output_width": 512,
+      "output_height": 512,
+      "confidence": "medium",
+      "quality_score": 0.75,
+      "selection_reason": "fallback_icon",
+      "retrieved_at": "2026-03-05T15:06:47+00:00",
+      "notes": []
+    }
+  },
+  "program": {
+    "name": "Transurban graduate program: Journey into the Future",
+    "overview_url": "https://careers.transurban.com/graduate-program",
+    "direct_apply_url": "https://careers.transurban.com/opportunities",
+    "open_date": null,
+    "close_date": null,
+    "streams": [
+      "Engineering",
+      "Technology",
+      "Finance"
+    ],
+    "locations": [
+      "Melbourne",
+      "Sydney",
+      "Brisbane"
+    ],
+    "salary_text": null,
+    "duration_text": "18-month rotational program",
+    "rotation_text": "Three six-month rotations in a core discipline"
+  },
+  "eligibility": {
+    "work_rights": null,
+    "graduation_window": "Intent to complete tertiary studies by February 2025 (or have completed in the last two years)",
+    "disciplines": [
+      "Engineering (Civil, Mechanical, Mechatronics or Electrical)",
+      "Science (Engineering Science, Computer and Software Systems)",
+      "Technology (Information Technology, Business Information Systems, Computer Systems, Computer Science, Software Engineering or Software Development)",
+      "Commerce, Finance, Accounting or Economics"
+    ],
+    "minimum_requirements": [
+      "Intent to complete a relevant bachelor’s degree by February 2025, or have completed in the last two years, with a credit average",
+      "Resilience (ability to work well under pressure and recover from setbacks)",
+      "Adaptability (comfortable with change and fast-moving work)",
+      "Drive for results (motivated by achievement and contribution)",
+      "Curiosity (eager to learn, collaborative mindset)",
+      "Problem solving ability (apply technical skills to practical problems)",
+      "Initiative (organised and confident to work independently with support from mentor/buddy/manager)"
+    ]
+  },
+  "recruitment_process": {
+    "stages": [
+      {
+        "name": "Step 1: Apply online",
+        "details": "Submit an online application. (Page states applications for the 2025 graduate program have closed.)"
+      },
+      {
+        "name": "Step 2: Psychometric testing",
+        "details": "Complete online assessments that measure abilities and preferences; instructions and practice questions are provided in advance."
+      },
+      {
+        "name": "Step 3: Video interview",
+        "details": "A one-way video assessment where you record answers to several set questions to showcase strengths, motivations and alignment to Transurban's values."
+      },
+      {
+        "name": "Steps 4 and 5: Presentation and interview",
+        "details": "Invited candidates take part in interactive, practical activities (may include a presentation) and a structured behavioural interview aligned to the graduate role requirements."
+      },
+      {
+        "name": "Step 6: Offer and reference checks",
+        "details": "If successful, Transurban will contact your nominated referees before an offer is finalised."
+      },
+      {
+        "name": "Step 7: Onboarding commences",
+        "details": "Onboarding begins before the formal start date; you may be introduced to current graduates, your people leader and buddy before you commence."
+      },
+      {
+        "name": "Step 8: First day",
+        "details": "Welcome by your people leader and team, facilities induction and later a corporate induction during the first month."
+      }
+    ],
+    "tips": [
+      "Complete the provided practice questions before psychometric testing.",
+      "For the video stage, be prepared to record answers to set questions that show your motivations and alignment to the company's values.",
+      "Expect interactive, practical tasks and a structured behavioural interview during the presentation/interview stage.",
+      "Transurban may contact your referees—have them ready and informed.",
+      "Follow Transurban's Graduate and Student Community on LinkedIn for updates.",
+      "If you require adjustments for accessibility during recruitment, contact careers@transurban.com as advised on the careers site."
+    ]
+  },
+  "commercial_context": {
+    "exec_themes": [
+      "Deliver customer value by reducing travel time and improving reliability (time savings and customer programs are a core focus).",
+      "Grow through project delivery and asset expansion in existing markets and North America (new/extended express lanes and major Australian projects).",
+      "Operate with capital discipline and an efficiency focus (optimise core assets, cost management and a refreshed operating model).",
+      "Use data, predictive analytics and automation to manage congestion, improve safety and run assets more efficiently.",
+      "Work closely with governments and partners on tolling policy, concession delivery and urban mobility planning.",
+      "Integrate sustainability into business planning (net-zero transition, emissions targets and sustainability reporting)."
+    ],
+    "profit_engine": "Primary profit engine is toll revenue from long‑life road concessions (proportional toll revenue and traffic growth drive EBITDA), supported by project development (new/expanded concessions such as Express Lanes), operations and customer programs that increase road use and yield.",
+    "headwinds": "Regulatory/toll reform risk (notably the NSW Independent Toll Review and engagement with governments); longer‑term shifts in road funding as fuel excise declines with EV uptake; evolving sustainability and disclosure requirements; interest rate and funding cost pressures; and operational risks associated with large projects and changing traffic patterns.",
+    "esg": "Transurban has a formal sustainability program: a net‑zero by 2050 commitment, SBTi‑validated near‑term 2030 targets for scope 1 and 2 (and scope 3 components), substantial reductions in scope 1 and 2 emissions versus FY19, and participation/recognition in external ESG benchmarks (DJSI, GRESB, MSCI, Equileap). Sustainability metrics and public reporting are integrated into the FY24 Corporate Report and investor data packs.",
+    "recent_pivot": "Organisational change and a refreshed operating model to position the company for scaled growth, paired with stronger emphasis on technology-enabled asset management and embedding sustainability (net‑zero and new disclosure preparedness) across planning and projects."
+  },
+  "section_provenance": {
+    "program": {
+      "confidence": "high",
+      "notes": [
+        "Program name, duration, rotation structure, streams and locations are explicitly stated on the Transurban graduate program page.",
+        "No salary or specific application open/close dates are given on the page; it only states that applications for the 2025 program have closed."
+      ],
+      "sources": [
+        {
+          "type": "webpage",
+          "title": "Transurban Graduate Program | Transurban Careers",
+          "url": "https://careers.transurban.com/graduate-program",
+          "retrieved_at": "2026-03-05"
+        }
+      ]
+    },
+    "eligibility": {
+      "confidence": "high",
+      "notes": [
+        "Graduation timing, required disciplines and minimum academic standard ('credit average') are stated explicitly on the graduate program page.",
+        "The page lists several personal attributes Transurban expects; these have been translated into plain English without changing meaning.",
+        "The page does not explicitly state visa/work-rights rules or other immigration-specific requirements."
+      ],
+      "sources": [
+        {
+          "type": "webpage",
+          "title": "Transurban Graduate Program | Transurban Careers",
+          "url": "https://careers.transurban.com/graduate-program",
+          "retrieved_at": "2026-03-05"
+        }
+      ]
+    },
+    "recruitment_process": {
+      "confidence": "high",
+      "notes": [
+        "The recruitment steps (apply, psychometric testing, video interview, presentation/interview, offer & references, onboarding, first day) and related details are listed step-by-step on the graduate program page.",
+        "Practical advice such as practice questions and the one-way video format are explicitly mentioned and included in the tips."
+      ],
+      "sources": [
+        {
+          "type": "webpage",
+          "title": "Transurban Graduate Program | Transurban Careers",
+          "url": "https://careers.transurban.com/graduate-program",
+          "retrieved_at": "2026-03-05"
+        },
+        {
+          "type": "webpage",
+          "title": "Graduates and students | Transurban Careers",
+          "url": "https://careers.transurban.com/graduates-and-interns",
+          "retrieved_at": "2026-03-05"
+        },
+        {
+          "type": "webpage",
+          "title": "Careers at Transurban",
+          "url": "https://careers.transurban.com/",
+          "retrieved_at": "2026-03-05"
+        }
+      ]
+    },
+    "commercial_context": {
+      "confidence": "high",
+      "notes": [
+        "Primary source for the strategic themes, profit description, headwinds and recent organisational change is Transurban’s FY24 Corporate Report (the report explicitly describes strategic objectives, operating model change, toll revenue performance, project pipeline and engagement on toll reform).",
+        "ESG summary is drawn from Transurban’s FY24 reporting and the company’s sustainability and ESG benchmarking pages (net‑zero commitment, SBTi validation and benchmark recognitions are published by Transurban).",
+        "Where corporate phrasing was broad (e.g., 'operating model refreshed') I translated it to plain English without adding new factual claims; all factual points (percent reductions, targets, revenue drivers and named reviews) are taken from the cited official pages."
+      ],
+      "sources": [
+        {
+          "type": "corporate_report",
+          "title": "2024 Corporate Report (Transurban) – for the year ended 30 June 2024",
+          "url": "https://online.flippingbook.com/view/539796607/",
+          "retrieved_at": "2026-03-05"
+        },
+        {
+          "type": "webpage",
+          "title": "Sustainability | Transurban Group",
+          "url": "https://www.transurban.com/sustainability",
+          "retrieved_at": "2026-03-05"
+        },
+        {
+          "type": "webpage",
+          "title": "ESG benchmarking | Transurban Group (Investor Centre)",
+          "url": "https://www.transurban.com/investor-centre/environmental-social-governance/esg-benchmarking",
+          "retrieved_at": "2026-03-05"
+        },
+        {
+          "type": "webpage",
+          "title": "Net zero emissions | Transurban Group",
+          "url": "https://www.transurban.com/netzero",
+          "retrieved_at": "2026-03-05"
+        },
+        {
+          "type": "insight",
+          "title": "Transurban Insights: Liveable and Productive Cities (research summary)",
+          "url": "https://www.transurban.com/news/new-research-report-on-liveable-and-productive-cities",
+          "retrieved_at": "2026-03-05"
+        }
+      ]
+    }
+  },
+  "provenance": {
+    "updated_at": "2026-03-05T15:06:47+00:00",
+    "sources": [
+      {
+        "type": "webpage",
+        "title": "Transurban Graduate Program | Transurban Careers",
+        "url": "https://careers.transurban.com/graduate-program",
+        "retrieved_at": "2026-03-05"
+      },
+      {
+        "type": "webpage",
+        "title": "Graduates and students | Transurban Careers",
+        "url": "https://careers.transurban.com/graduates-and-interns",
+        "retrieved_at": "2026-03-05"
+      },
+      {
+        "type": "webpage",
+        "title": "Careers at Transurban",
+        "url": "https://careers.transurban.com/",
+        "retrieved_at": "2026-03-05"
+      },
+      {
+        "type": "corporate_report",
+        "title": "2024 Corporate Report (Transurban) – for the year ended 30 June 2024",
+        "url": "https://online.flippingbook.com/view/539796607/",
+        "retrieved_at": "2026-03-05"
+      },
+      {
+        "type": "webpage",
+        "title": "Sustainability | Transurban Group",
+        "url": "https://www.transurban.com/sustainability",
+        "retrieved_at": "2026-03-05"
+      },
+      {
+        "type": "webpage",
+        "title": "ESG benchmarking | Transurban Group (Investor Centre)",
+        "url": "https://www.transurban.com/investor-centre/environmental-social-governance/esg-benchmarking",
+        "retrieved_at": "2026-03-05"
+      },
+      {
+        "type": "webpage",
+        "title": "Net zero emissions | Transurban Group",
+        "url": "https://www.transurban.com/netzero",
+        "retrieved_at": "2026-03-05"
+      },
+      {
+        "type": "insight",
+        "title": "Transurban Insights: Liveable and Productive Cities (research summary)",
+        "url": "https://www.transurban.com/news/new-research-report-on-liveable-and-productive-cities",
+        "retrieved_at": "2026-03-05"
+      }
+    ],
+    "notes": []
+  }
+}

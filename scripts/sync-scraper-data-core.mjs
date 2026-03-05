@@ -1,4 +1,4 @@
-import { cp, mkdir, readFile, readdir, writeFile } from "node:fs/promises";
+import { access, cp, mkdir, readFile, readdir, writeFile } from "node:fs/promises";
 import { dirname, join, resolve } from "node:path";
 
 function nowIso() {
@@ -15,9 +15,18 @@ async function writeJson(filePath, payload) {
   await writeFile(filePath, `${JSON.stringify(payload, null, 2)}\n`, "utf8");
 }
 
+async function pathExists(path) {
+  try {
+    await access(path);
+    return true;
+  } catch {
+    return false;
+  }
+}
+
 async function copyIfExists(sourcePath, targetPath) {
   await mkdir(dirname(targetPath), { recursive: true });
-  await cp(sourcePath, targetPath, { recursive: true, force: true, errorOnExist: false });
+  await cp(sourcePath, targetPath, { recursive: true, force: false, errorOnExist: false });
 }
 
 function normalizeIndexItem(item) {
@@ -47,11 +56,22 @@ export async function syncScraperData({ sourceRoots, outDir }) {
   const resolvedOutDir = resolve(outDir);
   const companiesOutDir = join(resolvedOutDir, "companies");
   const logosOutDir = join(resolvedOutDir, "assets", "logos");
+  const indexOutPath = join(resolvedOutDir, "index.json");
 
   await mkdir(companiesOutDir, { recursive: true });
   await mkdir(logosOutDir, { recursive: true });
 
-  const mergedCompanies = [];
+  const mergedCompaniesById = new Map();
+  if (await pathExists(indexOutPath)) {
+    const existingIndexPayload = await readJson(indexOutPath);
+    const existingCompanies = existingIndexPayload.companies ?? [];
+    for (const entry of existingCompanies) {
+      if (!entry?.id) {
+        continue;
+      }
+      mergedCompaniesById.set(entry.id, normalizeIndexItem(entry));
+    }
+  }
 
   for (const root of sourceRoots) {
     const resolvedRoot = resolve(root);
@@ -61,12 +81,21 @@ export async function syncScraperData({ sourceRoots, outDir }) {
 
     for (const entry of sourceCompanies) {
       const id = entry.id;
+      if (!id) {
+        continue;
+      }
       const companySourcePath = join(resolvedRoot, "companies", `${id}.json`);
       const companyOutPath = join(companiesOutDir, `${id}.json`);
-      const detail = await readJson(companySourcePath);
+      const alreadyExistsInPublic = await pathExists(companyOutPath);
 
-      await writeJson(companyOutPath, detail);
-      mergedCompanies.push(normalizeIndexItem(entry));
+      if (!alreadyExistsInPublic) {
+        const detail = await readJson(companySourcePath);
+        await writeJson(companyOutPath, detail);
+      }
+
+      if (!mergedCompaniesById.has(id)) {
+        mergedCompaniesById.set(id, normalizeIndexItem(entry));
+      }
     }
 
     const logosSourceDir = join(resolvedRoot, "assets", "logos");
@@ -80,9 +109,10 @@ export async function syncScraperData({ sourceRoots, outDir }) {
     }
   }
 
+  const mergedCompanies = Array.from(mergedCompaniesById.values());
   mergedCompanies.sort((a, b) => a.name.localeCompare(b.name));
 
-  await writeJson(join(resolvedOutDir, "index.json"), {
+  await writeJson(indexOutPath, {
     schema_version: "1.0",
     generated_at: nowIso(),
     companies: mergedCompanies

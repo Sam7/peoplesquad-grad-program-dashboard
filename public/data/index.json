@@ -1,7 +1,46 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-03-05T13:45:29.871Z",
+  "generated_at": "2026-03-05T15:24:10.965Z",
   "companies": [
+    {
+      "id": "anz-group",
+      "name": "ANZ Group",
+      "entity_type": "company",
+      "logo_url": "assets/logos/anz-group-peoplesquad-logo.webp",
+      "career_url": "https://www.anz.com.au/careers/",
+      "apply": {
+        "direct_apply_url": "https://www.anz.com.au/careers/",
+        "open_date": null,
+        "close_date": null,
+        "status": "unknown"
+      },
+      "tags": {
+        "streams": [
+          "Australia Retail",
+          "Business & Private Bank",
+          "Agribusiness",
+          "Communications and Public Affairs",
+          "Finance",
+          "Institutional",
+          "Risk",
+          "Suncorp Bank Business & Agribusiness",
+          "Technology",
+          "New Zealand: Marketing",
+          "New Zealand: Institutional",
+          "New Zealand: Data",
+          "New Zealand: Funds Management",
+          "India (Group Capability Centre) – Graduate engineering and technology roles (Bengaluru)"
+        ],
+        "eligibility": [
+          "You must be an Australian or New Zealand citizen, or hold permanent residency in the country you apply for."
+        ],
+        "industries": [
+          "Banking"
+        ]
+      },
+      "updated_at": "2026-03-05T15:03:37+00:00",
+      "confidence": "high"
+    },
     {
       "id": "bhp-group",
       "name": "BHP Group",
@@ -64,6 +103,139 @@
         ]
       },
       "updated_at": "2026-03-05T04:54:00+00:00",
+      "confidence": "high"
+    },
+    {
+      "id": "commonwealth-bank-of-australia",
+      "name": "Commonwealth Bank of Australia (CommBank)",
+      "entity_type": "company",
+      "logo_url": "assets/logos/commonwealth-bank-of-australia-peoplesquad-logo.webp",
+      "career_url": "https://www.commbank.com.au/about-us/careers.html",
+      "apply": {
+        "direct_apply_url": null,
+        "open_date": "Applications open – March and July (recurring each year)",
+        "close_date": null,
+        "status": "unknown"
+      },
+      "tags": {
+        "streams": [
+          "Technology (Engineering, Cyber Security, Data Science & AI)",
+          "Advanced Analytics",
+          "Banking Products (including CommSec & Product Management)",
+          "Banking Relationship Management (Institutional, Business & IB&M)",
+          "Finance & Accounting",
+          "Procurement",
+          "Regional and Agribusiness Banking",
+          "Risk Management",
+          "Marketing and Corporate Affairs"
+        ],
+        "eligibility": [
+          "Australian or New Zealand citizen, or Australian permanent resident at the time of application. (This does not include bridging visas while awaiting permanent residency or subclass 820 visa holders.)"
+        ],
+        "industries": [
+          "Banking"
+        ]
+      },
+      "updated_at": "2026-03-05T14:59:14+00:00",
+      "confidence": "high"
+    },
+    {
+      "id": "telstra",
+      "name": "Telstra",
+      "entity_type": "company",
+      "logo_url": "assets/logos/telstra-peoplesquad-logo.webp",
+      "career_url": "https://www.telstra.com.au/careers",
+      "apply": {
+        "direct_apply_url": null,
+        "open_date": "March 2026",
+        "close_date": null,
+        "status": "unknown"
+      },
+      "tags": {
+        "streams": [
+          "Network Engineering",
+          "Software Engineering",
+          "Product and Service Design",
+          "Technology Consulting and Solutions",
+          "Corporate pathways (Finance and Business, HR)",
+          "Information and Cybersecurity"
+        ],
+        "eligibility": [
+          "You must be eligible to work in Australia. International students with a valid visa that enables them to work in Australia without any work restrictions are eligible to apply to technical pathways only (Software Engineering, Network Engineering, Information Cyber & Security, Technology Consulting & Solutions)."
+        ],
+        "industries": [
+          "Telecommunications"
+        ]
+      },
+      "updated_at": "2026-03-05T15:16:23+00:00",
+      "confidence": "high"
+    },
+    {
+      "id": "transurban",
+      "name": "Transurban",
+      "entity_type": "company",
+      "logo_url": "assets/logos/transurban-peoplesquad-logo.webp",
+      "career_url": "https://careers.transurban.com/",
+      "apply": {
+        "direct_apply_url": "https://careers.transurban.com/opportunities",
+        "open_date": null,
+        "close_date": null,
+        "status": "unknown"
+      },
+      "tags": {
+        "streams": [
+          "Engineering",
+          "Technology",
+          "Finance"
+        ],
+        "eligibility": [],
+        "industries": [
+          "Industrial"
+        ]
+      },
+      "updated_at": "2026-03-05T15:06:47+00:00",
+      "confidence": "high"
+    },
+    {
+      "id": "westpac",
+      "name": "Westpac (Westpac Banking Corporation)",
+      "entity_type": "company",
+      "logo_url": "assets/logos/westpac-peoplesquad-logo.webp",
+      "career_url": "https://www.westpac.com.au/about-westpac/careers/",
+      "apply": {
+        "direct_apply_url": "https://www.westpac.com.au/about-westpac/careers/",
+        "open_date": "Institutional Bank: 16 March 2026; Other graduate programs: July 2026 (exact day in July not stated)",
+        "close_date": "Graduate program applications: August 2026 (exact day in August not stated)",
+        "status": "unknown"
+      },
+      "tags": {
+        "streams": [
+          "Brand & Marketing",
+          "Business & Wealth",
+          "Consumer",
+          "Corporate & Institutional Banking (CIB)",
+          "Customer Service & Operations (CS&O)",
+          "Digital",
+          "Finance & Accounting",
+          "Financial Markets & Treasury (FM)",
+          "Global Transaction Services (GTS)",
+          "Group Treasury",
+          "Human Resources",
+          "Property, Procurement & Resilience (PPR)",
+          "Regional and Agribusiness",
+          "Risk",
+          "Technology – Rotational",
+          "Technology – Specialist",
+          "Transformation"
+        ],
+        "eligibility": [
+          "You must be an Australian or New Zealand citizen or an Australian Permanent Resident when you apply."
+        ],
+        "industries": [
+          "Banking & Financial Services"
+        ]
+      },
+      "updated_at": "2026-03-05T15:01:09+00:00",
       "confidence": "high"
     },
     {

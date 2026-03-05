@@ -1,0 +1,282 @@
+{
+  "schema_version": "1.0",
+  "id": "westpac",
+  "name": "Westpac (Westpac Banking Corporation)",
+  "entity_type": "company",
+  "classification": {
+    "industry_bucket": "Banking & Financial Services",
+    "is_government": false,
+    "government_level": ""
+  },
+  "official_domains": [
+    "westpac.com.au"
+  ],
+  "urls": {
+    "careers_url": "https://www.westpac.com.au/about-westpac/careers/",
+    "grad_program_url": "https://www.westpac.com.au/about-westpac/careers/graduate-program/",
+    "apply_url": "https://www.westpac.com.au/about-westpac/careers/",
+    "investor_relations_url": "https://www.westpac.com.au/about-westpac/investor-centre/"
+  },
+  "logo_url": "assets/logos/westpac-peoplesquad-logo.webp",
+  "branding": {
+    "logo_candidates": [],
+    "logo": {
+      "local_path": "assets/logos/westpac-peoplesquad-logo.webp",
+      "source_url": "https://www.westpac.com.au/etc/designs/wbc/clientlib-all/assets/brand/wbc/png/westpac-114x114.png",
+      "mime_type": "image/webp",
+      "filename": "westpac-peoplesquad-logo.webp",
+      "format": "webp",
+      "source_width": 114,
+      "source_height": 114,
+      "output_width": 512,
+      "output_height": 512,
+      "confidence": "medium",
+      "quality_score": 0.75,
+      "selection_reason": "fallback_icon",
+      "retrieved_at": "2026-03-05T15:01:09+00:00",
+      "notes": []
+    }
+  },
+  "program": {
+    "name": "Graduate & Summer Intern Programs",
+    "overview_url": "https://www.westpac.com.au/about-westpac/careers/graduate-program/",
+    "direct_apply_url": "https://www.westpac.com.au/about-westpac/careers/",
+    "open_date": "Institutional Bank: 16 March 2026; Other graduate programs: July 2026 (exact day in July not stated)",
+    "close_date": "Graduate program applications: August 2026 (exact day in August not stated)",
+    "streams": [
+      "Brand & Marketing",
+      "Business & Wealth",
+      "Consumer",
+      "Corporate & Institutional Banking (CIB)",
+      "Customer Service & Operations (CS&O)",
+      "Digital",
+      "Finance & Accounting",
+      "Financial Markets & Treasury (FM)",
+      "Global Transaction Services (GTS)",
+      "Group Treasury",
+      "Human Resources",
+      "Property, Procurement & Resilience (PPR)",
+      "Regional and Agribusiness",
+      "Risk",
+      "Technology – Rotational",
+      "Technology – Specialist",
+      "Transformation"
+    ],
+    "locations": [
+      "Sydney, NSW (most positions)",
+      "Victoria (VIC) (select programs)",
+      "Queensland (QLD) (select programs)",
+      "South Australia (SA) (select programs)",
+      "Western Australia (WA) (select programs)"
+    ],
+    "salary_text": "Each year Westpac Group reviews graduate and intern salaries against the marketplace to ensure a competitive salary. They also offer financial and lifestyle benefits, discounts and an employee share plan.",
+    "duration_text": null,
+    "rotation_text": "The program includes rotations: you will complete a rotational program to learn about different parts of your business area (different roles, teams and project experiences)."
+  },
+  "eligibility": {
+    "work_rights": "You must be an Australian or New Zealand citizen or an Australian Permanent Resident when you apply.",
+    "graduation_window": "You must be in your final year of study, or have completed an undergraduate or postgraduate degree no more than three years prior to application.",
+    "disciplines": [
+      "All degrees/disciplines are encouraged to apply; Westpac does not limit applications to commerce/finance degrees."
+    ],
+    "minimum_requirements": [
+      "Be in final year of a university degree OR have completed a degree no more than three years ago.",
+      "Be an Australian or New Zealand citizen OR an Australian Permanent Resident when applying.",
+      "Submit the online application form with resume and academic transcripts in PDF or Word format (application approx. 10 minutes).",
+      "Only one application may be submitted; you can nominate first, second and third business area preferences.",
+      "All applications must be submitted online (hard copy resumes or direct emails are not accepted)."
+    ]
+  },
+  "recruitment_process": {
+    "stages": [
+      {
+        "name": "Step 1 – Online application",
+        "details": "Complete the online application form (approx. 10 minutes) and upload your resume and academic transcripts in PDF or Word formats."
+      },
+      {
+        "name": "Step 2 – Online assessments (if shortlisted)",
+        "details": "If shortlisted, you will be invited to complete an online psychometric assessment (invitation expected within 48 hours of being shortlisted)."
+      },
+      {
+        "name": "Step 3 – Video interview",
+        "details": "A video interview to assess motivations and fit ('Uncommon Mind')."
+      },
+      {
+        "name": "Step 4 – Assessment centre",
+        "details": "You may be invited to an assessment centre where Westpac will evaluate candidates and you can learn more about the business. Most assessment centres are held virtually, though some may be in person."
+      }
+    ],
+    "tips": [
+      "Use Westpac's application toolkit and 'Tips and Tricks' guide (provided on the graduate program page) to prepare your resume and interview technique.",
+      "Apply early – late applications are not accepted after the listed closing date.",
+      "If shortlisted, complete psychometric assessments promptly (Westpac may expect completion within 48 hours of invitation).",
+      "Most assessment centres are virtual; check your invite for format and prepare accordingly.",
+      "If offered a role that requires relocation to Sydney, Westpac will assist to coordinate and provide financial assistance under their relocation policy."
+    ]
+  },
+  "commercial_context": {
+    "exec_themes": [
+      "UNITE transformation: simplify operations, make Westpac easier to bank with, and invest in customer-facing roles and technology to lift growth and efficiency.",
+      "Risk and governance remediation: completion of the CORE Integrated Plan and shift to embedding and sustaining improved risk culture and controls.",
+      "Focused growth in targeted businesses: prioritising business & institutional banking, regional banking and selected wealth/markets activities.",
+      "Portfolio simplification and cost discipline: selling non-core mortgage books and reducing run costs to streamline operations."
+    ],
+    "profit_engine": "Westpac’s profit is driven primarily by net interest income (lending margins on home and business loans and deposit funding spread), supplemented by non-interest income from fees, wealth and markets activities; management emphasises growing lending and deposit volumes while managing net interest margin and costs.",
+    "headwinds": "Competitive mortgage market and pressure on net interest margins, deposit competition and funding mix shifts, ongoing costs from the UNITE transformation and investments, and general macro/global uncertainty; legacy remediation risk has been materially reduced but continued focus on embedding improvements remains.",
+    "esg": "Sustainability strategy focuses on climate transition, housing affordability and regional prosperity; Westpac publishes annual Sustainability/Climate Reports, a Modern Slavery Statement and performance datasheets, and obtains independent assurance over key sustainability data.",
+    "recent_pivot": "Completed the CORE Integrated Plan (Promontory review) in May 2024 and has re-focused on embedding those risk improvements; launched the UNITE transformation program and enacted portfolio simplification moves in FY25 (including agreement to sell the RAMS mortgage portfolio) to streamline operations and reduce run costs."
+  },
+  "section_provenance": {
+    "program": {
+      "confidence": "high",
+      "notes": [
+        "Program name, streams, key dates (open/close months), start month, and rotational format are explicitly stated on the page.",
+        "Exact closing/opening days for 'Other graduate programs' in July and for the August close are not specified on the page; those are recorded as month-level statements."
+      ],
+      "sources": [
+        {
+          "type": "web_page",
+          "title": "Graduate & Summer Intern Programs | Westpac",
+          "url": "https://www.westpac.com.au/about-westpac/careers/graduate-program/",
+          "retrieved_at": "2026-03-05"
+        }
+      ]
+    },
+    "eligibility": {
+      "confidence": "high",
+      "notes": [
+        "Eligibility requirements (final year or degree completed within three years, and citizenship/PR requirements) are explicitly stated.",
+        "The page encourages applicants from all disciplines; it does not list required degrees."
+      ],
+      "sources": [
+        {
+          "type": "web_page",
+          "title": "Graduate & Summer Intern Programs | Westpac",
+          "url": "https://www.westpac.com.au/about-westpac/careers/graduate-program/",
+          "retrieved_at": "2026-03-05"
+        }
+      ]
+    },
+    "recruitment_process": {
+      "confidence": "high",
+      "notes": [
+        "Recruitment steps (online application, online assessments, video interview, assessment centre) and related logistics (assessment centres generally virtual, psychometric assessment timeframe) are explicitly listed on the page.",
+        "The page states outcomes/feedback will be provided in a timely manner but does not give exact turnaround times beyond the 48-hour psychometric invitation window when shortlisted."
+      ],
+      "sources": [
+        {
+          "type": "web_page",
+          "title": "Graduate & Summer Intern Programs | Westpac",
+          "url": "https://www.westpac.com.au/about-westpac/careers/graduate-program/",
+          "retrieved_at": "2026-03-05"
+        }
+      ]
+    },
+    "commercial_context": {
+      "confidence": "high",
+      "notes": [
+        "Exec themes, ESG and recent pivots are taken from Westpac’s Annual Reporting suite, media releases and sustainability pages — these items are explicitly described by the company.",
+        "Profit engine and headwinds are synthesized from financial tables and management commentary in Westpac’s investor presentations and results announcements; Westpac does not use a single label 'profit engine', so wording is a concise synthesis of reported drivers (NII, fees, wealth, markets).",
+        "Where the company describes activities (for example 'UNITE' and RAMS sale) the exact commercial impact is management guidance or factual transaction reporting; future outcomes are subject to execution risk."
+      ],
+      "sources": [
+        {
+          "type": "report_page",
+          "title": "2025 annual reporting suite",
+          "url": "https://www.westpac.com.au/about-westpac/investor-centre/annual-report/",
+          "retrieved_at": "2026-03-05"
+        },
+        {
+          "type": "presentation",
+          "title": "2025 Full Year Financial Results Presentation and Investor Discussion Pack (PDF)",
+          "url": "https://www.westpac.com.au/content/dam/public/wbc/documents/pdf/aw/ic/wbc-full-year-presentation-and-IDP-2025.pdf",
+          "retrieved_at": "2026-03-05"
+        },
+        {
+          "type": "presentation",
+          "title": "2025 Interim Results Presentation & Investor Discussion Pack (PDF)",
+          "url": "https://www.westpac.com.au/content/dam/public/wbc/documents/pdf/aw/ic/wbc-1H25-presentation-IDP-2025.pdf",
+          "retrieved_at": "2026-03-05"
+        },
+        {
+          "type": "media_release",
+          "title": "Westpac completes CORE Integrated Plan (6 May 2024)",
+          "url": "https://www.westpac.com.au/about-westpac/media/media-releases/2024/6-May/",
+          "retrieved_at": "2026-03-05"
+        },
+        {
+          "type": "news_article",
+          "title": "Westpac CEO hands down first full year result, says Australia’s economy in a good place but “challenges remain”",
+          "url": "https://www.westpac.com.au/news/making-news/2025/11/westpac-ceo-hands-down-first-full-year-result-says-aus-economy-in-a-good-place",
+          "retrieved_at": "2026-03-05"
+        },
+        {
+          "type": "webpage",
+          "title": "Sustainability – Westpac",
+          "url": "https://www.westpac.com.au/about-westpac/sustainability/",
+          "retrieved_at": "2026-03-05"
+        },
+        {
+          "type": "webpage",
+          "title": "Performance reports (Sustainability and Climate reports)",
+          "url": "https://www.westpac.com.au/about-westpac/sustainability/performance-reports/",
+          "retrieved_at": "2026-03-05"
+        }
+      ]
+    }
+  },
+  "provenance": {
+    "updated_at": "2026-03-05T15:01:09+00:00",
+    "sources": [
+      {
+        "type": "web_page",
+        "title": "Graduate & Summer Intern Programs | Westpac",
+        "url": "https://www.westpac.com.au/about-westpac/careers/graduate-program/",
+        "retrieved_at": "2026-03-05"
+      },
+      {
+        "type": "report_page",
+        "title": "2025 annual reporting suite",
+        "url": "https://www.westpac.com.au/about-westpac/investor-centre/annual-report/",
+        "retrieved_at": "2026-03-05"
+      },
+      {
+        "type": "presentation",
+        "title": "2025 Full Year Financial Results Presentation and Investor Discussion Pack (PDF)",
+        "url": "https://www.westpac.com.au/content/dam/public/wbc/documents/pdf/aw/ic/wbc-full-year-presentation-and-IDP-2025.pdf",
+        "retrieved_at": "2026-03-05"
+      },
+      {
+        "type": "presentation",
+        "title": "2025 Interim Results Presentation & Investor Discussion Pack (PDF)",
+        "url": "https://www.westpac.com.au/content/dam/public/wbc/documents/pdf/aw/ic/wbc-1H25-presentation-IDP-2025.pdf",
+        "retrieved_at": "2026-03-05"
+      },
+      {
+        "type": "media_release",
+        "title": "Westpac completes CORE Integrated Plan (6 May 2024)",
+        "url": "https://www.westpac.com.au/about-westpac/media/media-releases/2024/6-May/",
+        "retrieved_at": "2026-03-05"
+      },
+      {
+        "type": "news_article",
+        "title": "Westpac CEO hands down first full year result, says Australia’s economy in a good place but “challenges remain”",
+        "url": "https://www.westpac.com.au/news/making-news/2025/11/westpac-ceo-hands-down-first-full-year-result-says-aus-economy-in-a-good-place",
+        "retrieved_at": "2026-03-05"
+      },
+      {
+        "type": "webpage",
+        "title": "Sustainability – Westpac",
+        "url": "https://www.westpac.com.au/about-westpac/sustainability/",
+        "retrieved_at": "2026-03-05"
+      },
+      {
+        "type": "webpage",
+        "title": "Performance reports (Sustainability and Climate reports)",
+        "url": "https://www.westpac.com.au/about-westpac/sustainability/performance-reports/",
+        "retrieved_at": "2026-03-05"
+      }
+    ],
+    "notes": []
+  }
+}

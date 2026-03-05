@@ -9,10 +9,10 @@ class OpenAISettings:
     model: str = "gpt-5.2-2025-12-11"
     search_context_size: str = "medium"
     external_web_access: bool = True
-    max_output_tokens: int = 2400
-    max_tool_calls: int = 8
-    request_timeout_seconds: int = 120
-    retries: int = 3
+    max_output_tokens: int = 10000
+    max_tool_calls: int = 20
+    request_timeout_seconds: int = 3000
+    retries: int = 1
 
 
 def require_api_key() -> str:
