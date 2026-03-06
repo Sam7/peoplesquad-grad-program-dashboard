@@ -1,4 +1,4 @@
-import { access, cp, mkdir, readFile, readdir, writeFile } from "node:fs/promises";
+import { access, cp, mkdir, readFile, readdir, rm, writeFile } from "node:fs/promises";
 import { dirname, join, resolve } from "node:path";
 
 function nowIso() {
@@ -24,9 +24,9 @@ async function pathExists(path) {
   }
 }
 
-async function copyIfExists(sourcePath, targetPath) {
+async function copyIfExists(sourcePath, targetPath, { overwrite = false } = {}) {
   await mkdir(dirname(targetPath), { recursive: true });
-  await cp(sourcePath, targetPath, { recursive: true, force: false, errorOnExist: false });
+  await cp(sourcePath, targetPath, { recursive: true, force: overwrite, errorOnExist: false });
 }
 
 function normalizeIndexItem(item) {
@@ -40,6 +40,10 @@ function normalizeIndexItem(item) {
       direct_apply_url: item.apply?.direct_apply_url ?? null,
       open_date: item.apply?.open_date ?? null,
       close_date: item.apply?.close_date ?? null,
+      open_date_raw: item.apply?.open_date_raw ?? null,
+      close_date_raw: item.apply?.close_date_raw ?? null,
+      open_date_precision: item.apply?.open_date_precision ?? null,
+      close_date_precision: item.apply?.close_date_precision ?? null,
       status: item.apply?.status ?? "unknown"
     },
     tags: {
@@ -52,17 +56,23 @@ function normalizeIndexItem(item) {
   };
 }
 
-export async function syncScraperData({ sourceRoots, outDir }) {
+export async function syncScraperData({ sourceRoots, outDir, hardRefresh = false }) {
   const resolvedOutDir = resolve(outDir);
   const companiesOutDir = join(resolvedOutDir, "companies");
   const logosOutDir = join(resolvedOutDir, "assets", "logos");
   const indexOutPath = join(resolvedOutDir, "index.json");
 
+  if (hardRefresh) {
+    await rm(companiesOutDir, { recursive: true, force: true });
+    await rm(logosOutDir, { recursive: true, force: true });
+    await rm(indexOutPath, { force: true });
+  }
+
   await mkdir(companiesOutDir, { recursive: true });
   await mkdir(logosOutDir, { recursive: true });
 
   const mergedCompaniesById = new Map();
-  if (await pathExists(indexOutPath)) {
+  if (!hardRefresh && (await pathExists(indexOutPath))) {
     const existingIndexPayload = await readJson(indexOutPath);
     const existingCompanies = existingIndexPayload.companies ?? [];
     for (const entry of existingCompanies) {
@@ -86,11 +96,15 @@ export async function syncScraperData({ sourceRoots, outDir }) {
       }
       const companySourcePath = join(resolvedRoot, "companies", `${id}.json`);
       const companyOutPath = join(companiesOutDir, `${id}.json`);
-      const alreadyExistsInPublic = await pathExists(companyOutPath);
-
-      if (!alreadyExistsInPublic) {
+      if (hardRefresh) {
         const detail = await readJson(companySourcePath);
         await writeJson(companyOutPath, detail);
+      } else {
+        const alreadyExistsInPublic = await pathExists(companyOutPath);
+        if (!alreadyExistsInPublic) {
+          const detail = await readJson(companySourcePath);
+          await writeJson(companyOutPath, detail);
+        }
       }
 
       if (!mergedCompaniesById.has(id)) {
@@ -102,7 +116,9 @@ export async function syncScraperData({ sourceRoots, outDir }) {
     try {
       const logos = await readdir(logosSourceDir);
       for (const logoFile of logos) {
-        await copyIfExists(join(logosSourceDir, logoFile), join(logosOutDir, logoFile));
+        await copyIfExists(join(logosSourceDir, logoFile), join(logosOutDir, logoFile), {
+          overwrite: hardRefresh
+        });
       }
     } catch {
       // Some sources do not include logos; this is expected.

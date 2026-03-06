@@ -55,7 +55,7 @@ npm run dev
 3. Open the local URL printed by Vite (usually `http://localhost:5173`).
 
 Notes:
-- `npm run build` automatically runs `prebuild` first, which syncs data into `public/data`.
+- `npm run build` does not run data sync automatically. Run the sync script first when scraper data changes.
 - If you are running e2e tests for the first time, install browser binaries:
 
 ```bash
@@ -96,15 +96,30 @@ The frontend expects:
 
 ### How data gets into `public/data`
 
-On `npm run build`, the following script runs automatically:
+Run the sync script manually before build:
 
-- `scripts/sync-scraper-data.mjs`
+```bash
+node scripts/sync-scraper-data.mjs data-scraper/data/runs/top-56 --out public/data
+```
 
-It currently merges data from these scraper outputs:
+For a full replacement of existing `public/data` company payloads/logos (hard refresh):
 
-- `data-scraper/data/e2e-three/coles`
-- `data-scraper/data/e2e-three/bhp`
-- `data-scraper/data/e2e-three/xero`
+```bash
+node scripts/sync-scraper-data.mjs data-scraper/data/runs/top-56 --out public/data --hard-refresh
+```
+
+The script only manages:
+- `index.json`
+- `companies/*`
+- `assets/logos/*`
+
+It does not touch unrelated files in the output folder.
+
+Default sources (when no source args are supplied):
+
+- `data-scraper/data/archive/experiments/e2e-three/coles`
+- `data-scraper/data/archive/experiments/e2e-three/bhp`
+- `data-scraper/data/archive/experiments/e2e-three/xero`
 
 If you change scraper output locations, update `scripts/sync-scraper-data.mjs`.
 
@@ -113,7 +128,7 @@ If you change scraper output locations, update `scripts/sync-scraper-data.mjs`.
 - `npm run dev`: Start local dev server
 - `npm run test`: Run unit/integration tests (Vitest)
 - `npm run test:e2e`: Run Playwright end-to-end tests
-- `npm run build`: Sync data + type-check + production build
+- `npm run build`: Type-check + production build
 - `npm run preview`: Serve production build locally
 
 ## Testing

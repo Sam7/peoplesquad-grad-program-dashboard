@@ -1,0 +1,327 @@
+{
+  "schema_version": "1.0",
+  "id": "woodside-energy",
+  "name": "Woodside Energy",
+  "entity_type": "company",
+  "classification": {
+    "industry_bucket": "Energy - Oil & Gas (Upstream/LNG)",
+    "is_government": false,
+    "government_level": ""
+  },
+  "official_domains": [
+    "woodside.com",
+    "careers.woodside.com.au"
+  ],
+  "urls": {
+    "careers_url": "https://www.woodside.com/careers",
+    "grad_program_url": "https://www.woodside.com/careers/graduates-and-students",
+    "apply_url": "https://careers.woodside.com.au/",
+    "investor_relations_url": "https://www.woodside.com/investors"
+  },
+  "logo_url": "assets/logos/woodside-energy-peoplesquad-logo.webp",
+  "branding": {
+    "logo_candidates": [],
+    "logo": {
+      "local_path": "assets/logos/woodside-energy-peoplesquad-logo.webp",
+      "source_url": "https://www.woodside.com/assets/static/images/icons/safari-pinned-tab.svg",
+      "mime_type": "image/webp",
+      "filename": "woodside-energy-peoplesquad-logo.webp",
+      "format": "webp",
+      "source_width": 1365,
+      "source_height": 1365,
+      "output_width": 512,
+      "output_height": 512,
+      "confidence": "medium",
+      "quality_score": 0.25,
+      "selection_reason": "fallback_icon",
+      "retrieved_at": "2026-03-06T08:53:23+00:00",
+      "notes": []
+    }
+  },
+  "program": {
+    "name": "Graduates and students (Graduate Development Program, Summer Vacation Program, Summer Internship Program, Better Future Pathways, and Professional Development Program)",
+    "overview_url": "https://www.woodside.com/careers/graduates-and-students",
+    "direct_apply_url": "https://careers.woodside.com.au/",
+    "open_date": "2026-08-01",
+    "close_date": null,
+    "streams": [
+      "Summer Vacation Program (Australia)",
+      "Indigenous Summer Vacation Program (Australia)",
+      "Better Future Pathways (Australia)",
+      "Graduate Development Program (Australia and USA pathways described on the same page)",
+      "Summer Internship Program (USA)",
+      "Professional Development Program (Timor-Leste)"
+    ],
+    "locations": [
+      "Australia",
+      "United States of America",
+      "Timor-Leste"
+    ],
+    "salary_text": "The Summer Vacation Program is described as a paid work experience opportunity, with accommodation and return travel provided to applicants residing outside of Perth. The Summer Internship Program is described as a paid work experience opportunity, with accommodation and return travel provided if applicable.",
+    "duration_text": "Summer Vacation Program: 12 weeks. Indigenous Summer Vacation Program: full-time for 6–12 weeks. Summer Internship Program (USA): 12 weeks. Graduate Development Program: three years of structured development.",
+    "rotation_text": "Woodside states that the Graduate Development Program includes carefully designed job rotations. Woodside also states graduates can broaden their knowledge of the business through rotations, and that all graduates will attend a site visit in the first year of the program."
+  },
+  "eligibility": {
+    "work_rights": "Australia pathways: Applicants must be an Australian or New Zealand citizen, an Australian permanent resident, or (for some pathways) an international student studying and residing in Australia with unrestricted Australian working rights. USA pathways: Applicants must be authorized to work in the United States and must not require current or future sponsorship for employment visa status (for example, F-1). Timor-Leste pathway: Applicants must be a Timor-Leste national.",
+    "graduation_window": "Graduate Development Program: Students in their final year of university or up to two years after university graduation. USA Summer Internship Program: Rising junior or senior with an expected graduation date of Spring 2027 through Spring 2028.",
+    "disciplines": [],
+    "minimum_requirements": [
+      "Australian Summer Vacation Program: You must be studying an Undergraduate, Honours, Post Graduate, Masters or PHD, and be in your penultimate (second to last) or final year of university.",
+      "Australian Summer Vacation Program: You must be an Australian or New Zealand citizen or an Australian permanent resident, or be an international student studying and residing in Australia with unrestricted Australian working rights over the summer vacation period.",
+      "Better Future Pathways (Australia): You must be currently studying at an Australian university in any year level besides penultimate or final year, and meet the stated citizenship/residency/working-rights conditions.",
+      "Graduate Development Program (Australia): You must be an Australian or New Zealand citizen or an Australian permanent resident, or an international student currently studying in Australia.",
+      "Graduate Development Program (Australia): You must have achieved a Weighted Average Mark (WAM) of 65 or above in your most recent studies.",
+      "Summer Internship Program (USA): You must be a rising junior or senior with an expected graduation date of Spring 2027 through Spring 2028.",
+      "Summer Internship Program (USA): You must be enrolled in an accredited college or university for the full duration of the Summer 2026 internship.",
+      "Summer Internship Program (USA): You must have a minimum cumulative GPA of 3.30.",
+      "Summer Internship Program (USA): You must be available for a minimum of twelve (12) consecutive weeks during Summer 2026.",
+      "Summer Internship Program (USA): You must be authorized to work in the United States and must not require current or future sponsorship for employment visa status.",
+      "Graduate Development Program (USA): You must be authorized to work in the United States and must not require current or future sponsorship for employment visa status.",
+      "Graduate Development Program (USA): You must have a minimum cumulative GPA of 3.30.",
+      "Professional Development Program (Timor-Leste): You must be a Timor-Leste national.",
+      "Professional Development Program (Timor-Leste): You must be enrolled full-time in an undergraduate or postgraduate degree course at a university.",
+      "Professional Development Program (Timor-Leste): You must have demonstrated workplace English language competency."
+    ]
+  },
+  "recruitment_process": {
+    "stages": [
+      {
+        "name": "Find your business area (degree matcher)",
+        "details": "Woodside suggests using its degree matcher to find the business area that best suits you."
+      },
+      {
+        "name": "Complete the pathways quiz",
+        "details": "Woodside states the pathways quiz shows what you are eligible to apply for."
+      },
+      {
+        "name": "Online application",
+        "details": "Woodside states the quiz provides a link to apply for the role best suited to you."
+      },
+      {
+        "name": "Online interview assessment",
+        "details": "Woodside states you may be invited to an online interview assessment, and a link will be emailed to you."
+      },
+      {
+        "name": "Formal interview",
+        "details": "Woodside states that if successful, you will be invited to an in-person or video interview."
+      },
+      {
+        "name": "Due diligence checks",
+        "details": "Woodside states due diligence may include a national criminal record check, sanctions check, academic record/qualification check, and reference checking."
+      },
+      {
+        "name": "Offer",
+        "details": "Woodside states that if you are successful, a member of the Talent Acquisition Team will contact you with a formal offer."
+      }
+    ],
+    "tips": [
+      "Use Woodside’s degree matcher to identify the business area that best fits your degree.",
+      "Complete the pathways quiz to confirm which roles you are eligible to apply for.",
+      "Be ready for checks in the due diligence stage, which may include criminal record, sanctions, academic records/qualifications, and references."
+    ]
+  },
+  "commercial_context": {
+    "exec_themes": [
+      "Grow LNG production and sales volumes by progressing major projects (e.g., Scarborough, Trion, Louisiana LNG) while keeping strong operational reliability.",
+      "Maintain a “disciplined” capital allocation approach (only sanctioning projects that meet return and payback hurdles) and continue returning cash to shareholders via dividends.",
+      "Position Woodside as a larger, more diversified global LNG supplier (“scale, diversity, and resilience”) and deepen customer/market relationships in high-demand energy markets.",
+      "Invest alongside core oil and gas in “new energy” and lower‑carbon services (e.g., ammonia/hydrogen and carbon capture solutions), with a stated 2030 investment target.",
+      "Run the business with a strong focus on safety and process safety performance as a core operating priority.",
+      "Manage climate-related expectations with defined Scope 1 and 2 reduction targets, methane management, and use of offsets/carbon credits as part of the plan."
+    ],
+    "profit_engine": "Woodside’s profit engine is producing and selling oil and gas (especially LNG) from a global portfolio, aiming for high reliability and volumes, and expanding cash flow through large growth projects that meet its return targets, while also returning value to shareholders (dividends).",
+    "headwinds": "Key headwinds described in Woodside materials include: (1) the cost and technical difficulty of large-scale emissions abatement retrofits (e.g., electrification, hydrogen fuelling, CCUS) which can be expensive to implement on existing assets; (2) climate and Scope 3 expectations from investors and stakeholders, which Woodside addresses via portfolio resilience assessments and “new energy”/lower‑carbon offerings rather than a traditional Scope 3 reduction target; and (3) safety and operational risk exposure, including process safety events and contractor/workforce safety risks during major project and operations activity.",
+    "esg": "Woodside frames ESG primarily around: safety (workforce health and safety and process safety), climate (net equity Scope 1 and 2 emissions reduction targets of 15% by 2025 and 30% by 2030, with an aspiration of net zero by 2050 or sooner; methane measurement/management; and use of offsets/carbon credits), and investment in new energy/lower‑carbon services (US$5bn by 2030; and FIDs by 2030 for projects with 5 Mtpa CO2-e abatement capacity).",
+    "recent_pivot": "Recent emphasis appears to be an accelerated LNG growth narrative alongside continued “new energy” investment: Woodside approved Louisiana LNG in April 2025 (positioning the company as a larger global LNG supplier, with first LNG targeted for 2029) and highlighted at its 2025 Capital Markets Day expectations to materially lift LNG production and operating cash flow by the early 2030s, while continuing to develop new energy/lower‑carbon offerings (e.g., Beaumont ammonia) under its 2030 targets."
+  },
+  "section_provenance": {
+    "program": {
+      "confidence": "high",
+      "notes": [
+        "The page states that Australian Summer Vacation and Graduate roles are opening on 1 August 2026, but it does not state a closing date.",
+        "The page lists locations at a country level (Australia, United States of America, Timor-Leste) but does not list specific cities.",
+        "The page describes program length and that the internship/vacation opportunities are paid, but it does not provide salary figures."
+      ],
+      "sources": [
+        {
+          "type": "web",
+          "title": "Woodside Graduate Programs & Summer Internships | Apply Now",
+          "url": "https://www.woodside.com/careers/graduates-and-students",
+          "retrieved_at": null
+        }
+      ]
+    },
+    "eligibility": {
+      "confidence": "high",
+      "notes": [
+        "Eligibility criteria differ by pathway (Australia, USA, Timor-Leste).",
+        "The page provides GPA/WAM thresholds for some pathways (USA GPA 3.30; Australia WAM 65), but it does not list discipline requirements on this page."
+      ],
+      "sources": [
+        {
+          "type": "web",
+          "title": "Woodside Graduate Programs & Summer Internships | Apply Now",
+          "url": "https://www.woodside.com/careers/graduates-and-students",
+          "retrieved_at": null
+        }
+      ]
+    },
+    "recruitment_process": {
+      "confidence": "high",
+      "notes": [
+        "The recruitment steps are described as the 'Australian pathway process'. The same page also describes USA and Timor-Leste pathways, but only the Australian pathway process is shown as a numbered step-by-step process."
+      ],
+      "sources": [
+        {
+          "type": "web",
+          "title": "Woodside Graduate Programs & Summer Internships | Apply Now",
+          "url": "https://www.woodside.com/careers/graduates-and-students",
+          "retrieved_at": null
+        }
+      ]
+    },
+    "commercial_context": {
+      "confidence": "medium",
+      "notes": [
+        "Most themes and the LNG growth/pivot items are stated clearly on Woodside investor/news pages (e.g., Louisiana LNG approval, Capital Markets Day growth narrative, and the 'Why invest' business model framing).",
+        "‘Profit engine’ and ‘headwinds’ are synthesized summaries from multiple official pages (operations/results pages and climate pages). Woodside does not present a single explicit ‘profit engine’ or ‘headwinds’ section in the snippets reviewed, so these are plain-English rollups of repeated messaging.",
+        "ESG items are strongly supported by Woodside’s climate and sustainability pages (targets, methane, offsets, and new energy/lower-carbon investment targets), plus safety performance pages.",
+        "Dates included for clarity: Louisiana LNG approval decision announced 30 April 2025 (decision 29 April 2025); Capital Markets Day story posted 14 Nov 2025; 2025 full-year results materials released 24 Feb 2026 (per investor events page)."
+      ],
+      "sources": [
+        {
+          "type": "web",
+          "title": "Why Invest with Woodside",
+          "url": "https://www.woodside.com/investors/why-invest-with-woodside",
+          "retrieved_at": null
+        },
+        {
+          "type": "web",
+          "title": "Woodside approves Louisiana LNG development",
+          "url": "https://www.woodside.com/media-centre/news-stories/story/woodside-approves-louisiana-lng-development",
+          "retrieved_at": null
+        },
+        {
+          "type": "web",
+          "title": "Growth projects fuel Woodside’s next chapter",
+          "url": "https://www.woodside.com/media-centre/news-stories/story/growth-projects-fuel-woodside-s-next-chapter",
+          "retrieved_at": null
+        },
+        {
+          "type": "web",
+          "title": "Scope 1 and 2 GHG emissions",
+          "url": "https://www.woodside.com/sustainability/environment/climate/Scope-1-and-2-ghg-emissions",
+          "retrieved_at": null
+        },
+        {
+          "type": "web",
+          "title": "Climate (climate change)",
+          "url": "https://www.woodside.com/sustainability/climate-change",
+          "retrieved_at": null
+        },
+        {
+          "type": "web",
+          "title": "Scope 3 GHG emissions",
+          "url": "https://www.woodside.com/sustainability/environment/climate/scope-3-ghg-emissions",
+          "retrieved_at": null
+        },
+        {
+          "type": "web",
+          "title": "Scope 3 emissions targets (fact checker)",
+          "url": "https://www.woodside.com/media-centre/woodside-energy-fact-checker/scope-3-emissions-targets",
+          "retrieved_at": null
+        },
+        {
+          "type": "web",
+          "title": "Health, safety and wellbeing (2025 performance page)",
+          "url": "https://www.woodside.com/sustainability/health-and-safety",
+          "retrieved_at": null
+        },
+        {
+          "type": "web",
+          "title": "2025 full-year results (investor events page)",
+          "url": "https://www.woodside.com/investors/shareholder-information/2025-full-year-results",
+          "retrieved_at": null
+        },
+        {
+          "type": "web",
+          "title": "Woodside Energy 2025 Climate and Sustainability Summary (PDF)",
+          "url": "https://www.woodside.com/docs/default-source/investor-documents/major-reports-%28static-pdfs%29/2025-annual-report/2025-climate-and-sustainability-summary.pdf?sfvrsn=a814c50_3",
+          "retrieved_at": null
+        }
+      ]
+    }
+  },
+  "provenance": {
+    "updated_at": "2026-03-06T08:53:23+00:00",
+    "sources": [
+      {
+        "type": "web",
+        "title": "Woodside Graduate Programs & Summer Internships | Apply Now",
+        "url": "https://www.woodside.com/careers/graduates-and-students",
+        "retrieved_at": null
+      },
+      {
+        "type": "web",
+        "title": "Why Invest with Woodside",
+        "url": "https://www.woodside.com/investors/why-invest-with-woodside",
+        "retrieved_at": null
+      },
+      {
+        "type": "web",
+        "title": "Woodside approves Louisiana LNG development",
+        "url": "https://www.woodside.com/media-centre/news-stories/story/woodside-approves-louisiana-lng-development",
+        "retrieved_at": null
+      },
+      {
+        "type": "web",
+        "title": "Growth projects fuel Woodside’s next chapter",
+        "url": "https://www.woodside.com/media-centre/news-stories/story/growth-projects-fuel-woodside-s-next-chapter",
+        "retrieved_at": null
+      },
+      {
+        "type": "web",
+        "title": "Scope 1 and 2 GHG emissions",
+        "url": "https://www.woodside.com/sustainability/environment/climate/Scope-1-and-2-ghg-emissions",
+        "retrieved_at": null
+      },
+      {
+        "type": "web",
+        "title": "Climate (climate change)",
+        "url": "https://www.woodside.com/sustainability/climate-change",
+        "retrieved_at": null
+      },
+      {
+        "type": "web",
+        "title": "Scope 3 GHG emissions",
+        "url": "https://www.woodside.com/sustainability/environment/climate/scope-3-ghg-emissions",
+        "retrieved_at": null
+      },
+      {
+        "type": "web",
+        "title": "Scope 3 emissions targets (fact checker)",
+        "url": "https://www.woodside.com/media-centre/woodside-energy-fact-checker/scope-3-emissions-targets",
+        "retrieved_at": null
+      },
+      {
+        "type": "web",
+        "title": "Health, safety and wellbeing (2025 performance page)",
+        "url": "https://www.woodside.com/sustainability/health-and-safety",
+        "retrieved_at": null
+      },
+      {
+        "type": "web",
+        "title": "2025 full-year results (investor events page)",
+        "url": "https://www.woodside.com/investors/shareholder-information/2025-full-year-results",
+        "retrieved_at": null
+      },
+      {
+        "type": "web",
+        "title": "Woodside Energy 2025 Climate and Sustainability Summary (PDF)",
+        "url": "https://www.woodside.com/docs/default-source/investor-documents/major-reports-%28static-pdfs%29/2025-annual-report/2025-climate-and-sustainability-summary.pdf?sfvrsn=a814c50_3",
+        "retrieved_at": null
+      }
+    ],
+    "notes": []
+  }
+}

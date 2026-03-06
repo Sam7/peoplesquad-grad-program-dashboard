@@ -14,13 +14,23 @@
         "direct_apply_url": {"type": ["string", "null"]},
         "open_date": {"type": ["string", "null"]},
         "close_date": {"type": ["string", "null"]},
+        "open_date_raw": {"type": ["string", "null"]},
+        "close_date_raw": {"type": ["string", "null"]},
+        "open_date_precision": {
+          "type": ["string", "null"],
+          "enum": ["exact_day", "month_year_normalized", "month_assumed_current_year", "missing", "unparseable", null]
+        },
+        "close_date_precision": {
+          "type": ["string", "null"],
+          "enum": ["exact_day", "month_year_normalized", "month_assumed_current_year", "missing", "unparseable", null]
+        },
         "streams": {"type": "array", "items": {"type": "string"}},
         "locations": {"type": "array", "items": {"type": "string"}},
         "salary_text": {"type": ["string", "null"]},
         "duration_text": {"type": ["string", "null"]},
         "rotation_text": {"type": ["string", "null"]}
       },
-      "required": ["name", "overview_url", "direct_apply_url", "open_date", "close_date", "streams", "locations", "salary_text", "duration_text", "rotation_text"]
+      "required": ["name", "overview_url", "direct_apply_url", "open_date", "close_date", "open_date_raw", "close_date_raw", "open_date_precision", "close_date_precision", "streams", "locations", "salary_text", "duration_text", "rotation_text"]
     },
     "eligibility": {
       "type": "object",

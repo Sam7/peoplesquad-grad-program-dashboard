@@ -1,0 +1,200 @@
+{
+  "schema_version": "1.0",
+  "id": "goodman-group",
+  "name": "Goodman Group",
+  "entity_type": "company",
+  "classification": {
+    "industry_bucket": "Real Estate (Industrial/Logistics Property & Funds Management)",
+    "is_government": false,
+    "government_level": "none"
+  },
+  "official_domains": [
+    "goodman.com",
+    "au.goodman.com",
+    "us.goodman.com",
+    "nz.goodman.com",
+    "goodmangroup.com.au"
+  ],
+  "urls": {
+    "careers_url": "https://goodmangroup.com.au/careers/",
+    "grad_program_url": null,
+    "apply_url": null,
+    "investor_relations_url": "https://www.goodman.com/en/investor-centre"
+  },
+  "logo_url": "assets/logos/goodman-group-peoplesquad-logo.webp",
+  "branding": {
+    "logo_candidates": [],
+    "logo": {
+      "local_path": "assets/logos/goodman-group-peoplesquad-logo.webp",
+      "source_url": "https://www.goodman.com/favicon/apple-touch-icon.png?v=10112025",
+      "mime_type": "image/webp",
+      "filename": "goodman-group-peoplesquad-logo.webp",
+      "format": "webp",
+      "source_width": 180,
+      "source_height": 180,
+      "output_width": 512,
+      "output_height": 512,
+      "confidence": "medium",
+      "quality_score": 0.1,
+      "selection_reason": "fallback_icon",
+      "retrieved_at": "2026-03-06T08:53:03+00:00",
+      "notes": []
+    }
+  },
+  "program": {
+    "name": null,
+    "overview_url": null,
+    "direct_apply_url": null,
+    "open_date": null,
+    "close_date": null,
+    "streams": [],
+    "locations": [],
+    "salary_text": null,
+    "duration_text": null,
+    "rotation_text": null
+  },
+  "eligibility": {
+    "work_rights": null,
+    "graduation_window": null,
+    "disciplines": [],
+    "minimum_requirements": []
+  },
+  "recruitment_process": {
+    "stages": [],
+    "tips": []
+  },
+  "commercial_context": {
+    "exec_themes": [
+      "Positioning Goodman to provide “essential infrastructure for the digital economy” by owning, developing and managing logistics and data centre assets in major cities.",
+      "Scaling the data centre platform by expanding the global “power bank”, progressing planning, and advancing delivery of large, higher-value data centre developments.",
+      "Using an integrated “Own, Develop, Manage” model to stay close to customer needs, refine the portfolio, and translate location/building specifications and service into investment returns.",
+      "Maintaining prudent capital management (e.g., low gearing and liquidity) to retain flexibility for investment and development—especially as data centre projects require more capital and take longer to deliver.",
+      "Embedding sustainability and innovation into development and operations, with quantified climate-related targets and Board oversight through incentive structures."
+    ],
+    "profit_engine": "Goodman’s profit engine is its integrated “Own, Develop, Manage” model: it owns and operates industrial/logistics and data centre properties in supply-constrained locations, develops new projects (including major data centres) for customers and partners, and earns management and related income from managing investment Partnerships (AUM-linked base fees plus performance/transaction-related income).",
+    "headwinds": "Goodman flags that its development profile is shifting toward larger, higher-value data centre projects, which increases capital intensity and lengthens the average development period (noted as increasing to around 25 months). It also notes exposure to market risks such as foreign exchange movements across its international operations.",
+    "esg": "Goodman reports quantified climate-related targets and progress in its FY24 reporting, including an objective of carbon neutral operations by end of FY25 and longer-term Scope 1 and 2 emissions reduction goals and renewable electricity targets. It also links sustainability performance to executive incentives (with sustainability targets reviewed annually and tested over the LTIP period).",
+    "recent_pivot": "Goodman describes a growing emphasis on data centres as a key supplement to its logistics portfolio, noting significant progress on its data centre strategy in FY24 and that data centres accounted for a large share of work in progress (reported as 40% at 30 June 2024)."
+  },
+  "section_provenance": {
+    "program": {
+      "confidence": "low",
+      "notes": [
+        "Goodman states that it has graduate programs in Australia, Mainland China, and Hong Kong SAR, but the public pages searched did not provide a named graduate program page with dates, streams, locations, duration, salary, or rotations.",
+        "The careers page located on au.goodman.com is a general careers page and does not describe a graduate program structure or application details."
+      ],
+      "sources": [
+        {
+          "type": "web",
+          "title": "People, culture and community | Goodman Sustainability Report 2023",
+          "url": "https://2023sustainabilityreport.goodman.com/people-culture-and-community/",
+          "retrieved_at": null
+        },
+        {
+          "type": "web",
+          "title": "Goodman Group 2023 Sustainability Report (PDF)",
+          "url": "https://2023sustainabilityreport.goodman.com/wp-content/uploads/2023/09/Goodman-Group-2023-Sustainability-Report_Original.pdf",
+          "retrieved_at": null
+        },
+        {
+          "type": "web",
+          "title": "Ambition needs space: Jobs in Property | Goodman Australia",
+          "url": "https://au.goodman.com/about-goodman/careers",
+          "retrieved_at": null
+        }
+      ]
+    },
+    "eligibility": {
+      "confidence": "low",
+      "notes": [
+        "No eligibility requirements (work rights, graduation window, disciplines, or minimum requirements) for a Goodman graduate program were found on the allowed official domains in the pages searched."
+      ],
+      "sources": [
+        {
+          "type": "web",
+          "title": "People, culture and community | Goodman Sustainability Report 2023",
+          "url": "https://2023sustainabilityreport.goodman.com/people-culture-and-community/",
+          "retrieved_at": null
+        },
+        {
+          "type": "web",
+          "title": "Ambition needs space: Jobs in Property | Goodman Australia",
+          "url": "https://au.goodman.com/about-goodman/careers",
+          "retrieved_at": null
+        }
+      ]
+    },
+    "recruitment_process": {
+      "confidence": "low",
+      "notes": [
+        "No graduate recruitment steps (such as assessments, interviews, or application stages) were found on the allowed official domains in the pages searched."
+      ],
+      "sources": [
+        {
+          "type": "web",
+          "title": "Ambition needs space: Jobs in Property | Goodman Australia",
+          "url": "https://au.goodman.com/about-goodman/careers",
+          "retrieved_at": null
+        }
+      ]
+    },
+    "commercial_context": {
+      "confidence": "medium",
+      "notes": [
+        "Themes and pivot statements are drawn primarily from the FY24 Annual Report narrative on strategy, the integrated business model, and the data centre opportunity; this is complemented by a more recent 1H26 results headline confirming continued focus on the data centre pipeline.",
+        "The “profit_engine” is a plain-English synthesis of the report’s described integrated model and disclosed management earnings composition; it is not a verbatim company label.",
+        "The “headwinds” field is limited to items that are explicitly described as structural/financial constraints or risks in official reporting (e.g., longer development periods, capital intensity, and market risk disclosures). Broader macro headwinds (rates, construction costs, leasing conditions) were not added unless clearly stated in the cited sections."
+      ],
+      "sources": [
+        {
+          "type": "report_pdf",
+          "title": "Goodman Group Annual Report 2024 (FY24) – strategy, integrated business model, data centre opportunity, sustainability targets and risk disclosures",
+          "url": "https://www.goodman.com/-/media/project/goodman/global/files/investor-centre/gmg-goodman-group/reports-and-newsletters/annual-reports/fy24_goodman-group_annual-report_distributed.pdf?hash=E236E571FA86C63AA550AF2DAFD503CA&rev=9e0e930e0b54414a8d8583dd511b7110",
+          "retrieved_at": "2026-03-06"
+        },
+        {
+          "type": "results_release",
+          "title": "Goodman Group reports operating profit while strengthening the data centre pipeline in 1H26 (18/02/2026)",
+          "url": "https://www.goodman.com/investor-centre/announcements-media/2026/goodman-group-reports-operating-profit-while-strengthening-the-data-centre-pipeline-in-1h26",
+          "retrieved_at": "2026-03-06"
+        }
+      ]
+    }
+  },
+  "provenance": {
+    "updated_at": "2026-03-06T08:53:03+00:00",
+    "sources": [
+      {
+        "type": "web",
+        "title": "People, culture and community | Goodman Sustainability Report 2023",
+        "url": "https://2023sustainabilityreport.goodman.com/people-culture-and-community/",
+        "retrieved_at": null
+      },
+      {
+        "type": "web",
+        "title": "Goodman Group 2023 Sustainability Report (PDF)",
+        "url": "https://2023sustainabilityreport.goodman.com/wp-content/uploads/2023/09/Goodman-Group-2023-Sustainability-Report_Original.pdf",
+        "retrieved_at": null
+      },
+      {
+        "type": "web",
+        "title": "Ambition needs space: Jobs in Property | Goodman Australia",
+        "url": "https://au.goodman.com/about-goodman/careers",
+        "retrieved_at": null
+      },
+      {
+        "type": "report_pdf",
+        "title": "Goodman Group Annual Report 2024 (FY24) – strategy, integrated business model, data centre opportunity, sustainability targets and risk disclosures",
+        "url": "https://www.goodman.com/-/media/project/goodman/global/files/investor-centre/gmg-goodman-group/reports-and-newsletters/annual-reports/fy24_goodman-group_annual-report_distributed.pdf?hash=E236E571FA86C63AA550AF2DAFD503CA&rev=9e0e930e0b54414a8d8583dd511b7110",
+        "retrieved_at": "2026-03-06"
+      },
+      {
+        "type": "results_release",
+        "title": "Goodman Group reports operating profit while strengthening the data centre pipeline in 1H26 (18/02/2026)",
+        "url": "https://www.goodman.com/investor-centre/announcements-media/2026/goodman-group-reports-operating-profit-while-strengthening-the-data-centre-pipeline-in-1h26",
+        "retrieved_at": "2026-03-06"
+      }
+    ],
+    "notes": []
+  }
+}

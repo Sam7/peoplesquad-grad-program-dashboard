@@ -1,0 +1,294 @@
+{
+  "schema_version": "1.0",
+  "id": "rio-tinto",
+  "name": "Rio Tinto",
+  "entity_type": "company",
+  "classification": {
+    "industry_bucket": "Resources",
+    "is_government": false,
+    "government_level": ""
+  },
+  "official_domains": [
+    "riotinto.com",
+    "www.riotinto.com",
+    "jobs.riotinto.com",
+    "www.wafutureskills.riotinto.com"
+  ],
+  "urls": {
+    "careers_url": "https://www.riotinto.com/en/careers",
+    "grad_program_url": "https://www.riotinto.com/careers/graduates-interns",
+    "apply_url": "https://jobs.riotinto.com/",
+    "investor_relations_url": "https://www.riotinto.com/en/invest"
+  },
+  "logo_url": null,
+  "branding": {
+    "logo_candidates": [],
+    "logo": null
+  },
+  "program": {
+    "name": "Rio Tinto Graduate and Intern Programs",
+    "overview_url": "https://www.riotinto.com/careers/graduates-interns",
+    "direct_apply_url": "https://jobs.riotinto.com/",
+    "open_date": "2026-03-09",
+    "close_date": "2026-04-17",
+    "streams": [],
+    "locations": [],
+    "salary_text": null,
+    "duration_text": null,
+    "rotation_text": null
+  },
+  "eligibility": {
+    "work_rights": null,
+    "graduation_window": null,
+    "disciplines": [],
+    "minimum_requirements": []
+  },
+  "recruitment_process": {
+    "stages": [],
+    "tips": []
+  },
+  "commercial_context": {
+    "exec_themes": [
+      "Become “Best Operator” (safety first, operational excellence, simpler ways of working)",
+      "Tight cost discipline and productivity improvements (including unit cost improvement ambitions)",
+      "Capital discipline and keeping a strong balance sheet while returning cash to shareholders (40–60% payout policy referenced)",
+      "Grow and diversify the portfolio toward energy transition materials (especially copper and lithium), while maintaining iron ore as a cornerstone",
+      "Deliver major projects and ramp-ups (notably Oyu Tolgoi underground)",
+      "Decarbonisation and helping customers/suppliers reduce emissions (e.g., steelmaking technology development)"
+    ],
+    "profit_engine": "Rio Tinto makes money by mining and selling large volumes of commodities (especially iron ore, plus aluminium/bauxite/alumina and copper), aiming to keep costs low through operational improvements, and using disciplined capital spending. It emphasizes maintaining a strong balance sheet and returning a significant share of earnings to shareholders through its dividend policy.",
+    "headwinds": "Higher-level headwinds explicitly signposted in company materials include: (1) lower iron ore prices impacting earnings; and (2) operating challenges at certain assets (the company lists Iron Ore Company of Canada, Kennecott, and Rio Tinto Iron and Titanium as facing challenges in 2024).",
+    "esg": "Rio Tinto describes the low‑carbon transition as central to its strategy, and reports progress on Scope 1 and 2 emissions reduction versus a 2018 baseline, largely via renewable power contracts. It also highlights work on decarbonising steelmaking (BioIron™) and notes safety performance tracking (AIFR) alongside the serious reality of fatalities, indicating safety and social licence/community relationships are core ESG topics.",
+    "recent_pivot": "A notable recent shift is a stronger push to diversify earnings and production toward copper and lithium (energy transition materials). This includes completing the Arcadium Lithium acquisition (rebranding to Rio Tinto Lithium) and targeting significant lithium capacity growth by 2028, plus continued emphasis on copper growth via the Oyu Tolgoi ramp-up. The company also frames a “stronger, sharper, simpler” operating model and highlights an updated (lower) capital estimate for decarbonisation to 2030 based on leveraging third‑party renewables investment."
+  },
+  "section_provenance": {
+    "program": {
+      "confidence": "low",
+      "notes": [
+        "The provided official Rio Tinto graduates/interns overview page (overview_url) was not retrieved in the allowed-source material available for extraction in this run, so program-wide basics like streams, locations, and dates could not be confirmed from that page.",
+        "Some job ads on jobs.riotinto.com describe a two-year Graduate Program, internship length, eligibility rules, and specific closing dates, but these vary by role and country. Because they are not stated as universal program rules on the program overview page in the retrieved material, they were not promoted into program-level fields here."
+      ],
+      "sources": [
+        {
+          "type": "known_url",
+          "title": "Rio Tinto - Graduates and interns (program overview)",
+          "url": "https://www.riotinto.com/careers/graduates-interns",
+          "retrieved_at": null
+        },
+        {
+          "type": "known_url",
+          "title": "Rio Tinto Jobs (application portal)",
+          "url": "https://jobs.riotinto.com/",
+          "retrieved_at": null
+        },
+        {
+          "type": "job_posting",
+          "title": "Graduate Program - Human Resources (job posting)",
+          "url": "https://jobs.riotinto.com/job/22354893/graduate-program-human-resources",
+          "retrieved_at": null
+        },
+        {
+          "type": "job_posting",
+          "title": "Graduate Program - Internship Engineering (job posting)",
+          "url": "https://jobs.riotinto.com/job/22572207/graduate-program-internship-engineering/",
+          "retrieved_at": null
+        },
+        {
+          "type": "job_posting",
+          "title": "Graduate - Project Engineer (job posting)",
+          "url": "https://jobs.riotinto.com/job/22435713/graduate-project-engineer/",
+          "retrieved_at": null
+        },
+        {
+          "type": "job_posting",
+          "title": "Graduate / Intern - Communities & Social Performance (job posting)",
+          "url": "https://jobs.riotinto.com/job/22469061/graduate-intern-communities-social-performance",
+          "retrieved_at": null
+        }
+      ]
+    },
+    "eligibility": {
+      "confidence": "low",
+      "notes": [
+        "Eligibility requirements differ by role and location in the retrieved job ads (for example, work rights, graduation timing, and driver’s licence requirements vary). No single universal eligibility rule-set was confirmed from a program overview page in the retrieved material, so eligibility fields are left blank."
+      ],
+      "sources": [
+        {
+          "type": "job_posting",
+          "title": "Graduate Program - Internship Engineering (job posting)",
+          "url": "https://jobs.riotinto.com/job/22572207/graduate-program-internship-engineering/",
+          "retrieved_at": null
+        },
+        {
+          "type": "job_posting",
+          "title": "Graduate - Project Engineer (job posting)",
+          "url": "https://jobs.riotinto.com/job/22435713/graduate-project-engineer/",
+          "retrieved_at": null
+        },
+        {
+          "type": "job_posting",
+          "title": "Rio Tinto HR Graduate Programme 2026 (job posting)",
+          "url": "https://jobs.riotinto.com/job/22293762/rio-tinto-hr-graduate-programme-2026/",
+          "retrieved_at": null
+        },
+        {
+          "type": "job_posting",
+          "title": "Richards Bay Minerals (RBM) Graduate Programme 2026 (job posting)",
+          "url": "https://jobs.riotinto.com/job/22293761/richards-bay-minerals-rbm-graduate-programme-2026/",
+          "retrieved_at": null
+        }
+      ]
+    },
+    "recruitment_process": {
+      "confidence": "low",
+      "notes": [
+        "The retrieved job ads mention applying online and completing pre-screening questions, but they do not provide a consistent, end-to-end recruitment process that can be treated as program-wide stages."
+      ],
+      "sources": [
+        {
+          "type": "job_posting",
+          "title": "Graduate Program - Internship Engineering (job posting)",
+          "url": "https://jobs.riotinto.com/job/22572207/graduate-program-internship-engineering/",
+          "retrieved_at": null
+        },
+        {
+          "type": "job_posting",
+          "title": "Graduate Program - Human Resources (job posting)",
+          "url": "https://jobs.riotinto.com/job/22058278/graduate-program-human-resources/",
+          "retrieved_at": null
+        }
+      ]
+    },
+    "commercial_context": {
+      "confidence": "medium",
+      "notes": [
+        "Some annual report sub-pages returned as a 404 when opened via certain URLs; therefore, several points are taken from official Rio Tinto investor/news releases rather than deep annual-report chapter text.",
+        "The themes reflect repeated messaging across multiple official releases; however, a single consolidated ‘exec themes’ list is not presented verbatim as a field in one document, so the list is an evidence-based synthesis.",
+        "The ‘profit_engine’ is summarized in plain English from how the company describes performance drivers (prices/volumes/cost discipline/capital discipline/dividends) rather than a single explicit statement labeled ‘profit engine’.",
+        "Headwinds are limited to items explicitly stated (e.g., price pressure, named asset challenges). Broader macro risks (FX, regulation, geopolitical) were not added because they were not explicit in the sourced excerpts used here."
+      ],
+      "sources": [
+        {
+          "type": "official_release",
+          "title": "Rio Tinto: Strong operating performance underpins financial results (20 February 2025)",
+          "url": "https://www.riotinto.com/en/news/releases/2025/rio-tinto-strong-operating-performance-underpins-financial-results",
+          "retrieved_at": null
+        },
+        {
+          "type": "official_release",
+          "title": "Rio Tinto completes acquisition of Arcadium Lithium (06 March 2025)",
+          "url": "https://www.riotinto.com/en/news/releases/2025/rio-tinto-completes-acquisition-of-arcadium-lithium",
+          "retrieved_at": null
+        },
+        {
+          "type": "official_release",
+          "title": "Rio Tinto investing for a stronger, more diversified portfolio (2024)",
+          "url": "https://www.riotinto.com/en/news/releases/2024/rio-tinto-investing-for-a-stronger-more-diversified-portfolio",
+          "retrieved_at": null
+        },
+        {
+          "type": "official_release",
+          "title": "Rio Tinto: Solid results underpinned by +8% CuEq production and sharper cost discipline (2026)",
+          "url": "https://www.riotinto.com/en/news/releases/2026/rio-tinto-solid-results-underpinned-by-8-cueq-production-and-sharper-cost-discipline",
+          "retrieved_at": null
+        },
+        {
+          "type": "official_release",
+          "title": "Stronger, sharper and simpler Rio Tinto to deliver leading returns (2025)",
+          "url": "https://www.riotinto.com/ko-kr/kr/news/releases/2025/stronger-sharper-simpler-rio-tinto",
+          "retrieved_at": null
+        }
+      ]
+    }
+  },
+  "provenance": {
+    "updated_at": "2026-03-06T08:52:53+00:00",
+    "sources": [
+      {
+        "type": "known_url",
+        "title": "Rio Tinto - Graduates and interns (program overview)",
+        "url": "https://www.riotinto.com/careers/graduates-interns",
+        "retrieved_at": null
+      },
+      {
+        "type": "known_url",
+        "title": "Rio Tinto Jobs (application portal)",
+        "url": "https://jobs.riotinto.com/",
+        "retrieved_at": null
+      },
+      {
+        "type": "job_posting",
+        "title": "Graduate Program - Human Resources (job posting)",
+        "url": "https://jobs.riotinto.com/job/22354893/graduate-program-human-resources",
+        "retrieved_at": null
+      },
+      {
+        "type": "job_posting",
+        "title": "Graduate Program - Internship Engineering (job posting)",
+        "url": "https://jobs.riotinto.com/job/22572207/graduate-program-internship-engineering/",
+        "retrieved_at": null
+      },
+      {
+        "type": "job_posting",
+        "title": "Graduate - Project Engineer (job posting)",
+        "url": "https://jobs.riotinto.com/job/22435713/graduate-project-engineer/",
+        "retrieved_at": null
+      },
+      {
+        "type": "job_posting",
+        "title": "Graduate / Intern - Communities & Social Performance (job posting)",
+        "url": "https://jobs.riotinto.com/job/22469061/graduate-intern-communities-social-performance",
+        "retrieved_at": null
+      },
+      {
+        "type": "job_posting",
+        "title": "Rio Tinto HR Graduate Programme 2026 (job posting)",
+        "url": "https://jobs.riotinto.com/job/22293762/rio-tinto-hr-graduate-programme-2026/",
+        "retrieved_at": null
+      },
+      {
+        "type": "job_posting",
+        "title": "Richards Bay Minerals (RBM) Graduate Programme 2026 (job posting)",
+        "url": "https://jobs.riotinto.com/job/22293761/richards-bay-minerals-rbm-graduate-programme-2026/",
+        "retrieved_at": null
+      },
+      {
+        "type": "job_posting",
+        "title": "Graduate Program - Human Resources (job posting)",
+        "url": "https://jobs.riotinto.com/job/22058278/graduate-program-human-resources/",
+        "retrieved_at": null
+      },
+      {
+        "type": "official_release",
+        "title": "Rio Tinto: Strong operating performance underpins financial results (20 February 2025)",
+        "url": "https://www.riotinto.com/en/news/releases/2025/rio-tinto-strong-operating-performance-underpins-financial-results",
+        "retrieved_at": null
+      },
+      {
+        "type": "official_release",
+        "title": "Rio Tinto completes acquisition of Arcadium Lithium (06 March 2025)",
+        "url": "https://www.riotinto.com/en/news/releases/2025/rio-tinto-completes-acquisition-of-arcadium-lithium",
+        "retrieved_at": null
+      },
+      {
+        "type": "official_release",
+        "title": "Rio Tinto investing for a stronger, more diversified portfolio (2024)",
+        "url": "https://www.riotinto.com/en/news/releases/2024/rio-tinto-investing-for-a-stronger-more-diversified-portfolio",
+        "retrieved_at": null
+      },
+      {
+        "type": "official_release",
+        "title": "Rio Tinto: Solid results underpinned by +8% CuEq production and sharper cost discipline (2026)",
+        "url": "https://www.riotinto.com/en/news/releases/2026/rio-tinto-solid-results-underpinned-by-8-cueq-production-and-sharper-cost-discipline",
+        "retrieved_at": null
+      },
+      {
+        "type": "official_release",
+        "title": "Stronger, sharper and simpler Rio Tinto to deliver leading returns (2025)",
+        "url": "https://www.riotinto.com/ko-kr/kr/news/releases/2025/stronger-sharper-simpler-rio-tinto",
+        "retrieved_at": null
+      }
+    ],
+    "notes": []
+  }
+}

@@ -1,0 +1,295 @@
+{
+  "schema_version": "1.0",
+  "id": "national-australia-bank",
+  "name": "National Australia Bank",
+  "entity_type": "company",
+  "classification": {
+    "industry_bucket": "Banking",
+    "is_government": false,
+    "government_level": "none"
+  },
+  "official_domains": [
+    "nab.com.au",
+    "careers.nab.com.au",
+    "capital.nab.com.au"
+  ],
+  "urls": {
+    "careers_url": "https://www.nab.com.au/about-us/careers",
+    "grad_program_url": "https://www.nab.com.au/about-us/careers/early-careers/graduate-careers",
+    "apply_url": "https://careers.nab.com.au/",
+    "investor_relations_url": "https://www.nab.com.au/about-us/shareholder-centre?own_cid=shortURL:shareholder"
+  },
+  "logo_url": "assets/logos/national-australia-bank-peoplesquad-logo.webp",
+  "branding": {
+    "logo_candidates": [],
+    "logo": {
+      "local_path": "assets/logos/national-australia-bank-peoplesquad-logo.webp",
+      "source_url": "https://www.nab.com.au/etc.clientlibs/nab/clientlibs/clientlib-generated-components/resources/images/jpg/nab-logo.jpg",
+      "mime_type": "image/webp",
+      "filename": "national-australia-bank-peoplesquad-logo.webp",
+      "format": "webp",
+      "source_width": 1200,
+      "source_height": 630,
+      "output_width": 512,
+      "output_height": 512,
+      "confidence": "high",
+      "quality_score": 0.95,
+      "selection_reason": "fallback_og_image",
+      "retrieved_at": "2026-03-06T08:36:16+00:00",
+      "notes": []
+    }
+  },
+  "program": {
+    "name": "NAB Graduate Program 2027",
+    "overview_url": "https://www.nab.com.au/about-us/careers/early-careers/graduate-careers",
+    "direct_apply_url": "https://careers.nab.com.au/jobs/nab-graduate-program-2027-nsw-sydney-cbd-nsw-australia-qld-brisbane-inner-qld-sa-adelaide-inner-sa-vic-melbourne-cbd-vic-wa-perth-inner-wa",
+    "open_date": "2026-02-16",
+    "close_date": "2026-03-29",
+    "streams": [
+      "Business Banking",
+      "Corporate & Institutional Banking",
+      "Digital, Data & AI",
+      "Finance and Strategy",
+      "Group Marketing",
+      "Group Transformation",
+      "Internal Audit",
+      "People & Culture",
+      "Personal Banking",
+      "Private Wealth",
+      "Risk"
+    ],
+    "locations": [
+      "Sydney CBD, NSW, Australia",
+      "Brisbane inner, QLD, Australia",
+      "Adelaide inner, SA, Australia",
+      "Melbourne CBD, VIC, Australia",
+      "Perth inner, WA, Australia"
+    ],
+    "salary_text": null,
+    "duration_text": "The program is a 15-month program.",
+    "rotation_text": "You will complete rotations during the program. You can also do a four-week secondment in a business area of your choice."
+  },
+  "eligibility": {
+    "work_rights": "You must be an Australian citizen, a New Zealand citizen, or an Australian permanent resident at the time of applying. Temporary visa holders are not eligible.",
+    "graduation_window": "You must have completed an undergraduate or postgraduate degree in the past three years (2024, 2025 or 2026), or be due to complete it by the end of January 2027.",
+    "disciplines": [],
+    "minimum_requirements": [
+      "Be an Australian citizen, a New Zealand citizen, or an Australian permanent resident at the time of applying.",
+      "Not be a temporary visa holder.",
+      "Have completed an undergraduate or postgraduate degree in 2024, 2025 or 2026, or be due to complete it by the end of January 2027."
+    ]
+  },
+  "recruitment_process": {
+    "stages": [
+      {
+        "name": "Online application",
+        "details": "You complete an online application form where you share your academic and work experience, and nominate your chosen business area."
+      },
+      {
+        "name": "Online assessment",
+        "details": "If you meet the eligibility criteria, you may be invited to complete online assessment. The online assessment includes a personality assessment, verbal reasoning, numerical reasoning, and logical reasoning."
+      },
+      {
+        "name": "Video interview",
+        "details": "If you are successful in the online assessment, you progress to video interviews where you record responses to questions on a secure site."
+      },
+      {
+        "name": "Engagement centre",
+        "details": "The final stage is an engagement centre with interactive activities. Engagement centres are usually held in May/June and may be via Zoom or in person depending on the business area."
+      },
+      {
+        "name": "Offer",
+        "details": "If you are successful, NAB will call you a few days after your engagement centre with the outcome."
+      }
+    ],
+    "tips": [
+      "Choose your business area carefully because you cannot change it after submitting your application.",
+      "Upload your most recent academic transcript. If you completed postgraduate studies, upload both your undergraduate and postgraduate results.",
+      "For online assessments, make sure you are free from distractions and have a good internet connection. Read questions carefully and try practice questions beforehand.",
+      "Prepare for the video interview by thinking about school, work, and life examples you can use, and how they relate to the role.",
+      "Prepare for the engagement centre by doing mock interviews and practising behavioural-based interview answers.",
+      "Relocation to participate in the graduate program is self-funded.",
+      "If you need reasonable adjustments for accessibility, you can email NAB to discuss support."
+    ]
+  },
+  "commercial_context": {
+    "exec_themes": [
+      "Helping customers transition to a net zero economy (including funding and advice for decarbonisation)",
+      "Growing sustainable/environmental finance (e.g., green and sustainability-linked lending and bonds)",
+      "Focusing sustainability priorities on climate action, housing affordability, and First Nations economic advancement",
+      "Building internal climate capability and embedding climate considerations into everyday banking and credit decisions",
+      "Improving NAB’s own operational environmental performance (renewable electricity and emissions reduction targets)"
+    ],
+    "profit_engine": "NAB’s sustainability pages describe a relationship-led banking model that supports customers through finance and advice (including sustainable finance products like green/social/sustainability bonds and sustainability-linked loans). These activities indicate NAB aims to earn income through lending, capital markets activity, and related banking services provided to customers, including as they invest in decarbonisation and resilience.",
+    "headwinds": "Climate change is described as creating “significant risks and opportunities” for the economy and for NAB. NAB also flags that fully embedding climate considerations “throughout the bank” remains a challenge, and notes growing expectations for climate-related disclosures and reporting (including preparation for Australian Sustainability Reporting Standards – AASB S2 Climate-related Disclosures from FY26).",
+    "esg": "NAB states its sustainability approach focuses on making a positive long-term impact for customers, communities, and the environment. It prioritises three customer support areas: climate action, housing affordability, and First Nations economic advancement. On climate, NAB’s stated goal is net zero by 2050 across financed and facilitated emissions and operations, supported by an environmental finance ambition of $80bn (1 Oct 2023 to 30 Sep 2030), renewable electricity (100% in 2025), and an operational emissions reduction target (72% reduction in market-based Scope 1 and 2 by 2030 vs a 2022 baseline). NAB also describes a risk-based approach to ESG risk, including responsible lending/investment policies and climate-risk disclosure aligned to TCFD in FY25, and preparation for AASB S2 in FY26.",
+    "recent_pivot": "NAB says its climate strategy was refreshed in 2025, shifting emphasis toward leveraging its “relationship-led” strengths to support customers to reduce emissions and finance related opportunities. NAB also highlights a “new environmental finance ambition” of $80bn for the period 1 Oct 2023 to 30 Sep 2030."
+  },
+  "section_provenance": {
+    "program": {
+      "confidence": "high",
+      "notes": [
+        "Program dates (applications open/close and start date) were taken from the NAB Graduate careers page key dates and cross-checked against the 2027 job ad.",
+        "Streams and locations were taken from the 2027 job ad.",
+        "Program length (15 months) was stated in the 2027 job ad.",
+        "Rotations and the four-week secondment were stated on the NAB Graduate careers page and repeated in the 2027 job ad.",
+        "Salary was not stated on the sources used."
+      ],
+      "sources": [
+        {
+          "type": "web",
+          "title": "Graduate careers at NAB",
+          "url": "https://www.nab.com.au/about-us/careers/early-careers/graduate-careers",
+          "retrieved_at": "2026-03-06"
+        },
+        {
+          "type": "web",
+          "title": "NAB Graduate Program 2027 job ad",
+          "url": "https://careers.nab.com.au/jobs/nab-graduate-program-2027-nsw-sydney-cbd-nsw-australia-qld-brisbane-inner-qld-sa-adelaide-inner-sa-vic-melbourne-cbd-vic-wa-perth-inner-wa",
+          "retrieved_at": "2026-03-06"
+        }
+      ]
+    },
+    "eligibility": {
+      "confidence": "high",
+      "notes": [
+        "Work rights and graduation timing requirements were stated on both the NAB Graduate careers page and the graduate application process page, and also reflected in the 2027 job ad.",
+        "No specific degree disciplines were listed as required on the sources used (NAB notes they hire graduates from different backgrounds)."
+      ],
+      "sources": [
+        {
+          "type": "web",
+          "title": "Graduate careers at NAB",
+          "url": "https://www.nab.com.au/about-us/careers/early-careers/graduate-careers",
+          "retrieved_at": "2026-03-06"
+        },
+        {
+          "type": "web",
+          "title": "Graduate careers application process and eligibility",
+          "url": "https://www.nab.com.au/about-us/careers/early-careers/graduate-careers/application-process",
+          "retrieved_at": "2026-03-06"
+        },
+        {
+          "type": "web",
+          "title": "NAB Graduate Program 2027 job ad",
+          "url": "https://careers.nab.com.au/jobs/nab-graduate-program-2027-nsw-sydney-cbd-nsw-australia-qld-brisbane-inner-qld-sa-adelaide-inner-sa-vic-melbourne-cbd-vic-wa-perth-inner-wa",
+          "retrieved_at": "2026-03-06"
+        }
+      ]
+    },
+    "recruitment_process": {
+      "confidence": "high",
+      "notes": [
+        "High-level stages (application, online assessment including video interview, engagement centre, offer) were stated on the NAB Graduate careers page.",
+        "Detailed assessment components and preparation tips were taken from the graduate application process page."
+      ],
+      "sources": [
+        {
+          "type": "web",
+          "title": "Graduate careers at NAB",
+          "url": "https://www.nab.com.au/about-us/careers/early-careers/graduate-careers",
+          "retrieved_at": "2026-03-06"
+        },
+        {
+          "type": "web",
+          "title": "Graduate careers application process and eligibility",
+          "url": "https://www.nab.com.au/about-us/careers/early-careers/graduate-careers/application-process",
+          "retrieved_at": "2026-03-06"
+        }
+      ]
+    },
+    "commercial_context": {
+      "confidence": "medium",
+      "notes": [
+        "The NAB site pages used are official but are mostly sustainability disclosures and product descriptions; they do not provide a full, investor-style explanation of the end-to-end profit model (e.g., net interest margin, fee mix), so the profit_engine summary is inferred at a high level from the described lending and capital markets activities.",
+        "The 2025 Annual Report and 2025 Climate Report are linked from NAB’s sustainability hub, but the PDFs could not be fetched by the tool (fetch returned an error), so this extraction relies on the accessible official web pages rather than the full reports/transcripts."
+      ],
+      "sources": [
+        {
+          "type": "web_page",
+          "title": "Environment, social and governance | Sustainability - NAB",
+          "url": "https://www.nab.com.au/about-us/sustainability",
+          "retrieved_at": null
+        },
+        {
+          "type": "web_page",
+          "title": "Taking action on climate change | Environment - NAB",
+          "url": "https://www.nab.com.au/about-us/sustainability/environment/climate-change",
+          "retrieved_at": null
+        },
+        {
+          "type": "web_page",
+          "title": "How we manage ESG risk | Policies and reporting - NAB",
+          "url": "https://www.nab.com.au/about-us/sustainability/reporting-policies-approach/esg-risk-management",
+          "retrieved_at": null
+        },
+        {
+          "type": "web_page",
+          "title": "Banking products and services for a healthier planet - NAB",
+          "url": "https://www.nab.com.au/about-us/sustainability/environment/products-services",
+          "retrieved_at": null
+        },
+        {
+          "type": "web_page",
+          "title": "Measuring our environmental performance | Environment - NAB",
+          "url": "https://www.nab.com.au/about-us/sustainability/environment/performance",
+          "retrieved_at": null
+        }
+      ]
+    }
+  },
+  "provenance": {
+    "updated_at": "2026-03-06T08:36:16+00:00",
+    "sources": [
+      {
+        "type": "web",
+        "title": "Graduate careers at NAB",
+        "url": "https://www.nab.com.au/about-us/careers/early-careers/graduate-careers",
+        "retrieved_at": "2026-03-06"
+      },
+      {
+        "type": "web",
+        "title": "NAB Graduate Program 2027 job ad",
+        "url": "https://careers.nab.com.au/jobs/nab-graduate-program-2027-nsw-sydney-cbd-nsw-australia-qld-brisbane-inner-qld-sa-adelaide-inner-sa-vic-melbourne-cbd-vic-wa-perth-inner-wa",
+        "retrieved_at": "2026-03-06"
+      },
+      {
+        "type": "web",
+        "title": "Graduate careers application process and eligibility",
+        "url": "https://www.nab.com.au/about-us/careers/early-careers/graduate-careers/application-process",
+        "retrieved_at": "2026-03-06"
+      },
+      {
+        "type": "web_page",
+        "title": "Environment, social and governance | Sustainability - NAB",
+        "url": "https://www.nab.com.au/about-us/sustainability",
+        "retrieved_at": null
+      },
+      {
+        "type": "web_page",
+        "title": "Taking action on climate change | Environment - NAB",
+        "url": "https://www.nab.com.au/about-us/sustainability/environment/climate-change",
+        "retrieved_at": null
+      },
+      {
+        "type": "web_page",
+        "title": "How we manage ESG risk | Policies and reporting - NAB",
+        "url": "https://www.nab.com.au/about-us/sustainability/reporting-policies-approach/esg-risk-management",
+        "retrieved_at": null
+      },
+      {
+        "type": "web_page",
+        "title": "Banking products and services for a healthier planet - NAB",
+        "url": "https://www.nab.com.au/about-us/sustainability/environment/products-services",
+        "retrieved_at": null
+      },
+      {
+        "type": "web_page",
+        "title": "Measuring our environmental performance | Environment - NAB",
+        "url": "https://www.nab.com.au/about-us/sustainability/environment/performance",
+        "retrieved_at": null
+      }
+    ],
+    "notes": []
+  }
+}

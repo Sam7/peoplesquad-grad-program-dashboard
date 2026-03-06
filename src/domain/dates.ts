@@ -1,4 +1,3 @@
-import { isValid, parse } from "date-fns";
 import { differenceInCalendarDays } from "date-fns";
 import { formatInTimeZone } from "date-fns-tz";
 
@@ -6,6 +5,31 @@ export type ApplicationStatus = "open" | "upcoming" | "closed" | "unknown";
 export type DeadlineUrgency = "none" | "normal" | "soon" | "closed";
 
 const APP_TIMEZONE = "Australia/Sydney";
+const MONTH_NAME_TO_NUMBER: Record<string, number> = {
+  january: 0,
+  jan: 0,
+  february: 1,
+  feb: 1,
+  march: 2,
+  mar: 2,
+  april: 3,
+  apr: 3,
+  may: 4,
+  june: 5,
+  jun: 5,
+  july: 6,
+  jul: 6,
+  august: 7,
+  aug: 7,
+  september: 8,
+  sep: 8,
+  october: 9,
+  oct: 9,
+  november: 10,
+  nov: 10,
+  december: 11,
+  dec: 11
+};
 
 function toUtcDateFromKey(dateKey: string): Date {
   return new Date(`${dateKey}T00:00:00Z`);
@@ -25,49 +49,61 @@ function parseIsoDateOnly(value: string): Date | null {
   return new Date(`${year}-${month}-${day}T00:00:00Z`);
 }
 
+function parseMonthToken(value: string): number | null {
+  const normalized = value.trim().toLowerCase().replace(/\./g, "");
+  const month = MONTH_NAME_TO_NUMBER[normalized];
+  return month === undefined ? null : month;
+}
+
+function buildUtcDate(year: number, month: number, day: number): Date | null {
+  if (!Number.isInteger(year) || !Number.isInteger(month) || !Number.isInteger(day)) {
+    return null;
+  }
+  const parsed = new Date(Date.UTC(year, month, day, 12, 0, 0, 0));
+  if (
+    parsed.getUTCFullYear() !== year ||
+    parsed.getUTCMonth() !== month ||
+    parsed.getUTCDate() !== day
+  ) {
+    return null;
+  }
+  return parsed;
+}
+
 function parseNaturalLanguageDate(value: string): Date | null {
-  const match = value.trim().match(/^(\d{1,2})\s+([A-Za-z]+)\s+(\d{4})$/);
-  if (!match) {
-    const formats = ["d MMMM yyyy", "d MMM yyyy"];
-    for (const fmt of formats) {
-      const parsed = parse(value, fmt, new Date());
-      if (isValid(parsed)) {
-        return new Date(
-          Date.UTC(parsed.getUTCFullYear(), parsed.getUTCMonth(), parsed.getUTCDate(), 12, 0, 0, 0)
-        );
-      }
+  const trimmed = value.trim();
+
+  const dayMonthYear = trimmed.match(/^(\d{1,2})\s+([A-Za-z.]+)\s+(\d{4})$/);
+  if (dayMonthYear) {
+    const day = Number.parseInt(dayMonthYear[1], 10);
+    const month = parseMonthToken(dayMonthYear[2]);
+    const year = Number.parseInt(dayMonthYear[3], 10);
+    if (month === null || !Number.isFinite(day) || !Number.isFinite(year)) {
+      return null;
     }
-    return null;
+    return buildUtcDate(year, month, day);
   }
 
-  const [, dayRaw, monthRaw, yearRaw] = match;
-  const months: Record<string, number> = {
-    january: 0,
-    february: 1,
-    march: 2,
-    april: 3,
-    may: 4,
-    june: 5,
-    july: 6,
-    august: 7,
-    september: 8,
-    october: 9,
-    november: 10,
-    december: 11
-  };
-
-  const month = months[monthRaw.toLowerCase()];
-  if (month === undefined) {
-    return null;
+  const monthYear = trimmed.match(/^([A-Za-z.]+)\s+(\d{4})$/);
+  if (monthYear) {
+    const month = parseMonthToken(monthYear[1]);
+    const year = Number.parseInt(monthYear[2], 10);
+    if (month === null || !Number.isFinite(year)) {
+      return null;
+    }
+    return buildUtcDate(year, month, 1);
   }
 
-  const day = Number.parseInt(dayRaw, 10);
-  const year = Number.parseInt(yearRaw, 10);
-  if (!Number.isFinite(day) || !Number.isFinite(year)) {
-    return null;
+  const monthOnly = trimmed.match(/^([A-Za-z.]+)$/);
+  if (monthOnly) {
+    const month = parseMonthToken(monthOnly[1]);
+    if (month === null) {
+      return null;
+    }
+    return buildUtcDate(new Date().getUTCFullYear(), month, 1);
   }
 
-  return new Date(Date.UTC(year, month, day, 12, 0, 0, 0));
+  return null;
 }
 
 export function parseFlexibleDate(value: string | null | undefined): Date | null {

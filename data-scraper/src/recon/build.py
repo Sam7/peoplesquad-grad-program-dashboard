@@ -9,7 +9,7 @@ from typing import Any
 from recon.logo_resolver import resolve_logo_asset
 from recon.models import SCHEMA_VERSION
 from recon.prompts import PromptBundle, build_messages
-from recon.utils import compute_status, slugify, utc_now_iso, write_json
+from recon.utils import compute_status, normalize_program_dates, slugify, utc_now_iso, write_json
 
 
 def select_seed_records(
@@ -145,7 +145,7 @@ def compose_company_detail(
     commercial_payload: dict[str, Any],
     logo: dict[str, Any] | None = None,
 ) -> dict[str, Any]:
-    program = program_payload.get("program") or {}
+    program = normalize_program_dates(program_payload.get("program") or {})
     eligibility = program_payload.get("eligibility") or {}
     recruitment = program_payload.get("recruitment_process") or {}
     program_prov = (program_payload.get("section_provenance") or {}).get("program") or {}
@@ -199,6 +199,10 @@ def build_index_entry(detail: dict[str, Any]) -> dict[str, Any]:
             "direct_apply_url": program.get("direct_apply_url"),
             "open_date": program.get("open_date"),
             "close_date": program.get("close_date"),
+            "open_date_raw": program.get("open_date_raw"),
+            "close_date_raw": program.get("close_date_raw"),
+            "open_date_precision": program.get("open_date_precision"),
+            "close_date_precision": program.get("close_date_precision"),
             "status": status,
         },
         "tags": {

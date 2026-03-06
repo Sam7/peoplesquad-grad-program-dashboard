@@ -227,7 +227,7 @@ export function CompanyDetailPane({ company, detail, isLoading, onClose, onSetPr
             <p>{workRights}</p>
           </div>
 
-          <div className="metric-card">
+          <div className="metric-card metric-card--wide">
             <span>Streams</span>
             <div className="tag-row">
               {streamTags.length > 0 ? (
@@ -242,10 +242,10 @@ export function CompanyDetailPane({ company, detail, isLoading, onClose, onSetPr
             </div>
           </div>
 
-          <div className="metric-card">
+          {/* <div className="metric-card">
             <span>Salary</span>
             <p>Salary: {salaryText}</p>
-          </div>
+          </div> */}
         </div>
       </div>
 

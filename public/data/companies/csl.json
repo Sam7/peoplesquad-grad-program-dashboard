@@ -1,0 +1,270 @@
+{
+  "schema_version": "1.0",
+  "id": "csl",
+  "name": "CSL Limited (CSL)",
+  "entity_type": "company",
+  "classification": {
+    "industry_bucket": "Healthcare / Biotechnology & Pharmaceuticals",
+    "is_government": false,
+    "government_level": "none"
+  },
+  "official_domains": [
+    "csl.com",
+    "investors.csl.com",
+    "jobs.csl.com",
+    "cslbehring.com.au",
+    "privacy.csl.com",
+    "newsroom.csl.com"
+  ],
+  "urls": {
+    "careers_url": "https://www.csl.com/careers",
+    "grad_program_url": "https://www.cslbehring.com.au/careers/graduate-program",
+    "apply_url": "https://csl2027graduateprogram-expressionofinterest-csl.pushapply.com",
+    "investor_relations_url": "https://investors.csl.com/"
+  },
+  "logo_url": "assets/logos/csl-peoplesquad-logo.webp",
+  "branding": {
+    "logo_candidates": [],
+    "logo": {
+      "local_path": "assets/logos/csl-peoplesquad-logo.webp",
+      "source_url": "https://investors.csl.com/irmcustomizationfile/160/logo.png",
+      "mime_type": "image/webp",
+      "filename": "csl-peoplesquad-logo.webp",
+      "format": "webp",
+      "source_width": 2260,
+      "source_height": 1702,
+      "output_width": 512,
+      "output_height": 512,
+      "confidence": "high",
+      "quality_score": 0.95,
+      "selection_reason": "fallback_icon",
+      "retrieved_at": "2026-03-06T07:53:50+00:00",
+      "notes": []
+    }
+  },
+  "program": {
+    "name": "CSL (Australia) Graduate Program",
+    "overview_url": "https://www.cslbehring.com.au/careers/graduate-program",
+    "direct_apply_url": "https://csl2027graduateprogram-expressionofinterest-csl.pushapply.com",
+    "open_date": "2025-06-23",
+    "close_date": "2025-08-03",
+    "streams": [
+      "Engineering",
+      "Manufacturing",
+      "Quality",
+      "Finance",
+      "Supply Chain",
+      "Operational Excellence",
+      "Global Procurement",
+      "Information & Technology"
+    ],
+    "locations": [
+      "Melbourne, Victoria, Australia (Broadmeadows)",
+      "Melbourne, Victoria, Australia (Tullamarine)",
+      "Melbourne, Victoria, Australia (CBD)"
+    ],
+    "salary_text": null,
+    "duration_text": "The CSL (Australia) Graduate Program is a two-year program.",
+    "rotation_text": "As a CSL Graduate you will be given tailored rotations."
+  },
+  "eligibility": {
+    "work_rights": "You will need to be an Australian or New Zealand Citizen or have Australian Permanent Residency status at the time of application.",
+    "graduation_window": "You must have completed an undergraduate or postgraduate degree in the last three years (2023, 2024, 2025) or be due to complete it by January 2026.",
+    "disciplines": [],
+    "minimum_requirements": [
+      "You will need to be an Australian or New Zealand Citizen or have Australian Permanent Residency status at the time of application.",
+      "Have completed an undergraduate or postgraduate degree in the last three years (2023, 2024, 2025) or be due to complete it by January 2026.",
+      "You will need to be available to commence full time employment from February 2026.",
+      "The graduate program is based in Melbourne (Broadmeadows, Tullamarine or CBD in Melbourne depending on your stream). You must be located in, or willing to relocate to, Melbourne and be willing to cover the costs of relocation.",
+      "Be available to attend the final Experience Centre stage in-person on 18 or 19 September 2025 in Melbourne, and be willing to attend at your own expense.",
+      "Demonstrated work experience throughout university (preferred)."
+    ]
+  },
+  "recruitment_process": {
+    "stages": [
+      {
+        "name": "Online Application Form",
+        "details": "Complete the online application form. CSL uses this to capture information such as your academic background, skills and experiences, and your stream preferences. Open 23 June to 3 August 2025."
+      },
+      {
+        "name": "Online Assessment",
+        "details": "If you progress, you will complete an online assessment and record a video response. It takes about 45 minutes and includes cognitive (verbal and numerical) questions, situational judgement scenarios (untimed), and a short video interview (timed)."
+      },
+      {
+        "name": "CSL Experience Centre",
+        "details": "The final step is an in-person Experience Centre on 18 or 19 September 2025 in Melbourne. You will take part in a group exercise and a short interview, and meet business leaders and current/previous graduates."
+      },
+      {
+        "name": "Offer",
+        "details": "CSL will call you within a couple of days after the Experience Centre to let you know if you are successful."
+      }
+    ],
+    "tips": [
+      "Check all program eligibility requirements before you apply.",
+      "Be ready to explain why you are a good fit for the Graduate Program in your application.",
+      "Plan ahead for attending the in-person Experience Centre in Melbourne (18 or 19 September 2025) at your own expense.",
+      "Be prepared for an online assessment that includes cognitive questions, situational judgement scenarios, and a timed video interview."
+    ]
+  },
+  "commercial_context": {
+    "exec_themes": [
+      "Grow the core plasma-derived immunoglobulin (Ig) business by increasing supply (more plasma) and improving manufacturing yield (getting more Ig and albumin out of each litre of plasma).",
+      "Improve “commercial execution” (how well CSL launches and sells products) and expand the portfolio with new product launches across Behring and Vifor (examples cited: Andembry, Hemgenix, Filspari).",
+      "Run the company more efficiently through operational excellence: simplify the operating model, reduce duplication, streamline corporate functions, and consolidate parts of the R&D footprint.",
+      "Use an integrated “portfolio development and commercialisation” approach that connects R&D, business development, and commercial teams; use partnerships where CSL cannot do everything alone.",
+      "Keep building and differentiating the influenza vaccine franchise at Seqirus (e.g., FLUAD and FLUCELVAX) and invest in new platforms beyond flu (including self-amplifying mRNA) and pandemic preparedness partnerships with governments.",
+      "Position CSL Vifor for an increasingly competitive IV iron market by defending and growing Ferinject volumes and executing many planned launches across iron and nephrology."
+    ],
+    "profit_engine": "CSL’s main profit engine is selling high-value specialty medicines and vaccines, especially plasma-derived therapies (notably immunoglobulins) that depend on a vertically integrated model: collecting plasma, fractionating/manufacturing it, and then commercialising therapies globally. The company also earns revenue from seasonal influenza vaccines (including differentiated products such as FLUAD and FLUCELVAX) and from iron-deficiency and nephrology products in CSL Vifor.",
+    "headwinds": "Competitive pressure in the IV iron market (CSL describes an “evolving” and increasingly competitive landscape). Also, CSL reports a challenging and volatile external environment and has announced restructuring actions (including one-off costs and workforce reductions) to simplify the business and lift productivity. More broadly, CSL notes pricing and affordability pressures from governments and payers, which can push companies toward more “responsible pricing” and equitable access expectations.",
+    "esg": "CSL frames sustainability around two pillars: “Healthier Environment” and “Healthier Communities.” Examples include emissions reduction targets approved by SBTi (42% absolute Scope 1 and 2 reduction by FY2030 from an FY2021 baseline, plus supplier target coverage), increasing renewable electricity use, donor safety and wellbeing initiatives, and access/community programs such as product donations (e.g., through the World Federation of Hemophilia partnership) and discounted access commitments (e.g., an aspirational commitment to help treat up to 450,000 people with anaemia in at least three low- and middle-income countries with Ferinject by FY2030).",
+    "recent_pivot": "In FY2025 and immediately after year-end (July–August 2025), CSL announced “transformational initiatives” to reshape and simplify the business, described as focusing on “Pipeline, Productivity and People.” This includes integrating R&D, business development and commercial teams via a Portfolio Development & Commercialisation operating model; combining Behring and Vifor medical and commercial functions; streamlining corporate functions; consolidating R&D footprint; optimizing the plasma network (including closing 22 underperforming U.S. plasma centres in August 2025); and a net headcount reduction of up to 15%. CSL also stated an intention to demerge CSL Seqirus as an ASX-listed company before the end of FY2026."
+  },
+  "section_provenance": {
+    "program": {
+      "confidence": "high",
+      "notes": [
+        "The program name and two-year duration are stated on the Graduate Program page.",
+        "Streams are listed on the Graduate Streams page.",
+        "The Expression of Interest link is provided on the Graduate Program page."
+      ],
+      "sources": [
+        {
+          "type": "web",
+          "title": "Graduate Program | CSL Australia",
+          "url": "https://www.cslbehring.com.au/careers/graduate-program",
+          "retrieved_at": null
+        },
+        {
+          "type": "web",
+          "title": "Graduate Streams | CSL Australia",
+          "url": "https://www.cslbehring.com.au/careers/graduate-program/graduate-streams",
+          "retrieved_at": null
+        }
+      ]
+    },
+    "eligibility": {
+      "confidence": "high",
+      "notes": [
+        "Eligibility and other requirements (citizenship/permanent residency, graduation window, start date, Melbourne location and relocation expectations, and Experience Centre attendance) are listed under 'Requirements' on the Selection Process page.",
+        "Salary information is not stated on the pages used."
+      ],
+      "sources": [
+        {
+          "type": "web",
+          "title": "The Selection Process | CSL Australia",
+          "url": "https://www.cslbehring.com.au/careers/graduate-program/the-selection-process",
+          "retrieved_at": null
+        }
+      ]
+    },
+    "recruitment_process": {
+      "confidence": "high",
+      "notes": [
+        "The stages, timing, and assessment format are described in the 'About our recruitment process' section on the Selection Process page."
+      ],
+      "sources": [
+        {
+          "type": "web",
+          "title": "The Selection Process | CSL Australia",
+          "url": "https://www.cslbehring.com.au/careers/graduate-program/the-selection-process",
+          "retrieved_at": null
+        }
+      ]
+    },
+    "commercial_context": {
+      "confidence": "medium",
+      "notes": [
+        "Themes, ESG items, and the restructuring/operating model changes are explicitly described in CSL’s FY2025 Annual Report webpages and CSL’s August 2025 strategic initiatives release/presentation.",
+        "The ‘profit_engine’ field is an interpretation that stays close to CSL’s described operating model (plasma collection → fractionation/manufacturing → commercialisation) and the company’s segment focus; the sources do not present a single sentence labeled ‘profit engine.’",
+        "‘Headwinds’ are summarized from CSL’s descriptions of a volatile external environment, competitive dynamics in iron, and payer/government pricing pressure; CSL does not provide a single consolidated ‘headwinds’ list in the snippets retrieved."
+      ],
+      "sources": [
+        {
+          "type": "report",
+          "title": "CSL 2025 Annual Report (web version) – CEO priorities, strategy and business descriptions",
+          "url": "https://investors.csl.com/annualreport/2025/",
+          "retrieved_at": "2026-03-06"
+        },
+        {
+          "type": "news_release",
+          "title": "CSL announces rise in full year net profit – Major strategic initiatives (includes demerger intention, restructuring, ‘3 Ps’)",
+          "url": "https://newsroom.csl.com/2025-08-18-CSL-announces-rise-in-full-year-net-profit",
+          "retrieved_at": "2026-03-06"
+        },
+        {
+          "type": "investor_presentation",
+          "title": "CSL FY25 Results and Major Strategic Initiatives (PDF)",
+          "url": "https://investors.csl.com/pdf/56bf77f4-8eff-40ff-bb67-c890e3a3476e/CSL-FY25-Results-and-Major-Strategic-Initiatives.pdf",
+          "retrieved_at": "2026-03-06"
+        },
+        {
+          "type": "sustainability_page",
+          "title": "CSL Sustainability – Healthier Environment (SBTi targets and supplier coverage)",
+          "url": "https://www.csl.com/sustainability/healthier-environment",
+          "retrieved_at": "2026-03-06"
+        },
+        {
+          "type": "report",
+          "title": "CSL Annual Report 2024 (PDF) – discussion of pricing/access pressure from governments and payers",
+          "url": "https://www.csl.com/-/media/shared/documents/annual-report/csl-annual-report-2024.pdf",
+          "retrieved_at": "2026-03-06"
+        }
+      ]
+    }
+  },
+  "provenance": {
+    "updated_at": "2026-03-06T07:53:50+00:00",
+    "sources": [
+      {
+        "type": "web",
+        "title": "Graduate Program | CSL Australia",
+        "url": "https://www.cslbehring.com.au/careers/graduate-program",
+        "retrieved_at": null
+      },
+      {
+        "type": "web",
+        "title": "Graduate Streams | CSL Australia",
+        "url": "https://www.cslbehring.com.au/careers/graduate-program/graduate-streams",
+        "retrieved_at": null
+      },
+      {
+        "type": "web",
+        "title": "The Selection Process | CSL Australia",
+        "url": "https://www.cslbehring.com.au/careers/graduate-program/the-selection-process",
+        "retrieved_at": null
+      },
+      {
+        "type": "report",
+        "title": "CSL 2025 Annual Report (web version) – CEO priorities, strategy and business descriptions",
+        "url": "https://investors.csl.com/annualreport/2025/",
+        "retrieved_at": "2026-03-06"
+      },
+      {
+        "type": "news_release",
+        "title": "CSL announces rise in full year net profit – Major strategic initiatives (includes demerger intention, restructuring, ‘3 Ps’)",
+        "url": "https://newsroom.csl.com/2025-08-18-CSL-announces-rise-in-full-year-net-profit",
+        "retrieved_at": "2026-03-06"
+      },
+      {
+        "type": "investor_presentation",
+        "title": "CSL FY25 Results and Major Strategic Initiatives (PDF)",
+        "url": "https://investors.csl.com/pdf/56bf77f4-8eff-40ff-bb67-c890e3a3476e/CSL-FY25-Results-and-Major-Strategic-Initiatives.pdf",
+        "retrieved_at": "2026-03-06"
+      },
+      {
+        "type": "sustainability_page",
+        "title": "CSL Sustainability – Healthier Environment (SBTi targets and supplier coverage)",
+        "url": "https://www.csl.com/sustainability/healthier-environment",
+        "retrieved_at": "2026-03-06"
+      },
+      {
+        "type": "report",
+        "title": "CSL Annual Report 2024 (PDF) – discussion of pricing/access pressure from governments and payers",
+        "url": "https://www.csl.com/-/media/shared/documents/annual-report/csl-annual-report-2024.pdf",
+        "retrieved_at": "2026-03-06"
+      }
+    ],
+    "notes": []
+  }
+}

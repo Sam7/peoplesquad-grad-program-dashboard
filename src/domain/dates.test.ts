@@ -23,7 +23,18 @@ describe("parseFlexibleDate", () => {
   });
 
   it("returns null for non-parseable values", () => {
-    expect(parseFlexibleDate("August")).toBeNull();
+    expect(parseFlexibleDate("Not a date")).toBeNull();
+  });
+
+  it("parses month-year values", () => {
+    const parsed = parseFlexibleDate("August 2026");
+    expect(parsed?.toISOString().slice(0, 10)).toBe("2026-08-01");
+  });
+
+  it("parses month-only values using current year", () => {
+    const currentYear = new Date().getUTCFullYear();
+    const parsed = parseFlexibleDate("August");
+    expect(parsed?.toISOString().slice(0, 10)).toBe(`${currentYear}-08-01`);
   });
 });
 
@@ -44,8 +55,8 @@ describe("computeApplicationStatus", () => {
     expect(computeApplicationStatus(null, "2026-04-06", new Date("2026-04-07T12:00:00+10:00"))).toBe("closed");
   });
 
-  it("returns unknown when no parseable dates exist", () => {
-    expect(computeApplicationStatus(null, "August", new Date("2026-04-07T12:00:00+10:00"))).toBe("unknown");
+  it("returns open when close month is parseable month-only in the same year", () => {
+    expect(computeApplicationStatus(null, "August 2026", new Date("2026-04-07T12:00:00+10:00"))).toBe("open");
   });
 
   it("returns upcoming when only open date exists and has not started", () => {

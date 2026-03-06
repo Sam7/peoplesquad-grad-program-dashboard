@@ -1,0 +1,270 @@
+{
+  "schema_version": "1.0",
+  "id": "macquarie-group",
+  "name": "Macquarie Group",
+  "entity_type": "company",
+  "classification": {
+    "industry_bucket": "Banking & Financial Services",
+    "is_government": false,
+    "government_level": "none"
+  },
+  "official_domains": [
+    "macquarie.com",
+    "careers.macquarie.com",
+    "recruitment.macquarie.com",
+    "macquarie.com.au"
+  ],
+  "urls": {
+    "careers_url": "https://www.macquarie.com/us/en/careers.html",
+    "grad_program_url": "https://www.macquarie.com/au/en/careers/graduates-and-interns.html",
+    "apply_url": "https://recruitment.macquarie.com/",
+    "investor_relations_url": "https://www.macquarie.com/us/en/investors.html"
+  },
+  "logo_url": "assets/logos/macquarie-group-peoplesquad-logo.webp",
+  "branding": {
+    "logo_candidates": [],
+    "logo": {
+      "local_path": "assets/logos/macquarie-group-peoplesquad-logo.webp",
+      "source_url": "https://www.macquarie.com/au/en/careers/graduates-and-interns.thumb.800.480.png?ck=1770242128",
+      "mime_type": "image/webp",
+      "filename": "macquarie-group-peoplesquad-logo.webp",
+      "format": "webp",
+      "source_width": 1280,
+      "source_height": 720,
+      "output_width": 512,
+      "output_height": 512,
+      "confidence": "medium",
+      "quality_score": 0.7,
+      "selection_reason": "fallback_og_image",
+      "retrieved_at": "2026-03-06T08:52:22+00:00",
+      "notes": []
+    }
+  },
+  "program": {
+    "name": "Macquarie Graduate and Internship Programs",
+    "overview_url": "https://www.macquarie.com/au/en/careers/graduates-and-interns/our-programs.html",
+    "direct_apply_url": "https://recruitment.macquarie.com/",
+    "open_date": "2026-03-03",
+    "close_date": "2026-04-14",
+    "streams": [
+      "Graduate Program",
+      "Summer Internship Program",
+      "Winter Development Program"
+    ],
+    "locations": [
+      "Sydney",
+      "Melbourne",
+      "Brisbane",
+      "Perth"
+    ],
+    "salary_text": null,
+    "duration_text": "Graduate Program: a 12–24 month structured program with on-the-job training, access to senior leaders, and internal and external learning opportunities.",
+    "rotation_text": null
+  },
+  "eligibility": {
+    "work_rights": null,
+    "graduation_window": "Graduate Program: students in their final year of study or who have completed their studies within 12 months of applying (counted from your last subject or unit).",
+    "disciplines": [],
+    "minimum_requirements": [
+      "Graduate Program: you must be in your final year of study, or have completed your studies within 12 months of applying (counted from your last subject or unit).",
+      "Summer Internship Program: you must be in your penultimate year of study.",
+      "Winter Development Program: you must be a STEM student or a woman from any discipline, and be in your penultimate year of study."
+    ]
+  },
+  "recruitment_process": {
+    "stages": [
+      {
+        "name": "Apply",
+        "details": "Apply using the online application form and submit your details and your CV. Your application is reviewed by the Early Careers team. Successful candidates are invited to complete a psychometric assessment."
+      },
+      {
+        "name": "Psychometric assessment",
+        "details": "You complete a psychometric assessment (typically about an hour) from home. There is no minimum score stated; results are reviewed against what the role needs. You may be asked to complete a verification assessment later."
+      },
+      {
+        "name": "Video interview",
+        "details": "If there is a strong match, you are invited to a timed video interview with pre-recorded questions tailored to the business group you applied for."
+      },
+      {
+        "name": "Superday / further interview(s)",
+        "details": "If successful after the video interview, you attend a Superday for further interviews. You may be asked to review a case study, do a problem-solving activity, or respond to an article and present your views. You can also expect competency-based questions. For the Graduate Programme, you may be invited to a final interview after the Superday."
+      },
+      {
+        "name": "Offer",
+        "details": "If you are successful, your recruiter contacts you with an offer. You have seven days to accept."
+      },
+      {
+        "name": "Reference checking and employment screening",
+        "details": "If you receive an offer, you must complete reference checks and employment screening before you commence."
+      }
+    ],
+    "tips": [
+      "Apply early where possible, because applications can close on a rolling basis and roles may be filled before the stated deadline.",
+      "Macquarie states you do not need to include a cover letter, transcripts, or references when you submit your application. They may request these later if you are successful.",
+      "If your recruiter sends you practice psychometric assessments, Macquarie states the practice assessment they send is the only authentic practice assessment for Macquarie.",
+      "Your video interview is timed and uses pre-recorded questions, so prepare to answer clearly and concisely under time limits."
+    ]
+  },
+  "commercial_context": {
+    "exec_themes": [
+      "Keep a diversified business mix and multiple income streams (mix of “annuity-style” and “markets-facing” activities).",
+      "Stay cautious and conservative on capital, funding, and liquidity while markets are uncertain.",
+      "Keep investing in the operating platform (including technology) to support long-term growth.",
+      "Grow in sectors with structural tailwinds (examples highlighted include energy transition/renewables, infrastructure, and digital infrastructure such as data centres).",
+      "Maintain disciplined capital deployment (including returning capital via buybacks/dividends when appropriate)."
+    ],
+    "profit_engine": "Macquarie’s profit model is built on diversified earnings across its four operating groups (Macquarie Asset Management, Banking and Financial Services, Commodities and Global Markets, and Macquarie Capital), with a mix of steadier “annuity-style” income (e.g., asset management and banking) and more market-dependent “markets-facing” income (e.g., trading/risk management and advisory).",
+    "headwinds": "Market and economic uncertainty; macro factors such as inflation and interest rates; volatility events and geopolitical impacts; foreign exchange impacts (given international income); potential tax or regulatory changes and tax uncertainties; and business-level pressures cited in results updates such as margin compression and higher operating expenses from technology/platform investment and remediation-related spend.",
+    "esg": "Macquarie frames sustainability through operational and supplier-focused commitments: sourcing renewable electricity across global offices and data centres, maintaining net zero Scope 1 and Scope 2 emissions, offsetting certain business travel (Scope 3 Category 6), pushing suppliers (covering a large share of Scope 3 emissions) to adopt science-aligned targets by 2030, and increasing spend with diverse-owned suppliers (cumulative A$150m from FY2026–FY2030).",
+    "recent_pivot": "null"
+  },
+  "section_provenance": {
+    "program": {
+      "confidence": "high",
+      "notes": [
+        "Graduate Program application dates (open and close) and program start timing were taken from the 'Our programs' page for Australia and New Zealand early careers.",
+        "Streams and city-specific close dates were taken from the same 'Our programs' page.",
+        "US graduate/intern page contains different timing (rolling dates) and locations (Houston; New York), but it does not provide a single fixed open/close date for the graduate program. This extraction uses the explicitly stated dates from the AU early careers pages."
+      ],
+      "sources": [
+        {
+          "type": "web",
+          "title": "Graduates and Interns | Our programs | Macquarie Group",
+          "url": "https://www.macquarie.com/au/en/careers/graduates-and-interns/our-programs.html",
+          "retrieved_at": null
+        },
+        {
+          "type": "web",
+          "title": "Graduates and Interns | Macquarie Group (United States)",
+          "url": "https://www.macquarie.com/us/en/careers/graduates-and-interns.html",
+          "retrieved_at": null
+        }
+      ]
+    },
+    "eligibility": {
+      "confidence": "medium",
+      "notes": [
+        "Work rights requirements were not stated on the pages used for this extraction, so work_rights is null.",
+        "Disciplines were not explicitly listed as requirements for the Graduate Program or Summer Internship Program on the extracted pages (the site says all degree backgrounds are invited to apply). For the Winter Development Program, eligibility explicitly mentions STEM students or women from any discipline.",
+        "Some eligibility information varies by region. This extraction records the eligibility criteria exactly as written on the 'Our programs' page for Australia and New Zealand."
+      ],
+      "sources": [
+        {
+          "type": "web",
+          "title": "Graduates and Interns | Our programs | Macquarie Group",
+          "url": "https://www.macquarie.com/au/en/careers/graduates-and-interns/our-programs.html",
+          "retrieved_at": null
+        }
+      ]
+    },
+    "recruitment_process": {
+      "confidence": "high",
+      "notes": [
+        "Recruitment stages were extracted from the 'Recruitment process' page (steps 1 to 6).",
+        "Application content tips (for example, no cover letter required and rolling recruitment) were extracted from the Early Careers FAQs page."
+      ],
+      "sources": [
+        {
+          "type": "web",
+          "title": "Graduates and Interns | Recruitment Process | Macquarie Group",
+          "url": "https://www.macquarie.com/fi/en/careers/graduates-and-interns/recruitment-process.html",
+          "retrieved_at": null
+        },
+        {
+          "type": "web",
+          "title": "Careers FAQs | Macquarie Group",
+          "url": "https://www.macquarie.com/de/en/careers/faqs.html",
+          "retrieved_at": null
+        }
+      ]
+    },
+    "commercial_context": {
+      "confidence": "medium",
+      "notes": [
+        "The executive themes and headwinds are summarized from Macquarie’s FY25 result announcement and the 1H26 investor report webpage text; the underlying investor PDFs were not retrievable via the tool (fetch errors), so details that typically sit in MD&A sections could not be validated.",
+        "“Recent pivot” is set to null because the sourced pages describe ongoing strategy and commitments, but do not clearly state a discrete strategic pivot (e.g., a named restructuring, major exit/entry, or formally described change in strategy) in a way that can be quoted or cleanly attributed to a single pivot event/date.",
+        "ESG content is taken from Macquarie’s sustainability commitments page and reflects Macquarie’s own operations and supplier commitments; it may not cover the full scope of group-wide financed emissions or all business-line ESG policies (not verified here due to PDF access limits)."
+      ],
+      "sources": [
+        {
+          "type": "press_release",
+          "title": "Macquarie Group announces $A3,715 million full-year profit (FY25 result announcement)",
+          "url": "https://www.macquarie.com/is/en/about/news/2025/macquarie-group-fy25-result-announcement.html",
+          "retrieved_at": null
+        },
+        {
+          "type": "investor_report_landing_page",
+          "title": "1H26 Interim Report | Investors | Macquarie Group (2026 half-year result page)",
+          "url": "https://www.macquarie.com/cz/en/investors/reports/half-year-2026.html",
+          "retrieved_at": null
+        },
+        {
+          "type": "sustainability_webpage",
+          "title": "Sustainability in Macquarie's own business operations | Sustainability | Macquarie Group",
+          "url": "https://www.macquarie.com/us/en/about/company/sustainability/sustainability-in-own-business-operations.html",
+          "retrieved_at": null
+        },
+        {
+          "type": "press_release",
+          "title": "Macquarie Group announces $A1,655 million half-year profit (1H26 result announcement)",
+          "url": "https://www.macquarie.com/li/en/about/news/2025/macquarie-group-hy26-result-announcement.html",
+          "retrieved_at": null
+        }
+      ]
+    }
+  },
+  "provenance": {
+    "updated_at": "2026-03-06T08:52:22+00:00",
+    "sources": [
+      {
+        "type": "web",
+        "title": "Graduates and Interns | Our programs | Macquarie Group",
+        "url": "https://www.macquarie.com/au/en/careers/graduates-and-interns/our-programs.html",
+        "retrieved_at": null
+      },
+      {
+        "type": "web",
+        "title": "Graduates and Interns | Macquarie Group (United States)",
+        "url": "https://www.macquarie.com/us/en/careers/graduates-and-interns.html",
+        "retrieved_at": null
+      },
+      {
+        "type": "web",
+        "title": "Graduates and Interns | Recruitment Process | Macquarie Group",
+        "url": "https://www.macquarie.com/fi/en/careers/graduates-and-interns/recruitment-process.html",
+        "retrieved_at": null
+      },
+      {
+        "type": "web",
+        "title": "Careers FAQs | Macquarie Group",
+        "url": "https://www.macquarie.com/de/en/careers/faqs.html",
+        "retrieved_at": null
+      },
+      {
+        "type": "press_release",
+        "title": "Macquarie Group announces $A3,715 million full-year profit (FY25 result announcement)",
+        "url": "https://www.macquarie.com/is/en/about/news/2025/macquarie-group-fy25-result-announcement.html",
+        "retrieved_at": null
+      },
+      {
+        "type": "investor_report_landing_page",
+        "title": "1H26 Interim Report | Investors | Macquarie Group (2026 half-year result page)",
+        "url": "https://www.macquarie.com/cz/en/investors/reports/half-year-2026.html",
+        "retrieved_at": null
+      },
+      {
+        "type": "sustainability_webpage",
+        "title": "Sustainability in Macquarie's own business operations | Sustainability | Macquarie Group",
+        "url": "https://www.macquarie.com/us/en/about/company/sustainability/sustainability-in-own-business-operations.html",
+        "retrieved_at": null
+      },
+      {
+        "type": "press_release",
+        "title": "Macquarie Group announces $A1,655 million half-year profit (1H26 result announcement)",
+        "url": "https://www.macquarie.com/li/en/about/news/2025/macquarie-group-hy26-result-announcement.html",
+        "retrieved_at": null
+      }
+    ],
+    "notes": []
+  }
+}

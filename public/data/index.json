@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-03-05T15:24:10.965Z",
+  "generated_at": "2026-03-06T11:18:06.191Z",
   "companies": [
     {
       "id": "anz-group",
@@ -9,9 +9,13 @@
       "logo_url": "assets/logos/anz-group-peoplesquad-logo.webp",
       "career_url": "https://www.anz.com.au/careers/",
       "apply": {
-        "direct_apply_url": "https://www.anz.com.au/careers/",
+        "direct_apply_url": null,
         "open_date": null,
         "close_date": null,
+        "open_date_raw": null,
+        "close_date_raw": null,
+        "open_date_precision": null,
+        "close_date_precision": null,
         "status": "unknown"
       },
       "tags": {
@@ -25,20 +29,19 @@
           "Risk",
           "Suncorp Bank Business & Agribusiness",
           "Technology",
-          "New Zealand: Marketing",
-          "New Zealand: Institutional",
-          "New Zealand: Data",
-          "New Zealand: Funds Management",
-          "India (Group Capability Centre) – Graduate engineering and technology roles (Bengaluru)"
+          "Marketing (New Zealand)",
+          "Institutional (New Zealand)",
+          "Data (New Zealand)",
+          "Funds Management (New Zealand)"
         ],
         "eligibility": [
-          "You must be an Australian or New Zealand citizen, or hold permanent residency in the country you apply for."
+          "When you apply, you should be an Australian or New Zealand citizen, or hold permanent residency in the program country you are applying for."
         ],
         "industries": [
           "Banking"
         ]
       },
-      "updated_at": "2026-03-05T15:03:37+00:00",
+      "updated_at": "2026-03-06T08:52:07+00:00",
       "confidence": "high"
     },
     {
@@ -46,38 +49,50 @@
       "name": "BHP Group",
       "entity_type": "company",
       "logo_url": null,
-      "career_url": "https://www.bhp.com/careers/",
+      "career_url": "https://www.bhp.com/careers",
       "apply": {
-        "direct_apply_url": "https://careers.bhp.com/",
-        "open_date": null,
-        "close_date": "6 April 2026",
-        "status": "unknown"
+        "direct_apply_url": "https://careers.bhp.com/job/BHP-2027-Australian-Graduate-Campaign/1368544000/",
+        "open_date": "2026-02-26",
+        "close_date": "2026-04-06",
+        "open_date_raw": null,
+        "close_date_raw": null,
+        "open_date_precision": null,
+        "close_date_precision": null,
+        "status": "open"
       },
       "tags": {
         "streams": [
-          "Graduate Program"
+          "Engineering",
+          "Science",
+          "Technology",
+          "Business",
+          "Health Science"
         ],
         "eligibility": [
           "International students with a valid visa are welcome to apply. By February 2027, you must hold a visa with no work restrictions."
         ],
         "industries": [
-          "Resources"
+          "Resources / Mining & Metals"
         ]
       },
-      "updated_at": "2026-03-05T04:54:50+00:00",
-      "confidence": "medium"
+      "updated_at": "2026-03-06T07:47:45+00:00",
+      "confidence": "high"
     },
     {
       "id": "coles-group",
       "name": "Coles Group",
       "entity_type": "company",
       "logo_url": "assets/logos/coles-group-peoplesquad-logo.webp",
-      "career_url": "https://colescareers.com.au/au/en/studentandgraduates",
+      "career_url": "https://colescareers.com.au/au/en/",
       "apply": {
-        "direct_apply_url": "https://2027colesgroupgraduateprogram-expressionofinterest-coles.pushapply.com",
+        "direct_apply_url": "https://colescareers.com.au/au/en/studentandgraduates",
         "open_date": "2026-03-10",
         "close_date": "2026-04-12",
-        "status": "closed"
+        "open_date_raw": null,
+        "close_date_raw": null,
+        "open_date_precision": null,
+        "close_date_precision": null,
+        "status": "upcoming"
       },
       "tags": {
         "streams": [
@@ -90,19 +105,16 @@
           "Central Operations & Supply Chain",
           "Coles Liquor",
           "Legal",
-          "Property",
-          "People & Culture",
-          "Own Brand",
-          "Safety"
+          "People & Culture"
         ],
         "eligibility": [
           "Australian or New Zealand citizens or permanent residents at the time of application can apply."
         ],
         "industries": [
-          "Retail"
+          "Retail (Grocery/Supermarket)"
         ]
       },
-      "updated_at": "2026-03-05T04:54:00+00:00",
+      "updated_at": "2026-03-06T08:53:13+00:00",
       "confidence": "high"
     },
     {
@@ -113,30 +125,257 @@
       "career_url": "https://www.commbank.com.au/about-us/careers.html",
       "apply": {
         "direct_apply_url": null,
-        "open_date": "Applications open – March and July (recurring each year)",
+        "open_date": null,
         "close_date": null,
+        "open_date_raw": null,
+        "close_date_raw": null,
+        "open_date_precision": null,
+        "close_date_precision": null,
         "status": "unknown"
       },
       "tags": {
         "streams": [
-          "Technology (Engineering, Cyber Security, Data Science & AI)",
-          "Advanced Analytics",
-          "Banking Products (including CommSec & Product Management)",
-          "Banking Relationship Management (Institutional, Business & IB&M)",
-          "Finance & Accounting",
-          "Procurement",
-          "Regional and Agribusiness Banking",
-          "Risk Management",
-          "Marketing and Corporate Affairs"
+          "Graduate Program",
+          "Summer Intern Program",
+          "Global Markets Summer Analyst Program",
+          "Technology Associate Program"
         ],
         "eligibility": [
-          "Australian or New Zealand citizen, or Australian permanent resident at the time of application. (This does not include bridging visas while awaiting permanent residency or subclass 820 visa holders.)"
+          "For the Graduate Program, Summer Intern Program, and Global Markets Summer Analyst Program, you must be an Australian or New Zealand citizen, or an Australian permanent resident at the time you apply. Temporary visa holders are not eligible. Bridging visas while awaiting permanent residency and 820 visa holders are not included."
         ],
         "industries": [
           "Banking"
         ]
       },
-      "updated_at": "2026-03-05T14:59:14+00:00",
+      "updated_at": "2026-03-06T08:36:18+00:00",
+      "confidence": "high"
+    },
+    {
+      "id": "csl",
+      "name": "CSL Limited (CSL)",
+      "entity_type": "company",
+      "logo_url": "assets/logos/csl-peoplesquad-logo.webp",
+      "career_url": "https://www.csl.com/careers",
+      "apply": {
+        "direct_apply_url": "https://csl2027graduateprogram-expressionofinterest-csl.pushapply.com",
+        "open_date": "2025-06-23",
+        "close_date": "2025-08-03",
+        "open_date_raw": null,
+        "close_date_raw": null,
+        "open_date_precision": null,
+        "close_date_precision": null,
+        "status": "closed"
+      },
+      "tags": {
+        "streams": [
+          "Engineering",
+          "Manufacturing",
+          "Quality",
+          "Finance",
+          "Supply Chain",
+          "Operational Excellence",
+          "Global Procurement",
+          "Information & Technology"
+        ],
+        "eligibility": [
+          "You will need to be an Australian or New Zealand Citizen or have Australian Permanent Residency status at the time of application."
+        ],
+        "industries": [
+          "Healthcare / Biotechnology & Pharmaceuticals"
+        ]
+      },
+      "updated_at": "2026-03-06T07:53:50+00:00",
+      "confidence": "high"
+    },
+    {
+      "id": "goodman-group",
+      "name": "Goodman Group",
+      "entity_type": "company",
+      "logo_url": "assets/logos/goodman-group-peoplesquad-logo.webp",
+      "career_url": "https://goodmangroup.com.au/careers/",
+      "apply": {
+        "direct_apply_url": null,
+        "open_date": null,
+        "close_date": null,
+        "open_date_raw": null,
+        "close_date_raw": null,
+        "open_date_precision": null,
+        "close_date_precision": null,
+        "status": "unknown"
+      },
+      "tags": {
+        "streams": [],
+        "eligibility": [],
+        "industries": [
+          "Real Estate (Industrial/Logistics Property & Funds Management)"
+        ]
+      },
+      "updated_at": "2026-03-06T08:53:03+00:00",
+      "confidence": "low"
+    },
+    {
+      "id": "macquarie-group",
+      "name": "Macquarie Group",
+      "entity_type": "company",
+      "logo_url": "assets/logos/macquarie-group-peoplesquad-logo.webp",
+      "career_url": "https://www.macquarie.com/us/en/careers.html",
+      "apply": {
+        "direct_apply_url": "https://recruitment.macquarie.com/",
+        "open_date": "2026-03-03",
+        "close_date": "2026-04-14",
+        "open_date_raw": null,
+        "close_date_raw": null,
+        "open_date_precision": null,
+        "close_date_precision": null,
+        "status": "open"
+      },
+      "tags": {
+        "streams": [
+          "Graduate Program",
+          "Summer Internship Program",
+          "Winter Development Program"
+        ],
+        "eligibility": [],
+        "industries": [
+          "Banking & Financial Services"
+        ]
+      },
+      "updated_at": "2026-03-06T08:52:22+00:00",
+      "confidence": "high"
+    },
+    {
+      "id": "national-australia-bank",
+      "name": "National Australia Bank",
+      "entity_type": "company",
+      "logo_url": "assets/logos/national-australia-bank-peoplesquad-logo.webp",
+      "career_url": "https://www.nab.com.au/about-us/careers",
+      "apply": {
+        "direct_apply_url": "https://careers.nab.com.au/jobs/nab-graduate-program-2027-nsw-sydney-cbd-nsw-australia-qld-brisbane-inner-qld-sa-adelaide-inner-sa-vic-melbourne-cbd-vic-wa-perth-inner-wa",
+        "open_date": "2026-02-16",
+        "close_date": "2026-03-29",
+        "open_date_raw": null,
+        "close_date_raw": null,
+        "open_date_precision": null,
+        "close_date_precision": null,
+        "status": "open"
+      },
+      "tags": {
+        "streams": [
+          "Business Banking",
+          "Corporate & Institutional Banking",
+          "Digital, Data & AI",
+          "Finance and Strategy",
+          "Group Marketing",
+          "Group Transformation",
+          "Internal Audit",
+          "People & Culture",
+          "Personal Banking",
+          "Private Wealth",
+          "Risk"
+        ],
+        "eligibility": [
+          "You must be an Australian citizen, a New Zealand citizen, or an Australian permanent resident at the time of applying. Temporary visa holders are not eligible."
+        ],
+        "industries": [
+          "Banking"
+        ]
+      },
+      "updated_at": "2026-03-06T08:36:16+00:00",
+      "confidence": "high"
+    },
+    {
+      "id": "qbe-insurance",
+      "name": "QBE Insurance (QBE Insurance Group)",
+      "entity_type": "company",
+      "logo_url": "assets/logos/qbe-insurance-peoplesquad-logo.webp",
+      "career_url": "https://www.qbe.com/au/careers",
+      "apply": {
+        "direct_apply_url": "https://www.qbe.com/au/careers/graduate/application-process",
+        "open_date": null,
+        "close_date": null,
+        "open_date_raw": null,
+        "close_date_raw": null,
+        "open_date_precision": null,
+        "close_date_precision": null,
+        "status": "unknown"
+      },
+      "tags": {
+        "streams": [
+          "Insurance Underwriting",
+          "Finance",
+          "Data & Analytics"
+        ],
+        "eligibility": [
+          "You need proof of unrestricted Australian working rights."
+        ],
+        "industries": [
+          "Financial Services (Insurance)"
+        ]
+      },
+      "updated_at": "2026-03-06T08:53:38+00:00",
+      "confidence": "high"
+    },
+    {
+      "id": "rio-tinto",
+      "name": "Rio Tinto",
+      "entity_type": "company",
+      "logo_url": null,
+      "career_url": "https://www.riotinto.com/en/careers",
+      "apply": {
+        "direct_apply_url": "https://jobs.riotinto.com/",
+        "open_date": null,
+        "close_date": null,
+        "open_date_raw": null,
+        "close_date_raw": null,
+        "open_date_precision": null,
+        "close_date_precision": null,
+        "status": "unknown"
+      },
+      "tags": {
+        "streams": [],
+        "eligibility": [],
+        "industries": [
+          "Resources"
+        ]
+      },
+      "updated_at": "2026-03-06T08:52:53+00:00",
+      "confidence": "low"
+    },
+    {
+      "id": "suncorp-group",
+      "name": "Suncorp Group",
+      "entity_type": "company",
+      "logo_url": null,
+      "career_url": "https://www.suncorpgroup.com.au/careers",
+      "apply": {
+        "direct_apply_url": "https://www.suncorpgroup.com.au/careers/graduates/apply",
+        "open_date": "2026-08-01",
+        "close_date": null,
+        "open_date_raw": "Applications for 2027 will open August 2026.",
+        "close_date_raw": "Applications for our 2026 program closed 26 August 2025.",
+        "open_date_precision": "exact_day",
+        "close_date_precision": "unparseable",
+        "status": "upcoming"
+      },
+      "tags": {
+        "streams": [
+          "Accounting",
+          "Data Science & Data Analyst",
+          "Human Resources",
+          "Insurance",
+          "Risk Management",
+          "Technology (technical)",
+          "Technology (non-technical)",
+          "Underwriting & Risk Engineering"
+        ],
+        "eligibility": [
+          "For the 2027 graduate program, you need full working rights in Australia or New Zealand. Suncorp does not participate in visa sponsorship."
+        ],
+        "industries": [
+          "Banking"
+        ]
+      },
+      "updated_at": "2026-03-06T11:17:54+00:00",
       "confidence": "high"
     },
     {
@@ -147,8 +386,12 @@
       "career_url": "https://www.telstra.com.au/careers",
       "apply": {
         "direct_apply_url": null,
-        "open_date": "March 2026",
+        "open_date": null,
         "close_date": null,
+        "open_date_raw": null,
+        "close_date_raw": null,
+        "open_date_precision": null,
+        "close_date_precision": null,
         "status": "unknown"
       },
       "tags": {
@@ -157,17 +400,17 @@
           "Software Engineering",
           "Product and Service Design",
           "Technology Consulting and Solutions",
-          "Corporate pathways (Finance and Business, HR)",
+          "Corporate pathways (Finance and Business; HR)",
           "Information and Cybersecurity"
         ],
         "eligibility": [
-          "You must be eligible to work in Australia. International students with a valid visa that enables them to work in Australia without any work restrictions are eligible to apply to technical pathways only (Software Engineering, Network Engineering, Information Cyber & Security, Technology Consulting & Solutions)."
+          "You must be eligible to work in Australia. International students who have a valid visa that enables them to work in Australia without any work restrictions are eligible to apply to technical pathways only."
         ],
         "industries": [
           "Telecommunications"
         ]
       },
-      "updated_at": "2026-03-05T15:16:23+00:00",
+      "updated_at": "2026-03-06T08:52:24+00:00",
       "confidence": "high"
     },
     {
@@ -180,6 +423,10 @@
         "direct_apply_url": "https://careers.transurban.com/opportunities",
         "open_date": null,
         "close_date": null,
+        "open_date_raw": null,
+        "close_date_raw": null,
+        "open_date_precision": null,
+        "close_date_precision": null,
         "status": "unknown"
       },
       "tags": {
@@ -193,7 +440,7 @@
           "Industrial"
         ]
       },
-      "updated_at": "2026-03-05T15:06:47+00:00",
+      "updated_at": "2026-03-06T08:52:19+00:00",
       "confidence": "high"
     },
     {
@@ -203,10 +450,14 @@
       "logo_url": "assets/logos/westpac-peoplesquad-logo.webp",
       "career_url": "https://www.westpac.com.au/about-westpac/careers/",
       "apply": {
-        "direct_apply_url": "https://www.westpac.com.au/about-westpac/careers/",
-        "open_date": "Institutional Bank: 16 March 2026; Other graduate programs: July 2026 (exact day in July not stated)",
-        "close_date": "Graduate program applications: August 2026 (exact day in August not stated)",
-        "status": "unknown"
+        "direct_apply_url": null,
+        "open_date": "2026-07-01",
+        "close_date": "2026-08-31",
+        "open_date_raw": "Graduate program applications open | July",
+        "close_date_raw": "Graduate program applications close | August",
+        "open_date_precision": "exact_day",
+        "close_date_precision": "exact_day",
+        "status": "upcoming"
       },
       "tags": {
         "streams": [
@@ -224,46 +475,54 @@
           "Property, Procurement & Resilience (PPR)",
           "Regional and Agribusiness",
           "Risk",
-          "Technology – Rotational",
-          "Technology – Specialist",
+          "Technology Rotational",
+          "Technology Specialist",
           "Transformation"
         ],
         "eligibility": [
-          "You must be an Australian or New Zealand citizen or an Australian Permanent Resident when you apply."
+          "You must be an Australian or New Zealand Citizen, or an Australian Permanent Resident, at the time of application."
         ],
         "industries": [
           "Banking & Financial Services"
         ]
       },
-      "updated_at": "2026-03-05T15:01:09+00:00",
+      "updated_at": "2026-03-06T11:16:57+00:00",
       "confidence": "high"
     },
     {
-      "id": "xero",
-      "name": "Xero",
+      "id": "woodside-energy",
+      "name": "Woodside Energy",
       "entity_type": "company",
-      "logo_url": "assets/logos/xero-peoplesquad-logo.webp",
-      "career_url": "https://careers.xero.com/jobs/",
+      "logo_url": "assets/logos/woodside-energy-peoplesquad-logo.webp",
+      "career_url": "https://www.woodside.com/careers",
       "apply": {
-        "direct_apply_url": null,
-        "open_date": null,
+        "direct_apply_url": "https://careers.woodside.com.au/",
+        "open_date": "2026-08-01",
         "close_date": null,
-        "status": "unknown"
+        "open_date_raw": null,
+        "close_date_raw": null,
+        "open_date_precision": null,
+        "close_date_precision": null,
+        "status": "upcoming"
       },
       "tags": {
         "streams": [
-          "Technical program",
-          "Design grad program"
+          "Summer Vacation Program (Australia)",
+          "Indigenous Summer Vacation Program (Australia)",
+          "Better Future Pathways (Australia)",
+          "Graduate Development Program (Australia and USA pathways described on the same page)",
+          "Summer Internship Program (USA)",
+          "Professional Development Program (Timor-Leste)"
         ],
         "eligibility": [
-          "Either have the right to work full-time in Australia or will be eligible to work full-time after graduating."
+          "Australia pathways: Applicants must be an Australian or New Zealand citizen, an Australian permanent resident, or (for some pathways) an international student studying and residing in Australia with unrestricted Australian working rights. USA pathways: Applicants must be authorized to work in the United States and must not require current or future sponsorship for employment visa status (for example, F-1). Timor-Leste pathway: Applicants must be a Timor-Leste national."
         ],
         "industries": [
-          "Technology"
+          "Energy - Oil & Gas (Upstream/LNG)"
         ]
       },
-      "updated_at": "2026-03-05T04:53:58+00:00",
-      "confidence": "medium"
+      "updated_at": "2026-03-06T08:53:23+00:00",
+      "confidence": "high"
     }
   ]
 }

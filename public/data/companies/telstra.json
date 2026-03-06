@@ -34,254 +34,216 @@
       "confidence": "high",
       "quality_score": 0.85,
       "selection_reason": "fallback_icon",
-      "retrieved_at": "2026-03-05T15:16:23+00:00",
+      "retrieved_at": "2026-03-06T08:52:24+00:00",
       "notes": []
     }
   },
   "program": {
     "name": "Telstra Graduate Program",
-    "overview_url": "https://www.telstra.com.au/careers/students-and-graduates/telstra-graduate-program",
+    "overview_url": "https://www.telstra.com.au/careers/students-and-graduates/telstra-graduate-program?lApplicationSubSourceID=11223",
     "direct_apply_url": null,
-    "open_date": "March 2026",
+    "open_date": "2026-03-01",
     "close_date": null,
     "streams": [
       "Network Engineering",
       "Software Engineering",
       "Product and Service Design",
       "Technology Consulting and Solutions",
-      "Corporate pathways (Finance and Business, HR)",
+      "Corporate pathways (Finance and Business; HR)",
       "Information and Cybersecurity"
     ],
     "locations": [],
-    "salary_text": "Competitive starting salary (no figure published). Includes Telstra Additional Day each year on top of four weeks’ annual leave, paid volunteer and cultural days, and discounts on Telstra products and partner offers.",
-    "duration_text": "14-month Graduate Program including a month-long induction; program commencement beginning February 2027.",
-    "rotation_text": "Graduates are allocated into Chapters/Operative groups and assigned to missions/projects to develop capabilities in chosen pathways."
+    "salary_text": "When you start in the Program, you’ll be given a competitive salary.",
+    "duration_text": "The Graduate Program runs for 14 months, which includes a month-long induction at the commencement.",
+    "rotation_text": "During this 14-month period you will be allocated into Chapters/Operative groups and assigned to missions/projects to develop capabilities in chosen pathways."
   },
   "eligibility": {
-    "work_rights": "You must be eligible to work in Australia. International students with a valid visa that enables them to work in Australia without any work restrictions are eligible to apply to technical pathways only (Software Engineering, Network Engineering, Information Cyber & Security, Technology Consulting & Solutions).",
-    "graduation_window": "Must have completed a minimum undergraduate degree at an Australian university within the last three years before the Program commencement in February 2027 (i.e., graduating in 2024, 2025 or 2026). Mature-age students who have just graduated are eligible if they complete their degree by end of 2026.",
-    "disciplines": [
-      "Network Engineering",
-      "Software Engineering",
-      "Product and Service Design",
-      "Technology Consulting and Solutions",
-      "Finance and Business",
-      "Human Resources",
-      "Information and Cybersecurity"
-    ],
+    "work_rights": "You must be eligible to work in Australia. International students who have a valid visa that enables them to work in Australia without any work restrictions are eligible to apply to technical pathways only.",
+    "graduation_window": "For the 2026 intake, you must have completed your most recent tertiary education qualification within the last three years up to the Program start in February 2026 (i.e. graduating between 2023, 2024 and 2025).",
+    "disciplines": [],
     "minimum_requirements": [
-      "Completed a minimum of an undergraduate degree within the eligibility window described above.",
-      "Be eligible to work in Australia (see visa restrictions for international students above).",
-      "You will need to upload a resume and your most recent academic transcript as part of the application.",
-      "If you are still waiting for final results you can apply using your GPA or unofficial transcript; official transcripts will be requested if you progress to interviews."
+      "You must have completed a minimum of an undergraduate degree at an Australian University within the last three years before the commencement of the Program in February 2026 (i.e. graduating between 2023, 2024 and 2025)."
     ]
   },
   "recruitment_process": {
     "stages": [
       {
         "name": "Submit application",
-        "details": "Short online application form; upload resume and most recent academic transcript."
+        "details": "Fill out a short online application form to check your eligibility. Upload your resume and most recent academic transcript."
       },
       {
-        "name": "Video interview & online assessment",
-        "details": "Video interview and online assessment completed via HireVue."
+        "name": "Video interview and online assessment (HireVue)",
+        "details": "Complete a video interview and an online assessment using HireVue."
       },
       {
-        "name": "Final interview (virtual) — three parts",
-        "details": "1) Graduate ambassador Q&A session (meet current graduates); 2) Case study (present a 3–5 minute pitch on a topical issue provided beforehand); 3) Behavioural interview (motivational and behavioural questions)."
+        "name": "Final interview (virtual)",
+        "details": "This includes a graduate ambassador Q&A session, a case study where you prepare a 3–5 minute pitch, and a behavioural interview with motivational and behavioural questions."
       },
       {
         "name": "Checks",
-        "details": "Security/background checks (and medical assessment in some cases) before final offer."
+        "details": "Telstra may run checks such as security or background checks before moving to the final stage."
       },
       {
         "name": "Offer",
-        "details": "Successful candidates receive a phone call and a verbal/contract offer."
+        "details": "If successful, Telstra will call you with an offer. If you miss out, they may keep you in their talent pool and contact you later if roles become available."
       }
     ],
     "tips": [
-      "For the HireVue video interview: use a quiet space, working camera and microphone, stable internet, and check lighting and background.",
-      "You will have practice opportunities in the video interview and up to three attempts per question—use them to prepare.",
-      "Read Telstra’s strategy and the role description for your chosen pathway so you can speak to why you’re a fit.",
-      "If invited to an interview, research the business unit and interviewer where possible and prepare thoughtful questions.",
-      "If you need adjustments or accessibility support, Telstra offers recruitment support and will work with you to make arrangements."
+      "Before you start the HireVue stage, make sure you have a phone, PC or laptop, and a working microphone and camera.",
+      "Do the interview and assessments in a quiet place with minimal distractions.",
+      "Check your internet connection before you start.",
+      "Use the chance to practice before recording your HireVue answers.",
+      "If you make a mistake in HireVue, you can re-record (up to three attempts per question).",
+      "It is okay to use notes during HireVue, and it is fine to briefly break eye contact to check them.",
+      "Read about Telstra’s T25 strategy, purpose, and four core values, and re-read the role description for your chosen pathway."
     ]
   },
   "commercial_context": {
     "exec_themes": [
-      "Network leadership and capacity: continuing heavy investment in mobile (5G), fibre (including intercity routes) and subsea capacity to keep Telstra’s network position and support higher data traffic.",
-      "Customer experience and digital transformation: improving Net Promoter Scores and reducing complaint referrals, expanding digital services and fraud/scam protections (e.g. Cleaner Pipes).",
-      "Cost discipline and organisational simplification: management actions to reduce cost and simplify the organisation announced in May 2024, with ongoing focus on efficiency.",
-      "Growth in enterprise, wholesale and platform services: monetise network assets (InfraCo/wholesale), expand enterprise offerings and build data & AI capabilities (including a JV with Accenture).",
-      "Sustainability as business priority: large renewable energy PPAs, emissions reduction targets and device recycling/repair programs integrated into strategy."
+      "Connected Future 30 strategy: “double down” on connectivity and digital infrastructure, and “radically innovate” in the core network (including treating the network as a product)",
+      "Cost discipline and efficiency focus across the business (including targeting positive operating leverage, and keeping tight control of costs and BAU capex)",
+      "Customer experience and brand outcomes as strategic goals (e.g., lifting strategic NPS and being a top-10 brand)",
+      "Mobile and network leadership investment (e.g., building reliability/resilience and advancing 5G capabilities)",
+      "Reset/turnaround actions in the Enterprise business (noted as under-performing, with actions underway)",
+      "Sustainability positioned as a strategy enabler (“Operating Sustainably”), with emissions and renewable energy commitments tied to long-term value"
     ],
-    "profit_engine": "Telstra’s financial performance is driven mainly by network-based services: consumer mobile and fixed broadband revenue, enterprise and wholesale services, and earnings from network infrastructure (including fibre/subsea/infra monetisation). Incremental growth and margin expansion are sought from higher-value products and platform/data services (notably data/AI initiatives and enterprise solutions).",
-    "headwinds": "Key headwinds called out in official reports include regulatory and competitive pressure in Australian retail and wholesale markets, the capital intensity and cost of network build and upgrades (including inflation and supply-chain pressures), and climate/physical risks to network assets that can cause unplanned repair and resilience costs.",
-    "esg": "Telstra positions ESG as core to operations: targets include a 70% reduction in scope 1+2 emissions by 2030 (from FY19 baseline) and scope 3 reduction targets, a goal to source renewable energy equivalent to 100% of consumption (major PPAs and renewables investments), and circular-economy commitments such as device recycling and a 2030 goal to re-use/recycle one device for every two sold. Telstra publishes annual sustainability reports and a Modern Slavery Statement.",
-    "recent_pivot": "Since FY24 Telstra has signalled a dual pivot: (1) a stronger focus on cost and organisational simplification announced 21 May 2024; and (2) an explicit push into data and AI capability (including a proposed global AI joint venture with Accenture announced 15 January 2025) to accelerate platform and service-based revenue beyond traditional connectivity."
+    "profit_engine": "Telstra’s profit engine is built around earning cashflows from its core connectivity business (especially mobiles) and monetising its digital infrastructure assets, while protecting margins through cost reduction/cost discipline and disciplined capital management (dividends, potential buy-backs, and portfolio actions).",
+    "headwinds": "Telstra highlights that its Enterprise business has under-performed and that resetting it “will take time.” It also describes operating in a fast-changing, highly competitive environment with changing customer needs and ongoing pressure to keep investing in networks and digital infrastructure; it notes prior NBN-related “economic headwind” as context for its turnaround period.",
+    "esg": "Telstra frames sustainability around two main pillars—Environment and Communities—supported by a commitment to “doing business responsibly.” Disclosed priorities and targets include reducing absolute Scope 1+2 emissions by 70% and Scope 3 emissions by 50% by 2030 (from an FY2019 baseline), progressing renewable energy generation equivalent to Telstra’s electricity consumption (targeting 100% by end of 2025), and community-focused programs aimed at digital inclusion and supporting customers in vulnerable circumstances.",
+    "recent_pivot": "In May 2025, Telstra signalled a strategic shift from the T22/T25 strategy cycle to a new five-year plan called “Connected Future 30,” including a stronger emphasis on treating the network as a product (commercial value capture via network attributes and APIs), stepping up cost discipline/efficiency, and continuing to leverage mobile and digital infrastructure leadership."
   },
   "section_provenance": {
     "program": {
       "confidence": "high",
       "notes": [
-        "Duration, start month/year (February 2027), program length (14 months) and general benefits are explicitly stated on Telstra's Graduate Program page.",
-        "No explicit salary figure or list of office locations is published on the Telstra Graduate Program page; only descriptive phrases about salary and benefits are given.",
-        "Direct 'apply' link on the Telstra page points to Telstra's external careers/job system (telstra.wd3.myworkdayjobs.com); because that domain is outside the allowed set for this extraction, direct_apply_url is returned as null."
+        "Program duration (14 months) and the induction timing are stated on Telstra’s Graduate Program page.",
+        "Pathways (streams) are listed under the 'Choose your pathway' section.",
+        "Specific program locations are not stated on the pages used."
       ],
       "sources": [
         {
           "type": "web",
           "title": "Telstra Graduate Program - Telstra",
-          "url": "https://www.telstra.com.au/careers/students-and-graduates/telstra-graduate-program",
-          "retrieved_at": "2026-03-05"
-        },
-        {
-          "type": "web",
-          "title": "Student Internships & Graduate Programs - Telstra",
-          "url": "https://www.telstra.com.au/careers/students-and-graduates",
-          "retrieved_at": "2026-03-05"
+          "url": "https://www.telstra.com.au/careers/students-and-graduates/telstra-graduate-program?lApplicationSubSourceID=11223",
+          "retrieved_at": null
         }
       ]
     },
     "eligibility": {
       "confidence": "high",
       "notes": [
-        "Eligibility rules, graduation window, visa restrictions for international students and requirements to upload transcripts are explicitly stated on the Graduate Program page.",
-        "The graduation window is defined relative to program commencement in February 2027 (graduating in 2024–2026)."
+        "Work rights and the graduation window for the February 2026 start are stated in the Program eligibility section and FAQs.",
+        "Eligible disciplines are not explicitly listed as degree fields."
       ],
       "sources": [
         {
           "type": "web",
           "title": "Telstra Graduate Program - Telstra",
-          "url": "https://www.telstra.com.au/careers/students-and-graduates/telstra-graduate-program",
-          "retrieved_at": "2026-03-05"
+          "url": "https://www.telstra.com.au/careers/students-and-graduates/telstra-graduate-program?lApplicationSubSourceID=11223",
+          "retrieved_at": null
         }
       ]
     },
     "recruitment_process": {
       "confidence": "high",
       "notes": [
-        "The Students & Grads application process steps (Submit application; Video interview & online assessment via HireVue; Final virtual interview with three parts; Checks; Offers) are listed on the Graduate Program page and duplicated with more detail on the 'How we hire' page.",
-        "Interview preparation tips in the 'tips' section are taken from Telstra's 'How we hire' guidance for Students & Grads."
+        "The Student & Grad application stages are described on Telstra’s 'How we hire' page.",
+        "Interview preparation tips for Students & Grads (HireVue) are listed on the same page."
       ],
       "sources": [
-        {
-          "type": "web",
-          "title": "Telstra Graduate Program - Telstra",
-          "url": "https://www.telstra.com.au/careers/students-and-graduates/telstra-graduate-program",
-          "retrieved_at": "2026-03-05"
-        },
         {
           "type": "web",
           "title": "How we hire - Telstra",
           "url": "https://www.telstra.com.au/careers/how-we-hire",
-          "retrieved_at": "2026-03-05"
+          "retrieved_at": null
         }
       ]
     },
     "commercial_context": {
-      "confidence": "high",
+      "confidence": "medium",
       "notes": [
-        "All statements are drawn from Telstra's official investor pages, annual report(s) and sustainability hub. Where wording in the source is organisational or thematic rather than a single label (for example 'profit engine'), the answer synthesises language used across investor and annual report materials rather than introducing new facts.",
-        "Profit composition (consumer mobile/fixed, enterprise, wholesale/infra, and growth via data/platforms) is synthesised from segment and strategy disclosure; Telstra does not publish a single-line 'profit engine' label.",
-        "Headwinds combine explicit risk disclosures (including climate-related risk) with management commentary in market updates — these are factual summaries of reported risks and guidance."
+        "Primary strategy and financial-discipline themes are directly supported by Telstra’s 27 May 2025 ASX market release on the Connected Future 30 strategy and the 27 May 2025 Investor Day transcript (Connected Future 30).",
+        "ESG themes and some metrics (e.g., emissions reduction progress, renewable energy coverage) are supported by Telstra’s Sustainability Hub pages; however, the 2025 Bigger Picture Sustainability Report PDF could not be fetched by the tool at time of extraction (tool returned an error), so ESG detail is constrained to what is explicitly visible on Telstra web pages and the Connected Future 30 market release.",
+        "Headwinds are summarized from explicit statements about Enterprise under-performance and the need for an Enterprise “reset,” plus broad competitive/technology change context; more granular headwinds (e.g., specific regulatory, pricing, or macro pressures) were not extracted because they were not clearly spelled out in the retrieved official sources."
       ],
       "sources": [
         {
-          "type": "annual_report",
-          "title": "Telstra Annual Report 2024 (full report PDF)",
-          "url": "https://www.telstra.com.au/content/dam/tcom/about-us/investors/pdf-g/telstra-annual-report-2024.pdf",
-          "retrieved_at": "2026-03-05"
+          "type": "official_investor_release",
+          "title": "Telstra announces Connected Future 30 Strategy (Market Release), 27 May 2025 (PDF)",
+          "url": "https://www.telstra.com.au/content/dam/tcom/about-us/investors/pdf-i/telstra-announces-connected-future-30-strategy.pdf",
+          "retrieved_at": "2026-03-06"
         },
         {
-          "type": "annual_reports_hub",
-          "title": "Telstra - Annual reports - Investors",
-          "url": "https://www.telstra.com.au/annualreport",
-          "retrieved_at": "2026-03-05"
+          "type": "official_investor_transcript",
+          "title": "Telstra Investor Day Transcript - Connected Future 30 - 27 May 2025 (PDF)",
+          "url": "https://www.telstra.com.au/content/dam/tcom/about-us/investors/pdf-i/2025-investor-day-video-transcript.pdf",
+          "retrieved_at": "2026-03-06"
         },
         {
-          "type": "investor_presentation",
-          "title": "Investor presentations (Investor Day and market updates)",
-          "url": "https://www.telstra.com.au/aboutus/investors/investor-presentations",
-          "retrieved_at": "2026-03-05"
-        },
-        {
-          "type": "market_update_transcript",
-          "title": "Telstra market update — Organisational changes, action on cost and early FY25 Guidance (transcript, 21 May 2024)",
-          "url": "https://www.telstra.com.au/content/dam/tcom/about-us/investors/pdf-g/telstra-market-update-20240521-transcript.pdf",
-          "retrieved_at": "2026-03-05"
-        },
-        {
-          "type": "sustainability_report_and_hub",
-          "title": "Telstra Sustainability hub and 2025 Bigger Picture Sustainability Report",
+          "type": "official_sustainability_page",
+          "title": "Telstra Sustainability Hub",
           "url": "https://www.telstra.com.au/sustainability",
-          "retrieved_at": "2026-03-05"
+          "retrieved_at": "2026-03-06"
         },
         {
-          "type": "media_release",
-          "title": "Telstra and Accenture announce global AI joint venture (15 January 2025)",
-          "url": "https://www.telstra.com.au/aboutus/media/media-releases/telstra-accenture-global-AI-venture",
-          "retrieved_at": "2026-03-05"
+          "type": "official_investor_page",
+          "title": "Telstra Investor presentations (listing page with Investor Day materials)",
+          "url": "https://www.telstra.com.au/aboutus/investors/investor-presentations",
+          "retrieved_at": "2026-03-06"
+        },
+        {
+          "type": "official_investor_page",
+          "title": "Telstra Annual reports (listing page; report availability and release dates)",
+          "url": "https://www.telstra.com.au/aboutus/investors/reports",
+          "retrieved_at": "2026-03-06"
         }
       ]
     }
   },
   "provenance": {
-    "updated_at": "2026-03-05T15:16:23+00:00",
+    "updated_at": "2026-03-06T08:52:24+00:00",
     "sources": [
       {
         "type": "web",
         "title": "Telstra Graduate Program - Telstra",
-        "url": "https://www.telstra.com.au/careers/students-and-graduates/telstra-graduate-program",
-        "retrieved_at": "2026-03-05"
-      },
-      {
-        "type": "web",
-        "title": "Student Internships & Graduate Programs - Telstra",
-        "url": "https://www.telstra.com.au/careers/students-and-graduates",
-        "retrieved_at": "2026-03-05"
+        "url": "https://www.telstra.com.au/careers/students-and-graduates/telstra-graduate-program?lApplicationSubSourceID=11223",
+        "retrieved_at": null
       },
       {
         "type": "web",
         "title": "How we hire - Telstra",
         "url": "https://www.telstra.com.au/careers/how-we-hire",
-        "retrieved_at": "2026-03-05"
+        "retrieved_at": null
       },
       {
-        "type": "annual_report",
-        "title": "Telstra Annual Report 2024 (full report PDF)",
-        "url": "https://www.telstra.com.au/content/dam/tcom/about-us/investors/pdf-g/telstra-annual-report-2024.pdf",
-        "retrieved_at": "2026-03-05"
+        "type": "official_investor_release",
+        "title": "Telstra announces Connected Future 30 Strategy (Market Release), 27 May 2025 (PDF)",
+        "url": "https://www.telstra.com.au/content/dam/tcom/about-us/investors/pdf-i/telstra-announces-connected-future-30-strategy.pdf",
+        "retrieved_at": "2026-03-06"
       },
       {
-        "type": "annual_reports_hub",
-        "title": "Telstra - Annual reports - Investors",
-        "url": "https://www.telstra.com.au/annualreport",
-        "retrieved_at": "2026-03-05"
+        "type": "official_investor_transcript",
+        "title": "Telstra Investor Day Transcript - Connected Future 30 - 27 May 2025 (PDF)",
+        "url": "https://www.telstra.com.au/content/dam/tcom/about-us/investors/pdf-i/2025-investor-day-video-transcript.pdf",
+        "retrieved_at": "2026-03-06"
       },
       {
-        "type": "investor_presentation",
-        "title": "Investor presentations (Investor Day and market updates)",
-        "url": "https://www.telstra.com.au/aboutus/investors/investor-presentations",
-        "retrieved_at": "2026-03-05"
-      },
-      {
-        "type": "market_update_transcript",
-        "title": "Telstra market update — Organisational changes, action on cost and early FY25 Guidance (transcript, 21 May 2024)",
-        "url": "https://www.telstra.com.au/content/dam/tcom/about-us/investors/pdf-g/telstra-market-update-20240521-transcript.pdf",
-        "retrieved_at": "2026-03-05"
-      },
-      {
-        "type": "sustainability_report_and_hub",
-        "title": "Telstra Sustainability hub and 2025 Bigger Picture Sustainability Report",
+        "type": "official_sustainability_page",
+        "title": "Telstra Sustainability Hub",
         "url": "https://www.telstra.com.au/sustainability",
-        "retrieved_at": "2026-03-05"
+        "retrieved_at": "2026-03-06"
       },
       {
-        "type": "media_release",
-        "title": "Telstra and Accenture announce global AI joint venture (15 January 2025)",
-        "url": "https://www.telstra.com.au/aboutus/media/media-releases/telstra-accenture-global-AI-venture",
-        "retrieved_at": "2026-03-05"
+        "type": "official_investor_page",
+        "title": "Telstra Investor presentations (listing page with Investor Day materials)",
+        "url": "https://www.telstra.com.au/aboutus/investors/investor-presentations",
+        "retrieved_at": "2026-03-06"
+      },
+      {
+        "type": "official_investor_page",
+        "title": "Telstra Annual reports (listing page; report availability and release dates)",
+        "url": "https://www.telstra.com.au/aboutus/investors/reports",
+        "retrieved_at": "2026-03-06"
       }
     ],
     "notes": []

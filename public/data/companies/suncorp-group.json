@@ -1,0 +1,285 @@
+{
+  "schema_version": "1.0",
+  "id": "suncorp-group",
+  "name": "Suncorp Group",
+  "entity_type": "company",
+  "classification": {
+    "industry_bucket": "Banking",
+    "is_government": false,
+    "government_level": ""
+  },
+  "official_domains": [
+    "suncorpgroup.com.au"
+  ],
+  "urls": {
+    "careers_url": "https://www.suncorpgroup.com.au/careers",
+    "grad_program_url": "https://www.suncorpgroup.com.au/careers/graduates",
+    "apply_url": "https://www.suncorpgroup.com.au/careers/graduates/apply",
+    "investor_relations_url": "https://www.suncorpgroup.com.au/investors"
+  },
+  "logo_url": null,
+  "branding": {
+    "logo_candidates": [],
+    "logo": null
+  },
+  "program": {
+    "name": "Suncorp Graduate Program",
+    "overview_url": "https://www.suncorpgroup.com.au/careers/graduates/graduate-programs",
+    "direct_apply_url": "https://www.suncorpgroup.com.au/careers/graduates/apply",
+    "open_date": "2026-08-01",
+    "close_date": null,
+    "open_date_raw": "Applications for 2027 will open August 2026.",
+    "close_date_raw": "Applications for our 2026 program closed 26 August 2025.",
+    "open_date_precision": "exact_day",
+    "close_date_precision": "unparseable",
+    "streams": [
+      "Accounting",
+      "Data Science & Data Analyst",
+      "Human Resources",
+      "Insurance",
+      "Risk Management",
+      "Technology (technical)",
+      "Technology (non-technical)",
+      "Underwriting & Risk Engineering"
+    ],
+    "locations": [
+      "Adelaide",
+      "Auckland",
+      "Brisbane",
+      "Melbourne",
+      "Perth",
+      "Sydney"
+    ],
+    "salary_text": null,
+    "duration_text": "Our graduate program is a two-year program built specifically to develop your technical skills, build capability, expand your network, enhance your working experience and allow you to have fun.",
+    "rotation_text": "Graduate Program Rotations are described as 4 x 6 months in multiple streams. In Technology (technical) and Technology (non-technical), rotations are described as optional and within the same team."
+  },
+  "eligibility": {
+    "work_rights": "For the 2027 graduate program, you need full working rights in Australia or New Zealand. Suncorp does not participate in visa sponsorship.",
+    "graduation_window": "For the 2027 graduate program, you must have completed a minimum of undergraduate level study within the last two years (2024, 2025 or 2026), or will complete a minimum of undergraduate level study prior to the program commencing.",
+    "disciplines": [
+      "Accounting stream: Commerce, Business, Accounting, Finance (and other majors if your studies still allow you to start CA or CPA).",
+      "Human Resources stream: Behavioural Science/Psychology, Human Resources, Business.",
+      "Insurance stream: Business, Finance, Commerce, Economics; Data Science, Mathematics; Engineering; Humanities, Arts; Law (not a legal role); Science.",
+      "Risk Management stream: Business, Commerce, Economics, Finance; Psychology; Law (not a legal role); Data Science, Mathematics.",
+      "Technology (technical) stream: IT (or related) degree.",
+      "Technology (non-technical) stream: Information Technology (or related); Business/Commerce/Finance/Economics; Engineering.",
+      "Underwriting & Risk Engineering stream: Underwriting—Business, Commerce, Economics, Maths, Science; Risk Engineering—Civil, Construction, Infrastructure Engineering (or similar)."
+    ],
+    "minimum_requirements": [
+      "Studying or have studied at an Australian or New Zealand university.",
+      "Minimum ‘pass’ grade.",
+      "If you are on a student/graduate visa, it is your responsibility to ensure you can continue to work beyond the visa expiry date, because Suncorp does not sponsor visas."
+    ]
+  },
+  "recruitment_process": {
+    "stages": [
+      {
+        "name": "Apply",
+        "details": "Complete the application form and online testing."
+      },
+      {
+        "name": "Video Interview",
+        "details": "Record responses to questions."
+      },
+      {
+        "name": "Final Interview (Meet-up)",
+        "details": "Final interview with the team."
+      }
+    ],
+    "tips": [
+      "Read the information about the roles on offer and be clear about which role/s you are applying for.",
+      "Have an electronic copy of your resume and your academic results to date ready as two separate documents to upload.",
+      "A cover letter is not required, and there are no selection criteria as part of the application.",
+      "Use an email address you check regularly and check your junk mail folder after applying. You can opt in to SMS notifications.",
+      "If you are interested in more than one role, complete the full application (including the online assessment) for the first role, then apply for other roles and release your results to avoid doing multiple assessments."
+    ]
+  },
+  "commercial_context": {
+    "exec_themes": [
+      "Simplify the group into a ‘pure-play’ general insurer after selling the banking and life businesses.",
+      "Grow the core insurance business while improving customer outcomes (products, service, claims).",
+      "Modernise and innovate operations, including using AI and digital tools to improve service and efficiency.",
+      "Respond to and manage natural hazards and extreme weather, including improving disaster response and supporting community resilience.",
+      "Manage affordability and accessibility of insurance, including public advocacy for mitigation, planning and lower taxes on insurance.",
+      "Disciplined capital management, including returning excess capital to shareholders (capital return, special dividend, buy-back)."
+    ],
+    "profit_engine": "Suncorp primarily makes money by selling general insurance across Australia and New Zealand (premiums), managing claims costs and reinsurance, and earning investment income on funds it holds to pay future claims. Recent profit was also lifted by one-off gains from selling Suncorp Bank and the New Zealand life business.",
+    "headwinds": "Suncorp highlights pressure from natural hazards (frequent declared weather events and large claim volumes), insurance affordability and accessibility challenges, and cost pressures such as inflation in claims supply chains. It also flags emerging in-home risks (for example sub-standard flexi piping and lithium-ion batteries) that could increase future home-claims costs and premiums.",
+    "esg": "Suncorp frames climate change and natural hazard resilience as a long-standing ESG priority, and says it is integrating climate considerations into governance, risk management and strategy. It has brought forward its Scope 1 and 2 operational net-zero target to 2030 (planned actions include buying renewable electricity and shifting fleet vehicles to electric/hybrid). It also states it uses responsible insurance and responsible investment policies to address environmental and social risks, and that it is a signatory to UN responsible finance/insurance frameworks.",
+    "recent_pivot": "Suncorp’s recent strategic pivot is completing a multi-year simplification to become a dedicated, Trans-Tasman general insurer: it completed the sale of Suncorp Bank to ANZ on 31 July 2024 and the sale of its New Zealand life insurance business (Asteron Life) on 31 January 2025, then focused investment on improving insurance products/services, digital experiences and operational capabilities (including AI)."
+  },
+  "section_provenance": {
+    "program": {
+      "confidence": "high",
+      "notes": [
+        "Open timing for the next intake is stated as 'August 2026' and is normalised to the first day of that month for the open_date field.",
+        "The page states the previous intake (2026 program) closed on a specific date (26 August 2025), but it does not state the 2027 close date, so close_date is left null.",
+        "Streams and rotation details are taken from the Graduate program streams page.",
+        "Locations are combined across streams on the Graduate program streams page, plus the cities listed for the 2025 cohort onboarding in a Suncorp news article."
+      ],
+      "sources": [
+        {
+          "type": "web",
+          "title": "Apply for graduate and internship programs",
+          "url": "https://www.suncorpgroup.com.au/careers/graduates/apply",
+          "retrieved_at": null
+        },
+        {
+          "type": "web",
+          "title": "Graduate program",
+          "url": "https://www.suncorpgroup.com.au/careers/graduates/graduate-programs",
+          "retrieved_at": null
+        },
+        {
+          "type": "web",
+          "title": "10,000 applications and 63 graduates: Suncorp Graduate Program 2025 kicks off",
+          "url": "https://www.suncorpgroup.com.au/news/news/graduate-program-2025",
+          "retrieved_at": null
+        }
+      ]
+    },
+    "eligibility": {
+      "confidence": "high",
+      "notes": [
+        "Eligibility criteria are explicitly listed for the 2027 graduate program on the 'How to apply' page.",
+        "Disciplines are listed per stream on the Graduate program streams page.",
+        "No additional academic requirements (for example, WAM/GPA thresholds beyond 'minimum pass') are stated on the pages used."
+      ],
+      "sources": [
+        {
+          "type": "web",
+          "title": "Apply for graduate and internship programs",
+          "url": "https://www.suncorpgroup.com.au/careers/graduates/apply",
+          "retrieved_at": null
+        },
+        {
+          "type": "web",
+          "title": "Graduate program",
+          "url": "https://www.suncorpgroup.com.au/careers/graduates/graduate-programs",
+          "retrieved_at": null
+        }
+      ]
+    },
+    "recruitment_process": {
+      "confidence": "high",
+      "notes": [
+        "The recruitment process stages and the pre-application checklist are explicitly listed on the 'How to apply' page."
+      ],
+      "sources": [
+        {
+          "type": "web",
+          "title": "Apply for graduate and internship programs",
+          "url": "https://www.suncorpgroup.com.au/careers/graduates/apply",
+          "retrieved_at": null
+        }
+      ]
+    },
+    "commercial_context": {
+      "confidence": "medium",
+      "notes": [
+        "Most source material is published as website news/strategy pages rather than full annual report sections or earnings call transcripts; therefore, wording about the ‘profit engine’ is summarised in plain English from reported drivers (premiums, claims, investment returns, and one-off sale gains) rather than quoted from a single explicit ‘business model’ statement.",
+        "‘Recent pivot’ is explicit (bank sale and NZ life sale) and date-stamped on Suncorp’s site; however, downstream operational changes (e.g., AI, modernisation) are described as priorities rather than a single formal ‘pivot’ announcement.",
+        "Headwinds are compiled from multiple statements (natural hazard claims, affordability/accessibility, inflation/cost pressures, emerging home risks) that are discussed in results commentary and climate/affordability pages."
+      ],
+      "sources": [
+        {
+          "type": "official_company_news_or_page",
+          "title": "Suncorp delivers full year results for FY25",
+          "url": "https://www.suncorpgroup.com.au/news/news/fy-25-results",
+          "retrieved_at": null
+        },
+        {
+          "type": "official_company_news_or_page",
+          "title": "Message from the Chairman HY25",
+          "url": "https://www.suncorpgroup.com.au/message-from-chairman-hy25",
+          "retrieved_at": null
+        },
+        {
+          "type": "official_company_news_or_page",
+          "title": "Suncorp Group completes sale of Bank to ANZ",
+          "url": "https://www.suncorpgroup.com.au/news/news/suncorp-completes-bank-sale",
+          "retrieved_at": null
+        },
+        {
+          "type": "official_company_news_or_page",
+          "title": "Suncorp accelerates net-zero ambition",
+          "url": "https://www.suncorpgroup.com.au/news/news/suncorp-accelerates-net-zero-ambition",
+          "retrieved_at": null
+        },
+        {
+          "type": "official_company_news_or_page",
+          "title": "Responding to climate change",
+          "url": "https://www.suncorpgroup.com.au/corporate-responsibility/sustainable-growth/climate-change",
+          "retrieved_at": null
+        },
+        {
+          "type": "official_company_news_or_page",
+          "title": "Responsible underwriting and investing",
+          "url": "https://www.suncorpgroup.com.au/corporate-responsibility/sustainable-growth/responsible-insurance-investing",
+          "retrieved_at": null
+        }
+      ]
+    }
+  },
+  "provenance": {
+    "updated_at": "2026-03-06T11:17:54+00:00",
+    "sources": [
+      {
+        "type": "web",
+        "title": "Apply for graduate and internship programs",
+        "url": "https://www.suncorpgroup.com.au/careers/graduates/apply",
+        "retrieved_at": null
+      },
+      {
+        "type": "web",
+        "title": "Graduate program",
+        "url": "https://www.suncorpgroup.com.au/careers/graduates/graduate-programs",
+        "retrieved_at": null
+      },
+      {
+        "type": "web",
+        "title": "10,000 applications and 63 graduates: Suncorp Graduate Program 2025 kicks off",
+        "url": "https://www.suncorpgroup.com.au/news/news/graduate-program-2025",
+        "retrieved_at": null
+      },
+      {
+        "type": "official_company_news_or_page",
+        "title": "Suncorp delivers full year results for FY25",
+        "url": "https://www.suncorpgroup.com.au/news/news/fy-25-results",
+        "retrieved_at": null
+      },
+      {
+        "type": "official_company_news_or_page",
+        "title": "Message from the Chairman HY25",
+        "url": "https://www.suncorpgroup.com.au/message-from-chairman-hy25",
+        "retrieved_at": null
+      },
+      {
+        "type": "official_company_news_or_page",
+        "title": "Suncorp Group completes sale of Bank to ANZ",
+        "url": "https://www.suncorpgroup.com.au/news/news/suncorp-completes-bank-sale",
+        "retrieved_at": null
+      },
+      {
+        "type": "official_company_news_or_page",
+        "title": "Suncorp accelerates net-zero ambition",
+        "url": "https://www.suncorpgroup.com.au/news/news/suncorp-accelerates-net-zero-ambition",
+        "retrieved_at": null
+      },
+      {
+        "type": "official_company_news_or_page",
+        "title": "Responding to climate change",
+        "url": "https://www.suncorpgroup.com.au/corporate-responsibility/sustainable-growth/climate-change",
+        "retrieved_at": null
+      },
+      {
+        "type": "official_company_news_or_page",
+        "title": "Responsible underwriting and investing",
+        "url": "https://www.suncorpgroup.com.au/corporate-responsibility/sustainable-growth/responsible-insurance-investing",
+        "retrieved_at": null
+      }
+    ],
+    "notes": []
+  }
+}

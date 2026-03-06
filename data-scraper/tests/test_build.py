@@ -55,6 +55,10 @@ class BuildTests(unittest.TestCase):
                 "direct_apply_url": "https://careers.example.com/apply",
                 "open_date": "2026-01-01",
                 "close_date": "2099-01-01",
+                "open_date_raw": "January 2026",
+                "close_date_raw": "2099-01-01",
+                "open_date_precision": "month_year_normalized",
+                "close_date_precision": "exact_day",
                 "streams": ["Technology"],
                 "locations": ["Melbourne"],
                 "salary_text": None,
@@ -117,6 +121,10 @@ class BuildTests(unittest.TestCase):
         self.assertEqual(index["id"], "coles-group")
         self.assertEqual(index["apply"]["status"], "open")
         self.assertEqual(index["logo_url"], "assets/logos/coles-group-peoplesquad-logo.webp")
+        self.assertEqual(index["apply"]["open_date_precision"], "month_year_normalized")
+        self.assertEqual(index["apply"]["close_date_precision"], "exact_day")
+        self.assertEqual(index["apply"]["open_date_raw"], "January 2026")
+        self.assertEqual(index["apply"]["close_date_raw"], "2099-01-01")
 
     def test_select_records_for_processing_skips_completed_and_applies_limit(self):
         records = [
