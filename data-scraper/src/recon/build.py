@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from concurrent.futures import ThreadPoolExecutor, as_completed
+import hashlib
 import json
 from pathlib import Path
 from typing import Any
@@ -21,6 +22,106 @@ def select_seed_records(
         target = company_id.strip().lower()
         selected = [r for r in selected if str(r.get("id", "")).lower() == target]
     return selected
+
+
+def _json_hash(payload: Any) -> str:
+    encoded = json.dumps(payload, sort_keys=True, separators=(",", ":"), ensure_ascii=False)
+    return hashlib.sha256(encoded.encode("utf-8")).hexdigest()
+
+
+def _company_id(record: dict[str, Any]) -> str:
+    return str(record.get("id") or slugify(str(record.get("name", ""))))
+
+
+def _state_company_path(state_dir: Path, company_id: str) -> Path:
+    return state_dir / "companies" / f"{company_id}.json"
+
+
+def _state_checkpoint_path(state_dir: Path, company_id: str, stage: str) -> Path:
+    return state_dir / "checkpoints" / company_id / f"{stage}.json"
+
+
+def _load_json_if_exists(path: Path) -> Any | None:
+    if not path.exists():
+        return None
+    with path.open("r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+def compute_build_fingerprint(
+    *,
+    record: dict[str, Any],
+    model: str,
+    program_bundle: PromptBundle,
+    commercial_bundle: PromptBundle,
+    logo_settings: dict[str, Any],
+) -> str:
+    payload = {
+        "record": record,
+        "model": model,
+        "program_prompt": {
+            "system": program_bundle.system,
+            "user": program_bundle.user,
+            "schema": program_bundle.schema,
+        },
+        "commercial_prompt": {
+            "system": commercial_bundle.system,
+            "user": commercial_bundle.user,
+            "schema": commercial_bundle.schema,
+        },
+        "logo_settings": logo_settings,
+        "schema_version": SCHEMA_VERSION,
+    }
+    return _json_hash(payload)
+
+
+def select_records_for_processing(
+    *,
+    records: list[dict[str, Any]],
+    out_dir: Path,
+    state_dir: Path,
+    model: str,
+    program_bundle: PromptBundle,
+    commercial_bundle: PromptBundle,
+    resume: bool,
+    force_rebuild: bool,
+    max_companies: int | None,
+    logo_settings: dict[str, Any],
+) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
+    if max_companies is not None and max_companies <= 0:
+        raise ValueError("--max-companies must be greater than 0.")
+
+    pending: list[dict[str, Any]] = []
+    skipped: list[dict[str, Any]] = []
+    companies_dir = out_dir / "companies"
+    for record in records:
+        if not resume or force_rebuild:
+            pending.append(record)
+            continue
+        company_id = _company_id(record)
+        fingerprint = compute_build_fingerprint(
+            record=record,
+            model=model,
+            program_bundle=program_bundle,
+            commercial_bundle=commercial_bundle,
+            logo_settings=logo_settings,
+        )
+        state = _load_json_if_exists(_state_company_path(state_dir, company_id)) or {}
+        company_file = companies_dir / f"{company_id}.json"
+        if not state and company_file.exists():
+            skipped.append(record)
+            continue
+        if (
+            state.get("status") == "completed"
+            and state.get("fingerprint") == fingerprint
+            and company_file.exists()
+        ):
+            skipped.append(record)
+            continue
+        pending.append(record)
+    if max_companies is not None:
+        pending = pending[:max_companies]
+    return pending, skipped
 
 
 def _merge_sources(*sections: dict[str, Any]) -> list[dict[str, Any]]:
@@ -126,6 +227,13 @@ def _extract_one_company(
     client: Any,
     program_bundle: PromptBundle,
     commercial_bundle: PromptBundle,
+    out_dir: Path,
+    state_dir: Path,
+    model: str,
+    fingerprint: str,
+    resume: bool,
+    force_rebuild: bool,
+    logo_failure_mode: str,
     logo_output_dir: Path,
     logo_public_prefix: str,
     logo_filename_template: str,
@@ -135,47 +243,149 @@ def _extract_one_company(
     logo_max_size: int,
     logo_output_format: str,
 ) -> dict[str, Any]:
+    company_id = _company_id(record)
     domains = record.get("official_domains") or []
     if not domains:
         raise ValueError("official_domains is required for extraction.")
+    companies_dir = out_dir / "companies"
+    companies_dir.mkdir(parents=True, exist_ok=True)
+    state_path = _state_company_path(state_dir, company_id)
+    state = _load_json_if_exists(state_path) or {}
+    previous_fingerprint = state.get("fingerprint")
+    can_resume_stage_checkpoints = bool(
+        resume and not force_rebuild and previous_fingerprint == fingerprint
+    )
+    state.update(
+        {
+            "company_id": company_id,
+            "fingerprint": fingerprint,
+            "model": model,
+            "status": "in_progress",
+            "stages": state.get("stages") or {},
+        }
+    )
+    write_json(state_path, state)
 
     vars_common = build_prompt_variables(record)
-    program_payload = client.call_structured(
-        messages=build_messages(program_bundle, vars_common),
+    stage_errors: list[str] = []
+    warnings: list[str] = []
+
+    def stage_payload(
+        *,
+        stage: str,
+        schema_name: str,
+        schema: dict[str, Any],
+        bundle: PromptBundle,
+    ) -> dict[str, Any]:
+        checkpoint = _state_checkpoint_path(state_dir, company_id, stage)
+        current = _load_json_if_exists(state_path) or {}
+        checkpoint_state = ((current.get("stages") or {}).get(stage)) or {}
+        if (
+            can_resume_stage_checkpoints
+            and checkpoint_state.get("status") == "completed"
+            and checkpoint.exists()
+        ):
+            payload = _load_json_if_exists(checkpoint)
+            if isinstance(payload, dict):
+                return payload
+        try:
+            payload = client.call_structured(
+                messages=build_messages(bundle, vars_common),
+                schema_name=schema_name,
+                schema=schema,
+                allowed_domains=domains,
+                phase="build",
+                trace_context={"company_id": company_id},
+            )
+            if not isinstance(payload, dict):
+                raise RuntimeError(f"{schema_name} returned non-object payload.")
+            write_json(checkpoint, payload)
+            latest = _load_json_if_exists(state_path) or {}
+            latest_stages = latest.get("stages") or {}
+            latest_stages[stage] = {"status": "completed", "checkpoint": str(checkpoint)}
+            latest["stages"] = latest_stages
+            write_json(state_path, latest)
+            return payload
+        except Exception as exc:
+            latest = _load_json_if_exists(state_path) or {}
+            latest_stages = latest.get("stages") or {}
+            latest_stages[stage] = {"status": "failed", "error": str(exc)}
+            latest["status"] = "failed"
+            latest["stages"] = latest_stages
+            latest["last_error"] = str(exc)
+            write_json(state_path, latest)
+            raise
+
+    program_payload = stage_payload(
+        stage="program",
         schema_name="extract_program",
         schema=program_bundle.schema,
-        allowed_domains=domains,
-        phase="build",
-        trace_context={"company_id": str(record.get("id") or "")},
+        bundle=program_bundle,
     )
-    commercial_payload = client.call_structured(
-        messages=build_messages(commercial_bundle, vars_common),
+    commercial_payload = stage_payload(
+        stage="commercial",
         schema_name="extract_commercial",
         schema=commercial_bundle.schema,
-        allowed_domains=domains,
-        phase="build",
-        trace_context={"company_id": str(record.get("id") or "")},
+        bundle=commercial_bundle,
     )
-    logo = resolve_logo_asset(
-        company_id=str(record.get("id") or slugify(str(record.get("name") or ""))),
-        company_name=str(record.get("name") or ""),
-        official_domains=domains,
-        logo_candidates=(((record.get("branding") or {}).get("logo_candidates")) or []),
-        known_page_urls=[
-            str(((record.get("urls") or {}).get("careers_url")) or ""),
-            str(((record.get("urls") or {}).get("grad_program_url")) or ""),
-            str(((record.get("urls") or {}).get("investor_relations_url")) or ""),
-        ],
-        output_dir=logo_output_dir,
-        public_prefix=logo_public_prefix,
-        filename_template=logo_filename_template,
-        timeout_seconds=logo_timeout_seconds,
-        skip_download=skip_logo_download,
-        min_source_size=logo_min_source_size,
-        max_size=logo_max_size,
-        output_format=logo_output_format,
-    )
-    return compose_company_detail(record, program_payload, commercial_payload, logo)
+
+    logo: dict[str, Any] | None = None
+    try:
+        logo = resolve_logo_asset(
+            company_id=company_id,
+            company_name=str(record.get("name") or ""),
+            official_domains=domains,
+            logo_candidates=(((record.get("branding") or {}).get("logo_candidates")) or []),
+            known_page_urls=[
+                str(((record.get("urls") or {}).get("careers_url")) or ""),
+                str(((record.get("urls") or {}).get("grad_program_url")) or ""),
+                str(((record.get("urls") or {}).get("investor_relations_url")) or ""),
+            ],
+            output_dir=logo_output_dir,
+            public_prefix=logo_public_prefix,
+            filename_template=logo_filename_template,
+            timeout_seconds=logo_timeout_seconds,
+            skip_download=skip_logo_download,
+            min_source_size=logo_min_source_size,
+            max_size=logo_max_size,
+            output_format=logo_output_format,
+        )
+        latest = _load_json_if_exists(state_path) or {}
+        latest_stages = latest.get("stages") or {}
+        latest_stages["logo"] = {"status": "completed"}
+        latest["stages"] = latest_stages
+        write_json(state_path, latest)
+    except Exception as exc:
+        if logo_failure_mode == "fail":
+            latest = _load_json_if_exists(state_path) or {}
+            latest_stages = latest.get("stages") or {}
+            latest_stages["logo"] = {"status": "failed", "error": str(exc)}
+            latest["status"] = "failed"
+            latest["stages"] = latest_stages
+            latest["last_error"] = str(exc)
+            write_json(state_path, latest)
+            raise
+        warnings.append(f"logo: {exc}")
+        stage_errors.append(str(exc))
+        latest = _load_json_if_exists(state_path) or {}
+        latest_stages = latest.get("stages") or {}
+        latest_stages["logo"] = {"status": "warning", "error": str(exc)}
+        latest["stages"] = latest_stages
+        write_json(state_path, latest)
+
+    detail = compose_company_detail(record, program_payload, commercial_payload, logo)
+    if warnings:
+        provenance = detail.get("provenance") or {}
+        notes = provenance.get("notes") or []
+        provenance["notes"] = notes + warnings
+        detail["provenance"] = provenance
+    write_json(companies_dir / f"{company_id}.json", detail)
+    latest = _load_json_if_exists(state_path) or {}
+    latest["status"] = "completed"
+    latest["output_path"] = str(companies_dir / f"{company_id}.json")
+    latest["stage_errors"] = stage_errors
+    write_json(state_path, latest)
+    return detail
 
 
 def build_company_details(
@@ -184,6 +394,12 @@ def build_company_details(
     client: Any,
     program_bundle: PromptBundle,
     commercial_bundle: PromptBundle,
+    out_dir: Path = Path("data"),
+    state_dir: Path = Path("data") / ".recon-state",
+    model: str = "unknown",
+    resume: bool = True,
+    force_rebuild: bool = False,
+    logo_failure_mode: str = "warn",
     workers: int = 4,
     logo_output_dir: Path | None = None,
     logo_public_prefix: str = "assets/logos",
@@ -197,6 +413,14 @@ def build_company_details(
     details: list[dict[str, Any]] = []
     failures: list[dict[str, str]] = []
     resolved_logo_output_dir = logo_output_dir or Path("data") / "assets" / "logos"
+    logo_settings = {
+        "logo_public_prefix": logo_public_prefix,
+        "logo_filename_template": logo_filename_template,
+        "logo_max_size": logo_max_size,
+        "logo_min_source_size": logo_min_source_size,
+        "logo_format": logo_output_format,
+        "skip_logo_download": skip_logo_download,
+    }
     with ThreadPoolExecutor(max_workers=max(1, workers)) as executor:
         futures = {
             executor.submit(
@@ -205,6 +429,19 @@ def build_company_details(
                 client=client,
                 program_bundle=program_bundle,
                 commercial_bundle=commercial_bundle,
+                out_dir=out_dir,
+                state_dir=state_dir,
+                model=model,
+                fingerprint=compute_build_fingerprint(
+                    record=record,
+                    model=model,
+                    program_bundle=program_bundle,
+                    commercial_bundle=commercial_bundle,
+                    logo_settings=logo_settings,
+                ),
+                resume=resume,
+                force_rebuild=force_rebuild,
+                logo_failure_mode=logo_failure_mode,
                 logo_output_dir=resolved_logo_output_dir,
                 logo_public_prefix=logo_public_prefix,
                 logo_filename_template=logo_filename_template,
@@ -238,15 +475,25 @@ def write_build_outputs(
     failures: list[dict[str, Any]],
     model: str,
     approved_snapshot: list[dict[str, Any]],
+    selected_count: int | None = None,
+    skipped_count: int | None = None,
+    scheduled_count: int | None = None,
+    requested_max_companies: int | None = None,
 ) -> None:
     out_dir.mkdir(parents=True, exist_ok=True)
     companies_dir = out_dir / "companies"
     companies_dir.mkdir(parents=True, exist_ok=True)
 
-    index_companies = []
     for detail in details:
         write_json(companies_dir / f"{detail['id']}.json", detail)
-        index_companies.append(build_index_entry(detail))
+
+    all_details: list[dict[str, Any]] = []
+    for path in sorted(companies_dir.glob("*.json")):
+        payload = _load_json_if_exists(path)
+        if isinstance(payload, dict):
+            all_details.append(payload)
+
+    index_companies = [build_index_entry(detail) for detail in all_details]
 
     write_json(
         out_dir / "index.json",
@@ -262,9 +509,13 @@ def write_build_outputs(
             "schema_version": SCHEMA_VERSION,
             "generated_at": utc_now_iso(),
             "model": model,
-            "company_count": len(details),
+            "company_count": len(all_details),
             "failure_count": len(failures),
             "failures": failures,
+            "selected_count": selected_count,
+            "skipped_count": skipped_count,
+            "scheduled_count": scheduled_count,
+            "requested_max_companies": requested_max_companies,
         },
     )
     write_json(out_dir / "discovery" / "approved_seed_snapshot.json", approved_snapshot)

@@ -9,7 +9,7 @@ SRC = ROOT / "src"
 if str(SRC) not in sys.path:
     sys.path.insert(0, str(SRC))
 
-from recon.cli import build_parser, main, run_build
+from recon.cli import build_parser, main, run_build, run_seed_from_names
 from recon.prompts import PromptBundle
 
 
@@ -20,6 +20,8 @@ class CLITests(unittest.TestCase):
         self.assertIn("discover", subparsers_action.choices)
         self.assertIn("build", subparsers_action.choices)
         self.assertIn("report", subparsers_action.choices)
+        self.assertIn("seed-from-names", subparsers_action.choices)
+        self.assertIn("master-merge", subparsers_action.choices)
 
     def test_main_dispatches_discover(self):
         with mock.patch("recon.cli.run_discover") as run_discover:
@@ -27,6 +29,42 @@ class CLITests(unittest.TestCase):
             rc = main(["discover", "--out", "x.json"])
             self.assertEqual(rc, 0)
             run_discover.assert_called_once()
+
+    def test_main_dispatches_seed_from_names(self):
+        with mock.patch("recon.cli.run_seed_from_names") as run_seed:
+            run_seed.return_value = 0
+            rc = main(["seed-from-names", "--names", "Acme; Beta", "--out", "seed.json"])
+            self.assertEqual(rc, 0)
+            run_seed.assert_called_once()
+
+    def test_seed_from_names_parser_has_names_flag(self):
+        parser = build_parser()
+        args = parser.parse_args(["seed-from-names", "--names", "Acme; Beta", "--out", "seed.json"])
+        self.assertEqual(args.names, "Acme; Beta")
+
+    def test_run_seed_from_names_requires_exactly_one_input_source(self):
+        parser = build_parser()
+        with tempfile.TemporaryDirectory() as td:
+            names_file = Path(td) / "names.txt"
+            names_file.write_text("Acme\n", encoding="utf-8")
+            out = Path(td) / "seed.json"
+
+            args_none = parser.parse_args(["seed-from-names", "--out", str(out)])
+            with self.assertRaises(ValueError):
+                run_seed_from_names(args_none)
+
+            args_both = parser.parse_args(
+                ["seed-from-names", "--names", "Acme", "--names-file", str(names_file), "--out", str(out)]
+            )
+            with self.assertRaises(ValueError):
+                run_seed_from_names(args_both)
+
+    def test_main_dispatches_master_merge(self):
+        with mock.patch("recon.cli.run_master_merge") as run_merge:
+            run_merge.return_value = 0
+            rc = main(["master-merge", "--master", "master.json", "--incoming", "incoming.json"])
+            self.assertEqual(rc, 0)
+            run_merge.assert_called_once()
 
     def test_discover_parser_has_usage_flags(self):
         parser = build_parser()
@@ -51,6 +89,26 @@ class CLITests(unittest.TestCase):
         self.assertEqual(args.logo_max_size, 512)
         self.assertEqual(args.logo_min_source_size, 96)
 
+    def test_build_parser_has_resume_and_max_companies_flags(self):
+        parser = build_parser()
+        args = parser.parse_args(["build", "--max-companies", "10", "--no-resume"])
+        self.assertEqual(args.max_companies, 10)
+        self.assertFalse(args.resume)
+
+    def test_build_parser_has_runtime_retry_and_timeout_flags(self):
+        parser = build_parser()
+        args = parser.parse_args(["build", "--retries", "2", "--request-timeout-seconds", "90"])
+        self.assertEqual(args.retries, 2)
+        self.assertEqual(args.request_timeout_seconds, 90)
+
+    def test_build_parser_has_request_archive_flags(self):
+        parser = build_parser()
+        args = parser.parse_args(
+            ["build", "--request-archive-dir", "logs/requests", "--no-request-archive"]
+        )
+        self.assertEqual(args.request_archive_dir, Path("logs/requests"))
+        self.assertFalse(args.request_archive)
+
     def test_run_build_defaults_logo_dir_under_out(self):
         parser = build_parser()
         with tempfile.TemporaryDirectory() as td:
@@ -72,20 +130,28 @@ class CLITests(unittest.TestCase):
                 mock.patch("recon.cli.require_api_key") as require_api_key,
                 mock.patch("recon.cli.OpenAIWebSearchClient") as client_cls,
                 mock.patch("recon.cli.load_prompt_bundle") as load_prompt_bundle,
+                mock.patch("recon.cli.select_records_for_processing") as select_records_for_processing,
                 mock.patch("recon.cli.build_company_details") as build_company_details,
                 mock.patch("recon.cli.write_build_outputs"),
-                mock.patch("recon.cli.generate_build_report") as generate_build_report,
+                mock.patch("recon.cli.generate_report_from_data") as generate_report_from_data,
                 mock.patch("recon.cli.UsageTracker", return_value=tracker),
             ):
                 load_seed.return_value = [{"id": "a", "review": {"status": "approved"}}]
                 require_api_key.return_value = "k"
                 load_prompt_bundle.return_value = bundle
+                select_records_for_processing.return_value = ([{"id": "a"}], [])
                 build_company_details.return_value = ([], [])
-                generate_build_report.return_value = "# Build Report"
                 rc = run_build(args)
                 self.assertEqual(rc, 0)
+                client_kwargs = client_cls.call_args.kwargs
+                self.assertTrue(client_kwargs["request_archive_enabled"])
+                self.assertIn("openai-requests", str(client_kwargs["request_archive_dir"]))
+                select_kwargs = select_records_for_processing.call_args.kwargs
+                self.assertIsNone(select_kwargs["max_companies"])
                 kwargs = build_company_details.call_args.kwargs
                 self.assertEqual(kwargs["logo_output_dir"], out_dir / "assets" / "logos")
+                self.assertEqual(kwargs["records"], [{"id": "a"}])
+                generate_report_from_data.assert_called_once()
 
 
 if __name__ == "__main__":

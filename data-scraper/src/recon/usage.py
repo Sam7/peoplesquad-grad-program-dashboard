@@ -155,6 +155,46 @@ class UsageTracker:
                 self._console_stream.flush()
             return record
 
+    def record_attempt_error(
+        self,
+        *,
+        phase: str,
+        company_id: str | None,
+        schema_name: str,
+        model: str,
+        attempt: int,
+        error_type: str,
+        error_message: str,
+        retryable: bool,
+    ) -> dict:
+        with self._lock:
+            self._sequence += 1
+            seq = self._sequence
+            record = {
+                "record_type": "attempt_error",
+                "timestamp_utc": _utc_now_iso(),
+                "sequence": seq,
+                "phase": phase,
+                "company_id": company_id,
+                "schema_name": schema_name,
+                "model": model,
+                "attempt": attempt,
+                "error_type": error_type,
+                "error_message": error_message,
+                "retryable": retryable,
+            }
+            self._append_record(record)
+            if self._console_enabled:
+                self._console_stream.write(
+                    (
+                        f"[usage] error #{seq} {phase}/{schema_name} company={company_id or '-'} "
+                        f"attempt={attempt} retryable={retryable} type={error_type} "
+                        f"msg={error_message}\n"
+                    )
+                )
+                self._console_stream.flush()
+            return record
+
     def finalize(self) -> dict:
         with self._lock:
             summary = {
