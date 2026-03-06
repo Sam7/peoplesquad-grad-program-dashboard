@@ -9,7 +9,8 @@
     "preview": "vite preview",
     "test": "vitest run",
     "test:watch": "vitest",
-    "test:e2e": "playwright test"
+    "test:e2e": "playwright test",
+    "data:reindex": "node scripts/rebuild-index-from-companies.mjs --data-dir public/data"
   },
   "engines": {
     "node": ">=20.18.0"

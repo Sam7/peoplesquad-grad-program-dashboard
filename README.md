@@ -94,6 +94,10 @@ The frontend expects:
 - `public/data/companies/{id}.json` for detail pages
 - `public/data/assets/logos/*` for local logo assets when present
 
+Canonical source of truth:
+- `companies/{id}.json` is canonical for application timeline fields.
+- `index.json` is a derived artifact regenerated from company detail payloads.
+
 ### How data gets into `public/data`
 
 Run the sync script manually before build:
@@ -108,12 +112,23 @@ For a full replacement of existing `public/data` company payloads/logos (hard re
 node scripts/sync-scraper-data.mjs data-scraper/data/runs/top-56 --out public/data --hard-refresh
 ```
 
-The script only manages:
+Rebuild only `index.json` from existing `companies/*` without touching logos/details:
+
+```bash
+npm run data:reindex
+```
+
+The sync script manages:
 - `index.json`
 - `companies/*`
 - `assets/logos/*`
 
 It does not touch unrelated files in the output folder.
+
+Sync precedence and overwrite behavior:
+- Company payloads are overwritten from source by default (`Source Wins`).
+- When multiple source roots include the same company id, the later root wins.
+- `index.json` is rebuilt from output `companies/*` every sync and validated for consistency.
 
 Default sources (when no source args are supplied):
 
@@ -130,6 +145,7 @@ If you change scraper output locations, update `scripts/sync-scraper-data.mjs`.
 - `npm run test:e2e`: Run Playwright end-to-end tests
 - `npm run build`: Type-check + production build
 - `npm run preview`: Serve production build locally
+- `npm run data:reindex`: Rebuild `public/data/index.json` from `public/data/companies/*`
 
 ## Testing
 
@@ -138,6 +154,7 @@ If you change scraper output locations, update `scripts/sync-scraper-data.mjs`.
 
 Current tests cover:
 - data sync pipeline
+- index/detail consistency guardrail for `public/data`
 - date parsing/status logic
 - filtering/sorting/query-param behavior
 - progress cookie behavior and transition logic

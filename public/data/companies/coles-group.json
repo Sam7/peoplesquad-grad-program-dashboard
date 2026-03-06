@@ -35,16 +35,20 @@
       "confidence": "medium",
       "quality_score": 0.1,
       "selection_reason": "fallback_icon",
-      "retrieved_at": "2026-03-06T08:53:13+00:00",
+      "retrieved_at": "2026-03-06T11:59:36+00:00",
       "notes": []
     }
   },
   "program": {
-    "name": "Coles Graduate Program",
+    "name": "Coles Group Graduate Program",
     "overview_url": "https://colescareers.com.au/au/en/studentandgraduates",
     "direct_apply_url": "https://colescareers.com.au/au/en/studentandgraduates",
     "open_date": "2026-03-10",
     "close_date": "2026-04-12",
+    "open_date_raw": "Applications will be open from 10 March to 12 April 2026 for our February 2027 intake.",
+    "close_date_raw": "Applications will be open from 10 March to 12 April 2026 for our February 2027 intake.",
+    "open_date_precision": "exact_day",
+    "close_date_precision": "exact_day",
     "streams": [
       "Commercial",
       "Finance",
@@ -57,183 +61,173 @@
       "Legal",
       "People & Culture"
     ],
-    "locations": [],
+    "locations": [
+      "Australia (offices nationwide)",
+      "Melbourne Store Support Centre (travel provided)"
+    ],
     "salary_text": null,
-    "duration_text": null,
-    "rotation_text": "Coles describes the program as having rotations. A graduate testimonial on the program page says you rotate through different teams every six months."
+    "duration_text": "The program length is 2 years.",
+    "rotation_text": "The program includes rotations across different teams (rotation options vary by stream)."
   },
   "eligibility": {
     "work_rights": "Australian or New Zealand citizens or permanent residents at the time of application can apply.",
-    "graduation_window": "You will have completed a bachelor’s degree before starting the program.",
+    "graduation_window": "You must have completed a bachelor’s degree before starting the program (for this intake, before the program starts in February 2027).",
     "disciplines": [],
     "minimum_requirements": [
-      "Be an Australian or New Zealand citizen, or a permanent resident, at the time of application.",
-      "Have completed a bachelor’s degree before starting the program."
+      "You must be an Australian or New Zealand citizen, or a permanent resident, at the time you apply.",
+      "You must have completed a bachelor’s degree before the program starts."
     ]
   },
   "recruitment_process": {
     "stages": [
       {
         "name": "Application",
-        "details": "You submit an online application. Coles states applications for the February 2027 intake are open from 10 March to 12 April 2026."
+        "details": "Complete an online application."
       },
       {
         "name": "Online assessment and video interview",
-        "details": "After applying, you complete an online assessment and a video interview. Coles says it is not timed and takes around 45 minutes in total."
+        "details": "Complete an online assessment that includes a video interview. It is not timed and should take about 45 minutes in total."
       },
       {
         "name": "Discovery Centre",
-        "details": "You attend a Discovery Centre with a range of activities. Coles says every candidate who participates receives feedback, whether successful or not."
+        "details": "Attend a Discovery Centre and take part in activities. Every candidate who participates will receive feedback."
       },
       {
         "name": "Verbal offer",
-        "details": "If successful at the Discovery Centre, you receive a verbal offer. Coles says the next steps include pre-hire checks, accepting your contract, online onboarding, and keep-in-touch sessions before you start."
+        "details": "If successful, you will receive a verbal offer. After this, you complete pre-hire checks, accept your contract, complete online onboarding, and then start the program."
       }
     ],
     "tips": [
-      "Register your interest to be notified when applications open."
+      "Register your interest to be notified when applications open.",
+      "Expect the online assessment (including video interview) to take around 45 minutes.",
+      "If you attend a Discovery Centre, you will receive feedback whether you are successful or not."
     ]
   },
   "commercial_context": {
     "exec_themes": [
-      "Winning on value, quality, availability and customer experience (strengthening the customer offer).",
-      "Investing in store network growth and renewals (opening and renewing stores).",
-      "Scaling eCommerce and improving the online offer.",
-      "Improving supply chain resilience and efficiency (including automated distribution centres).",
-      "Disciplined cost control, with a focus on simplifying work and funding reinvestment (“save to invest”).",
-      "Embedding sustainability into strategy, with priority focus areas on climate/energy, nature/deforestation-linked commodities, waste/circularity, and people/community outcomes."
+      "Keeping grocery prices competitive and focusing on value for customers (including growing Exclusive to Coles / own-brand range).",
+      "Growing digital and omnichannel shopping (eCommerce growth; online + stores).",
+      "Store network investment (new stores and renewals) and improving operational efficiency (including energy efficiency upgrades).",
+      "Integrating sustainability into core business strategy, with focus areas of climate, nature, and circularity.",
+      "Strengthening responsible sourcing and human rights practices across the supply chain, and supporting communities (food donations, grants)."
     ],
-    "profit_engine": "Coles’ profit model is based on high sales volumes in food and everyday retail, supported by gross margin management (including “Coles 360” benefits, promotional optimisation and strategic sourcing) and tight cost control. The company also targets growth through store renewals/new stores and faster-growing eCommerce sales, while improving distribution and operations efficiency to protect margins over time.",
-    "headwinds": "The FY25 Sustainability Report notes that outcomes can be affected by factors such as regulatory change, competition, shifts in consumer behaviour, technological change, and broader economic/geopolitical conditions. Specific FY25 operational headwinds (for example, cost inflation, wage pressures, or supply disruptions) were not explicit enough in the accessible official pages/PDF extracts used here, so this is kept at a high level.",
-    "esg": "Coles frames sustainability as integrated into company strategy. In FY25 reporting, it highlights: (1) Climate/energy: sourcing 100% renewable electricity for operations and large reductions in Scope 1 and 2 emissions versus an FY20 baseline; (2) Waste/circularity: maintaining >85% diversion of solid waste from landfill and improving recyclability of own-brand packaging; (3) Nature: commitments including no deforestation across material own-brand deforestation-linked commodities by 31 Dec 2025; and (4) People/community: diversity metrics (e.g., women in leadership; Aboriginal and Torres Strait Islander representation) and community support including food donations and funding programs.",
-    "recent_pivot": "Coles describes a multi-year shift toward heavier investment in eCommerce and supply chain capability (including the ramp-up and operation of a second automated distribution centre) and a more explicit “Simplify and Save to Invest” approach. In sustainability, it reports reaching 100% renewable electricity for operations and achieving its FY30 Scope 1+2 reduction target threshold (>75% vs FY20) five years early (in FY25)."
+    "profit_engine": "null",
+    "headwinds": "null",
+    "esg": "Coles’ FY26–FY30 Sustainability Strategy is organised around three pillars: climate, nature and circularity. It is supported by ongoing commitments to human rights, enabling and developing teams, diversity and inclusion, health/safety/wellbeing, community support, and healthy/safe/affordable food. The FY25 Sustainability Report also states targets and progress, including maintaining 100% renewable electricity sourcing for operations and emissions reduction targets (Scope 1 and 2), plus waste diversion/packaging initiatives and ethical sourcing work.",
+    "recent_pivot": "Coles describes a refreshed FY26–FY30 Sustainability Strategy focused on three pillars—climate, nature, and circularity—positioned as a shift/refocus in how it prioritises sustainability efforts. Coles also reports achieving 100% renewable electricity sourcing for its operations (a milestone reached in FY25, reported publicly on 26 August 2025)."
   },
   "section_provenance": {
     "program": {
       "confidence": "high",
       "notes": [
-        "Application dates (10 March to 12 April 2026) and February 2027 intake are stated on the program page.",
-        "The listed streams come from the program page section titled 'Choose from our career streams'.",
-        "No general program salary, overall duration, or overall rotations structure is stated in a single clear program summary. Rotation information is only mentioned in a graduate testimonial."
+        "Program page states the application window (10 March to 12 April 2026) and that it is for the February 2027 intake.",
+        "Program page lists example graduate streams and describes offices nationwide and travel to Melbourne Store Support Centre.",
+        "Graduate streams page lists the program length as 2 years and provides rotation possibilities by stream."
       ],
       "sources": [
         {
           "type": "web",
-          "title": "Coles Graduate Program | Coles Group",
+          "title": "Graduate Program | Coles Group",
           "url": "https://colescareers.com.au/au/en/studentandgraduates",
-          "retrieved_at": "2026-03-06"
+          "retrieved_at": null
+        },
+        {
+          "type": "web",
+          "title": "Graduate Streams | Coles Careers",
+          "url": "https://colescareers.com.au/au/en/graduate-streams",
+          "retrieved_at": null
         }
       ]
     },
     "eligibility": {
       "confidence": "high",
       "notes": [
-        "Eligibility requirements are stated under 'Who can apply?' on the program page."
+        "Eligibility section on the Graduate Program page states citizenship/permanent residency requirement and that you must have completed a bachelor’s degree before starting.",
+        "The First Nations Graduate Program page URL found in search results returned a 404 when opened, so no additional eligibility details were extracted from it."
       ],
       "sources": [
         {
           "type": "web",
-          "title": "Coles Graduate Program | Coles Group",
+          "title": "Graduate Program | Coles Group",
           "url": "https://colescareers.com.au/au/en/studentandgraduates",
-          "retrieved_at": "2026-03-06"
+          "retrieved_at": null
         }
       ]
     },
     "recruitment_process": {
       "confidence": "high",
       "notes": [
-        "Coles describes a four-step recruitment process on the program page, with extra detail in the 'The Recruitment Process' section."
+        "Graduate Program page describes a four-step process and provides extra detail on the online assessment/video interview duration, Discovery Centre feedback, and the post-offer steps."
       ],
       "sources": [
         {
           "type": "web",
-          "title": "Coles Graduate Program | Coles Group",
+          "title": "Graduate Program | Coles Group",
           "url": "https://colescareers.com.au/au/en/studentandgraduates",
-          "retrieved_at": "2026-03-06"
+          "retrieved_at": null
         }
       ]
     },
     "commercial_context": {
       "confidence": "medium",
       "notes": [
-        "Primary sources were limited to Coles Group official pages and PDF reports per instructions.",
-        "The FY25 Annual Report PDF link returned a Coles website “System Unavailable” error in this environment, so profit/cost themes were taken from the Coles Group FY25 highlights page and the accessible Annual Report snippet returned by search results, not from a fully opened Annual Report PDF.",
-        "The FY25 Sustainability Report PDF was accessible and used for most ESG-related items and for general risk/uncertainty wording.",
-        "Headwinds are kept high-level because specific operational headwinds were not clearly extractable from the accessible official sources in this session.",
-        "Dates clarified: FY25 refers to the financial year ended 29 June 2025; the 100% renewable electricity milestone was announced 26 August 2025; the investor site lists HY26 results dated 27 February 2026."
+        "The 2025 Annual Report PDF could not be accessed due to a 'System Unavailable' error on the colesgroup.com.au file endpoint during retrieval. Because of this, 'profit_engine' and 'headwinds' are set to null (they are typically spelled out in the Operating and Financial Review / risk sections of the Annual Report and/or results materials).",
+        "Exec themes were inferred from the official 'Reports' page FY25 highlights (eCommerce growth, Exclusive to Coles products, store renewals) plus the FY25 Sustainability Report’s stated strategy pillars/commitments. These are themes visible in official materials, but not a complete management discussion."
       ],
       "sources": [
         {
           "type": "webpage",
-          "title": "Reports | Coles Group (FY25 highlights incl. sales, EBIT, NPAT, eCommerce growth, store renewals)",
-          "url": "https://www.colesgroup.com.au/reports",
-          "retrieved_at": null
+          "title": "Reports | Coles Group (Investors – Reports page / FY25 highlights and downloads)",
+          "url": "https://www.colesgroup.com.au/investors/?page=reports",
+          "retrieved_at": "2026-03-06"
         },
         {
-          "type": "pdf",
-          "title": "Coles Group 2025 Sustainability Report (FY25)",
-          "url": "https://www.colesgroup.com.au/FormBuilder/_Resource/_module/ir5sKeTxxEOndzdh00hWJw/file/Sustainability_Report_2025.pdf",
-          "retrieved_at": null
-        },
-        {
-          "type": "webpage",
-          "title": "Sustainability Report | Coles Group (FY25 sustainability achievements snapshot)",
-          "url": "https://www.colesgroup.com.au/sustainability/?page=sustainability-report",
-          "retrieved_at": null
+          "type": "report_pdf",
+          "title": "Coles Group 2025 Sustainability Report (PDF)",
+          "url": "https://www.colesgroup.com.au/FormBuilder/_Resource/_module/ir5sKeTxxEOndzdh00hWJw/file/Sustainability_Report.pdf",
+          "retrieved_at": "2026-03-06"
         },
         {
           "type": "webpage",
-          "title": "Media release: Coles hits target to source 100% renewable electricity for its operations (26 Aug 2025)",
+          "title": "Media release: Coles hits target to source 100% renewable electricity for its operations (26 August 2025)",
           "url": "https://www.colesgroup.com.au/news/2025/media-releases/?page=coles-hits-target-to-source-100-percent-renewable-electricity-for-its-operations",
-          "retrieved_at": null
-        },
-        {
-          "type": "webpage",
-          "title": "Investors | Coles Group (key investor dates incl. HY26 results date)",
-          "url": "https://www.colesgroup.com.au/investors/",
-          "retrieved_at": null
+          "retrieved_at": "2026-03-06"
         }
       ]
     }
   },
   "provenance": {
-    "updated_at": "2026-03-06T08:53:13+00:00",
+    "updated_at": "2026-03-06T11:59:36+00:00",
     "sources": [
       {
         "type": "web",
-        "title": "Coles Graduate Program | Coles Group",
+        "title": "Graduate Program | Coles Group",
         "url": "https://colescareers.com.au/au/en/studentandgraduates",
+        "retrieved_at": null
+      },
+      {
+        "type": "web",
+        "title": "Graduate Streams | Coles Careers",
+        "url": "https://colescareers.com.au/au/en/graduate-streams",
+        "retrieved_at": null
+      },
+      {
+        "type": "webpage",
+        "title": "Reports | Coles Group (Investors – Reports page / FY25 highlights and downloads)",
+        "url": "https://www.colesgroup.com.au/investors/?page=reports",
+        "retrieved_at": "2026-03-06"
+      },
+      {
+        "type": "report_pdf",
+        "title": "Coles Group 2025 Sustainability Report (PDF)",
+        "url": "https://www.colesgroup.com.au/FormBuilder/_Resource/_module/ir5sKeTxxEOndzdh00hWJw/file/Sustainability_Report.pdf",
         "retrieved_at": "2026-03-06"
       },
       {
         "type": "webpage",
-        "title": "Reports | Coles Group (FY25 highlights incl. sales, EBIT, NPAT, eCommerce growth, store renewals)",
-        "url": "https://www.colesgroup.com.au/reports",
-        "retrieved_at": null
-      },
-      {
-        "type": "pdf",
-        "title": "Coles Group 2025 Sustainability Report (FY25)",
-        "url": "https://www.colesgroup.com.au/FormBuilder/_Resource/_module/ir5sKeTxxEOndzdh00hWJw/file/Sustainability_Report_2025.pdf",
-        "retrieved_at": null
-      },
-      {
-        "type": "webpage",
-        "title": "Sustainability Report | Coles Group (FY25 sustainability achievements snapshot)",
-        "url": "https://www.colesgroup.com.au/sustainability/?page=sustainability-report",
-        "retrieved_at": null
-      },
-      {
-        "type": "webpage",
-        "title": "Media release: Coles hits target to source 100% renewable electricity for its operations (26 Aug 2025)",
+        "title": "Media release: Coles hits target to source 100% renewable electricity for its operations (26 August 2025)",
         "url": "https://www.colesgroup.com.au/news/2025/media-releases/?page=coles-hits-target-to-source-100-percent-renewable-electricity-for-its-operations",
-        "retrieved_at": null
-      },
-      {
-        "type": "webpage",
-        "title": "Investors | Coles Group (key investor dates incl. HY26 results date)",
-        "url": "https://www.colesgroup.com.au/investors/",
-        "retrieved_at": null
+        "retrieved_at": "2026-03-06"
       }
     ],
     "notes": []

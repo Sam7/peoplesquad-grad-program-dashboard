@@ -1,0 +1,213 @@
+{
+  "schema_version": "1.0",
+  "id": "fortescue",
+  "name": "Fortescue",
+  "entity_type": "company",
+  "classification": {
+    "industry_bucket": "Resources",
+    "is_government": false,
+    "government_level": "none"
+  },
+  "official_domains": [
+    "fortescue.com",
+    "careers.fortescue.com",
+    "investors.fortescue.com",
+    "metals.fortescue.com",
+    "energy.fortescue.com",
+    "zero.fortescue.com",
+    "capital.fortescue.com",
+    "content.fortescue.com"
+  ],
+  "urls": {
+    "careers_url": "https://careers.fortescue.com/en",
+    "grad_program_url": "https://careers.fortescue.com/en/early-careers/graduate-program",
+    "apply_url": "https://career10.successfactors.com/career?company=fortescue",
+    "investor_relations_url": "https://investors.fortescue.com/en"
+  },
+  "logo_url": "assets/logos/fortescue-peoplesquad-logo.webp",
+  "branding": {
+    "logo_candidates": [],
+    "logo": {
+      "local_path": "assets/logos/fortescue-peoplesquad-logo.webp",
+      "source_url": "https://investors.fortescue.com/apple-touch-icon.png",
+      "mime_type": "image/webp",
+      "filename": "fortescue-peoplesquad-logo.webp",
+      "format": "webp",
+      "source_width": 180,
+      "source_height": 180,
+      "output_width": 512,
+      "output_height": 512,
+      "confidence": "medium",
+      "quality_score": 0.1,
+      "selection_reason": "fallback_icon",
+      "retrieved_at": "2026-03-06T14:25:37+00:00",
+      "notes": []
+    }
+  },
+  "program": {
+    "name": "Graduate Program",
+    "overview_url": "https://careers.fortescue.com/en/early-careers/graduate-program",
+    "direct_apply_url": "https://career10.successfactors.com/career?company=fortescue",
+    "open_date": null,
+    "close_date": null,
+    "open_date_raw": null,
+    "close_date_raw": null,
+    "open_date_precision": "missing",
+    "close_date_precision": "missing",
+    "streams": [],
+    "locations": [],
+    "salary_text": "Competitive remuneration and benefits program.",
+    "duration_text": "We offer a two-year structured graduate program.",
+    "rotation_text": "The program provides exposure to a site operational role, a technical placement and a business functional role."
+  },
+  "eligibility": {
+    "work_rights": null,
+    "graduation_window": "Open to students in their final year of university or who have recently completed a relevant degree.",
+    "disciplines": [
+      "Mining",
+      "Geosciences",
+      "Engineering",
+      "Data science",
+      "AI",
+      "Law",
+      "Commerce",
+      "Health and safety",
+      "Sustainability",
+      "Environment"
+    ],
+    "minimum_requirements": []
+  },
+  "recruitment_process": {
+    "stages": [],
+    "tips": []
+  },
+  "commercial_context": {
+    "exec_themes": [
+      "Run a large-scale, low-cost iron ore business with strong shipment volumes, disciplined cost control, and capital allocation focused on shareholder returns.",
+      "Decarbonise operations through the “Real Zero” plan (stop burning fossil fuels in Scope 1 and 2 terrestrial Australian iron ore operations by 2030) and treat this as both a climate and cost-reduction strategy.",
+      "Build a second growth engine by developing a global portfolio across green metals, critical minerals, energy and technology, while applying “commercial discipline” to decide project timing and viability.",
+      "Use partnerships and in-house technology (renewables, batteries, electrified mining equipment, software/AI) to improve productivity, reduce fossil-fuel exposure, and create new products/solutions (e.g., green iron/green metals)."
+    ],
+    "profit_engine": "Fortescue’s main profit engine is producing and shipping large volumes of iron ore from its Pilbara operations at industry-leading low operating costs (C1), generating strong cash flow/EBITDA and returning a large share of profits to shareholders via dividends.",
+    "headwinds": "Fortescue flags external pressures such as inflationary pressures on costs and sensitivity to foreign exchange movements (AUD/USD affecting C1 costs). It also indicates it is navigating changing “market dynamics” (including conditions impacting iron ore pricing/discounts).",
+    "esg": "Fortescue positions sustainability as integrated into the business, with a focus on safety, community benefits, and decarbonisation. It has a “Real Zero” target to eliminate Scope 1 and 2 terrestrial emissions from Australian iron ore operations by 2030 without relying on voluntary carbon offsets or carbon capture and storage, and it is progressing delivery via renewables, battery storage and electrification of equipment.",
+    "recent_pivot": "Fortescue is increasingly framing itself as a “technology, energy and metals” group, with a stronger emphasis on decarbonisation-as-cost-reduction and on building a pipeline of green metals/energy/technology and critical minerals projects (beyond the core iron ore business)."
+  },
+  "section_provenance": {
+    "program": {
+      "confidence": "high",
+      "notes": [
+        "The Fortescue Graduate Program page states the program name, program duration, and high-level structure (exposure to site, technical, and business functional roles).",
+        "The page includes a 'Register your interest' link that points to Fortescue's SuccessFactors career site, which is treated here as the direct apply link."
+      ],
+      "sources": [
+        {
+          "type": "web",
+          "title": "Graduate Program | Fortescue Careers",
+          "url": "https://careers.fortescue.com/en/early-careers/graduate-program",
+          "retrieved_at": "2026-03-06"
+        }
+      ]
+    },
+    "eligibility": {
+      "confidence": "high",
+      "notes": [
+        "Eligibility information (final year or recently completed degree, and the list of relevant study areas) is explicitly stated on the Fortescue Graduate Program page.",
+        "No explicit work-rights statement was found on the Graduate Program overview page that was available to crawl."
+      ],
+      "sources": [
+        {
+          "type": "web",
+          "title": "Graduate Program | Fortescue Careers",
+          "url": "https://careers.fortescue.com/en/early-careers/graduate-program",
+          "retrieved_at": "2026-03-06"
+        }
+      ]
+    },
+    "recruitment_process": {
+      "confidence": "low",
+      "notes": [
+        "The Graduate Program page does not describe the recruitment stages or give application tips.",
+        "A Fortescue 'Recruitment Process' page link appears in the site navigation, but it could not be fetched in this run, so no stages/tips were extracted."
+      ],
+      "sources": [
+        {
+          "type": "web",
+          "title": "Graduate Program | Fortescue Careers",
+          "url": "https://careers.fortescue.com/en/early-careers/graduate-program",
+          "retrieved_at": "2026-03-06"
+        }
+      ]
+    },
+    "commercial_context": {
+      "confidence": "medium",
+      "notes": [
+        "This summary is based on Fortescue’s official Investor Centre pages plus its FY26 half-year results announcement and investor call transcript excerpts. Some themes (e.g., “market dynamics”) are referenced at a high level in the transcript, so details are kept general.",
+        "“Headwinds” are limited to items Fortescue explicitly mentions in the sourced documents (e.g., inflationary pressures and FX sensitivity). It does not provide a single consolidated ‘headwinds’ list in the excerpts reviewed.",
+        "The wording ‘recent pivot’ reflects how Fortescue describes its evolving identity and priorities (technology/energy/metals; Real Zero; green metals) rather than a dated, one-time strategic change announcement."
+      ],
+      "sources": [
+        {
+          "type": "investor-centre-page",
+          "title": "Fortescue Investor Centre",
+          "url": "https://investors.fortescue.com/en",
+          "retrieved_at": "2026-03-06"
+        },
+        {
+          "type": "results-announcement-pdf",
+          "title": "Fortescue | Half Year Results to 31 December 2025 (FY26 Half Year Results announcement)",
+          "url": "https://content.fortescue.com/fortescue17114-fortescueeb60-productionbbdb-8be5/media/project/fortescueportal/shared/documents/regulatory/asx-announcements/automated/03060660-fy26-half-year-results-announcement.pdf",
+          "retrieved_at": "2026-03-06"
+        },
+        {
+          "type": "transcript-pdf",
+          "title": "FY26 Half Year Results - Analyst and Investor Call Transcript",
+          "url": "https://content.fortescue.com/fortescue17114-fortescueeb60-productionbbdb-8be5/media/project/fortescueportal/shared/documents/regulatory/transcripts/fy26-half-year-results---analyst-and-investor-call-transcript.pdf",
+          "retrieved_at": "2026-03-06"
+        },
+        {
+          "type": "sustainability-page",
+          "title": "Sustainability | Fortescue",
+          "url": "https://www.fortescue.com/sustainability",
+          "retrieved_at": "2026-03-06"
+        }
+      ]
+    }
+  },
+  "provenance": {
+    "updated_at": "2026-03-06T14:25:37+00:00",
+    "sources": [
+      {
+        "type": "web",
+        "title": "Graduate Program | Fortescue Careers",
+        "url": "https://careers.fortescue.com/en/early-careers/graduate-program",
+        "retrieved_at": "2026-03-06"
+      },
+      {
+        "type": "investor-centre-page",
+        "title": "Fortescue Investor Centre",
+        "url": "https://investors.fortescue.com/en",
+        "retrieved_at": "2026-03-06"
+      },
+      {
+        "type": "results-announcement-pdf",
+        "title": "Fortescue | Half Year Results to 31 December 2025 (FY26 Half Year Results announcement)",
+        "url": "https://content.fortescue.com/fortescue17114-fortescueeb60-productionbbdb-8be5/media/project/fortescueportal/shared/documents/regulatory/asx-announcements/automated/03060660-fy26-half-year-results-announcement.pdf",
+        "retrieved_at": "2026-03-06"
+      },
+      {
+        "type": "transcript-pdf",
+        "title": "FY26 Half Year Results - Analyst and Investor Call Transcript",
+        "url": "https://content.fortescue.com/fortescue17114-fortescueeb60-productionbbdb-8be5/media/project/fortescueportal/shared/documents/regulatory/transcripts/fy26-half-year-results---analyst-and-investor-call-transcript.pdf",
+        "retrieved_at": "2026-03-06"
+      },
+      {
+        "type": "sustainability-page",
+        "title": "Sustainability | Fortescue",
+        "url": "https://www.fortescue.com/sustainability",
+        "retrieved_at": "2026-03-06"
+      }
+    ],
+    "notes": []
+  }
+}

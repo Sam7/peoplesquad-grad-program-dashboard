@@ -1,5 +1,6 @@
 import { access, cp, mkdir, readFile, readdir, rm, writeFile } from "node:fs/promises";
 import { dirname, join, resolve } from "node:path";
+import { assertIndexMatchesDetails, buildIndexPayloadFromDetails, loadDetailsFromCompaniesDir } from "./data-index-core.mjs";
 
 function nowIso() {
   return new Date().toISOString();
@@ -29,33 +30,6 @@ async function copyIfExists(sourcePath, targetPath, { overwrite = false } = {}) 
   await cp(sourcePath, targetPath, { recursive: true, force: overwrite, errorOnExist: false });
 }
 
-function normalizeIndexItem(item) {
-  return {
-    id: item.id,
-    name: item.name,
-    entity_type: item.entity_type,
-    logo_url: item.logo_url ?? null,
-    career_url: item.career_url ?? null,
-    apply: {
-      direct_apply_url: item.apply?.direct_apply_url ?? null,
-      open_date: item.apply?.open_date ?? null,
-      close_date: item.apply?.close_date ?? null,
-      open_date_raw: item.apply?.open_date_raw ?? null,
-      close_date_raw: item.apply?.close_date_raw ?? null,
-      open_date_precision: item.apply?.open_date_precision ?? null,
-      close_date_precision: item.apply?.close_date_precision ?? null,
-      status: item.apply?.status ?? "unknown"
-    },
-    tags: {
-      streams: item.tags?.streams ?? [],
-      eligibility: item.tags?.eligibility ?? [],
-      industries: item.tags?.industries ?? []
-    },
-    updated_at: item.updated_at ?? null,
-    confidence: item.confidence ?? "low"
-  };
-}
-
 export async function syncScraperData({ sourceRoots, outDir, hardRefresh = false }) {
   const resolvedOutDir = resolve(outDir);
   const companiesOutDir = join(resolvedOutDir, "companies");
@@ -71,17 +45,7 @@ export async function syncScraperData({ sourceRoots, outDir, hardRefresh = false
   await mkdir(companiesOutDir, { recursive: true });
   await mkdir(logosOutDir, { recursive: true });
 
-  const mergedCompaniesById = new Map();
-  if (!hardRefresh && (await pathExists(indexOutPath))) {
-    const existingIndexPayload = await readJson(indexOutPath);
-    const existingCompanies = existingIndexPayload.companies ?? [];
-    for (const entry of existingCompanies) {
-      if (!entry?.id) {
-        continue;
-      }
-      mergedCompaniesById.set(entry.id, normalizeIndexItem(entry));
-    }
-  }
+  const mergedDetailsById = hardRefresh ? new Map() : await loadDetailsFromCompaniesDir(companiesOutDir);
 
   for (const root of sourceRoots) {
     const resolvedRoot = resolve(root);
@@ -90,26 +54,20 @@ export async function syncScraperData({ sourceRoots, outDir, hardRefresh = false
     const sourceCompanies = indexPayload.companies ?? [];
 
     for (const entry of sourceCompanies) {
-      const id = entry.id;
+      const id = entry?.id;
       if (!id) {
         continue;
       }
+
       const companySourcePath = join(resolvedRoot, "companies", `${id}.json`);
-      const companyOutPath = join(companiesOutDir, `${id}.json`);
-      if (hardRefresh) {
-        const detail = await readJson(companySourcePath);
-        await writeJson(companyOutPath, detail);
-      } else {
-        const alreadyExistsInPublic = await pathExists(companyOutPath);
-        if (!alreadyExistsInPublic) {
-          const detail = await readJson(companySourcePath);
-          await writeJson(companyOutPath, detail);
-        }
+      if (!(await pathExists(companySourcePath))) {
+        throw new Error(`Missing source company payload: ${companySourcePath}`);
       }
 
-      if (!mergedCompaniesById.has(id)) {
-        mergedCompaniesById.set(id, normalizeIndexItem(entry));
-      }
+      const detail = await readJson(companySourcePath);
+      const companyOutPath = join(companiesOutDir, `${id}.json`);
+      await writeJson(companyOutPath, detail);
+      mergedDetailsById.set(id, detail);
     }
 
     const logosSourceDir = join(resolvedRoot, "assets", "logos");
@@ -117,7 +75,7 @@ export async function syncScraperData({ sourceRoots, outDir, hardRefresh = false
       const logos = await readdir(logosSourceDir);
       for (const logoFile of logos) {
         await copyIfExists(join(logosSourceDir, logoFile), join(logosOutDir, logoFile), {
-          overwrite: hardRefresh
+          overwrite: true
         });
       }
     } catch {
@@ -125,17 +83,12 @@ export async function syncScraperData({ sourceRoots, outDir, hardRefresh = false
     }
   }
 
-  const mergedCompanies = Array.from(mergedCompaniesById.values());
-  mergedCompanies.sort((a, b) => a.name.localeCompare(b.name));
-
-  await writeJson(indexOutPath, {
-    schema_version: "1.0",
-    generated_at: nowIso(),
-    companies: mergedCompanies
-  });
+  const indexPayload = buildIndexPayloadFromDetails(mergedDetailsById, nowIso());
+  assertIndexMatchesDetails(indexPayload, mergedDetailsById);
+  await writeJson(indexOutPath, indexPayload);
 
   return {
-    companyCount: mergedCompanies.length,
+    companyCount: indexPayload.companies.length,
     outDir: resolvedOutDir
   };
 }

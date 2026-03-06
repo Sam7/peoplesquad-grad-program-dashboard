@@ -1,0 +1,288 @@
+{
+  "schema_version": "1.0",
+  "id": "xero",
+  "name": "Xero",
+  "entity_type": "company",
+  "classification": {
+    "industry_bucket": "Technology (SaaS / FinTech - Accounting Software)",
+    "is_government": false,
+    "government_level": ""
+  },
+  "official_domains": [
+    "xero.com",
+    "careers.xero.com"
+  ],
+  "urls": {
+    "careers_url": "https://careers.xero.com/",
+    "grad_program_url": "https://www.xero.com/au/graduate/",
+    "apply_url": null,
+    "investor_relations_url": "https://www.xero.com/us/investors/"
+  },
+  "logo_url": "assets/logos/xero-peoplesquad-logo.webp",
+  "branding": {
+    "logo_candidates": [],
+    "logo": {
+      "local_path": "assets/logos/xero-peoplesquad-logo.webp",
+      "source_url": "https://careers.xero.com/images/xero-wordmark-blue.png",
+      "mime_type": "image/webp",
+      "filename": "xero-peoplesquad-logo.webp",
+      "format": "webp",
+      "source_width": 2772,
+      "source_height": 750,
+      "output_width": 512,
+      "output_height": 512,
+      "confidence": "high",
+      "quality_score": 0.95,
+      "selection_reason": "brand_logo",
+      "retrieved_at": "2026-03-06T14:25:36+00:00",
+      "notes": []
+    }
+  },
+  "program": {
+    "name": "Xero grad program 2026",
+    "overview_url": "https://www.xero.com/au/graduate/",
+    "direct_apply_url": null,
+    "open_date": "2025-06-30",
+    "close_date": "2025-07-13",
+    "open_date_raw": "Applications for the 2026 program are open from 30 June to 13 July 2025",
+    "close_date_raw": "Applications for the 2026 program are open from 30 June to 13 July 2025",
+    "open_date_precision": "exact_day",
+    "close_date_precision": "exact_day",
+    "streams": [
+      "Technical grad program",
+      "Design grad program"
+    ],
+    "locations": [
+      "Manchester",
+      "Wellington",
+      "Auckland",
+      "Melbourne",
+      "Toronto",
+      "Denver"
+    ],
+    "salary_text": null,
+    "duration_text": "Our 12-month graduate program is designed to launch your career in either engineering, security, analysis, security engineering, or data science.",
+    "rotation_text": "Technical grads complete three 4-month rotations over 12 months, working with teams across the business in their chosen field. Design grads spend the full year in the same team, gaining in-depth skills and knowledge in their specific field."
+  },
+  "eligibility": {
+    "work_rights": "You must either have the right to work full-time in Australia, or be eligible to work full-time after graduating.",
+    "graduation_window": "You must be able to start full-time in February 2026. You must have fewer than 12 months professional working experience in relevant industries.",
+    "disciplines": [
+      "Software engineering",
+      "Security analyst",
+      "Product design",
+      "Design research"
+    ],
+    "minimum_requirements": [
+      "You must have fewer than 12 months professional working experience in relevant industries.",
+      "You must either have the right to work full-time in Australia, or be eligible to work full-time after graduating.",
+      "You must be able to start full-time in February 2026.",
+      "If you are a current or past university student applying for a role in your field of study, you need to provide a copy of your transcript.",
+      "You need to send your CV so Xero can use it to verify your eligibility.",
+      "You can only submit one application per candidate (choose your role carefully)."
+    ]
+  },
+  "recruitment_process": {
+    "stages": [
+      {
+        "name": "Step 1: Check if you're eligible",
+        "details": "You need fewer than 12 months relevant professional experience, the right to work full-time in Australia (or be eligible after graduating), and you must be able to start full-time in February 2026. If you are a current or past university student, you need to provide a transcript. You also need to send your CV so Xero can verify eligibility."
+      },
+      {
+        "name": "Step 2: Online assessments",
+        "details": "You will be invited to complete both a behavioural assessment and a technical assessment. For technical roles, the technical assessment is a HackerRank test. For design roles, there is a multiple-choice skills test."
+      },
+      {
+        "name": "Step 3: Record a short video",
+        "details": "You will be invited to pre-record a video interview. If it is successful, you will be invited to attend a grad day. Xero says it reviews all applications before making a decision and you should expect an outcome either way."
+      },
+      {
+        "name": "Step 4: Virtual grad day",
+        "details": "A half-day virtual event where you will be assessed across different activities and can learn more about Xero and the grad program."
+      }
+    ],
+    "tips": [
+      "It is not all about your grades. Xero wants to know who you are and what you are passionate about.",
+      "Xero cannot accept applications after the close date.",
+      "You do not need a cover letter (cover letters are not part of the process).",
+      "The entire recruitment process is online, and the last stage is a virtual assessment centre, so you do not need to travel.",
+      "If you are applying from overseas, Xero asks you to contact the grad team to discuss options."
+    ]
+  },
+  "commercial_context": {
+    "exec_themes": [
+      "Grow by helping small businesses (and their accountants/bookkeepers) succeed, and scaling the platform globally.",
+      "Expand the product and ecosystem beyond core accounting (for example through connected apps and deeper financial services partnerships).",
+      "Use sustainability as a long-term value driver, with structured ESG governance and disclosure (materiality assessments, reporting, and supplier collaboration)."
+    ],
+    "profit_engine": "Xero’s core profit engine is recurring subscription revenue from its cloud accounting platform (i.e., customers pay ongoing fees to use Xero).",
+    "headwinds": null,
+    "esg": "Xero positions ESG as important to delivering its commitments, and publishes sustainability reporting with focus areas across environment (reducing climate impact), people (representation and inclusion), and communities/partners (supporting small businesses).",
+    "recent_pivot": "Recent investor communications highlight “Xero and Melio” product demonstrations and an investor briefing (3 February 2026), signaling increased emphasis on showcasing product integration/financial services capabilities to investors."
+  },
+  "section_provenance": {
+    "program": {
+      "confidence": "high",
+      "notes": [
+        "The main graduate program page says the 2026 grad program starts in February 2026 and directs applicants to apply via Prosple, but it does not provide exact open/close dates.",
+        "The technical grad program page explicitly states the application window (30 June to 13 July 2025).",
+        "The Early Careers page lists global locations for the grad program."
+      ],
+      "sources": [
+        {
+          "type": "web",
+          "title": "Xero Grad Program | Australian Grad Program | Xero AU",
+          "url": "https://www.xero.com/au/graduate/",
+          "retrieved_at": null
+        },
+        {
+          "type": "web",
+          "title": "Technical grad program | 2026 grad program | Xero AU",
+          "url": "https://www.xero.com/au/graduate/technical-program/",
+          "retrieved_at": null
+        },
+        {
+          "type": "web",
+          "title": "Early Careers at Xero | Grad Programs | Xero",
+          "url": "https://careers.xero.com/early-careers/",
+          "retrieved_at": null
+        }
+      ]
+    },
+    "eligibility": {
+      "confidence": "high",
+      "notes": [
+        "Eligibility requirements and required documents are stated in the 'Grad and intern program application process' section on the technical grad program page.",
+        "The design program page repeats the same eligibility wording and states that candidates can only submit one application."
+      ],
+      "sources": [
+        {
+          "type": "web",
+          "title": "Technical grad program | 2026 grad program | Xero AU",
+          "url": "https://www.xero.com/au/graduate/technical-program/",
+          "retrieved_at": null
+        },
+        {
+          "type": "web",
+          "title": "Design grad program | 2026 grad program | Xero AU",
+          "url": "https://www.xero.com/au/graduate/design-program/",
+          "retrieved_at": null
+        }
+      ]
+    },
+    "recruitment_process": {
+      "confidence": "high",
+      "notes": [
+        "The step-by-step recruitment stages and application tips are described on the technical grad program page (and mirrored across related grad pages)."
+      ],
+      "sources": [
+        {
+          "type": "web",
+          "title": "Technical grad program | 2026 grad program | Xero AU",
+          "url": "https://www.xero.com/au/graduate/technical-program/",
+          "retrieved_at": null
+        }
+      ]
+    },
+    "commercial_context": {
+      "confidence": "medium",
+      "notes": [
+        "Most investor ‘official reports’ (interim/annual reports, ASX releases, investor presentation PDFs) are linked from xero.com but hosted on brandfolder.xero.com or other third-party hosts. Per the domain restriction, I did not use those documents, which limits detail (especially for headwinds and profit model specifics like margins, CAC, churn, ARPU trends).",
+        "No explicit, report-style ‘headwinds’ section was found on xero.com pages retrieved under the allowed domains. As a result, headwinds is null.",
+        "The ESG summary is based on Xero’s sustainability pages, which describe the company’s ESG approach and objectives, but do not always provide quantified results in the HTML pages themselves (those are often in the linked PDF report)."
+      ],
+      "sources": [
+        {
+          "type": "webpage",
+          "title": "Information for Investors | Xero US",
+          "url": "https://www.xero.com/us/investors/",
+          "retrieved_at": null
+        },
+        {
+          "type": "webpage",
+          "title": "Financial Information | Investor Information | Xero US",
+          "url": "https://www.xero.com/us/investors/financial-information/",
+          "retrieved_at": null
+        },
+        {
+          "type": "webpage",
+          "title": "Sustainability at Xero | Xero US",
+          "url": "https://www.xero.com/sustainability/",
+          "retrieved_at": null
+        },
+        {
+          "type": "webpage",
+          "title": "Our Sustainability Approach & Performance | Xero US",
+          "url": "https://www.xero.com/us/sustainability/approach-and-performance/",
+          "retrieved_at": null
+        },
+        {
+          "type": "webpage",
+          "title": "Sustainability | Our Environment | Xero",
+          "url": "https://www.xero.com/id/sustainability/environment/",
+          "retrieved_at": null
+        }
+      ]
+    }
+  },
+  "provenance": {
+    "updated_at": "2026-03-06T14:25:36+00:00",
+    "sources": [
+      {
+        "type": "web",
+        "title": "Xero Grad Program | Australian Grad Program | Xero AU",
+        "url": "https://www.xero.com/au/graduate/",
+        "retrieved_at": null
+      },
+      {
+        "type": "web",
+        "title": "Technical grad program | 2026 grad program | Xero AU",
+        "url": "https://www.xero.com/au/graduate/technical-program/",
+        "retrieved_at": null
+      },
+      {
+        "type": "web",
+        "title": "Early Careers at Xero | Grad Programs | Xero",
+        "url": "https://careers.xero.com/early-careers/",
+        "retrieved_at": null
+      },
+      {
+        "type": "web",
+        "title": "Design grad program | 2026 grad program | Xero AU",
+        "url": "https://www.xero.com/au/graduate/design-program/",
+        "retrieved_at": null
+      },
+      {
+        "type": "webpage",
+        "title": "Information for Investors | Xero US",
+        "url": "https://www.xero.com/us/investors/",
+        "retrieved_at": null
+      },
+      {
+        "type": "webpage",
+        "title": "Financial Information | Investor Information | Xero US",
+        "url": "https://www.xero.com/us/investors/financial-information/",
+        "retrieved_at": null
+      },
+      {
+        "type": "webpage",
+        "title": "Sustainability at Xero | Xero US",
+        "url": "https://www.xero.com/sustainability/",
+        "retrieved_at": null
+      },
+      {
+        "type": "webpage",
+        "title": "Our Sustainability Approach & Performance | Xero US",
+        "url": "https://www.xero.com/us/sustainability/approach-and-performance/",
+        "retrieved_at": null
+      },
+      {
+        "type": "webpage",
+        "title": "Sustainability | Our Environment | Xero",
+        "url": "https://www.xero.com/id/sustainability/environment/",
+        "retrieved_at": null
+      }
+    ],
+    "notes": []
+  }
+}

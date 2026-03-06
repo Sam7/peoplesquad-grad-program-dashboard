@@ -1,0 +1,195 @@
+{
+  "schema_version": "1.0",
+  "id": "iph-limited-asx-iph",
+  "name": "IPH Limited",
+  "entity_type": "company",
+  "classification": {
+    "industry_bucket": "Professional Services (Intellectual Property Services)",
+    "is_government": false,
+    "government_level": ""
+  },
+  "official_domains": [
+    "iphlimited.com",
+    "iphltd.com.au"
+  ],
+  "urls": {
+    "careers_url": "https://www.iphlimited.com/careers/",
+    "grad_program_url": null,
+    "apply_url": null,
+    "investor_relations_url": "https://www.iphlimited.com/investor-information/financial-reports/"
+  },
+  "logo_url": null,
+  "branding": {
+    "logo_candidates": [],
+    "logo": null
+  },
+  "program": {
+    "name": "IPH Graduate Program (IT graduates)",
+    "overview_url": null,
+    "direct_apply_url": null,
+    "open_date": null,
+    "close_date": null,
+    "open_date_raw": null,
+    "close_date_raw": null,
+    "open_date_precision": "missing",
+    "close_date_precision": "missing",
+    "streams": [
+      "Information Technology (IT)"
+    ],
+    "locations": [],
+    "salary_text": null,
+    "duration_text": "Over an 18 month period, IT graduates rotate through a variety of IT functions.",
+    "rotation_text": "Over an 18 month period, IT graduates rotate through a variety of IT functions, starting in Service Desk, and moving to Process Improvement and Project Management."
+  },
+  "eligibility": {
+    "work_rights": null,
+    "graduation_window": null,
+    "disciplines": [],
+    "minimum_requirements": []
+  },
+  "recruitment_process": {
+    "stages": [],
+    "tips": []
+  },
+  "commercial_context": {
+    "exec_themes": [
+      "Build organic growth and lift performance across the existing member-firm network (after a multi-year acquisition period).",
+      "Use technology (especially AI) to improve how work is done and support growth (e.g., build AI tools and embed AI into core workflows).",
+      "Keep improving operational efficiency and how corporate services support the member firms (operational excellence, restructuring corporate services).",
+      "Maintain a diversified, networked model across multiple IP jurisdictions and service lines (patents, trade marks, designs) to provide resilience.",
+      "Capital management alongside growth investment (return surplus funds to shareholders while investing in growth)."
+    ],
+    "profit_engine": "IPH makes money by charging professional fees for intellectual property services delivered by its member firms. The fees relate to securing, enforcing, and managing clients’ IP rights, and revenue is earned across the full IP lifecycle. Management describes part of the revenue base as long-term and “annuity-style” (matters generate follow-on work over time), supported by a large and diverse client base with no single client over 2% of revenue.",
+    "headwinds": "IPH notes that performance is influenced by macro and market conditions (global and local economies), client activity levels, competitor activity, and regulatory environments. In FY25 it also described (1) a general decline in market-wide patent filings, and (2) weaker Singapore market filings over the past three years impacting the Asia segment (Singapore is a large portion of Asia segment filings). The Group also highlights exposure to foreign exchange movements because much of the Group operates in currencies other than AUD and some revenue/assets are USD-denominated.",
+    "esg": "IPH frames ESG as including climate change, wellbeing, diversity/equity/inclusion, governance, privacy, and data security. It states the Board approves the sustainability strategy, and oversight is integrated into governance (including Audit & Risk Committee oversight of greenhouse gas emissions calculations and climate reporting compliance considerations). It also points to specific ESG-related policies (e.g., DEI Policy, Code of Ethics, Whistleblower, information security policies) and says it calculates greenhouse gas emissions annually and reviews climate risks. In FY25 it updated its DEI Policy and drafted an expanded DEI strategy to be formally embedded in FY26, covering policy/compliance, data/reporting, engagement, learning/development, and inclusive talent/community practices, alongside a 40:40:20 by 2030 gender balance target.",
+    "recent_pivot": "In HY26 (half-year ended 31 December 2025), IPH explicitly says that after several years of acquisitions it is now focused on strengthening performance of current operations. It also highlights a shift toward building and embedding AI in workflows, restructuring corporate services to better support member firms, and evolving the executive leadership team, with further targeted AI investment and operational improvements planned for the remainder of FY26."
+  },
+  "section_provenance": {
+    "program": {
+      "confidence": "medium",
+      "notes": [
+        "IPH’s 2023 Annual Report explicitly says the group launched a Graduate Program in FY23, with an initial cohort of IT graduates joining in February 2023.",
+        "No official IPH Limited careers page found on the provided domains that lists application open/close dates, salary, locations, eligibility rules, or how to apply for this graduate program."
+      ],
+      "sources": [
+        {
+          "type": "pdf",
+          "title": "ASX_Appendix_4E_Annual_Report.pdf (IPH Limited 2023 Annual Report, year ended 30 June 2023)",
+          "url": "https://www.iphltd.com.au/wp-content/uploads/2023/08/ASX_Appendix_4E_Annual_Report.pdf",
+          "retrieved_at": "2026-03-06"
+        },
+        {
+          "type": "webpage",
+          "title": "Careers - IPH",
+          "url": "https://www.iphlimited.com/careers/",
+          "retrieved_at": "2026-03-06"
+        }
+      ]
+    },
+    "eligibility": {
+      "confidence": "low",
+      "notes": [
+        "No eligibility criteria for IPH’s Graduate Program were stated on the official pages/PDF reviewed from the provided domains."
+      ],
+      "sources": [
+        {
+          "type": "pdf",
+          "title": "ASX_Appendix_4E_Annual_Report.pdf (IPH Limited 2023 Annual Report, year ended 30 June 2023)",
+          "url": "https://www.iphltd.com.au/wp-content/uploads/2023/08/ASX_Appendix_4E_Annual_Report.pdf",
+          "retrieved_at": "2026-03-06"
+        },
+        {
+          "type": "webpage",
+          "title": "Careers - IPH",
+          "url": "https://www.iphlimited.com/careers/",
+          "retrieved_at": "2026-03-06"
+        }
+      ]
+    },
+    "recruitment_process": {
+      "confidence": "low",
+      "notes": [
+        "No step-by-step recruitment process for the IPH Graduate Program was stated on the official pages/PDF reviewed from the provided domains."
+      ],
+      "sources": [
+        {
+          "type": "pdf",
+          "title": "ASX_Appendix_4E_Annual_Report.pdf (IPH Limited 2023 Annual Report, year ended 30 June 2023)",
+          "url": "https://www.iphltd.com.au/wp-content/uploads/2023/08/ASX_Appendix_4E_Annual_Report.pdf",
+          "retrieved_at": "2026-03-06"
+        },
+        {
+          "type": "webpage",
+          "title": "Careers - IPH",
+          "url": "https://www.iphlimited.com/careers/",
+          "retrieved_at": "2026-03-06"
+        }
+      ]
+    },
+    "commercial_context": {
+      "confidence": "medium",
+      "notes": [
+        "Profit engine is stated directly in the HY26 half-year report business model section; the ‘annuity-style’ description is sourced from the FY25 annual report narrative and is paraphrased.",
+        "Headwinds are compiled from multiple places: the FY25 annual report narrative on filing trends (including Singapore) plus the FY25 risk section and HY26 ‘factors that affect performance’ statement. These are described as influences/risks rather than quantified forecast impacts.",
+        "ESG is based on the FY25 annual report’s ESG risk/governance discussion and DEI section. The dedicated FY25 Sustainability Report PDF could be accessed but text extraction was not available via the tool in this run, so ESG detail is limited to what is explicitly in the Annual Report.",
+        "Recent pivot is based on the HY26 ‘Strategy and outlook’ section describing the post-acquisition focus and AI/operating model initiatives."
+      ],
+      "sources": [
+        {
+          "type": "company_report",
+          "title": "IPH Annual Report 2025 (year ended 30 June 2025)",
+          "url": "https://www.iphlimited.com/wp-content/uploads/2025/08/2932588.pdf",
+          "retrieved_at": "2026-03-06"
+        },
+        {
+          "type": "company_report",
+          "title": "Appendix 4D and HY26 Half Year Report (half year ended 31 December 2025)",
+          "url": "https://www.iphlimited.com/wp-content/uploads/2026/02/Appendix-4D-and-HY26-Report.pdf",
+          "retrieved_at": "2026-03-06"
+        },
+        {
+          "type": "company_page",
+          "title": "Financial Reports (Investor Information)",
+          "url": "https://www.iphlimited.com/investor-information/financial-reports/",
+          "retrieved_at": "2026-03-06"
+        }
+      ]
+    }
+  },
+  "provenance": {
+    "updated_at": "2026-03-06T14:25:42+00:00",
+    "sources": [
+      {
+        "type": "pdf",
+        "title": "ASX_Appendix_4E_Annual_Report.pdf (IPH Limited 2023 Annual Report, year ended 30 June 2023)",
+        "url": "https://www.iphltd.com.au/wp-content/uploads/2023/08/ASX_Appendix_4E_Annual_Report.pdf",
+        "retrieved_at": "2026-03-06"
+      },
+      {
+        "type": "webpage",
+        "title": "Careers - IPH",
+        "url": "https://www.iphlimited.com/careers/",
+        "retrieved_at": "2026-03-06"
+      },
+      {
+        "type": "company_report",
+        "title": "IPH Annual Report 2025 (year ended 30 June 2025)",
+        "url": "https://www.iphlimited.com/wp-content/uploads/2025/08/2932588.pdf",
+        "retrieved_at": "2026-03-06"
+      },
+      {
+        "type": "company_report",
+        "title": "Appendix 4D and HY26 Half Year Report (half year ended 31 December 2025)",
+        "url": "https://www.iphlimited.com/wp-content/uploads/2026/02/Appendix-4D-and-HY26-Report.pdf",
+        "retrieved_at": "2026-03-06"
+      },
+      {
+        "type": "company_page",
+        "title": "Financial Reports (Investor Information)",
+        "url": "https://www.iphlimited.com/investor-information/financial-reports/",
+        "retrieved_at": "2026-03-06"
+      }
+    ],
+    "notes": []
+  }
+}

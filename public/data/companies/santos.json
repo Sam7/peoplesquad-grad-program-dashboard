@@ -1,0 +1,285 @@
+{
+  "schema_version": "1.0",
+  "id": "santos",
+  "name": "Santos (Santos Limited)",
+  "entity_type": "company",
+  "classification": {
+    "industry_bucket": "Energy",
+    "is_government": false,
+    "government_level": "none"
+  },
+  "official_domains": [
+    "santos.com"
+  ],
+  "urls": {
+    "careers_url": "https://www.santos.com/careers/",
+    "grad_program_url": null,
+    "apply_url": "https://recruitment.santos.com/",
+    "investor_relations_url": "https://www.santos.com/investors/"
+  },
+  "logo_url": "assets/logos/santos-peoplesquad-logo.webp",
+  "branding": {
+    "logo_candidates": [],
+    "logo": {
+      "local_path": "assets/logos/santos-peoplesquad-logo.webp",
+      "source_url": "https://www.santos.com/wp-content/uploads/2023/04/cropped-android-chrome-512x512-1-192x192.png",
+      "mime_type": "image/webp",
+      "filename": "santos-peoplesquad-logo.webp",
+      "format": "webp",
+      "source_width": 192,
+      "source_height": 192,
+      "output_width": 512,
+      "output_height": 512,
+      "confidence": "medium",
+      "quality_score": 0.1,
+      "selection_reason": "fallback_icon",
+      "retrieved_at": "2026-03-06T14:24:09+00:00",
+      "notes": []
+    }
+  },
+  "program": {
+    "name": "Graduate and Vacation Employment Program",
+    "overview_url": "https://recruitment.santos.com/graduateCareers/",
+    "direct_apply_url": "https://recruitment.santos.com/",
+    "open_date": null,
+    "close_date": null,
+    "open_date_raw": null,
+    "close_date_raw": null,
+    "open_date_precision": "missing",
+    "close_date_precision": "missing",
+    "streams": [
+      "Geology, Geophysics and Petrophysics",
+      "Petroleum Engineering",
+      "Chemical Engineering",
+      "Mechanical/Mechatronic Engineering",
+      "Electrical Engineering",
+      "Civil Engineering",
+      "Environmental Engineering",
+      "Computer Science",
+      "Information Systems Engineering",
+      "Supply Chain Management",
+      "Procurement & Logistics"
+    ],
+    "locations": [
+      "Adelaide, South Australia (office placements)",
+      "Brisbane, Queensland (office placements)",
+      "Perth, Western Australia (office placements)",
+      "Site locations throughout Australia (travel may be required)",
+      "Overseas locations (possible later in career)"
+    ],
+    "salary_text": "Santos states it offers a competitive remuneration and benefits package. Examples listed include bonus, superannuation, access to a share plan, salary sacrifice, study assistance and education programs, employee assistance program, health and fitness memberships, professional memberships, and relocation assistance (where applicable).",
+    "duration_text": null,
+    "rotation_text": "Santos states the graduate program includes job rotations to give graduates exposure to different teams or locations, to build technical breadth and meet both graduate and business needs."
+  },
+  "eligibility": {
+    "work_rights": null,
+    "graduation_window": "Santos states that applicants will be in the final year of their Honours degree (for the graduate positions described in the Graduate and Vacation Employment Program brochure).",
+    "disciplines": [
+      "Geology, Geophysics and Petrophysics",
+      "Petroleum Engineering",
+      "Chemical Engineering",
+      "Mechanical/Mechatronic Engineering",
+      "Electrical Engineering",
+      "Civil Engineering",
+      "Environmental Engineering",
+      "Computer Science",
+      "Information Systems Engineering",
+      "Supply Chain Management",
+      "Procurement & Logistics"
+    ],
+    "minimum_requirements": [
+      "Santos states applicants need to demonstrate effective communication skills.",
+      "Santos states applicants need to demonstrate strong problem solving skills.",
+      "Santos states applicants need to demonstrate analytical skills.",
+      "Santos states applicants need to demonstrate time management skills.",
+      "Santos states applicants need to demonstrate organisational skills.",
+      "Santos states all applications must be registered online."
+    ]
+  },
+  "recruitment_process": {
+    "stages": [
+      {
+        "name": "Search",
+        "details": "Santos advises candidates to search current jobs to find a position that matches their skills, experience, and career ambitions."
+      },
+      {
+        "name": "Create a profile",
+        "details": "Santos advises candidates to upload a CV and enter personal details and experience."
+      },
+      {
+        "name": "Selection",
+        "details": "Santos states applications are evaluated against position requirements. Shortlisted candidates are contacted by a recruiter, and candidates who best match the criteria and Santos values progress to interview."
+      },
+      {
+        "name": "Get excited!",
+        "details": "Santos notes process times can vary. Candidates can log in to their account to see real-time application progress updates."
+      }
+    ],
+    "tips": [
+      "Check you meet the academic requirements or have the relevant experience Santos is looking for.",
+      "Clearly show the qualities and skills you have that are relevant to the role you are applying for.",
+      "Answer application questions clearly and precisely.",
+      "Use your resume to show not only what you have done, but also your achievements and the skills you developed.",
+      "Check grammar and spelling, and ask someone else to proofread your application."
+    ]
+  },
+  "commercial_context": {
+    "exec_themes": [
+      "Running a “disciplined low-cost operating model” to keep unit costs low and generate free cash flow through commodity-price cycles.",
+      "Prioritising safe and reliable operations (“base business” performance) while bringing major growth projects online.",
+      "Funding shareholder returns (dividends / cash returns) from free cash flow, supported by a strong balance sheet and gearing management.",
+      "Executing near-term growth projects (especially Barossa LNG and Pikka) to lift production and cash generation in the next few years.",
+      "Using carbon capture and storage (CCS)—notably Moomba CCS—as a central part of the company’s decarbonisation approach and “Say on Climate” engagement."
+    ],
+    "profit_engine": "Santos’ profit model (as described in its investor materials) is to run existing producing assets at low unit cost, sell LNG and other hydrocarbons into Asia-linked markets, and use the resulting free cash flow to (1) fund a small number of large, phased growth projects and (2) pay dividends/cash returns—while keeping leverage (gearing) within target ranges.",
+    "headwinds": "Commodity price and capital market volatility, plus general “challenging market conditions,” which can pressure revenue and investment returns. The company also notes inflationary pressures but states it has still maintained its targeted low free-cash-flow breakeven oil price.",
+    "esg": "Santos positions CCS as the backbone of its decarbonisation strategy (highlighting Moomba CCS injection volumes and storage rates). It also states it achieved its 2030 emissions reduction target of 30% five years early and highlights shareholder support for its advisory “Say on Climate” vote.",
+    "recent_pivot": "As Barossa LNG and Darwin LNG move from development into operations (including first cargo achieved in early 2026), Santos describes these projects becoming part of the “base business.” Alongside cost-savings goals, it signals a “rightsizing” of the organisation (targeting ~10% headcount reduction) as major growth projects near completion."
+  },
+  "section_provenance": {
+    "program": {
+      "confidence": "high",
+      "notes": [
+        "Key program description, rotations, benefits, and work locations were taken from Santos' Graduate and Vacation Employment Program brochure (PDF).",
+        "The graduate streams/disciplines list is taken directly from the same brochure and is presented as the disciplines applicants may be in for final-year Honours study."
+      ],
+      "sources": [
+        {
+          "type": "pdf",
+          "title": "Graduate and Vacation Employment Program (Handbook.pdf)",
+          "url": "https://recruitment.santos.com/portal/6/file/Handbook.pdf",
+          "retrieved_at": "2026-03-06"
+        },
+        {
+          "type": "webpage",
+          "title": "Find Jobs - Graduate Careers",
+          "url": "https://recruitment.santos.com/graduateCareers/",
+          "retrieved_at": "2026-03-06"
+        }
+      ]
+    },
+    "eligibility": {
+      "confidence": "high",
+      "notes": [
+        "Eligibility details were extracted from the Graduate and Vacation Employment Program brochure (PDF).",
+        "The brochure describes graduate applicants as being in the final year of an Honours degree and lists the disciplines."
+      ],
+      "sources": [
+        {
+          "type": "pdf",
+          "title": "Graduate and Vacation Employment Program (Handbook.pdf)",
+          "url": "https://recruitment.santos.com/portal/6/file/Handbook.pdf",
+          "retrieved_at": "2026-03-06"
+        }
+      ]
+    },
+    "recruitment_process": {
+      "confidence": "high",
+      "notes": [
+        "Recruitment stages and application tips were extracted from the Santos Graduate Careers 'Process' page."
+      ],
+      "sources": [
+        {
+          "type": "webpage",
+          "title": "Graduate Careers - Application process",
+          "url": "https://recruitment.santos.com/graduateCareers/Process",
+          "retrieved_at": "2026-03-06"
+        }
+      ]
+    },
+    "commercial_context": {
+      "confidence": "medium",
+      "notes": [
+        "Some key pages (including the HTML versions of results/quarterly report pages) were blocked by a JavaScript/anti-bot gate when opened directly, so extraction relied on Santos.com search snippets that reproduce substantial official text.",
+        "Several PDFs hosted on santos.com/wp-content/uploads returned access errors (403/JS gate) when opened, limiting direct quotation and cross-checking of exact wording inside the reports/presentations.",
+        "Items are paraphrased into student-friendly language; where the company’s wording was high-level (e.g., “challenging market conditions”), the summary stays high-level rather than adding detail."
+      ],
+      "sources": [
+        {
+          "type": "company_news_release_page",
+          "title": "2025 Full-Year Results | Santos",
+          "url": "https://www.santos.com/news/2025-full-year-results/",
+          "retrieved_at": "2026-03-06"
+        },
+        {
+          "type": "company_news_release_page",
+          "title": "2025 First Quarter Report | Santos",
+          "url": "https://www.santos.com/news/2025-first-quarter-report/",
+          "retrieved_at": "2026-03-06"
+        },
+        {
+          "type": "company_investor_hub_page",
+          "title": "Investor Centre | Santos",
+          "url": "https://www.santos.com/investors",
+          "retrieved_at": "2026-03-06"
+        },
+        {
+          "type": "company_pdf_media_release",
+          "title": "Results of the 2025 Annual General Meeting (PDF) | Santos",
+          "url": "https://www.santos.com/wp-content/uploads/2025/04/Results-of-the-2025-Annual-General-Meeting.pdf",
+          "retrieved_at": "2026-03-06"
+        },
+        {
+          "type": "company_news_release_page",
+          "title": "Release of 2022 Climate Change Report | Santos",
+          "url": "https://www.santos.com/news/release-of-2022-climate-change-report/",
+          "retrieved_at": "2026-03-06"
+        }
+      ]
+    }
+  },
+  "provenance": {
+    "updated_at": "2026-03-06T14:24:09+00:00",
+    "sources": [
+      {
+        "type": "pdf",
+        "title": "Graduate and Vacation Employment Program (Handbook.pdf)",
+        "url": "https://recruitment.santos.com/portal/6/file/Handbook.pdf",
+        "retrieved_at": "2026-03-06"
+      },
+      {
+        "type": "webpage",
+        "title": "Find Jobs - Graduate Careers",
+        "url": "https://recruitment.santos.com/graduateCareers/",
+        "retrieved_at": "2026-03-06"
+      },
+      {
+        "type": "webpage",
+        "title": "Graduate Careers - Application process",
+        "url": "https://recruitment.santos.com/graduateCareers/Process",
+        "retrieved_at": "2026-03-06"
+      },
+      {
+        "type": "company_news_release_page",
+        "title": "2025 Full-Year Results | Santos",
+        "url": "https://www.santos.com/news/2025-full-year-results/",
+        "retrieved_at": "2026-03-06"
+      },
+      {
+        "type": "company_news_release_page",
+        "title": "2025 First Quarter Report | Santos",
+        "url": "https://www.santos.com/news/2025-first-quarter-report/",
+        "retrieved_at": "2026-03-06"
+      },
+      {
+        "type": "company_investor_hub_page",
+        "title": "Investor Centre | Santos",
+        "url": "https://www.santos.com/investors",
+        "retrieved_at": "2026-03-06"
+      },
+      {
+        "type": "company_pdf_media_release",
+        "title": "Results of the 2025 Annual General Meeting (PDF) | Santos",
+        "url": "https://www.santos.com/wp-content/uploads/2025/04/Results-of-the-2025-Annual-General-Meeting.pdf",
+        "retrieved_at": "2026-03-06"
+      },
+      {
+        "type": "company_news_release_page",
+        "title": "Release of 2022 Climate Change Report | Santos",
+        "url": "https://www.santos.com/news/release-of-2022-climate-change-report/",
+        "retrieved_at": "2026-03-06"
+      }
+    ],
+    "notes": []
+  }
+}

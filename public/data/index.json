@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-03-06T11:18:06.191Z",
+  "generated_at": "2026-03-06T14:25:50.503Z",
   "companies": [
     {
       "id": "anz-group",
@@ -10,13 +10,13 @@
       "career_url": "https://www.anz.com.au/careers/",
       "apply": {
         "direct_apply_url": null,
-        "open_date": null,
-        "close_date": null,
-        "open_date_raw": null,
-        "close_date_raw": null,
-        "open_date_precision": null,
-        "close_date_precision": null,
-        "status": "unknown"
+        "open_date": "2026-04-02",
+        "close_date": "2026-05-11",
+        "open_date_raw": "Applications open 2 April 2026",
+        "close_date_raw": "Applications close 11 May 2026",
+        "open_date_precision": "exact_day",
+        "close_date_precision": "exact_day",
+        "status": "upcoming"
       },
       "tags": {
         "streams": [
@@ -30,18 +30,77 @@
           "Suncorp Bank Business & Agribusiness",
           "Technology",
           "Marketing (New Zealand)",
-          "Institutional (New Zealand)",
           "Data (New Zealand)",
           "Funds Management (New Zealand)"
         ],
         "eligibility": [
-          "When you apply, you should be an Australian or New Zealand citizen, or hold permanent residency in the program country you are applying for."
+          "You should be an Australian or New Zealand citizen, or hold permanent residency in the program country you are applying for."
         ],
         "industries": [
           "Banking"
         ]
       },
-      "updated_at": "2026-03-06T08:52:07+00:00",
+      "updated_at": "2026-03-06T11:58:48+00:00",
+      "confidence": "medium"
+    },
+    {
+      "id": "apa-group-au",
+      "name": "APA Group",
+      "entity_type": "company",
+      "logo_url": "assets/logos/apa-group-au-peoplesquad-logo.webp",
+      "career_url": "https://www.apa.com.au/careers",
+      "apply": {
+        "direct_apply_url": null,
+        "open_date": null,
+        "close_date": null,
+        "open_date_raw": "Applications for our 2027 program will open in March/April 2026.",
+        "close_date_raw": null,
+        "open_date_precision": "unparseable",
+        "close_date_precision": "missing",
+        "status": "unknown"
+      },
+      "tags": {
+        "streams": [],
+        "eligibility": [
+          "You must be an Australian or New Zealand citizen, or an Australian Permanent Resident."
+        ],
+        "industries": [
+          "Energy"
+        ]
+      },
+      "updated_at": "2026-03-06T14:24:49+00:00",
+      "confidence": "high"
+    },
+    {
+      "id": "asx-limited-au",
+      "name": "ASX Limited (Australian Securities Exchange)",
+      "entity_type": "company",
+      "logo_url": "assets/logos/asx-limited-au-peoplesquad-logo.webp",
+      "career_url": "https://www.asx.com.au/about/careers",
+      "apply": {
+        "direct_apply_url": null,
+        "open_date": "2025-08-25",
+        "close_date": "2025-09-28",
+        "open_date_raw": "Applications open: Monday 25 August 2025",
+        "close_date_raw": "Applications close: Sunday 28 September 2025",
+        "open_date_precision": "exact_day",
+        "close_date_precision": "exact_day",
+        "status": "closed"
+      },
+      "tags": {
+        "streams": [
+          "Technology",
+          "Business/Commercial",
+          "Corporate Finance"
+        ],
+        "eligibility": [
+          "You must be an Australian or New Zealand citizen, or an Australian or New Zealand permanent resident."
+        ],
+        "industries": [
+          "Financial Services"
+        ]
+      },
+      "updated_at": "2026-03-06T14:24:55+00:00",
       "confidence": "high"
     },
     {
@@ -52,12 +111,12 @@
       "career_url": "https://www.bhp.com/careers",
       "apply": {
         "direct_apply_url": "https://careers.bhp.com/job/BHP-2027-Australian-Graduate-Campaign/1368544000/",
-        "open_date": "2026-02-26",
+        "open_date": null,
         "close_date": "2026-04-06",
         "open_date_raw": null,
-        "close_date_raw": null,
-        "open_date_precision": null,
-        "close_date_precision": null,
+        "close_date_raw": "6 April 2026",
+        "open_date_precision": "missing",
+        "close_date_precision": "exact_day",
         "status": "open"
       },
       "tags": {
@@ -75,7 +134,7 @@
           "Resources / Mining & Metals"
         ]
       },
-      "updated_at": "2026-03-06T07:47:45+00:00",
+      "updated_at": "2026-03-06T11:58:58+00:00",
       "confidence": "high"
     },
     {
@@ -88,10 +147,10 @@
         "direct_apply_url": "https://colescareers.com.au/au/en/studentandgraduates",
         "open_date": "2026-03-10",
         "close_date": "2026-04-12",
-        "open_date_raw": null,
-        "close_date_raw": null,
-        "open_date_precision": null,
-        "close_date_precision": null,
+        "open_date_raw": "Applications will be open from 10 March to 12 April 2026 for our February 2027 intake.",
+        "close_date_raw": "Applications will be open from 10 March to 12 April 2026 for our February 2027 intake.",
+        "open_date_precision": "exact_day",
+        "close_date_precision": "exact_day",
         "status": "upcoming"
       },
       "tags": {
@@ -114,7 +173,7 @@
           "Retail (Grocery/Supermarket)"
         ]
       },
-      "updated_at": "2026-03-06T08:53:13+00:00",
+      "updated_at": "2026-03-06T11:59:36+00:00",
       "confidence": "high"
     },
     {
@@ -125,13 +184,13 @@
       "career_url": "https://www.commbank.com.au/about-us/careers.html",
       "apply": {
         "direct_apply_url": null,
-        "open_date": null,
-        "close_date": null,
-        "open_date_raw": null,
-        "close_date_raw": null,
-        "open_date_precision": null,
-        "close_date_precision": null,
-        "status": "unknown"
+        "open_date": "2026-03-30",
+        "close_date": "2026-04-21",
+        "open_date_raw": "Applications open 30 March 2026",
+        "close_date_raw": "Applications close 21 April 2026",
+        "open_date_precision": "exact_day",
+        "close_date_precision": "exact_day",
+        "status": "upcoming"
       },
       "tags": {
         "streams": [
@@ -141,14 +200,14 @@
           "Technology Associate Program"
         ],
         "eligibility": [
-          "For the Graduate Program, Summer Intern Program, and Global Markets Summer Analyst Program, you must be an Australian or New Zealand citizen, or an Australian permanent resident at the time you apply. Temporary visa holders are not eligible. Bridging visas while awaiting permanent residency and 820 visa holders are not included."
+          "You must be an Australian or New Zealand citizen, or an Australian permanent resident at the time of your application. Temporary visa holders are not eligible. Bridging visas while awaiting permanent residency and 820 visa holders are not included."
         ],
         "industries": [
           "Banking"
         ]
       },
-      "updated_at": "2026-03-06T08:36:18+00:00",
-      "confidence": "high"
+      "updated_at": "2026-03-06T11:57:57+00:00",
+      "confidence": "medium"
     },
     {
       "id": "csl",
@@ -160,10 +219,10 @@
         "direct_apply_url": "https://csl2027graduateprogram-expressionofinterest-csl.pushapply.com",
         "open_date": "2025-06-23",
         "close_date": "2025-08-03",
-        "open_date_raw": null,
-        "close_date_raw": null,
-        "open_date_precision": null,
-        "close_date_precision": null,
+        "open_date_raw": "Open: 23 Jun- 3rd Aug 2025",
+        "close_date_raw": "Open: 23 Jun- 3rd Aug 2025",
+        "open_date_precision": "exact_day",
+        "close_date_precision": "exact_day",
         "status": "closed"
       },
       "tags": {
@@ -178,13 +237,39 @@
           "Information & Technology"
         ],
         "eligibility": [
-          "You will need to be an Australian or New Zealand Citizen or have Australian Permanent Residency status at the time of application."
+          "You need to be an Australian or New Zealand Citizen, or have Australian Permanent Residency status at the time of application."
         ],
         "industries": [
           "Healthcare / Biotechnology & Pharmaceuticals"
         ]
       },
-      "updated_at": "2026-03-06T07:53:50+00:00",
+      "updated_at": "2026-03-06T11:57:55+00:00",
+      "confidence": "high"
+    },
+    {
+      "id": "fortescue",
+      "name": "Fortescue",
+      "entity_type": "company",
+      "logo_url": "assets/logos/fortescue-peoplesquad-logo.webp",
+      "career_url": "https://careers.fortescue.com/en",
+      "apply": {
+        "direct_apply_url": "https://career10.successfactors.com/career?company=fortescue",
+        "open_date": null,
+        "close_date": null,
+        "open_date_raw": null,
+        "close_date_raw": null,
+        "open_date_precision": "missing",
+        "close_date_precision": "missing",
+        "status": "unknown"
+      },
+      "tags": {
+        "streams": [],
+        "eligibility": [],
+        "industries": [
+          "Resources"
+        ]
+      },
+      "updated_at": "2026-03-06T14:25:37+00:00",
       "confidence": "high"
     },
     {
@@ -199,8 +284,8 @@
         "close_date": null,
         "open_date_raw": null,
         "close_date_raw": null,
-        "open_date_precision": null,
-        "close_date_precision": null,
+        "open_date_precision": "missing",
+        "close_date_precision": "missing",
         "status": "unknown"
       },
       "tags": {
@@ -210,8 +295,36 @@
           "Real Estate (Industrial/Logistics Property & Funds Management)"
         ]
       },
-      "updated_at": "2026-03-06T08:53:03+00:00",
+      "updated_at": "2026-03-06T14:24:23+00:00",
       "confidence": "low"
+    },
+    {
+      "id": "iph-limited-asx-iph",
+      "name": "IPH Limited",
+      "entity_type": "company",
+      "logo_url": null,
+      "career_url": "https://www.iphlimited.com/careers/",
+      "apply": {
+        "direct_apply_url": null,
+        "open_date": null,
+        "close_date": null,
+        "open_date_raw": null,
+        "close_date_raw": null,
+        "open_date_precision": "missing",
+        "close_date_precision": "missing",
+        "status": "unknown"
+      },
+      "tags": {
+        "streams": [
+          "Information Technology (IT)"
+        ],
+        "eligibility": [],
+        "industries": [
+          "Professional Services (Intellectual Property Services)"
+        ]
+      },
+      "updated_at": "2026-03-06T14:25:42+00:00",
+      "confidence": "medium"
     },
     {
       "id": "macquarie-group",
@@ -223,24 +336,22 @@
         "direct_apply_url": "https://recruitment.macquarie.com/",
         "open_date": "2026-03-03",
         "close_date": "2026-04-14",
-        "open_date_raw": null,
-        "close_date_raw": null,
-        "open_date_precision": null,
-        "close_date_precision": null,
+        "open_date_raw": "Opens 3 March 2026",
+        "close_date_raw": "Closes 14 April 2026",
+        "open_date_precision": "exact_day",
+        "close_date_precision": "exact_day",
         "status": "open"
       },
       "tags": {
-        "streams": [
-          "Graduate Program",
-          "Summer Internship Program",
-          "Winter Development Program"
+        "streams": [],
+        "eligibility": [
+          "You must be an Australian citizen, Australian permanent resident or New Zealand citizen to be eligible for Macquarie’s Graduate and Internship Programs."
         ],
-        "eligibility": [],
         "industries": [
           "Banking & Financial Services"
         ]
       },
-      "updated_at": "2026-03-06T08:52:22+00:00",
+      "updated_at": "2026-03-06T11:58:39+00:00",
       "confidence": "high"
     },
     {
@@ -253,10 +364,10 @@
         "direct_apply_url": "https://careers.nab.com.au/jobs/nab-graduate-program-2027-nsw-sydney-cbd-nsw-australia-qld-brisbane-inner-qld-sa-adelaide-inner-sa-vic-melbourne-cbd-vic-wa-perth-inner-wa",
         "open_date": "2026-02-16",
         "close_date": "2026-03-29",
-        "open_date_raw": null,
-        "close_date_raw": null,
-        "open_date_precision": null,
-        "close_date_precision": null,
+        "open_date_raw": "Applications open: 10:00am (AEDT), Monday 16 February 2026",
+        "close_date_raw": "Applications close: 11:59pm (AEDT), Sunday 29 March 2026",
+        "open_date_precision": "exact_day",
+        "close_date_precision": "exact_day",
         "status": "open"
       },
       "tags": {
@@ -274,13 +385,46 @@
           "Risk"
         ],
         "eligibility": [
-          "You must be an Australian citizen, a New Zealand citizen, or an Australian permanent resident at the time of applying. Temporary visa holders are not eligible."
+          "You must be an Australian citizen, New Zealand citizen, or an Australian permanent resident at the time of applying. Temporary visa holders are not eligible."
         ],
         "industries": [
           "Banking"
         ]
       },
-      "updated_at": "2026-03-06T08:36:16+00:00",
+      "updated_at": "2026-03-06T11:57:55+00:00",
+      "confidence": "high"
+    },
+    {
+      "id": "orica",
+      "name": "Orica",
+      "entity_type": "company",
+      "logo_url": null,
+      "career_url": "https://www.orica.com/Careers",
+      "apply": {
+        "direct_apply_url": "https://careers.orica.com/",
+        "open_date": null,
+        "close_date": "2025-08-08",
+        "open_date_raw": null,
+        "close_date_raw": "Friday, 8 August 2025",
+        "open_date_precision": "missing",
+        "close_date_precision": "exact_day",
+        "status": "closed"
+      },
+      "tags": {
+        "streams": [
+          "Blasting Technical & Mining Services",
+          "Innovation Technology & Digital Solutions",
+          "Chemical & Manufacturing Engineering",
+          "Electrical, Electronic & Mechanical Engineering",
+          "Business & Commerce",
+          "Supply Chain & Logistics"
+        ],
+        "eligibility": [],
+        "industries": [
+          "Industrial"
+        ]
+      },
+      "updated_at": "2026-03-06T14:24:56+00:00",
       "confidence": "high"
     },
     {
@@ -290,13 +434,13 @@
       "logo_url": "assets/logos/qbe-insurance-peoplesquad-logo.webp",
       "career_url": "https://www.qbe.com/au/careers",
       "apply": {
-        "direct_apply_url": "https://www.qbe.com/au/careers/graduate/application-process",
+        "direct_apply_url": null,
         "open_date": null,
         "close_date": null,
         "open_date_raw": null,
-        "close_date_raw": null,
-        "open_date_precision": null,
-        "close_date_precision": null,
+        "close_date_raw": "Applications are now closed for the 2026 graduate program.",
+        "open_date_precision": "missing",
+        "close_date_precision": "unparseable",
         "status": "unknown"
       },
       "tags": {
@@ -312,7 +456,7 @@
           "Financial Services (Insurance)"
         ]
       },
-      "updated_at": "2026-03-06T08:53:38+00:00",
+      "updated_at": "2026-03-06T14:24:15+00:00",
       "confidence": "high"
     },
     {
@@ -323,23 +467,63 @@
       "career_url": "https://www.riotinto.com/en/careers",
       "apply": {
         "direct_apply_url": "https://jobs.riotinto.com/",
-        "open_date": null,
-        "close_date": null,
-        "open_date_raw": null,
-        "close_date_raw": null,
-        "open_date_precision": null,
-        "close_date_precision": null,
-        "status": "unknown"
+        "open_date": "2026-03-09",
+        "close_date": "2026-04-17",
+        "open_date_raw": "Applications open 9 March 2026",
+        "close_date_raw": "Applications close 17 April 2026",
+        "open_date_precision": "exact_day",
+        "close_date_precision": "exact_day",
+        "status": "upcoming"
       },
       "tags": {
         "streams": [],
-        "eligibility": [],
+        "eligibility": [
+          "For graduate roles, you must have the right to work in the country where the position is based (for example: citizens, permanent residents, student or postgraduate work visa holders)."
+        ],
         "industries": [
           "Resources"
         ]
       },
-      "updated_at": "2026-03-06T08:52:53+00:00",
-      "confidence": "low"
+      "updated_at": "2026-03-06T11:59:24+00:00",
+      "confidence": "medium"
+    },
+    {
+      "id": "santos",
+      "name": "Santos (Santos Limited)",
+      "entity_type": "company",
+      "logo_url": "assets/logos/santos-peoplesquad-logo.webp",
+      "career_url": "https://www.santos.com/careers/",
+      "apply": {
+        "direct_apply_url": "https://recruitment.santos.com/",
+        "open_date": null,
+        "close_date": null,
+        "open_date_raw": null,
+        "close_date_raw": null,
+        "open_date_precision": "missing",
+        "close_date_precision": "missing",
+        "status": "unknown"
+      },
+      "tags": {
+        "streams": [
+          "Geology, Geophysics and Petrophysics",
+          "Petroleum Engineering",
+          "Chemical Engineering",
+          "Mechanical/Mechatronic Engineering",
+          "Electrical Engineering",
+          "Civil Engineering",
+          "Environmental Engineering",
+          "Computer Science",
+          "Information Systems Engineering",
+          "Supply Chain Management",
+          "Procurement & Logistics"
+        ],
+        "eligibility": [],
+        "industries": [
+          "Energy"
+        ]
+      },
+      "updated_at": "2026-03-06T14:24:09+00:00",
+      "confidence": "high"
     },
     {
       "id": "suncorp-group",
@@ -386,13 +570,13 @@
       "career_url": "https://www.telstra.com.au/careers",
       "apply": {
         "direct_apply_url": null,
-        "open_date": null,
+        "open_date": "2026-03-01",
         "close_date": null,
-        "open_date_raw": null,
+        "open_date_raw": "Applications for the 2027 program will open March 2026.",
         "close_date_raw": null,
-        "open_date_precision": null,
-        "close_date_precision": null,
-        "status": "unknown"
+        "open_date_precision": "exact_day",
+        "close_date_precision": "missing",
+        "status": "open"
       },
       "tags": {
         "streams": [
@@ -400,17 +584,17 @@
           "Software Engineering",
           "Product and Service Design",
           "Technology Consulting and Solutions",
-          "Corporate pathways (Finance and Business; HR)",
+          "Corporate pathways (Finance and Business, and HR)",
           "Information and Cybersecurity"
         ],
         "eligibility": [
-          "You must be eligible to work in Australia. International students who have a valid visa that enables them to work in Australia without any work restrictions are eligible to apply to technical pathways only."
+          "You must be eligible to work in Australia. International students with a valid visa that enables them to work in Australia without any work restrictions can apply to technical pathways only."
         ],
         "industries": [
           "Telecommunications"
         ]
       },
-      "updated_at": "2026-03-06T08:52:24+00:00",
+      "updated_at": "2026-03-06T11:59:32+00:00",
       "confidence": "high"
     },
     {
@@ -424,9 +608,9 @@
         "open_date": null,
         "close_date": null,
         "open_date_raw": null,
-        "close_date_raw": null,
-        "open_date_precision": null,
-        "close_date_precision": null,
+        "close_date_raw": "Applications for our 2025 graduate program have closed.",
+        "open_date_precision": "missing",
+        "close_date_precision": "unparseable",
         "status": "unknown"
       },
       "tags": {
@@ -440,7 +624,7 @@
           "Industrial"
         ]
       },
-      "updated_at": "2026-03-06T08:52:19+00:00",
+      "updated_at": "2026-03-06T11:58:41+00:00",
       "confidence": "high"
     },
     {
@@ -499,10 +683,10 @@
         "direct_apply_url": "https://careers.woodside.com.au/",
         "open_date": "2026-08-01",
         "close_date": null,
-        "open_date_raw": null,
+        "open_date_raw": "opening 1 August 2026",
         "close_date_raw": null,
-        "open_date_precision": null,
-        "close_date_precision": null,
+        "open_date_precision": "exact_day",
+        "close_date_precision": "missing",
         "status": "upcoming"
       },
       "tags": {
@@ -510,18 +694,50 @@
           "Summer Vacation Program (Australia)",
           "Indigenous Summer Vacation Program (Australia)",
           "Better Future Pathways (Australia)",
-          "Graduate Development Program (Australia and USA pathways described on the same page)",
-          "Summer Internship Program (USA)",
+          "Graduate Development Program (Australia)",
+          "Summer Internship Program (United States)",
+          "Graduate Development Program (United States)",
           "Professional Development Program (Timor-Leste)"
         ],
         "eligibility": [
-          "Australia pathways: Applicants must be an Australian or New Zealand citizen, an Australian permanent resident, or (for some pathways) an international student studying and residing in Australia with unrestricted Australian working rights. USA pathways: Applicants must be authorized to work in the United States and must not require current or future sponsorship for employment visa status (for example, F-1). Timor-Leste pathway: Applicants must be a Timor-Leste national."
+          "Australia (Summer Vacation Program and Graduate Development Program): Australian or New Zealand citizen, or Australian permanent resident; or an international student currently studying (and for SVP also residing) in Australia with unrestricted Australian working rights over the relevant period. USA (Summer Internship Program and Graduate Development Program): must be authorized to work in the United States and must not require current or future sponsorship for employment visa status (for example, F-1). Timor-Leste (Professional Development Program): must be a Timor-Leste national."
         ],
         "industries": [
           "Energy - Oil & Gas (Upstream/LNG)"
         ]
       },
-      "updated_at": "2026-03-06T08:53:23+00:00",
+      "updated_at": "2026-03-06T14:24:18+00:00",
+      "confidence": "high"
+    },
+    {
+      "id": "xero",
+      "name": "Xero",
+      "entity_type": "company",
+      "logo_url": "assets/logos/xero-peoplesquad-logo.webp",
+      "career_url": "https://careers.xero.com/",
+      "apply": {
+        "direct_apply_url": null,
+        "open_date": "2025-06-30",
+        "close_date": "2025-07-13",
+        "open_date_raw": "Applications for the 2026 program are open from 30 June to 13 July 2025",
+        "close_date_raw": "Applications for the 2026 program are open from 30 June to 13 July 2025",
+        "open_date_precision": "exact_day",
+        "close_date_precision": "exact_day",
+        "status": "closed"
+      },
+      "tags": {
+        "streams": [
+          "Technical grad program",
+          "Design grad program"
+        ],
+        "eligibility": [
+          "You must either have the right to work full-time in Australia, or be eligible to work full-time after graduating."
+        ],
+        "industries": [
+          "Technology (SaaS / FinTech - Accounting Software)"
+        ]
+      },
+      "updated_at": "2026-03-06T14:25:36+00:00",
       "confidence": "high"
     }
   ]

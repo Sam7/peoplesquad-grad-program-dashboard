@@ -1,0 +1,248 @@
+{
+  "schema_version": "1.0",
+  "id": "orica",
+  "name": "Orica",
+  "entity_type": "company",
+  "classification": {
+    "industry_bucket": "Industrial",
+    "is_government": false,
+    "government_level": ""
+  },
+  "official_domains": [
+    "orica.com",
+    "careers.orica.com"
+  ],
+  "urls": {
+    "careers_url": "https://www.orica.com/Careers",
+    "grad_program_url": "https://www.orica.com/Careers/Graduate-Program",
+    "apply_url": "https://careers.orica.com/",
+    "investor_relations_url": "https://www.orica.com/investor-centre/investors"
+  },
+  "logo_url": null,
+  "branding": {
+    "logo_candidates": [],
+    "logo": null
+  },
+  "program": {
+    "name": "Orica Graduate Program",
+    "overview_url": "https://www.orica.com/Careers/Graduate-Program",
+    "direct_apply_url": "https://careers.orica.com/",
+    "open_date": null,
+    "close_date": "2025-08-08",
+    "open_date_raw": null,
+    "close_date_raw": "Friday, 8 August 2025",
+    "open_date_precision": "missing",
+    "close_date_precision": "exact_day",
+    "streams": [
+      "Blasting Technical & Mining Services",
+      "Innovation Technology & Digital Solutions",
+      "Chemical & Manufacturing Engineering",
+      "Electrical, Electronic & Mechanical Engineering",
+      "Business & Commerce",
+      "Supply Chain & Logistics"
+    ],
+    "locations": [],
+    "salary_text": "Salary and benefits information will be provided during the interview and offer stage.",
+    "duration_text": "The graduate program goes for two years.",
+    "rotation_text": "The program offers diverse rotations."
+  },
+  "eligibility": {
+    "work_rights": null,
+    "graduation_window": "Graduation year: 2024 or 2025.",
+    "disciplines": [],
+    "minimum_requirements": []
+  },
+  "recruitment_process": {
+    "stages": [
+      {
+        "name": "Online application",
+        "details": "You attach your resume and complete a short online questionnaire. Orica says you can expect an update within a week of applying."
+      },
+      {
+        "name": "Online on-demand video interview or phone screen",
+        "details": "Suitable candidates are invited to complete a short video interview, with a phone interview option on request."
+      },
+      {
+        "name": "Lets Connect! Q&A call",
+        "details": "Orica calls successful candidates to discuss the graduate opportunities and answer questions."
+      },
+      {
+        "name": "FutureShaper Lab online group assessment activity",
+        "details": "An online group activity to show problem solving, teamwork, communication, and adaptability."
+      },
+      {
+        "name": "Psychometric and abilities assessment",
+        "details": "Candidates selected for final one-on-one interviews are invited to complete a short abilities and psychometric assessment."
+      },
+      {
+        "name": "One-on-one interviews",
+        "details": "Behavioural interview with leaders in the sector."
+      },
+      {
+        "name": "Offer and pre-employment checks",
+        "details": "Successful candidates receive an offer and then complete pre-employment checks including medical, police check, references, and right to work check."
+      }
+    ],
+    "tips": [
+      "Keep an eye on the Graduate Program page for when the next year’s applications open.",
+      "Be ready to provide your resume and complete the online questionnaire as part of your application.",
+      "Prepare for behavioural-style questions for the one-on-one interview."
+    ]
+  },
+  "commercial_context": {
+    "exec_themes": [
+      "Grow through higher uptake of premium products and technology-enabled solutions (especially in Blasting and Digital).",
+      "Run the business with “commercial discipline” (pricing, contracting, cost control, working capital and cash focus).",
+      "Build a more resilient manufacturing and supply chain network to protect security of supply in volatile conditions.",
+      "Integrate and scale acquired businesses to broaden the solutions offering (e.g., Cyanco and Terra Insights mentioned as integrated/newly integrated).",
+      "Improve safety performance and manage operational risks (injury prevention, loss-of-containment reduction, and reliability).",
+      "Advance decarbonisation and sustainability outcomes while meeting tighter mandatory sustainability reporting requirements."
+    ],
+    "profit_engine": "Orica mainly grows profits by selling blasting and mining solutions where customers pay more for value-added products and technology (e.g., premium explosives systems and digital tools), while Orica protects margins through strong pricing/contracting discipline and efficient operations across its global manufacturing and supply chain network.",
+    "headwinds": "Orica flags a tougher operating backdrop that can pressure demand and margins, including inflation, talent shortages, supply chain disruptions/capacity constraints, geopolitical tensions/tariffs, economic volatility, and physical climate impacts (extreme weather) that affect customers and Orica’s supply chains. It also notes some market softness such as lower thermal coal demand in Indonesia and the US, and subdued quarry/construction activity in the US.",
+    "esg": "Orica positions sustainability as core to its purpose (“sustainably mobilise the earth’s resources”) and reports climate and safety goals. In FY2025 it reported net Scope 1 and 2 emissions 41% below its 2019 baseline, is targeting a 30% reduction by 2026 and 45% by 2030 (from 2019), and has an ambition of net zero by 2050. It is also developing plans to reduce Scope 3 emissions by 25% by 2035 (from 2022). Orica highlights safety as a priority (including serious injury rate performance) and notes continued due diligence on human rights and modern slavery, plus engagement with First Nations communities and its Reconciliation Action Plan work.",
+    "recent_pivot": "Orica’s recent emphasis is on accelerating technology-led growth (stronger uptake of advanced blasting technologies and Digital Solutions products) while tightening capital management (including an updated capital management framework and an on-market share buy-back announced in March 2025)."
+  },
+  "section_provenance": {
+    "program": {
+      "confidence": "high",
+      "notes": [
+        "The Graduate Program page states the program is two years long and lists the core business unit streams.",
+        "The Graduate Program page says applications for the 2026 Graduate Program are closed, but it does not give exact opening or closing dates.",
+        "A 2026 Graduate Program job ad states an application closing date of Friday, 8 August 2025.",
+        "The Graduate Program page says salary and benefits details are provided at interview and offer stage."
+      ],
+      "sources": [
+        {
+          "type": "web",
+          "title": "Graduate Program | Orica",
+          "url": "https://www.orica.com/Careers/Graduate-Program",
+          "retrieved_at": null
+        },
+        {
+          "type": "web",
+          "title": "Orica 2026 Graduate Program - Digital Technology Implementation (WA) Job Details | Orica",
+          "url": "https://careers.orica.com/job-invite/33953/",
+          "retrieved_at": null
+        }
+      ]
+    },
+    "eligibility": {
+      "confidence": "medium",
+      "notes": [
+        "The Graduate Program overview page does not clearly state eligibility criteria such as required work rights, specific degrees, or graduation window.",
+        "A 2026 Graduate Program job ad states the graduation years as 2024 or 2025, but this may vary by role and location."
+      ],
+      "sources": [
+        {
+          "type": "web",
+          "title": "Orica 2026 Graduate Program - Digital Technology Implementation (WA) Job Details | Orica",
+          "url": "https://careers.orica.com/job-invite/33953/",
+          "retrieved_at": null
+        }
+      ]
+    },
+    "recruitment_process": {
+      "confidence": "high",
+      "notes": [
+        "The Graduate Program page lists seven steps in the selection process, including application, interview stages, group assessment, assessments, and pre-employment checks."
+      ],
+      "sources": [
+        {
+          "type": "web",
+          "title": "Graduate Program | Orica",
+          "url": "https://www.orica.com/Careers/Graduate-Program",
+          "retrieved_at": null
+        }
+      ]
+    },
+    "commercial_context": {
+      "confidence": "medium",
+      "notes": [
+        "This summary is based on Orica’s FY2025 Annual Report and Orica investor/news pages. Some items (like detailed segment profit drivers and ‘pivot’ framing) are inferred from repeated management emphasis on technology uptake, commercial discipline, integration, and capital management, rather than being labeled explicitly as a ‘pivot’.",
+        "Headwinds are captured from Orica’s stated operating environment and commentary on demand softness in specific end-markets/regions; it is not an exhaustive risk list.",
+        "ESG content reflects targets and progress stated in the FY2025 Annual Report; details of methodologies/boundaries and assurance are not reproduced here."
+      ],
+      "sources": [
+        {
+          "type": "report",
+          "title": "Orica Annual Report 2025 (PDF)",
+          "url": "https://www.orica.com/ArticleDocuments/301/Orica%20Annual%20Report%202025.pdf.aspx",
+          "retrieved_at": null
+        },
+        {
+          "type": "investor_page",
+          "title": "Orica Results & Presentations",
+          "url": "https://www.orica.com/Investor-Centre/results-presentations",
+          "retrieved_at": null
+        },
+        {
+          "type": "news_release",
+          "title": "Strong earnings momentum continues (08 May 2025)",
+          "url": "https://www.orica.com/news-media/2025/strong-earnings-momentum-continues",
+          "retrieved_at": null
+        },
+        {
+          "type": "news_release",
+          "title": "Highest earnings in 13 years (share buy-back details and capital management commentary)",
+          "url": "https://www.orica.com/news-media/2025/highest-earnings-in-13-years",
+          "retrieved_at": null
+        },
+        {
+          "type": "webpage",
+          "title": "Sustainability",
+          "url": "https://www.orica.com/sustainability/sustainability",
+          "retrieved_at": null
+        }
+      ]
+    }
+  },
+  "provenance": {
+    "updated_at": "2026-03-06T14:24:56+00:00",
+    "sources": [
+      {
+        "type": "web",
+        "title": "Graduate Program | Orica",
+        "url": "https://www.orica.com/Careers/Graduate-Program",
+        "retrieved_at": null
+      },
+      {
+        "type": "web",
+        "title": "Orica 2026 Graduate Program - Digital Technology Implementation (WA) Job Details | Orica",
+        "url": "https://careers.orica.com/job-invite/33953/",
+        "retrieved_at": null
+      },
+      {
+        "type": "report",
+        "title": "Orica Annual Report 2025 (PDF)",
+        "url": "https://www.orica.com/ArticleDocuments/301/Orica%20Annual%20Report%202025.pdf.aspx",
+        "retrieved_at": null
+      },
+      {
+        "type": "investor_page",
+        "title": "Orica Results & Presentations",
+        "url": "https://www.orica.com/Investor-Centre/results-presentations",
+        "retrieved_at": null
+      },
+      {
+        "type": "news_release",
+        "title": "Strong earnings momentum continues (08 May 2025)",
+        "url": "https://www.orica.com/news-media/2025/strong-earnings-momentum-continues",
+        "retrieved_at": null
+      },
+      {
+        "type": "news_release",
+        "title": "Highest earnings in 13 years (share buy-back details and capital management commentary)",
+        "url": "https://www.orica.com/news-media/2025/highest-earnings-in-13-years",
+        "retrieved_at": null
+      },
+      {
+        "type": "webpage",
+        "title": "Sustainability",
+        "url": "https://www.orica.com/sustainability/sustainability",
+        "retrieved_at": null
+      }
+    ],
+    "notes": []
+  }
+}

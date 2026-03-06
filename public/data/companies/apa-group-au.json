@@ -1,0 +1,224 @@
+{
+  "schema_version": "1.0",
+  "id": "apa-group-au",
+  "name": "APA Group",
+  "entity_type": "company",
+  "classification": {
+    "industry_bucket": "Energy",
+    "is_government": false,
+    "government_level": "none"
+  },
+  "official_domains": [
+    "apa.com.au"
+  ],
+  "urls": {
+    "careers_url": "https://www.apa.com.au/careers",
+    "grad_program_url": "https://www.apa.com.au/careers/early-careers/graduate-program",
+    "apply_url": null,
+    "investor_relations_url": "https://www.apa.com.au/investors-centre"
+  },
+  "logo_url": "assets/logos/apa-group-au-peoplesquad-logo.webp",
+  "branding": {
+    "logo_candidates": [],
+    "logo": {
+      "local_path": "assets/logos/apa-group-au-peoplesquad-logo.webp",
+      "source_url": "https://www.apa.com.au/favicon.svg",
+      "mime_type": "image/webp",
+      "filename": "apa-group-au-peoplesquad-logo.webp",
+      "format": "webp",
+      "source_width": 289,
+      "source_height": 289,
+      "output_width": 512,
+      "output_height": 512,
+      "confidence": "medium",
+      "quality_score": 0.2,
+      "selection_reason": "fallback_icon",
+      "retrieved_at": "2026-03-06T14:24:49+00:00",
+      "notes": []
+    }
+  },
+  "program": {
+    "name": "APA Group Graduate program",
+    "overview_url": "https://www.apa.com.au/careers/early-careers/graduate-program",
+    "direct_apply_url": null,
+    "open_date": null,
+    "close_date": null,
+    "open_date_raw": "Applications for our 2027 program will open in March/April 2026.",
+    "close_date_raw": null,
+    "open_date_precision": "unparseable",
+    "close_date_precision": "missing",
+    "streams": [],
+    "locations": [],
+    "salary_text": null,
+    "duration_text": null,
+    "rotation_text": "Our rotational programs offer structured development, mentorship, diverse opportunities, and a supportive environment to accelerate your growth."
+  },
+  "eligibility": {
+    "work_rights": "You must be an Australian or New Zealand citizen, or an Australian Permanent Resident.",
+    "graduation_window": "You must be in your final year of study (at time of application) in a relevant field.",
+    "disciplines": [],
+    "minimum_requirements": [
+      "You must be in your final year of study (at time of application) in a relevant field.",
+      "You must be passionate about Australia's energy future.",
+      "You must be an Australian or New Zealand citizen, or an Australian Permanent Resident."
+    ]
+  },
+  "recruitment_process": {
+    "stages": [
+      {
+        "name": "Submit your application",
+        "details": "Submit your resume and a cover letter explaining your interest in the energy industry and what excites you about APA."
+      },
+      {
+        "name": "Assessments",
+        "details": "Complete APA's assessments."
+      },
+      {
+        "name": "Interview",
+        "details": "Attend an interview."
+      }
+    ],
+    "tips": []
+  },
+  "commercial_context": {
+    "exec_themes": [
+      "Grow earnings from core gas transmission and storage (capacity expansions, recontracting, inflation-linked tariffs).",
+      "Deliver organic growth projects across gas, remote power (renewables + firming), and electricity transmission.",
+      "Run the business more efficiently via enterprise-wide cost reduction and simplification.",
+      "Position gas infrastructure as supporting energy security and helping renewables integration (firming) during the energy transition.",
+      "Maintain investment-grade balance sheet while funding a large multi-year development pipeline (use existing capacity and DRP)."
+    ],
+    "profit_engine": "APA’s profits are mainly driven by cashflows from energy infrastructure (especially gas transmission and storage). Earnings growth is supported by inflation-linked tariff increases, recontracting, higher demand/variable revenue, contributions from new/commissioned assets (including the Pilbara Energy System), and margin improvement from cost reduction initiatives.",
+    "headwinds": "Higher interest costs and tax payments reduced the benefit of EBITDA growth for free cash flow. APA also flags exposure to asset performance, macroeconomic factors and regulatory changes in its guidance, and notes that earnings from Basslink may be materially variable while it is traded as an uncontracted market provider during the relevant period.",
+    "esg": "APA’s climate approach centres on its Climate Transition Plan and annual climate reporting. It reconfirms 2030 targets to cut operational gas infrastructure emissions by 30% and methane emissions by 30% (both vs FY21), and to reduce power generation emissions intensity by 35% (vs FY21). APA also describes actions like methane measurement improvements, abatement measures under its Methane Action Plan, and integrating lower-emissions options into new infrastructure, while highlighting resilience to physical and transition climate risks.",
+    "recent_pivot": "APA is leaning further into a strategy that combines continued investment in gas transmission/storage and gas-powered generation (framed as energy security and renewables firming) with growth in renewables/remote power and regulated electricity transmission opportunities. It is also placing increased emphasis on business simplification and an enterprise-wide cost-out program (including an FY26 cost-out target of about $50m), and is advancing a multi-stage five-year East Coast Gas Grid expansion plan (announced February 2025)."
+  },
+  "section_provenance": {
+    "program": {
+      "confidence": "high",
+      "notes": [
+        "The page states applications will open in “March/April 2026” for the 2027 program, but it does not give an exact day, and it does not state a closing date.",
+        "Streams, locations, salary, duration, and rotation structure details are not explicitly listed beyond a general description of a rotational program."
+      ],
+      "sources": [
+        {
+          "type": "web",
+          "title": "Graduate program",
+          "url": "https://www.apa.com.au/careers/early-careers/graduate-program",
+          "retrieved_at": "2026-03-06"
+        }
+      ]
+    },
+    "eligibility": {
+      "confidence": "high",
+      "notes": [
+        "Work rights and study timing requirements are explicitly stated in the 'You must also' section.",
+        "Disciplines are described only as “a relevant field” and are not listed on the page."
+      ],
+      "sources": [
+        {
+          "type": "web",
+          "title": "Graduate program",
+          "url": "https://www.apa.com.au/careers/early-careers/graduate-program",
+          "retrieved_at": "2026-03-06"
+        }
+      ]
+    },
+    "recruitment_process": {
+      "confidence": "high",
+      "notes": [
+        "The 'How to apply' section lists three steps but does not describe assessment types, number of interviews, or a full timeline."
+      ],
+      "sources": [
+        {
+          "type": "web",
+          "title": "Graduate program",
+          "url": "https://www.apa.com.au/careers/early-careers/graduate-program",
+          "retrieved_at": "2026-03-06"
+        }
+      ]
+    },
+    "commercial_context": {
+      "confidence": "medium",
+      "notes": [
+        "Some details that would normally come from full investor presentations and annual reports (e.g., deeper segment breakdowns, explicit statements of “profit engine” wording, and a complete risk list) were not fully available from the accessible APA pages in this pull.",
+        "The FY24 results presentation PDF could not be fetched via the tool due to a retrieval error, so FY24 strategy themes were taken from APA’s FY24 results release page and other APA releases instead.",
+        "‘Recent pivot’ is expressed as a synthesis of APA’s own stated strategic direction across multiple official releases, rather than a single explicit sentence labeled as a pivot."
+      ],
+      "sources": [
+        {
+          "type": "ASX/media release (official site page)",
+          "title": "APA delivers strong FY25 earnings and announces FY26 guidance, with continued cost reductions and momentum in growth projects (20 August 2025)",
+          "url": "https://www.apa.com.au/news/asx-and-media-releases/apa-delivers-strong-fy25-earnings-and-announces-fy26-guidance",
+          "retrieved_at": null
+        },
+        {
+          "type": "ASX/media release (official site page)",
+          "title": "APA's East Coast Gas Expansion Plan (24 February 2025)",
+          "url": "https://www.apa.com.au/news/asx-and-media-releases/apas-east-coast-gas-expansion-plan",
+          "retrieved_at": null
+        },
+        {
+          "type": "ASX/media release (official site page)",
+          "title": "APA releases 2025 Climate Transition Plan (20 August 2025)",
+          "url": "https://www.apa.com.au/news/asx-and-media-releases/apa-releases-2025-climate-transition-plan",
+          "retrieved_at": null
+        },
+        {
+          "type": "ASX/media release (official site page)",
+          "title": "APA Releases 2024 Climate Report (28 August 2024)",
+          "url": "https://www.apa.com.au/news/asx-and-media-releases/apa-releases-2024-climate-report",
+          "retrieved_at": null
+        },
+        {
+          "type": "ASX/media release (official site page)",
+          "title": "APA Delivers Solid Growth in Earnings for FY24 (28 August 2024)",
+          "url": "https://www.apa.com.au/news/asx-and-media-releases/apa-delivers-solid-growth-in-earnings-for-fy24",
+          "retrieved_at": null
+        }
+      ]
+    }
+  },
+  "provenance": {
+    "updated_at": "2026-03-06T14:24:49+00:00",
+    "sources": [
+      {
+        "type": "web",
+        "title": "Graduate program",
+        "url": "https://www.apa.com.au/careers/early-careers/graduate-program",
+        "retrieved_at": "2026-03-06"
+      },
+      {
+        "type": "ASX/media release (official site page)",
+        "title": "APA delivers strong FY25 earnings and announces FY26 guidance, with continued cost reductions and momentum in growth projects (20 August 2025)",
+        "url": "https://www.apa.com.au/news/asx-and-media-releases/apa-delivers-strong-fy25-earnings-and-announces-fy26-guidance",
+        "retrieved_at": null
+      },
+      {
+        "type": "ASX/media release (official site page)",
+        "title": "APA's East Coast Gas Expansion Plan (24 February 2025)",
+        "url": "https://www.apa.com.au/news/asx-and-media-releases/apas-east-coast-gas-expansion-plan",
+        "retrieved_at": null
+      },
+      {
+        "type": "ASX/media release (official site page)",
+        "title": "APA releases 2025 Climate Transition Plan (20 August 2025)",
+        "url": "https://www.apa.com.au/news/asx-and-media-releases/apa-releases-2025-climate-transition-plan",
+        "retrieved_at": null
+      },
+      {
+        "type": "ASX/media release (official site page)",
+        "title": "APA Releases 2024 Climate Report (28 August 2024)",
+        "url": "https://www.apa.com.au/news/asx-and-media-releases/apa-releases-2024-climate-report",
+        "retrieved_at": null
+      },
+      {
+        "type": "ASX/media release (official site page)",
+        "title": "APA Delivers Solid Growth in Earnings for FY24 (28 August 2024)",
+        "url": "https://www.apa.com.au/news/asx-and-media-releases/apa-delivers-solid-growth-in-earnings-for-fy24",
+        "retrieved_at": null
+      }
+    ],
+    "notes": []
+  }
+}

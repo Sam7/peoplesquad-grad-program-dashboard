@@ -1,0 +1,235 @@
+{
+  "schema_version": "1.0",
+  "id": "asx-limited-au",
+  "name": "ASX Limited (Australian Securities Exchange)",
+  "entity_type": "company",
+  "classification": {
+    "industry_bucket": "Financial Services",
+    "is_government": false,
+    "government_level": ""
+  },
+  "official_domains": [
+    "asx.com.au"
+  ],
+  "urls": {
+    "careers_url": "https://www.asx.com.au/about/careers",
+    "grad_program_url": "https://www.asx.com.au/about/careers/asx-graduate-program",
+    "apply_url": "https://asxgraduateprogrameoi-asx.pushapply.com",
+    "investor_relations_url": "https://www.asx.com.au/about/asx-shareholder-reports.htm"
+  },
+  "logo_url": "assets/logos/asx-limited-au-peoplesquad-logo.webp",
+  "branding": {
+    "logo_candidates": [],
+    "logo": {
+      "local_path": "assets/logos/asx-limited-au-peoplesquad-logo.webp",
+      "source_url": "https://www.asx.com.au/content/asx/home/about/careers/asx-graduate-program.thumb.1000.1000.png",
+      "mime_type": "image/webp",
+      "filename": "asx-limited-au-peoplesquad-logo.webp",
+      "format": "webp",
+      "source_width": 240,
+      "source_height": 180,
+      "output_width": 512,
+      "output_height": 512,
+      "confidence": "medium",
+      "quality_score": 0.6,
+      "selection_reason": "fallback_og_image",
+      "retrieved_at": "2026-03-06T14:24:55+00:00",
+      "notes": []
+    }
+  },
+  "program": {
+    "name": "ASX Graduate Program",
+    "overview_url": "https://www.asx.com.au/about/careers/asx-graduate-program",
+    "direct_apply_url": null,
+    "open_date": "2025-08-25",
+    "close_date": "2025-09-28",
+    "open_date_raw": "Applications open: Monday 25 August 2025",
+    "close_date_raw": "Applications close: Sunday 28 September 2025",
+    "open_date_precision": "exact_day",
+    "close_date_precision": "exact_day",
+    "streams": [
+      "Technology",
+      "Business/Commercial",
+      "Corporate Finance"
+    ],
+    "locations": [
+      "Sydney (head office)"
+    ],
+    "salary_text": null,
+    "duration_text": "You will complete an 18-month tailored program designed to give you cross-functional experience.",
+    "rotation_text": "You will complete three six-month rotations, tailored to your career pathway."
+  },
+  "eligibility": {
+    "work_rights": "You must be an Australian or New Zealand citizen, or an Australian or New Zealand permanent resident.",
+    "graduation_window": "You must have completed an undergraduate or postgraduate degree in the last two years prior to the program start date.",
+    "disciplines": [
+      "Technology pathway: information systems, computer science, engineering, economics, data science, or business management.",
+      "Business/Commercial pathway: business/commerce, management, economics, behavioural science, communication, environmental studies, and other degree types.",
+      "Corporate Finance pathway: accounting, actuarial studies, finance, or another degree with a strong financial or analytical focus."
+    ],
+    "minimum_requirements": [
+      "You must be an Australian or New Zealand citizen, or an Australian or New Zealand permanent resident.",
+      "You must have completed an undergraduate or postgraduate degree in the last two years prior to the program start date.",
+      "You must be available and eligible to commence the role in ASX’s Sydney head office in March 2026."
+    ]
+  },
+  "recruitment_process": {
+    "stages": [
+      {
+        "name": "Online application form",
+        "details": "Complete an online application form and provide supporting documents such as a resume, academic transcript, and proof of citizenship."
+      },
+      {
+        "name": "Online assessment",
+        "details": "Complete a short online assessment and record a video response to questions about you and your motivation for the program."
+      },
+      {
+        "name": "Virtual Assessment Centre",
+        "details": "Attend a virtual assessment centre with group activities and a short interview."
+      },
+      {
+        "name": "Offer",
+        "details": "If successful, People and Culture will call shortly after the virtual assessment centre to make an employment offer."
+      }
+    ],
+    "tips": [
+      "Try to complete the online application form in one sitting and have your supporting documents ready (for example, your resume, academic transcript, and proof of citizenship).",
+      "Do the online assessment in a quiet place where you will not be disturbed.",
+      "At the assessment centre, show how you work in a team by engaging with your group and letting your personality come through."
+    ]
+  },
+  "commercial_context": {
+    "exec_themes": [],
+    "profit_engine": null,
+    "headwinds": null,
+    "esg": null,
+    "recent_pivot": null
+  },
+  "section_provenance": {
+    "program": {
+      "confidence": "high",
+      "notes": [
+        "Application opening and closing dates, streams (pathways), program duration, rotation structure, and Sydney location are stated on the ASX Graduate Program page."
+      ],
+      "sources": [
+        {
+          "type": "web",
+          "title": "ASX graduate program",
+          "url": "https://www.asx.com.au/about/careers/asx-graduate-program",
+          "retrieved_at": null
+        }
+      ]
+    },
+    "eligibility": {
+      "confidence": "high",
+      "notes": [
+        "Work rights, graduation window, and March 2026 start location requirement are stated under eligibility requirements on the ASX Graduate Program page.",
+        "Suggested study areas are listed under each pathway section on the same page."
+      ],
+      "sources": [
+        {
+          "type": "web",
+          "title": "ASX graduate program",
+          "url": "https://www.asx.com.au/about/careers/asx-graduate-program",
+          "retrieved_at": null
+        }
+      ]
+    },
+    "recruitment_process": {
+      "confidence": "high",
+      "notes": [
+        "Recruitment stages, timing window (September and October), and the assessment centre date are described on the ASX Graduate Program page, including tips for each stage."
+      ],
+      "sources": [
+        {
+          "type": "web",
+          "title": "ASX graduate program",
+          "url": "https://www.asx.com.au/about/careers/asx-graduate-program",
+          "retrieved_at": null
+        }
+      ]
+    },
+    "commercial_context": {
+      "confidence": "low",
+      "notes": [
+        "I found the official ASX ‘Reports’ repository page listing Annual Reports (including FY24 and FY25) and other shareholder reports, plus official Sustainability pages and the Media Centre index.",
+        "However, the tool could not fetch the FY24 and FY25 annual report PDFs from asx.com.au (the requests failed with an internal fetch error), so I could not reliably extract executive themes, profit engine, headwinds, ESG summary, or recent strategic pivots from the official reports/transcripts.",
+        "Because the requested fields must come from official company reports/transcripts/pages, and the most relevant reports were not accessible in this run, I am returning nulls rather than guessing."
+      ],
+      "sources": [
+        {
+          "type": "web",
+          "title": "Reports (ASX shareholders)",
+          "url": "https://www.asx.com.au/about/asx-shareholders/reports",
+          "retrieved_at": null
+        },
+        {
+          "type": "web",
+          "title": "ASX shareholders (business/divisions; purpose/vision/strategy)",
+          "url": "https://www.asx.com.au/about/asx-shareholders",
+          "retrieved_at": null
+        },
+        {
+          "type": "web",
+          "title": "Sustainability – Environment (FY24 outcomes)",
+          "url": "https://www.asx.com.au/about/sustainability/environment",
+          "retrieved_at": null
+        },
+        {
+          "type": "web",
+          "title": "Sustainability – People (strategy connection; June 2023 five-year strategy mention)",
+          "url": "https://www.asx.com.au/about/sustainability/people",
+          "retrieved_at": null
+        },
+        {
+          "type": "web",
+          "title": "Media centre (index of market releases, presentations and notes)",
+          "url": "https://www.asx.com.au/about/media-centre.html",
+          "retrieved_at": null
+        }
+      ]
+    }
+  },
+  "provenance": {
+    "updated_at": "2026-03-06T14:24:55+00:00",
+    "sources": [
+      {
+        "type": "web",
+        "title": "ASX graduate program",
+        "url": "https://www.asx.com.au/about/careers/asx-graduate-program",
+        "retrieved_at": null
+      },
+      {
+        "type": "web",
+        "title": "Reports (ASX shareholders)",
+        "url": "https://www.asx.com.au/about/asx-shareholders/reports",
+        "retrieved_at": null
+      },
+      {
+        "type": "web",
+        "title": "ASX shareholders (business/divisions; purpose/vision/strategy)",
+        "url": "https://www.asx.com.au/about/asx-shareholders",
+        "retrieved_at": null
+      },
+      {
+        "type": "web",
+        "title": "Sustainability – Environment (FY24 outcomes)",
+        "url": "https://www.asx.com.au/about/sustainability/environment",
+        "retrieved_at": null
+      },
+      {
+        "type": "web",
+        "title": "Sustainability – People (strategy connection; June 2023 five-year strategy mention)",
+        "url": "https://www.asx.com.au/about/sustainability/people",
+        "retrieved_at": null
+      },
+      {
+        "type": "web",
+        "title": "Media centre (index of market releases, presentations and notes)",
+        "url": "https://www.asx.com.au/about/media-centre.html",
+        "retrieved_at": null
+      }
+    ],
+    "notes": []
+  }
+}

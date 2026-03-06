@@ -120,7 +120,6 @@ export function CompanyDetailPane({ company, detail, isLoading, onClose, onSetPr
   const careersUrl = asString(urls.careers_url) ?? company.careerUrl;
   const openDate = asString(program.open_date) ?? company.openDateRaw;
   const closeDate = asString(program.close_date) ?? company.closeDateRaw;
-  const salaryText = asString(program.salary_text) ?? "Not published";
   const durationText = asString(program.duration_text) ?? "Not published";
   const rotationText = asString(program.rotation_text) ?? "Not published";
 

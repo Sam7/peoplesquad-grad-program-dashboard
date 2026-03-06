@@ -33,16 +33,20 @@
       "confidence": "high",
       "quality_score": 0.8,
       "selection_reason": "fallback_og_image",
-      "retrieved_at": "2026-03-06T08:53:38+00:00",
+      "retrieved_at": "2026-03-06T14:24:15+00:00",
       "notes": []
     }
   },
   "program": {
     "name": "QBE Graduate Program",
-    "overview_url": "https://www.qbe.com/au/careers/graduate/",
-    "direct_apply_url": "https://www.qbe.com/au/careers/graduate/application-process",
+    "overview_url": "https://www.qbe.com/au/careers/graduate",
+    "direct_apply_url": null,
     "open_date": null,
     "close_date": null,
+    "open_date_raw": null,
+    "close_date_raw": "Applications are now closed for the 2026 graduate program.",
+    "open_date_precision": "missing",
+    "close_date_precision": "unparseable",
     "streams": [
       "Insurance Underwriting",
       "Finance",
@@ -51,76 +55,93 @@
     "locations": [],
     "salary_text": null,
     "duration_text": null,
-    "rotation_text": "QBE says graduates spend the first week together in an induction week, and then start in their first rotation team from week two."
+    "rotation_text": "QBE says you start in your first rotation team from week two of the program (after induction week)."
   },
   "eligibility": {
     "work_rights": "You need proof of unrestricted Australian working rights.",
-    "graduation_window": "You need a bachelor’s degree completed within two years before the program commencement date. QBE also accepts postgraduate qualifications completed within two years of the program commencement date.",
+    "graduation_window": "You must have completed a bachelor’s degree within two years before the program starts. QBE also accepts postgraduate qualifications completed within two years of the program start.",
     "disciplines": [],
     "minimum_requirements": [
-      "Submit a resume and your current academic transcript.",
-      "Provide proof of unrestricted Australian working rights."
+      "Submit a resume and a current academic transcript.",
+      "Provide proof of unrestricted Australian working rights.",
+      "A cover letter is not required.",
+      "Have completed a bachelor’s degree (or postgraduate qualification) within two years of the program start date."
     ]
   },
   "recruitment_process": {
     "stages": [
       {
-        "name": "Recruitment timeline",
-        "details": "Application in July, assessment in August, and selection in September."
+        "name": "Application",
+        "details": "QBE’s recruitment timeline lists the application period as July."
+      },
+      {
+        "name": "Assessment",
+        "details": "QBE’s recruitment timeline lists assessment as August."
+      },
+      {
+        "name": "Selection",
+        "details": "QBE’s recruitment timeline lists selection as September."
       },
       {
         "name": "Online application",
-        "details": "Submit your resume and current academic transcript. QBE says a cover letter is not required for its graduate program."
+        "details": "You submit your resume and current academic transcript. QBE says a cover letter is not required."
       },
       {
-        "name": "Online experience",
-        "details": "Complete ability, working style and personality assessments, and an activity exploring QBE and its values."
+        "name": "Online experience and assessments",
+        "details": "QBE lists ability, working style and personality assessments, plus learning about QBE and its values."
       },
       {
         "name": "Phone interview",
-        "details": "Interview with a member of the graduate recruitment team."
+        "details": "You speak with a member of the graduate recruitment team."
       },
       {
         "name": "Final assessment centre",
-        "details": "Group activity and an individual interview. For technical program streams, there may also be a technical interview or a case study."
+        "details": "You complete a group activity and an individual interview. For technical streams, QBE says there may be an additional technical interview or case study."
       },
       {
         "name": "Probity checks and offer",
-        "details": "Probity checks, then an offer to join the QBE graduate program."
+        "details": "QBE lists probity checks, then an offer to join the graduate program."
       }
     ],
     "tips": [
-      "QBE says the application process can vary between program streams.",
-      "QBE says a cover letter is not required for its graduate program.",
-      "QBE suggests researching the program streams before choosing which one to apply for."
+      "QBE says a cover letter is not required.",
+      "QBE suggests you research the program streams and email questions to the graduate team.",
+      "QBE says you will need proof of unrestricted Australian working rights when you apply."
     ]
   },
   "commercial_context": {
     "exec_themes": [
-      "Disciplined underwriting to deliver consistent insurance profits (focus on pricing, risk selection, and keeping the combined operating ratio strong).",
-      "Executing a medium-term strategy and operational modernisation initiatives to improve efficiency and long-term performance.",
-      "Managing catastrophe and climate-related risk as a core part of the business (including governance, risk frameworks, and climate-related disclosures).",
-      "Supporting the transition to a lower-carbon economy through actions in underwriting and investments, alongside net zero operations goals.",
-      "Community resilience and inclusion initiatives via the QBE Foundation, including support for climate-vulnerable communities."
+      "Execute a clear strategy built around six priorities (including portfolio optimisation, sustainable growth, customer focus, and pace/efficiency).",
+      "Actively rebalance and simplify the insurance portfolio (including exiting or running off non-core lines) to reduce volatility and improve consistency.",
+      "Maintain strong underwriting discipline (risk selection, pricing/rate adequacy, and portfolio management) even as the market cycle changes.",
+      "Grow core businesses through targeted organic growth, while continuing portfolio optimisation.",
+      "Invest in modernisation and technology (including AI use cases) to improve customer and partner experience and operational agility.",
+      "Use disciplined capital management to return capital to shareholders (e.g., buybacks/dividends) while staying within regulatory capital targets."
     ],
-    "profit_engine": "QBE’s core profit engine is earning underwriting profits on insurance premiums (measured with metrics like the combined operating ratio and insurance profit margin), supported by investment income on its investment portfolio.",
-    "headwinds": "Catastrophe activity and natural disaster losses remain an ongoing risk driver. Competitive conditions can make growth harder in some markets/lines. Claims inflation is also a pressure, although QBE noted it was gradually easing in 1H25.",
-    "esg": "QBE positions climate change and natural disasters as top sustainability topics and uses an Environmental and Social Risk Framework for underwriting/investments. It has targets/commitments including net zero operations by 2030 (Scope 1, 2 and selected Scope 3), sourcing 100% renewable electricity by end-2025 (RE100 commitment), and continued climate-related reporting (including climate-related financial disclosure aligned to AASB S2 from February 2026, per QBE’s sustainability site). QBE also highlights community-focused work through the QBE Foundation (e.g., partnership supporting climate-vulnerable communities).",
-    "recent_pivot": "QBE says it has reassessed its prior commitment to achieve net zero emissions in its underwriting and investment portfolios by 2050, moving to a revised approach focused on actions ‘within QBE’s control’ while maintaining net zero operations by 2030. It also announced in March 2025 that it resigned from the Net-Zero Asset Owners Alliance and will incorporate its ‘net zero investments by 2050’ approach into a broader climate transition plan to be released in 2026."
+    "profit_engine": "QBE mainly makes money by (1) underwriting profit—pricing risk well so premiums collected exceed claims and operating costs, measured through a low combined operating ratio—and (2) investing the insurance float to earn investment income. QBE emphasises disciplined risk selection, monitoring premium rate adequacy, and active portfolio management to sustain profitable underwriting, alongside robust investment returns from a largely high-quality fixed income portfolio with a smaller allocation to risk assets.",
+    "headwinds": "External and operating pressures discussed by QBE include: increased competition in some insurance lines (including property), premium rate increases moderating versus prior years (which can slow revenue growth), ongoing uncertainty from a dynamic economic backdrop and claims inflation risk, catastrophe/event risk (even if outcomes can be below or above allowance in a given year), and broader geopolitical/global trade uncertainty that can add volatility to markets and the operating environment.",
+    "esg": "QBE frames ESG mainly through its sustainability strategy and reporting suite. It describes three sustainability focus areas: (1) taking action to support climate resilience and the transition to a net-zero economy, (2) enabling a sustainable and resilient workforce, and (3) partnering for growth through innovative, sustainable and impactful solutions (including work with the QBE Foundation and impact investing such as Premiums4Good). QBE also reports on human rights and modern slavery due diligence in its Modern Slavery and Human Trafficking Statement, including supplier risk assessments and governance oversight.",
+    "recent_pivot": "In 2025, QBE describes a refreshed climate strategy: it reassessed its prior commitment to achieve net-zero emissions in its underwriting and investment portfolios by 2050, and replaced it with a renewed approach focused on actions within QBE’s control to support the transition to a net-zero economy. Separately, QBE highlights that portfolio optimisation progressed with non-core portfolio actions broadly concluding in 2025, leaving a more focused business with substantially less property catastrophe exposure, and that it is adjusting sustainability reporting by introducing an Impact Report supported by a data book and moving mandatory climate disclosures into the Annual Report’s Sustainability Report."
   },
   "section_provenance": {
     "program": {
       "confidence": "high",
       "notes": [
-        "Program name and streams were taken from the QBE Graduate Program page.",
-        "Rotation timing (induction week and starting the first rotation from week two) was taken from the QBE Graduate Program page.",
-        "No explicit salary, duration, rotation length, or city/state locations were stated on the extracted pages."
+        "Program name and streams were taken from QBE’s Graduate Program overview page.",
+        "The site states that applications are closed for the 2026 graduate program, but it does not provide an application open date or a specific close date.",
+        "No salary, program length, or full rotation schedule details were explicitly stated on the pages reviewed."
       ],
       "sources": [
         {
-          "type": "web",
+          "type": "webpage",
           "title": "QBE Insurance Graduate Program | QBE Careers | QBE AU",
-          "url": "https://www.qbe.com/au/careers/graduate/",
+          "url": "https://www.qbe.com/au/careers/graduate",
+          "retrieved_at": "2026-03-06"
+        },
+        {
+          "type": "webpage",
+          "title": "Application process | QBE Graduate Program | QBE AU",
+          "url": "https://www.qbe.com/au/careers/graduate/application-process",
           "retrieved_at": "2026-03-06"
         }
       ]
@@ -128,13 +149,12 @@
     "eligibility": {
       "confidence": "high",
       "notes": [
-        "Work rights and application document requirements were taken from the FAQs on the Application process page.",
-        "The graduation window was taken from the 'What level of education is required?' FAQ on the Application process page.",
-        "Disciplines were not explicitly listed as formal eligibility requirements on the extracted pages (QBE notes some technical streams may require a particular field of study, and to see each stream job ad for details)."
+        "Work rights and what you need to apply were taken from the FAQs on the Application process page.",
+        "The graduation timing rule (completed within two years before program start) and program start month (February) were taken from the FAQs."
       ],
       "sources": [
         {
-          "type": "web",
+          "type": "webpage",
           "title": "Application process | QBE Graduate Program | QBE AU",
           "url": "https://www.qbe.com/au/careers/graduate/application-process",
           "retrieved_at": "2026-03-06"
@@ -144,12 +164,12 @@
     "recruitment_process": {
       "confidence": "high",
       "notes": [
-        "Recruitment timeline and the step-by-step process were taken from the Application process page.",
-        "QBE states applications are closed for the 2026 graduate program, but the page does not state specific opening or closing dates."
+        "Recruitment timeline months and the step-by-step application stages were taken from the Application process page.",
+        "The stages listed are described by QBE as the most common process and may vary by stream."
       ],
       "sources": [
         {
-          "type": "web",
+          "type": "webpage",
           "title": "Application process | QBE Graduate Program | QBE AU",
           "url": "https://www.qbe.com/au/careers/graduate/application-process",
           "retrieved_at": "2026-03-06"
@@ -159,124 +179,66 @@
     "commercial_context": {
       "confidence": "medium",
       "notes": [
-        "Some items (especially the ‘profit_engine’ and ‘headwinds’) are synthesized in plain English from performance/strategy language in QBE’s official investor materials; QBE does not present a single labeled ‘profit engine’ section.",
-        "The phrase ‘operational modernisation initiatives’ and the idea of a ‘medium-term strategy’ are taken from investor reporting language; details on specific programs are not fully enumerated in the extracted snippets.",
-        "The ‘recent_pivot’ reflects QBE’s stated reassessment of its net zero underwriting/investments commitment and membership change (NZAOA). The practical implications (exact target changes and milestones) are not fully specified on the cited pages."
+        "Most items are drawn from QBE’s FY25 Investor Report (strategy priorities, underwriting discipline, portfolio optimisation, competition, inflation/cat risk, investment portfolio positioning).",
+        "Sustainability and recent climate-strategy changes are drawn from QBE’s 2025 Impact Report and the reporting-suite descriptions within QBE documents.",
+        "Some themes (e.g., customer focus, pace/efficiency, employer-of-choice) are listed as priorities in the Investor Report; the response avoids adding details not explicitly described in the cited pages.",
+        "Where QBE describes market conditions (competition, inflation dynamics, geopolitical uncertainty), these are summarised as headwinds in plain English without quantifying impacts beyond what QBE states.",
+        "The exact wording and full detail of the six priorities and 2030 Sustainability Scorecard targets are broader than the excerpts reviewed; this summary captures the high-level items visible in the sourced sections."
       ],
       "sources": [
         {
-          "type": "official investor report (PDF)",
-          "title": "2025 Half Year Investor Report (for half year ended 30 June 2025)",
-          "url": "https://www.qbe.com/media/qbe/group/document-listing/2025/08/07/21/58/9b-1h25_investor-report_vasx%2810892611%29.pdf%3Frev%3Dfd4bb42c87e6458aa0a2e08d5a5af69a",
-          "retrieved_at": null
+          "type": "company_report",
+          "title": "2025 Investor Report (QBE Insurance Group Limited)",
+          "url": "https://www.qbe.com/media/qbe/group/document-listing/2026/02/19/21/07/2025-qbe-investor-report_vf%2811278181%29.pdf?rev=97e2830f057744b786b49005861bb45b",
+          "retrieved_at": "2026-03-06"
         },
         {
-          "type": "newsroom release",
-          "title": "QBE announces Full Year 2025 result",
-          "url": "https://www.qbe.com/newsroom/news/fy-25-result",
-          "retrieved_at": null
+          "type": "company_report",
+          "title": "2025 Impact Report (QBE Insurance Group Limited)",
+          "url": "https://www.qbe.com/media/qbe/group/sustainability/2026/qbe-2025-impact-report.pdf",
+          "retrieved_at": "2026-03-06"
         },
         {
-          "type": "sustainability webpage",
-          "title": "Climate change",
-          "url": "https://www.qbe.com/sustainability/climate-change",
-          "retrieved_at": null
-        },
-        {
-          "type": "sustainability webpage",
-          "title": "Materiality",
-          "url": "https://www.qbe.com/sustainability/our-approach-to-sustainability/materiality",
-          "retrieved_at": null
-        },
-        {
-          "type": "newsroom statement",
-          "title": "Statement on QBE’s climate strategy",
-          "url": "https://www.qbe.com/newsroom/news/statement-on-qbe-climate-strategy",
-          "retrieved_at": null
-        },
-        {
-          "type": "newsroom update",
-          "title": "QBE Net-Zero Asset Owners Alliance update",
-          "url": "https://www.qbe.com/newsroom/news/qbe-announces-resignation-from-the-net-zero-asset-owners-alliance",
-          "retrieved_at": null
-        },
-        {
-          "type": "newsroom release",
-          "title": "QBE Targets 100 per cent renewable electricity",
-          "url": "https://www.qbe.com/newsroom/news/qbe-targets-renewable-electricity",
-          "retrieved_at": null
-        },
-        {
-          "type": "newsroom release",
-          "title": "QBE Foundation partners with Humanity Insured to support climate-vulnerable communities in Asia",
-          "url": "https://www.qbe.com/newsroom/news/qbe-foundation-partners-with-humanity-insured-to-support-climate-vulnerable-communities-in-asia",
-          "retrieved_at": null
+          "type": "company_report",
+          "title": "2025 Modern Slavery and Human Trafficking Statement (QBE Group reporting entities)",
+          "url": "https://www.qbe.com/media/qbe/group/sustainability/2026/2025-qbe-modern-slavery-and-human-trafficking-statement.pdf?rev=cc726bc406db4d9bbe41d70dd52f09fc",
+          "retrieved_at": "2026-03-06"
         }
       ]
     }
   },
   "provenance": {
-    "updated_at": "2026-03-06T08:53:38+00:00",
+    "updated_at": "2026-03-06T14:24:15+00:00",
     "sources": [
       {
-        "type": "web",
+        "type": "webpage",
         "title": "QBE Insurance Graduate Program | QBE Careers | QBE AU",
-        "url": "https://www.qbe.com/au/careers/graduate/",
+        "url": "https://www.qbe.com/au/careers/graduate",
         "retrieved_at": "2026-03-06"
       },
       {
-        "type": "web",
+        "type": "webpage",
         "title": "Application process | QBE Graduate Program | QBE AU",
         "url": "https://www.qbe.com/au/careers/graduate/application-process",
         "retrieved_at": "2026-03-06"
       },
       {
-        "type": "official investor report (PDF)",
-        "title": "2025 Half Year Investor Report (for half year ended 30 June 2025)",
-        "url": "https://www.qbe.com/media/qbe/group/document-listing/2025/08/07/21/58/9b-1h25_investor-report_vasx%2810892611%29.pdf%3Frev%3Dfd4bb42c87e6458aa0a2e08d5a5af69a",
-        "retrieved_at": null
+        "type": "company_report",
+        "title": "2025 Investor Report (QBE Insurance Group Limited)",
+        "url": "https://www.qbe.com/media/qbe/group/document-listing/2026/02/19/21/07/2025-qbe-investor-report_vf%2811278181%29.pdf?rev=97e2830f057744b786b49005861bb45b",
+        "retrieved_at": "2026-03-06"
       },
       {
-        "type": "newsroom release",
-        "title": "QBE announces Full Year 2025 result",
-        "url": "https://www.qbe.com/newsroom/news/fy-25-result",
-        "retrieved_at": null
+        "type": "company_report",
+        "title": "2025 Impact Report (QBE Insurance Group Limited)",
+        "url": "https://www.qbe.com/media/qbe/group/sustainability/2026/qbe-2025-impact-report.pdf",
+        "retrieved_at": "2026-03-06"
       },
       {
-        "type": "sustainability webpage",
-        "title": "Climate change",
-        "url": "https://www.qbe.com/sustainability/climate-change",
-        "retrieved_at": null
-      },
-      {
-        "type": "sustainability webpage",
-        "title": "Materiality",
-        "url": "https://www.qbe.com/sustainability/our-approach-to-sustainability/materiality",
-        "retrieved_at": null
-      },
-      {
-        "type": "newsroom statement",
-        "title": "Statement on QBE’s climate strategy",
-        "url": "https://www.qbe.com/newsroom/news/statement-on-qbe-climate-strategy",
-        "retrieved_at": null
-      },
-      {
-        "type": "newsroom update",
-        "title": "QBE Net-Zero Asset Owners Alliance update",
-        "url": "https://www.qbe.com/newsroom/news/qbe-announces-resignation-from-the-net-zero-asset-owners-alliance",
-        "retrieved_at": null
-      },
-      {
-        "type": "newsroom release",
-        "title": "QBE Targets 100 per cent renewable electricity",
-        "url": "https://www.qbe.com/newsroom/news/qbe-targets-renewable-electricity",
-        "retrieved_at": null
-      },
-      {
-        "type": "newsroom release",
-        "title": "QBE Foundation partners with Humanity Insured to support climate-vulnerable communities in Asia",
-        "url": "https://www.qbe.com/newsroom/news/qbe-foundation-partners-with-humanity-insured-to-support-climate-vulnerable-communities-in-asia",
-        "retrieved_at": null
+        "type": "company_report",
+        "title": "2025 Modern Slavery and Human Trafficking Statement (QBE Group reporting entities)",
+        "url": "https://www.qbe.com/media/qbe/group/sustainability/2026/2025-qbe-modern-slavery-and-human-trafficking-statement.pdf?rev=cc726bc406db4d9bbe41d70dd52f09fc",
+        "retrieved_at": "2026-03-06"
       }
     ],
     "notes": []

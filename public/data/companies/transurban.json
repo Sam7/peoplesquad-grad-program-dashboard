@@ -35,7 +35,7 @@
       "confidence": "medium",
       "quality_score": 0.75,
       "selection_reason": "fallback_icon",
-      "retrieved_at": "2026-03-06T08:52:19+00:00",
+      "retrieved_at": "2026-03-06T11:58:41+00:00",
       "notes": []
     }
   },
@@ -45,15 +45,19 @@
     "direct_apply_url": "https://careers.transurban.com/opportunities",
     "open_date": null,
     "close_date": null,
+    "open_date_raw": null,
+    "close_date_raw": "Applications for our 2025 graduate program have closed.",
+    "open_date_precision": "missing",
+    "close_date_precision": "unparseable",
     "streams": [
       "Engineering",
       "Technology",
       "Finance"
     ],
     "locations": [
-      "Melbourne, Victoria (VIC)",
-      "Sydney, New South Wales (NSW)",
-      "Brisbane, Queensland (QLD)"
+      "Melbourne, Australia",
+      "Sydney, Australia",
+      "Brisbane, Australia"
     ],
     "salary_text": null,
     "duration_text": "18-month rotational program (three six-month rotations in a core discipline).",
@@ -61,7 +65,7 @@
   },
   "eligibility": {
     "work_rights": null,
-    "graduation_window": "Applicants are expected to intend to complete tertiary studies by February 2025, or to have completed in the last two years.",
+    "graduation_window": "Intent to complete tertiary studies by February 2025 (or have completed in the last two years).",
     "disciplines": [
       "Engineering (Civil, Mechanical, Mechatronics or Electrical)",
       "Science (Engineering Science, Computer and Software Systems)",
@@ -69,69 +73,72 @@
       "Commerce, Finance, Accounting or Economics"
     ],
     "minimum_requirements": [
-      "Applicants are expected to be completing (by February 2025) or have recently completed (in the last two years) a relevant bachelor’s degree with a credit average."
+      "You intend to complete tertiary studies by February 2025 (or you have completed in the last two years).",
+      "You have (or will complete) a relevant bachelor’s degree with a credit average in one of the listed disciplines."
     ]
   },
   "recruitment_process": {
     "stages": [
       {
         "name": "Step 1: Apply online",
-        "details": "Apply online. The graduate program page states that applications for the 2025 graduate program are closed."
+        "details": "Apply online. Applications are currently closed."
       },
       {
         "name": "Step 2: Psychometric testing",
-        "details": "Complete online assessments. These examine your abilities and preferences when working with others, across changing conditions, and with different types of information. Instructions and practice questions are provided in advance."
+        "details": "Complete online assessments that examine your abilities and preferences when working with others, across changing conditions, and with different types of information. Instructions and practice questions are provided in advance."
       },
       {
         "name": "Step 3: Video interview",
-        "details": "Complete a one-way video assessment where you record answers to set questions. This stage is used to assess your strengths, motivations, and alignment to Transurban’s core values."
+        "details": "Complete a one-way video assessment where you record answers to set questions. This is used to assess your strengths, motivations, and alignment to Transurban’s core values."
       },
       {
         "name": "Steps 4 and 5: Presentation and interview",
-        "details": "Attend interactive, practical activities that may include a presentation and an interview. The presentation may assess how you work with others to solve a business problem, your follow-up process, and your reflections. The interview includes structured, behavioural questions aligned to the graduate role requirements, and you can ask questions about the program."
+        "details": "Attend interactive, practical activities that may include a presentation and an interview. The presentation looks at how you work with others to solve a business problem and how you reflect. The interview includes structured behavioural questions aligned to the role requirements, and you can ask questions about the program."
       },
       {
         "name": "Step 6: Offer and reference checks",
-        "details": "Transurban contacts your nominated referees to understand your strengths, past achievements, and ideal working environment."
+        "details": "If progressed, Transurban contacts your nominated referees for reference checks."
       },
       {
         "name": "Step 7: Onboarding commences",
-        "details": "You are introduced to the 2024 graduates, your people leader, and your buddy before you start. You learn more about how Transurban operates and how you can grow and develop your career."
+        "details": "You are introduced to the prior graduate cohort, your people leader, and your buddy before your formal start date, and you learn more about how Transurban operates."
       },
       {
         "name": "Step 8: First day",
-        "details": "You are welcomed by your people leader and team, complete a facilities induction, and later in your first month complete a corporate induction. Your official graduate experience then commences."
+        "details": "You are welcomed by your people leader and team, complete a facilities induction, and later in the first month you complete a corporate induction. Your official graduate experience then commences."
       }
     ],
     "tips": [
       "Follow Transurban on LinkedIn to stay up to date with Graduate and Student Community news.",
-      "Use the video interview stage to clearly explain your strengths, motivations, and how you align to Transurban’s core values.",
-      "Prepare to discuss how you work with others to solve business problems (for the presentation and interview stage)."
+      "Use the video interview to clearly explain your strengths, motivations, and how you align to Transurban’s core values.",
+      "Prepare to demonstrate how you work with others to solve practical business problems during the presentation and interview stage."
     ]
   },
   "commercial_context": {
     "exec_themes": [
-      "Grow and improve a portfolio of toll roads through long-term concessions and major upgrades/expansions (build and operate).",
-      "Convert traffic growth and tolling outcomes into steady cash generation and security holder distributions.",
-      "Use customer-facing products and data (for example Linkt app and rewards) to strengthen customer value and support demand.",
-      "Work with governments and partners on transport policy and reforms that affect tolling and customer outcomes (example: NSW toll reform).",
-      "Improve safety, reliability, and network performance through operations and technology upgrades.",
-      "Decarbonisation and climate resilience planning (net zero pathway, renewables, lower-carbon operations and supply chain)."
+      "Grow traffic and toll revenue by operating high-quality toll road assets and improving the customer travel experience.",
+      "Expand capacity through a long-term project pipeline (major new projects plus smaller, repeatable network enhancements).",
+      "Improve performance through active cost management and operating efficiency.",
+      "Prioritise North America as a growth engine, highlighting a “step change” in operational performance after completing key projects.",
+      "Work with government on NSW toll reform to create a simpler and more transparent system while protecting contract value and revenue.",
+      "Invest in technology and innovation to help customers make better travel choices and to improve end-to-end journeys.",
+      "Manage the balance sheet to fund growth while navigating a higher interest-rate (“macroeconomic”) environment."
     ],
-    "profit_engine": "Transurban’s main profit engine is operating toll roads under long-term concession-style arrangements and turning road usage (traffic volumes) and toll revenue into cash flow that supports distributions to security holders.",
-    "headwinds": "Transurban flags an “uncertain macroeconomic environment,” and its reporting shows ongoing exposure to financing-related risks (for example interest-rate and foreign-exchange risk management due to significant borrowings and international operations). In addition, tolling policy/regulatory reform can create uncertainty and may require changes to customer fees and processes (example: NSW toll reform discussions and commitments).",
-    "esg": "Transurban’s ESG focus includes a net-zero greenhouse gas emissions target by 2050 across Scope 1, 2 and 3, with interim targets (including reducing absolute Scope 1 and 2 emissions 50% by 2030) and Scope 3 intensity targets that it says are aligned with SBTi methodology. It also describes actions like improving road efficiency, shifting its own operations away from fossil fuels, and working with supply chain partners on emissions reductions.",
-    "recent_pivot": "Transurban has recently leaned further into customer/value features and engagement (for example, adding a personalised travel-time savings feature in the Linkt app and expanding/trialling Linkt Rewards), alongside active engagement in tolling reform in Sydney (including indicating willingness to remove NSW toll notice administration fees by mid-2026 and working toward a broader reform package in the first half of 2026)."
+    "profit_engine": "Transurban’s core profit engine is collecting toll revenue from long-life toll road concessions. Cash generation is supported by traffic volumes (average daily trips), tolling outcomes, and disciplined control of operating costs, which flows through to EBITDA and Free Cash used to pay distributions.",
+    "headwinds": "Key headwinds explicitly flagged include: (1) macroeconomic factors that can affect traffic and distribution outcomes; (2) inflation pressure on costs (even if partly offset by cost management); (3) interest costs and refinancing timing (early refinancing brought forward interest costs); and (4) regulatory/policy uncertainty and negotiation complexity around NSW toll reform (changes are being worked through with government, with outcomes to be finalised in 1H 2026).",
+    "esg": "Transurban states it is committed to net-zero greenhouse gas emissions by 2050 (Scopes 1, 2, and 3), with interim science-based targets including a 50% reduction in absolute Scope 1 and 2 emissions by 2030. It also describes actions such as improving road efficiency, shifting its own operations away from fossil fuels, and reducing supply-chain emissions intensity. In its investor materials it also reports sourcing high levels of renewable energy across the group and progress reducing Scope 1 and 2 emissions year-on-year.",
+    "recent_pivot": "Transurban describes a “next phase of growth” after completing several key strategic initiatives and projects, including major capacity coming online (notably in North America and Melbourne). It also signals a more customer-focused approach through reforms (e.g., removing certain administration fees by mid-2026 as part of NSW toll reform discussions) and continued investment in innovation/technology to improve the end-to-end travel experience."
   },
   "section_provenance": {
     "program": {
       "confidence": "high",
       "notes": [
-        "Program name, locations, duration, rotations, and listed disciplines/streams were taken directly from the Transurban Graduate Program page."
+        "The program name, locations, streams, and rotation/duration details are stated on the Graduate Program page.",
+        "The page states that applications for the 2025 graduate program have closed, but it does not provide a specific close date."
       ],
       "sources": [
         {
-          "type": "web",
+          "type": "webpage",
           "title": "Transurban Graduate Program | Transurban Careers",
           "url": "https://careers.transurban.com/graduate-program",
           "retrieved_at": "2026-03-06"
@@ -141,12 +148,12 @@
     "eligibility": {
       "confidence": "high",
       "notes": [
-        "Eligibility and degree requirements were taken from the 'About you' section of the Transurban Graduate Program page.",
-        "No explicit work rights or visa/PR/citizenship requirement was stated on the page, so work_rights is null."
+        "Eligibility details are taken directly from the 'About you' section on the Graduate Program page.",
+        "Work rights requirements are not explicitly stated on the page."
       ],
       "sources": [
         {
-          "type": "web",
+          "type": "webpage",
           "title": "Transurban Graduate Program | Transurban Careers",
           "url": "https://careers.transurban.com/graduate-program",
           "retrieved_at": "2026-03-06"
@@ -156,20 +163,14 @@
     "recruitment_process": {
       "confidence": "high",
       "notes": [
-        "Graduate-specific recruitment stages (including psychometric testing, one-way video interview, and presentation/interview activities) were taken from the 'Next steps and process' section on the Transurban Graduate Program page.",
-        "The direct apply link provided points to the Transurban Careers 'Opportunities' page, which links out to Workday for job applications."
+        "Recruitment steps are listed in order on the Graduate Program page under 'Next steps and process'.",
+        "No application open/close dates are provided beyond 'Applications are currently closed'."
       ],
       "sources": [
         {
-          "type": "web",
+          "type": "webpage",
           "title": "Transurban Graduate Program | Transurban Careers",
           "url": "https://careers.transurban.com/graduate-program",
-          "retrieved_at": "2026-03-06"
-        },
-        {
-          "type": "web",
-          "title": "Opportunities | Transurban Careers",
-          "url": "https://careers.transurban.com/opportunities",
           "retrieved_at": "2026-03-06"
         }
       ]
@@ -177,87 +178,93 @@
     "commercial_context": {
       "confidence": "medium",
       "notes": [
-        "Some key strategy/risk detail typically found in investor presentations/transcripts could not be fully extracted here because the FY25 Corporate Report PDF could not be opened with the tool in this session (fetch error), so themes/headwinds are based on accessible excerpts and official web pages.",
-        "“Headwinds” is summarized at a high level from explicit references to macro uncertainty and documented financial risk exposures (e.g., FX/borrowings) rather than a complete principal-risks list from the report.",
-        "“Recent pivot” is framed from concrete, dated announcements and FY25 highlights (customer feature/rewards, NSW toll reform) rather than an explicit statement that management calls it a pivot."
+        "Some fields (especially profit_engine and recent_pivot) require synthesis across multiple official documents; Transurban does not present them as a single labeled section.",
+        "The 1H26 ASX release provides clear statements on strategic priorities, macro/interest-rate context, and project completion signals; however it is a short document, so some themes may be under-specified versus the full corporate report.",
+        "Net-zero and emissions targets are clearly stated on Transurban sustainability pages; broader ESG topics (e.g., safety, community investment, governance) were not extracted here because they were not as explicit in the specific sources reviewed in this run."
       ],
       "sources": [
         {
-          "type": "company_report_excerpt",
-          "title": "Transurban FY25 Corporate Report (PDF) – FY25 highlights excerpt (traffic, toll revenue, free cash/distributions, Linkt app and rewards)",
-          "url": "https://www.transurban.com/content/dam/investor-centre/04/2025-Corporate-Report.pdf",
+          "type": "Investor reporting suite index (official IR page)",
+          "title": "Investor reporting suite | Transurban Group",
+          "url": "https://www.transurban.com/investor-centre/reporting-suite",
           "retrieved_at": null
         },
         {
-          "type": "company_webpage",
-          "title": "Reducing emissions (Sustainability) – targets and approach",
+          "type": "ASX release / results announcement (official PDF)",
+          "title": "Transurban 1H26 results (ASX release)",
+          "url": "https://www.transurban.com/content/dam/investor-centre/01/1H26-ASXRelease.pdf",
+          "retrieved_at": null
+        },
+        {
+          "type": "ASX release / results announcement (official PDF)",
+          "title": "Transurban FY25 results and FY26 distribution guidance (ASX release)",
+          "url": "https://www.transurban.com/content/dam/investor-centre/01/FY25-ASXRelease.pdf",
+          "retrieved_at": null
+        },
+        {
+          "type": "Sustainability / ESG page (official site)",
+          "title": "Reducing emissions | Transurban Group",
           "url": "https://www.transurban.com/sustainability/reducing-emissions",
           "retrieved_at": null
         },
         {
-          "type": "company_webpage",
-          "title": "ESG benchmarking – SBTi-aligned targets and interim targets",
+          "type": "ESG page (official site)",
+          "title": "ESG benchmarking | Transurban Group",
           "url": "https://www.transurban.com/investor-centre/environmental-social-governance/esg-benchmarking",
           "retrieved_at": null
         },
         {
-          "type": "company_webpage",
-          "title": "Progress on NSW toll reform (News, 11 Dec 2025)",
+          "type": "Newsroom / policy update (official site)",
+          "title": "Progress on NSW toll reform | Transurban Group",
           "url": "https://www.transurban.com/news/progress-on-nsw-toll-reform",
-          "retrieved_at": null
-        },
-        {
-          "type": "company_webpage",
-          "title": "Distribution components – confirms distribution structure/rates and ongoing distributions framework",
-          "url": "https://www.transurban.com/investor-centre/distributions-and-tax/distribution-components",
           "retrieved_at": null
         }
       ]
     }
   },
   "provenance": {
-    "updated_at": "2026-03-06T08:52:19+00:00",
+    "updated_at": "2026-03-06T11:58:41+00:00",
     "sources": [
       {
-        "type": "web",
+        "type": "webpage",
         "title": "Transurban Graduate Program | Transurban Careers",
         "url": "https://careers.transurban.com/graduate-program",
         "retrieved_at": "2026-03-06"
       },
       {
-        "type": "web",
-        "title": "Opportunities | Transurban Careers",
-        "url": "https://careers.transurban.com/opportunities",
-        "retrieved_at": "2026-03-06"
-      },
-      {
-        "type": "company_report_excerpt",
-        "title": "Transurban FY25 Corporate Report (PDF) – FY25 highlights excerpt (traffic, toll revenue, free cash/distributions, Linkt app and rewards)",
-        "url": "https://www.transurban.com/content/dam/investor-centre/04/2025-Corporate-Report.pdf",
+        "type": "Investor reporting suite index (official IR page)",
+        "title": "Investor reporting suite | Transurban Group",
+        "url": "https://www.transurban.com/investor-centre/reporting-suite",
         "retrieved_at": null
       },
       {
-        "type": "company_webpage",
-        "title": "Reducing emissions (Sustainability) – targets and approach",
+        "type": "ASX release / results announcement (official PDF)",
+        "title": "Transurban 1H26 results (ASX release)",
+        "url": "https://www.transurban.com/content/dam/investor-centre/01/1H26-ASXRelease.pdf",
+        "retrieved_at": null
+      },
+      {
+        "type": "ASX release / results announcement (official PDF)",
+        "title": "Transurban FY25 results and FY26 distribution guidance (ASX release)",
+        "url": "https://www.transurban.com/content/dam/investor-centre/01/FY25-ASXRelease.pdf",
+        "retrieved_at": null
+      },
+      {
+        "type": "Sustainability / ESG page (official site)",
+        "title": "Reducing emissions | Transurban Group",
         "url": "https://www.transurban.com/sustainability/reducing-emissions",
         "retrieved_at": null
       },
       {
-        "type": "company_webpage",
-        "title": "ESG benchmarking – SBTi-aligned targets and interim targets",
+        "type": "ESG page (official site)",
+        "title": "ESG benchmarking | Transurban Group",
         "url": "https://www.transurban.com/investor-centre/environmental-social-governance/esg-benchmarking",
         "retrieved_at": null
       },
       {
-        "type": "company_webpage",
-        "title": "Progress on NSW toll reform (News, 11 Dec 2025)",
+        "type": "Newsroom / policy update (official site)",
+        "title": "Progress on NSW toll reform | Transurban Group",
         "url": "https://www.transurban.com/news/progress-on-nsw-toll-reform",
-        "retrieved_at": null
-      },
-      {
-        "type": "company_webpage",
-        "title": "Distribution components – confirms distribution structure/rates and ongoing distributions framework",
-        "url": "https://www.transurban.com/investor-centre/distributions-and-tax/distribution-components",
         "retrieved_at": null
       }
     ],

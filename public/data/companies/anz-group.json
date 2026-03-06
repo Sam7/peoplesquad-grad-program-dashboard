@@ -35,7 +35,7 @@
       "confidence": "medium",
       "quality_score": 0.7,
       "selection_reason": "fallback_og_image",
-      "retrieved_at": "2026-03-06T08:52:07+00:00",
+      "retrieved_at": "2026-03-06T11:58:48+00:00",
       "notes": []
     }
   },
@@ -45,6 +45,10 @@
     "direct_apply_url": null,
     "open_date": "2026-04-02",
     "close_date": "2026-05-11",
+    "open_date_raw": "Applications open 2 April 2026",
+    "close_date_raw": "Applications close 11 May 2026",
+    "open_date_precision": "exact_day",
+    "close_date_precision": "exact_day",
     "streams": [
       "Australia Retail",
       "Business & Private Bank",
@@ -56,26 +60,25 @@
       "Suncorp Bank Business & Agribusiness",
       "Technology",
       "Marketing (New Zealand)",
-      "Institutional (New Zealand)",
       "Data (New Zealand)",
       "Funds Management (New Zealand)"
     ],
     "locations": [
       "Australia",
       "New Zealand",
-      "Bengaluru, India"
+      "Bengaluru, India (Group Capability Centre)"
     ],
     "salary_text": null,
     "duration_text": "You’ll get 18 or 24 months of critical experiences across our business, including exposure to a diverse range of people, environments and situations.",
-    "rotation_text": "The program has six-monthly rotations."
+    "rotation_text": "Our six-monthly rotations are the best way to learn about the bank and your options for the role you’d like to move into at the end of the program."
   },
   "eligibility": {
-    "work_rights": "When you apply, you should be an Australian or New Zealand citizen, or hold permanent residency in the program country you are applying for.",
-    "graduation_window": "When you apply, you should be in your final year of university studies (bachelor degree or higher), or have graduated in the last three years.",
+    "work_rights": "You should be an Australian or New Zealand citizen, or hold permanent residency in the program country you are applying for.",
+    "graduation_window": "You should be in your final year of university studies (bachelor degree or higher), or have graduated in the last three years.",
     "disciplines": [],
     "minimum_requirements": [
-      "Be an Australian or New Zealand citizen, or hold permanent residency in the program country you are applying for.",
-      "Be in your final year of university studies (bachelor degree or higher), or have graduated in the last three years."
+      "You should be an Australian or New Zealand citizen, or hold permanent residency in the program country you are applying for.",
+      "You should be in your final year of university studies (bachelor degree or higher), or have graduated in the last three years."
     ]
   },
   "recruitment_process": {
@@ -86,163 +89,188 @@
       },
       {
         "name": "Digital interview and game-based assessment",
-        "details": "A set of games that help ANZ get to know you better."
+        "details": "A bunch of games that help ANZ get to know you better."
       },
       {
         "name": "Personality questionnaire",
-        "details": "Questions about how you like to work."
+        "details": "Some questions about how you like to work."
       },
       {
         "name": "Interview preparation",
-        "details": "Tips from past grads on how to do well in the interview."
+        "details": "Get insider tips from past grads on how to do well in the interview."
       },
       {
         "name": "Face to face interview",
-        "details": "Meet some leaders so they can learn more about you, and you can get to know ANZ."
+        "details": "Meet some ANZ leaders so they can learn more about you and you can get to know ANZ."
       }
     ],
     "tips": [
-      "Use the interview preparation stage to get tips from past grads on how to do well in the interview."
+      "You do not need to submit a CV or cover letter for the application form."
     ]
   },
   "commercial_context": {
     "exec_themes": [
-      "Cost discipline and productivity (tight control of expenses while still investing in the business).",
-      "Risk management and stronger non-financial risk controls (including conduct, complaints, fraud/scams and financial crime focus).",
-      "Capital strength and efficiency (maintaining a robust balance sheet and improving capital efficiency).",
-      "Diversified earnings across Banking and Markets (using multiple business lines to support revenue and profit).",
-      "Integration and value capture from the Suncorp Bank acquisition (including a larger earnings base from a full-year contribution).",
-      "Support customers through the climate transition (building capability to assess climate/nature risk and help customers transition)."
+      "Customer-first focus (improving digital and human service interactions)",
+      "Simplification and productivity (reducing duplication, divesting non-core assets, lowering costs)",
+      "Resilience via stronger non-financial risk management (trust, safety, accountability; APRA remediation)",
+      "Delivering value through higher-returning growth and disciplined capital management",
+      "Integration of Suncorp Bank to capture a ‘step change’ in earnings and deliver value",
+      "Accelerating ANZ Plus as the group’s digital front-end",
+      "Maintaining strong credit quality through cautious customer selection and de-risking"
     ],
-    "profit_engine": "ANZ primarily makes money from a diversified mix of: (1) Banking earnings (net interest income plus fees) supported by balance sheet growth and improved risk-adjusted margins, and (2) Markets income (customer activity-driven, with repeated >$1b first-half income in recent years mentioned), with results amplified by cost discipline, capital management, and the added earnings contribution from Suncorp Bank.",
-    "headwinds": "Management cited macro headwinds including cash rate reductions, higher funding costs, and seasonal impacts (noted as around $200 million of headwinds in 1H25).",
-    "esg": "ANZ’s ESG approach is organised around seven “most material” issues (including environmental sustainability, ethics/culture, financial wellbeing, housing, information security, responsible customer engagement, and improving non-financial risk management). Key climate elements include a Climate & Environment Strategy aimed at “financing a sustainable transition,” ambitions to transition its lending portfolio to net-zero financed emissions by 2050, and a target to fund and facilitate at least $100b in social and environmental activities by September 2030. ANZ also states it achieved an earlier operational emissions goal and reset to an 85% Scope 1 & 2 reduction by 2030 against a 2024 baseline (commencing 1 Oct 2025).",
-    "recent_pivot": "A recent emphasis highlighted in results communications is the framing of ANZ around two main businesses—Banking and Markets—and the step-change in earnings and balance sheet following the first full half/full year contribution from Suncorp Bank. (A broader strategic “pivot” beyond this framing/integration is not explicitly stated in the accessed sources.)"
+    "profit_engine": "ANZ describes its profit engine as a diversified banking and markets group that grows earnings through (1) core banking income (lending and deposits) across Australia, New Zealand and other geographies, (2) Markets and capital markets performance (including customer activity in Markets and debt capital markets), and (3) disciplined cost/productivity programs, all supported by strong credit quality and capital strength. The inclusion and integration of Suncorp Bank is also described as a material earnings contributor.",
+    "headwinds": "ANZ highlights a challenging and volatile external environment, including heightened geopolitical disruption (including US trade policy changes) and global supply chain disruption creating uncertainty. It also flags the need to remediate and lift capability in non-financial risk management under regulatory scrutiny (including an APRA enforceable undertaking), and the execution challenge of large change programs (e.g., integrating Suncorp Bank and scaling the ANZ Plus digital front-end).",
+    "esg": "ANZ positions ESG largely around supporting customers’ transition (including net-zero transition) through financing and sustainable finance products (e.g., green/social/sustainability/sustainability-linked loans, bonds and trade products). ANZ also reports activity in sustainable finance deals and frames ESG as part of its stakeholder outcomes (alongside broader climate-related disclosures in investor materials).",
+    "recent_pivot": "Recent strategy emphasis is framed around four strategic pillars (Customer first, Simplicity, Resilience, Delivering value) and five near-term priorities under new leadership: cultural reset/leadership embed, faster Suncorp Bank integration, accelerating ANZ Plus delivery, reducing duplication/simplifying the organisation (including role reductions), and strengthening non-financial risk management (including APRA-approved remediation planning)."
   },
   "section_provenance": {
     "program": {
-      "confidence": "high",
+      "confidence": "medium",
       "notes": [
-        "The page lists streams for the Australian Graduate Program and typical streams for the New Zealand Graduate Program.",
-        "The page describes program duration as 18 or 24 months and mentions six-monthly rotations.",
-        "The page mentions graduates in India and locates the Group Capability Centre in Bengaluru."
+        "The main Graduate Programs page lists program structure, streams, locations, and process steps, but it does not clearly state application open/close dates on the page itself.",
+        "Application open/close dates were taken from an ANZ Newsroom article about the 2026 program (Australia and New Zealand)."
       ],
       "sources": [
         {
           "type": "web",
           "title": "Graduate Program | ANZ",
           "url": "https://www.anz.com.au/careers/career-programs/graduate-program/",
-          "retrieved_at": null
+          "retrieved_at": "2026-03-06"
+        },
+        {
+          "type": "web",
+          "title": "From graduates to leaders: Igniting your passion | ANZ",
+          "url": "https://www.anz.com.au/newsroom/news/2025/february/graduate-program-2026-career-oswald-treloar/",
+          "retrieved_at": "2026-03-06"
         }
       ]
     },
     "eligibility": {
       "confidence": "high",
       "notes": [
-        "Eligibility requirements are listed under the 'Am I eligible?' section."
+        "Eligibility wording is stated directly under “Am I eligible?” on the Graduate Programs page."
       ],
       "sources": [
         {
           "type": "web",
           "title": "Graduate Program | ANZ",
           "url": "https://www.anz.com.au/careers/career-programs/graduate-program/",
-          "retrieved_at": null
+          "retrieved_at": "2026-03-06"
         }
       ]
     },
     "recruitment_process": {
-      "confidence": "high",
+      "confidence": "medium",
       "notes": [
-        "The recruitment steps are listed under the 'New Zealand and Australia process' section."
+        "The Graduate Programs page lists the main application stages.",
+        "The tip about not needing a CV or cover letter is stated in an ANZ media release, and is consistent with the “Quick online application” stage wording on the Graduate Programs page."
       ],
       "sources": [
         {
           "type": "web",
           "title": "Graduate Program | ANZ",
           "url": "https://www.anz.com.au/careers/career-programs/graduate-program/",
-          "retrieved_at": null
+          "retrieved_at": "2026-03-06"
+        },
+        {
+          "type": "web",
+          "title": "ANZ awarded most Popular Banking, Finance and Insurance Employer at Top100 Graduate Employers Awards 2025 | ANZ",
+          "url": "https://www.anz.com.au/newsroom/media/2025/february/anz-awarded-most-popular-banking--finance-and-insurance-employer/",
+          "retrieved_at": "2026-03-06"
         }
       ]
     },
     "commercial_context": {
       "confidence": "medium",
       "notes": [
-        "Profit engine and headwinds are drawn mainly from the 2025 Half Year Results CFO speaking notes/transcript excerpts; they describe drivers and pressures but do not fully define ANZ’s business model in one place.",
-        "ESG content is well-supported by ANZ’s ESG webpages and the 2025 ESG Report, but this summary simplifies a larger reporting suite.",
-        "Recent pivot is interpreted as a shift in how ANZ presents/organises performance (Banking vs Markets) plus the impact of Suncorp Bank; the sources do not label it as a formal strategic pivot."
+        "Some ESG details in the 2024 ESG investor pack could not be fully extracted from text due to PDF rendering/availability limits in this run; only clearly readable elements were used.",
+        "The 2025 Strategy Update investor discussion pack PDF was not text-readable in this run (likely scanned/secured), so themes were taken from the 2025 Full Year Results investor discussion pack pages shown and from 2025 Half Year transcript/speaking notes.",
+        "Where ANZ uses broad strategic language (e.g., ‘delivering value’), the summary translates it into plain English without adding numbers or targets beyond what is explicitly shown."
       ],
       "sources": [
         {
-          "type": "webpage",
-          "title": "ANZ 2025 Half Year Results – Chief Financial Officer Farhan Faruqui Speaking Notes",
-          "url": "https://www.anz.com.au/newsroom/media/2025/may/anz-2025-half-year-results---chief-financial-officer-farhan-faru/",
-          "retrieved_at": null
+          "type": "company_report",
+          "title": "2025 Full Year Results Investor Discussion Pack (dated 10 November 2025; current as at 7 November 2025)",
+          "url": "https://www.anz.com/content/dam/anzcom/shareholder/full-year-results-announcement/2025-full-year-results-investor-discussion-pack.pdf",
+          "retrieved_at": "2026-03-06"
         },
         {
-          "type": "pdf",
-          "title": "ANZ 2025 Half Year Results Presentation (transcript)",
+          "type": "company_transcript",
+          "title": "ANZ 2025 Half Year Results Presentation transcript (8 May 2025)",
           "url": "https://www.anz.com/content/dam/anzcom/shareholder/2025-half-year-results-announcement/ANZ-2025-Half-Year-Results-Presentation-transcript.pdf",
-          "retrieved_at": null
+          "retrieved_at": "2026-03-06"
         },
         {
-          "type": "pdf",
-          "title": "ANZ 2025 ESG Report",
-          "url": "https://www.anz.com.au/content/dam/anzcomau/about-us/anz-2025-esg-report.pdf",
-          "retrieved_at": null
+          "type": "company_web_page",
+          "title": "ANZ 2025 Half Year Results – CEO Shayne Elliott speaking notes (Newsroom)",
+          "url": "https://www.anz.com.au/newsroom/media/2025/may/anz-2025-half-year-results-ceo-shayne-elliott/",
+          "retrieved_at": "2026-03-06"
         },
         {
-          "type": "webpage",
-          "title": "Our Environmental, Social and Governance (ESG) approach",
-          "url": "https://www.anz.com.au/about-us/sustainability",
-          "retrieved_at": null
+          "type": "company_web_page",
+          "title": "ANZ 2025 Half Year Results – CFO Farhan Faruqui speaking notes (Newsroom)",
+          "url": "https://www.anz.com.au/newsroom/media/2025/may/anz-2025-half-year-results---chief-financial-officer-farhan-faru/",
+          "retrieved_at": "2026-03-06"
         },
         {
-          "type": "webpage",
-          "title": "Environmental sustainability (Climate and Environment Strategy, targets)",
-          "url": "https://www.anz.com.au/about-us/esg/environmental-sustainability/",
-          "retrieved_at": null
+          "type": "company_report",
+          "title": "2024 ESG Full Year Investor Discussion Pack",
+          "url": "https://www.anz.com/content/dam/anzcom/shareholder/anz-esg-investor-discussion-pack.pdf",
+          "retrieved_at": "2026-03-06"
         }
       ]
     }
   },
   "provenance": {
-    "updated_at": "2026-03-06T08:52:07+00:00",
+    "updated_at": "2026-03-06T11:58:48+00:00",
     "sources": [
       {
         "type": "web",
         "title": "Graduate Program | ANZ",
         "url": "https://www.anz.com.au/careers/career-programs/graduate-program/",
-        "retrieved_at": null
+        "retrieved_at": "2026-03-06"
       },
       {
-        "type": "webpage",
-        "title": "ANZ 2025 Half Year Results – Chief Financial Officer Farhan Faruqui Speaking Notes",
-        "url": "https://www.anz.com.au/newsroom/media/2025/may/anz-2025-half-year-results---chief-financial-officer-farhan-faru/",
-        "retrieved_at": null
+        "type": "web",
+        "title": "From graduates to leaders: Igniting your passion | ANZ",
+        "url": "https://www.anz.com.au/newsroom/news/2025/february/graduate-program-2026-career-oswald-treloar/",
+        "retrieved_at": "2026-03-06"
       },
       {
-        "type": "pdf",
-        "title": "ANZ 2025 Half Year Results Presentation (transcript)",
+        "type": "web",
+        "title": "ANZ awarded most Popular Banking, Finance and Insurance Employer at Top100 Graduate Employers Awards 2025 | ANZ",
+        "url": "https://www.anz.com.au/newsroom/media/2025/february/anz-awarded-most-popular-banking--finance-and-insurance-employer/",
+        "retrieved_at": "2026-03-06"
+      },
+      {
+        "type": "company_report",
+        "title": "2025 Full Year Results Investor Discussion Pack (dated 10 November 2025; current as at 7 November 2025)",
+        "url": "https://www.anz.com/content/dam/anzcom/shareholder/full-year-results-announcement/2025-full-year-results-investor-discussion-pack.pdf",
+        "retrieved_at": "2026-03-06"
+      },
+      {
+        "type": "company_transcript",
+        "title": "ANZ 2025 Half Year Results Presentation transcript (8 May 2025)",
         "url": "https://www.anz.com/content/dam/anzcom/shareholder/2025-half-year-results-announcement/ANZ-2025-Half-Year-Results-Presentation-transcript.pdf",
-        "retrieved_at": null
+        "retrieved_at": "2026-03-06"
       },
       {
-        "type": "pdf",
-        "title": "ANZ 2025 ESG Report",
-        "url": "https://www.anz.com.au/content/dam/anzcomau/about-us/anz-2025-esg-report.pdf",
-        "retrieved_at": null
+        "type": "company_web_page",
+        "title": "ANZ 2025 Half Year Results – CEO Shayne Elliott speaking notes (Newsroom)",
+        "url": "https://www.anz.com.au/newsroom/media/2025/may/anz-2025-half-year-results-ceo-shayne-elliott/",
+        "retrieved_at": "2026-03-06"
       },
       {
-        "type": "webpage",
-        "title": "Our Environmental, Social and Governance (ESG) approach",
-        "url": "https://www.anz.com.au/about-us/sustainability",
-        "retrieved_at": null
+        "type": "company_web_page",
+        "title": "ANZ 2025 Half Year Results – CFO Farhan Faruqui speaking notes (Newsroom)",
+        "url": "https://www.anz.com.au/newsroom/media/2025/may/anz-2025-half-year-results---chief-financial-officer-farhan-faru/",
+        "retrieved_at": "2026-03-06"
       },
       {
-        "type": "webpage",
-        "title": "Environmental sustainability (Climate and Environment Strategy, targets)",
-        "url": "https://www.anz.com.au/about-us/esg/environmental-sustainability/",
-        "retrieved_at": null
+        "type": "company_report",
+        "title": "2024 ESG Full Year Investor Discussion Pack",
+        "url": "https://www.anz.com/content/dam/anzcom/shareholder/anz-esg-investor-discussion-pack.pdf",
+        "retrieved_at": "2026-03-06"
       }
     ],
     "notes": []

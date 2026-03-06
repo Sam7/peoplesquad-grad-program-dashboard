@@ -24,11 +24,15 @@
     "logo": null
   },
   "program": {
-    "name": "BHP 2027 Graduate Program (Australia)",
+    "name": "BHP Graduate Program (Australia)",
     "overview_url": "https://www.bhp.com/careers/graduate-student-programs/australia",
     "direct_apply_url": "https://careers.bhp.com/job/BHP-2027-Australian-Graduate-Campaign/1368544000/",
-    "open_date": "2026-02-26",
+    "open_date": null,
     "close_date": "2026-04-06",
+    "open_date_raw": null,
+    "close_date_raw": "6 April 2026",
+    "open_date_precision": "missing",
+    "close_date_precision": "exact_day",
     "streams": [
       "Engineering",
       "Science",
@@ -37,40 +41,40 @@
       "Health Science"
     ],
     "locations": [
-      "Australia (Western Australia, Queensland, South Australia)"
+      "Australia",
+      "Western Australia (Iron Ore assets)",
+      "Queensland (Coal operations)",
+      "South Australia (Copper Operations)"
     ],
-    "salary_text": "BHP states it offers a competitive salary package, plus a performance-based bonus and an employee share program.",
-    "duration_text": "The program is a 24-month BHP Graduate Program.",
-    "rotation_text": "BHP describes roles as potentially being based in a residential community, a city office, or operating on a Fly-in Fly-out (FIFO) roster, depending on discipline and preferred location."
+    "salary_text": "The job ad says the program offers a competitive salary package, plus a performance-based bonus and an employee share program.",
+    "duration_text": "The program is described as a 24-month graduate program.",
+    "rotation_text": "Graduates will rotate into different teams 2-4 times during the program."
   },
   "eligibility": {
     "work_rights": "International students with a valid visa are welcome to apply. By February 2027, you must hold a visa with no work restrictions.",
-    "graduation_window": "You must have graduated within the past two years or be due to graduate by the end of 2026.",
+    "graduation_window": "You must have graduated within the past two years, or be due to graduate by the end of 2026.",
     "disciplines": [
-      "Engineering (Mechanical, Mechatronics, Electrical, Civil, Geotechnical, Metallurgy / Minerals Processing, Chemical, Construction, Environmental, Instrumentation, Control & Automation)",
-      "Science (Hydrogeology, Environmental and Earth Sciences, Physics, Chemistry, Spatial Science (Surveying), Geographical Information Systems)",
+      "Engineering",
+      "Science",
       "Technology",
       "Business",
-      "Health Science (and related technical fields)"
+      "Health Science"
     ],
-    "minimum_requirements": [
-      "You must have graduated within the past two years or be due to graduate by the end of 2026.",
-      "International students must have a valid visa and, by February 2027, must hold a visa with no work restrictions."
-    ]
+    "minimum_requirements": []
   },
   "recruitment_process": {
     "stages": [
       {
         "name": "Stage 1: Application",
-        "details": "Apply online and add your resume."
+        "details": "Apply online and include your resume. BHP recommends checking your resume for typos and double-checking all application responses and contact details. BHP notes that a cover letter and academic transcript are not required at this stage."
       },
       {
-        "name": "Stage 2: Online Assessment",
-        "details": "A video interview and cognitive testing."
+        "name": "Stage 2: Online assessment",
+        "details": "BHP describes this as a video interview and cognitive testing, and recommends following the email instructions, choosing a quiet place, and ensuring your device is charged with a strong internet connection."
       },
       {
-        "name": "Stage 3: 1-on-1 Conversation with a Line Leader",
-        "details": null
+        "name": "Stage 3: 1-on-1 conversation with a line leader",
+        "details": "BHP recommends finding a quiet place if by phone/video, letting BHP know if you cannot make the time so it can be rescheduled, reviewing your resume, and familiarising yourself with BHP’s values and purpose."
       },
       {
         "name": "Stage 4: Offer",
@@ -81,224 +85,162 @@
         "details": null
       },
       {
-        "name": "Stage 6: Provide your Academic Transcript prior to your start date (Graduates only)",
+        "name": "Stage 6: Provide your academic transcript prior to your start date (graduates only)",
         "details": null
       }
     ],
     "tips": [
-      "Ask someone to review your resume for typos before submitting.",
-      "Read the application questions carefully and double check your responses, including your contact details.",
-      "Answer all questions when completing your candidate profile and the application form.",
-      "Cover letter and academic transcript are not required at the application stage (you can include a cover letter in the same file as your resume if you want).",
-      "For online assessments, read the email invitation carefully, use a quiet place, ensure your device is charged, and have a strong internet connection.",
-      "For the online video interview, treat it like a conversation and wear something comfortable.",
-      "Before the 1-on-1 conversation, review your resume, be ready to explain your motivation, and familiarise yourself with BHP’s values and purpose."
+      "Talk to BHP employees to learn more about the company.",
+      "Understand the BHP Charter Values and what they mean for you.",
+      "Be yourself.",
+      "Have a safety-focused mindset.",
+      "Do the practice tests for the online cognitive testing.",
+      "Treat the video interview as a conversation and answer naturally.",
+      "If you need modifications to the testing process due to your situation, submit a query via bhp.com/contact."
     ]
   },
   "commercial_context": {
     "exec_themes": [
-      "Run a portfolio of “tier one” mining assets and focus on commodities that are in demand both now and in the energy transition (notably copper and potash, alongside iron ore and higher-quality steelmaking coal).",
-      "Keep costs and operations tightly managed (operational excellence, productivity, cost discipline) to stay resilient in volatile markets.",
-      "Use a disciplined capital allocation framework to balance growth investment with shareholder returns (dividends).",
-      "Build a growth pipeline through major projects and phased expansions (e.g., potash at Jansen; copper growth at Escondida and Copper South Australia; advancing Vicuña).",
-      "Make sustainability central to strategy, with emphasis on climate targets and reducing operational emissions.",
-      "Strengthen “social value” outcomes (e.g., economic contributions, inclusion/diversity, Indigenous procurement, and community investment)."
+      "Run “tier 1” mining assets safely and efficiently, with a strong focus on operational excellence and productivity.",
+      "Use disciplined capital allocation (Capital Allocation Framework) to balance growth investment and shareholder returns (dividends) through commodity cycles.",
+      "Grow production in key commodities (notably copper and iron ore), supported by ongoing investment and a resilient portfolio.",
+      "Progress decarbonisation plans for operational emissions and work with suppliers/customers on value-chain emissions where possible.",
+      "Build “social value” (e.g., Indigenous procurement, workforce inclusion) as a way to keep operations stable, reduce risk, and access opportunities and capital."
     ],
-    "profit_engine": "BHP’s profit engine is producing and selling large volumes of key commodities (especially iron ore and copper, and also steelmaking coal and emerging potash) from low-cost, long-life assets, while using tight cost control and disciplined capital allocation to generate strong cash flow and pay dividends.",
-    "headwinds": "Exposure to a “volatile external environment” for commodity markets, plus cost pressures such as inflation (including higher labour costs) that can push unit costs up; and technology readiness and timing risk in delivering longer-term decarbonisation pathways (some decarbonisation technologies are not yet ready and development has slowed in parts).",
-    "esg": "BHP frames sustainability as core to strategy and reports progress on: (1) climate—medium-term target to reduce operational (Scope 1 and 2) GHG emissions by at least 30% by FY2030 from an FY2020 baseline, and a long-term net zero goal for operational emissions by CY2050; (2) operational approach—renewable/low-emissions electricity procurement, diesel displacement trials (battery-electric haul trucks/locomotives and electrification of equipment), methane abatement, and planning to meet the FY2030 target through structural abatement rather than offsets; and (3) social factors—workforce safety/health focus, inclusion/diversity (including reported gender balance progress), and economic/social contributions (taxes/royalties, supplier spend, Indigenous procurement, community contributions).",
-    "recent_pivot": "A recent strategic emphasis is accelerating and optimising growth options in copper and potash (including expected first production from Jansen potash by mid-2027, and expansion pathways in copper), alongside continued focus on capital discipline and maintaining shareholder returns."
+    "profit_engine": "BHP’s profit engine is high-volume, low-cost production from large, long-life assets (notably being the world’s lowest-cost major iron ore producer at WAIO), combined with operational excellence, cost discipline, and disciplined capital allocation that supports strong margins and cash generation used for dividends and growth capex.",
+    "headwinds": "BHP highlights a volatile/uncertain external environment, commodity-market volatility, and inflation pressures (especially higher labour costs). On the climate side, BHP notes that some decarbonisation technologies needed for its long-term net zero goal are not yet ready and that the pace of development for some technologies has slowed, creating delays/updates to parts of its transition pathway.",
+    "esg": "BHP frames ESG as central to long-term value creation: safety as the top priority; reducing operational (Scope 1 and 2) greenhouse gas emissions (including being on track for at least a 30% reduction from FY2020 levels by FY2030, and reporting a reduction in FY2025 versus FY2024); publishing and seeking shareholder support for its Climate Transition Action Plan; and social value initiatives such as Indigenous procurement and progress on workforce gender balance.",
+    "recent_pivot": "BHP’s most explicit recent shift is an updated/second Climate Transition Action Plan (CTAP 2024, published August 2024) and subsequent updates to parts of its long-term decarbonisation pathway due to technology delays identified through planning since CTAP 2024. It is also emphasizing growth investment plans (including Jansen potash, copper growth options) while maintaining disciplined capital allocation and dividends."
   },
   "section_provenance": {
     "program": {
       "confidence": "high",
       "notes": [
-        "Program duration (24 months), close date (6 April 2026), and the February 2027 start date are stated on the BHP career portal job ad.",
-        "Broader Australia program page confirms relevant degree areas and mentions FIFO/relocation expectations in Australia, and lists Australian states (WA, SA, QLD) on the same page."
+        "Program duration and rotations were taken from the Australia graduate and student programs page.",
+        "Closing date and visa/work rights requirements were taken from the careers.bhp.com job ad for the 2027 Australian Graduate Campaign.",
+        "The BHP page states applications are open but does not give a specific opening date, so open_date is left null."
       ],
       "sources": [
         {
           "type": "web",
-          "title": "BHP 2027 Australian Graduate Campaign Job Details | BHP Career Portal",
-          "url": "https://careers.bhp.com/job/BHP-2027-Australian-Graduate-Campaign/1368544000/",
-          "retrieved_at": "2026-03-06"
+          "title": "Australia graduate and student programs | BHP",
+          "url": "https://www.bhp.com/careers/graduate-student-programs/australia",
+          "retrieved_at": null
         },
         {
           "type": "web",
-          "title": "Australia graduate and student programs | BHP",
-          "url": "https://www.bhp.com/careers/graduate-student-programs/australia",
-          "retrieved_at": "2026-03-06"
+          "title": "BHP 2027 Australian Graduate Campaign Job Details | BHP Career Portal",
+          "url": "https://careers.bhp.com/job/BHP-2027-Australian-Graduate-Campaign/1368544000/",
+          "retrieved_at": null
         }
       ]
     },
     "eligibility": {
       "confidence": "high",
       "notes": [
-        "Graduation window and visa/work restriction requirement by February 2027 are stated on the BHP career portal job ad.",
-        "Degree and specialisation examples are stated on the BHP career portal job ad; the broader graduate student programs page also lists degree background examples."
+        "Graduation window and work rights requirements were taken from the careers.bhp.com job ad for the 2027 Australian Graduate Campaign.",
+        "The broad discipline areas were taken from the BHP Australia graduate and student programs page and reinforced by the job ad."
       ],
       "sources": [
         {
           "type": "web",
           "title": "BHP 2027 Australian Graduate Campaign Job Details | BHP Career Portal",
           "url": "https://careers.bhp.com/job/BHP-2027-Australian-Graduate-Campaign/1368544000/",
-          "retrieved_at": "2026-03-06"
+          "retrieved_at": null
         },
         {
           "type": "web",
-          "title": "Graduate student programs | BHP",
-          "url": "https://www.bhp.com/careers/graduate-student-programs",
-          "retrieved_at": "2026-03-06"
+          "title": "Australia graduate and student programs | BHP",
+          "url": "https://www.bhp.com/careers/graduate-student-programs/australia",
+          "retrieved_at": null
         }
       ]
     },
     "recruitment_process": {
       "confidence": "high",
       "notes": [
-        "The stages (Apply online; Online Assessment; 1-on-1 conversation; Offer; Medical for site roles; Provide transcript prior to start date) and practical application tips are stated on the Australia graduate and student programs page.",
-        "The job ad also notes that recruitment checks may include police/criminal background checks, medical, drug and alcohol testing, due diligence checks, right to work checks, and/or reference checks."
+        "The stage list and tips were taken from the 'How to apply', 'Application recommendations', and FAQ sections on the Australia graduate and student programs page."
       ],
       "sources": [
         {
           "type": "web",
           "title": "Australia graduate and student programs | BHP",
           "url": "https://www.bhp.com/careers/graduate-student-programs/australia",
-          "retrieved_at": "2026-03-06"
-        },
-        {
-          "type": "web",
-          "title": "BHP 2027 Australian Graduate Campaign Job Details | BHP Career Portal",
-          "url": "https://careers.bhp.com/job/BHP-2027-Australian-Graduate-Campaign/1368544000/",
-          "retrieved_at": "2026-03-06"
+          "retrieved_at": null
         }
       ]
     },
     "commercial_context": {
       "confidence": "medium",
       "notes": [
-        "This summary is based on BHP’s official investor reporting pages and climate plan pages. Some fields (especially ‘headwinds’ and ‘recent_pivot’) require interpretation because BHP discusses them across multiple sections and often in broad terms rather than as a single labeled list.",
-        "‘Profit engine’ is phrased in plain English by combining BHP’s stated portfolio/strategy and financial performance descriptions; it is not a single quote from one section.",
-        "ESG items include explicit targets and described actions; broader ESG topics (e.g., tailings, human rights) are referenced on BHP’s site but not exhaustively summarized here because the request is for concise, high-signal context."
+        "This summary is limited to what is explicitly stated on BHP’s official pages listed in the sources. Some items (e.g., ‘pivot’) are inferred as ‘recently emphasized change’ based on BHP describing CTAP 2024 and subsequent updates; BHP does not label these as a ‘pivot’ in the cited text.",
+        "The sources used include BHP’s Annual Report webpage(s), a FY2025 results media release, and BHP’s Climate Transition Action Plan page, which are official but not full transcripts in the extracted snippets here."
       ],
       "sources": [
         {
           "type": "web",
-          "title": "Annual Report 2025 | BHP (web page)",
+          "title": "Annual Report 2025",
           "url": "https://www.bhp.com/investors/annual-reporting/annual-report-2025",
           "retrieved_at": "2026-03-06"
         },
         {
           "type": "web",
-          "title": "BHP Results for the full year ended 30 June 2025 (media release)",
-          "url": "https://www.bhp.com/news/media-centre/releases/2025/08/bhp-results-for-the-full-year-ended-30-june-2025",
-          "retrieved_at": "2026-03-06"
-        },
-        {
-          "type": "web",
-          "title": "Annual report 2024 | BHP (web page)",
+          "title": "Annual report 2024",
           "url": "https://www.bhp.com/investors/annual-reporting/annual-report-2024",
           "retrieved_at": "2026-03-06"
         },
         {
           "type": "web",
-          "title": "Annual reporting | BHP (index page)",
-          "url": "https://www.bhp.com/investors/annual-reporting",
+          "title": "BHP Results for the full year ended 30 June 2025",
+          "url": "https://www.bhp.com/news/media-centre/releases/2025/08/bhp-results-for-the-full-year-ended-30-june-2025",
           "retrieved_at": "2026-03-06"
         },
         {
           "type": "web",
-          "title": "Climate Transition Action Plan | BHP (CTAP 2024 page)",
+          "title": "Climate Transition Action Plan",
           "url": "https://www.bhp.com/sustainability/climate-change/climate-transition-action-plan",
-          "retrieved_at": "2026-03-06"
-        },
-        {
-          "type": "web",
-          "title": "Operational GHG emissions (Scopes 1 and 2 emissions from our operated assets) | BHP",
-          "url": "https://www.bhp.com/sustainability/climate-change/operational-ghg-emissions",
-          "retrieved_at": "2026-03-06"
-        },
-        {
-          "type": "web",
-          "title": "BHP Climate Transition Action Plan 2024 (PDF)",
-          "url": "https://www.bhp.com/-/media/documents/investors/annual-reports/2024/240827_bhpclimatetransitionactionplan2024.pdf",
-          "retrieved_at": "2026-03-06"
-        },
-        {
-          "type": "web",
-          "title": "Economic Contribution Report 2025 | BHP",
-          "url": "https://www.bhp.com/investors/annual-reporting/economic-contribution-report-2025",
           "retrieved_at": "2026-03-06"
         }
       ]
     }
   },
   "provenance": {
-    "updated_at": "2026-03-06T07:47:45+00:00",
+    "updated_at": "2026-03-06T11:58:58+00:00",
     "sources": [
-      {
-        "type": "web",
-        "title": "BHP 2027 Australian Graduate Campaign Job Details | BHP Career Portal",
-        "url": "https://careers.bhp.com/job/BHP-2027-Australian-Graduate-Campaign/1368544000/",
-        "retrieved_at": "2026-03-06"
-      },
       {
         "type": "web",
         "title": "Australia graduate and student programs | BHP",
         "url": "https://www.bhp.com/careers/graduate-student-programs/australia",
-        "retrieved_at": "2026-03-06"
+        "retrieved_at": null
       },
       {
         "type": "web",
-        "title": "Graduate student programs | BHP",
-        "url": "https://www.bhp.com/careers/graduate-student-programs",
-        "retrieved_at": "2026-03-06"
+        "title": "BHP 2027 Australian Graduate Campaign Job Details | BHP Career Portal",
+        "url": "https://careers.bhp.com/job/BHP-2027-Australian-Graduate-Campaign/1368544000/",
+        "retrieved_at": null
       },
       {
         "type": "web",
-        "title": "Annual Report 2025 | BHP (web page)",
+        "title": "Annual Report 2025",
         "url": "https://www.bhp.com/investors/annual-reporting/annual-report-2025",
         "retrieved_at": "2026-03-06"
       },
       {
         "type": "web",
-        "title": "BHP Results for the full year ended 30 June 2025 (media release)",
-        "url": "https://www.bhp.com/news/media-centre/releases/2025/08/bhp-results-for-the-full-year-ended-30-june-2025",
-        "retrieved_at": "2026-03-06"
-      },
-      {
-        "type": "web",
-        "title": "Annual report 2024 | BHP (web page)",
+        "title": "Annual report 2024",
         "url": "https://www.bhp.com/investors/annual-reporting/annual-report-2024",
         "retrieved_at": "2026-03-06"
       },
       {
         "type": "web",
-        "title": "Annual reporting | BHP (index page)",
-        "url": "https://www.bhp.com/investors/annual-reporting",
+        "title": "BHP Results for the full year ended 30 June 2025",
+        "url": "https://www.bhp.com/news/media-centre/releases/2025/08/bhp-results-for-the-full-year-ended-30-june-2025",
         "retrieved_at": "2026-03-06"
       },
       {
         "type": "web",
-        "title": "Climate Transition Action Plan | BHP (CTAP 2024 page)",
+        "title": "Climate Transition Action Plan",
         "url": "https://www.bhp.com/sustainability/climate-change/climate-transition-action-plan",
-        "retrieved_at": "2026-03-06"
-      },
-      {
-        "type": "web",
-        "title": "Operational GHG emissions (Scopes 1 and 2 emissions from our operated assets) | BHP",
-        "url": "https://www.bhp.com/sustainability/climate-change/operational-ghg-emissions",
-        "retrieved_at": "2026-03-06"
-      },
-      {
-        "type": "web",
-        "title": "BHP Climate Transition Action Plan 2024 (PDF)",
-        "url": "https://www.bhp.com/-/media/documents/investors/annual-reports/2024/240827_bhpclimatetransitionactionplan2024.pdf",
-        "retrieved_at": "2026-03-06"
-      },
-      {
-        "type": "web",
-        "title": "Economic Contribution Report 2025 | BHP",
-        "url": "https://www.bhp.com/investors/annual-reporting/economic-contribution-report-2025",
         "retrieved_at": "2026-03-06"
       }
     ],
